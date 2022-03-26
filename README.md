@@ -200,9 +200,7 @@ PS：我已经将输入框显示的所有编程语言写入了 CSS 文件。应�
 
 此功能默认关闭。
 
-链接默认末尾增加一个小链接图标，部分网站链接首端有对应网站 logo 。如下： 
-
-[汉仪字库-用心绽放文字之美 (hanyi.com.cn)](https://www.hanyi.com.cn/) 、 [iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/) 。
+链接默认末尾增加一个小链接图标，部分网站链接首端有对应网站 logo 。
 
 如果你的链接没有对应 logo 。可以在 `website-icon.css` 添加相应代码。
 
