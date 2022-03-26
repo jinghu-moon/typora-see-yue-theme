@@ -1,0 +1,385 @@
+/* 本文为一些小的样式修改 */
+
+@import "fonts.css";
+
+
+/* 无序列表竖线 */
+ul ul {
+  position: relative;
+}
+
+ul ul::before {
+  content: '';
+  border-left: 1.5px solid rgb(129, 178, 154, 0.3);
+  position: absolute;
+  left: -13.5px;
+  top: -17px;
+  bottom: 5px;
+}
+
+/* 光标所在列表的符号 */
+li.md-focus-container::marker {
+  color: #e2542e !important;
+  font-family: "HarmonyOS";
+  font-size: 18px;
+}
+
+/* 鼠标滚轮 */
+::-webkit-scrollbar-thumb {
+  /* background: #e9c46a !important; */
+  border-radius: 3px;
+}
+
+[md-inline='inline_math'] {
+  /* color: blue; */
+  font-size: 105%;
+}
+
+/* 右键菜单 */
+.context-menu.dropdown-menu>li>a {
+  padding: 4px 20px;
+  color: inherit;
+  cursor: default;
+  border: none !important;
+  font-family: "Fira", "霞鹜文楷";
+  font-size: 13px;
+  color: #000 !important;
+}
+
+/* 右键快捷键样式 */
+.ty-menu-shortcut {
+  float: right;
+  line-height: inherit;
+  font-size: .9em;
+  font-family: 'Fira';
+  opacity: .7;
+}
+
+/* 以下代码，没写注释，我也不知道是干嘛的，就先放这儿吧 :( */
+/* .menu-item-container a.menu-style-btn {
+  color: #000 !important;
+}
+
+.info-panel-tab-title {
+  line-height: 1.2rem;
+  padding-bottom: 0.2rem;
+  -webkit-app-region: no-drag;
+  font-size: 1.2em;
+  font-family: 'HarmonyOS';
+} */
+
+/* ————————————————————————————————————————————脚注设置—————————————————————————————————————————————*/
+/* 正文脚注 */
+#write .md-footnote {
+  /* background-color: #f8f8f8; */
+  color: #e96900;
+  font-family: "RobotoMono", '霞鹜文楷' !important;
+  font-size: .6rem;
+}
+
+/* 调整脚注位置 */
+sup {
+  top: -0.9em;
+}
+
+/* 脚注内容 */
+.footnotes {
+  font-size: .8rem;
+  font-family: "RobotoMono", '霞鹜文楷' !important;
+  color: #777;
+}
+
+#write sup.md-footnote a {
+  color: inherit !important;
+  border-bottom: none !important;
+  padding: 1px;
+  background-color: inherit;
+}
+
+/* 脚注样式 */
+/* #write .md-footnote>.md-text:before {
+  content: '[';
+  font-family: 'RobotoMono';
+}
+
+#write .md-footnote>.md-text:after {
+  content: ']';
+  font-family: 'RobotoMono';
+} */
+
+.reversefootnote {
+  border: none !important;
+  color: #0f4b9b !important;
+}
+
+/* 脚注内容尾部符号样式 */
+.md-reverse-footnote-area a {
+  text-decoration: underline !important;
+  padding: 0 2px;
+  border-bottom: none !important;
+}
+
+.md-reverse-footnote-area a:hover {
+  text-decoration: none !important;
+  border-radius: 4px;
+  padding: 0 2px;
+  background-color: #457b9d;
+  color: #ffffff !important;
+  cursor: pointer;
+  border-bottom: none !important;
+}
+
+#write.footnotes:first-child {
+  background-color: red;
+}
+
+/* 行间公式 */
+mjx-container[jax="SVG"] {
+  direction: ltr;
+  margin: 0 !important;
+  padding: 0;
+}
+
+/* 网络图片标识 */
+.md-img-loaded[data-src*="https"]::before,
+p>.md-img-loaded[data-src*="https"]::before {
+  content: url("./Icon_font/云端.svg");
+  position: absolute;
+  top: 5px;
+  right: 0.5%;
+  z-index: 99;
+  line-height: 1;
+  /* background-color: #f3f3f3; */
+  border-radius: 5px;
+  padding: 0 3px;
+  margin: 0 !important;
+  /* 代码二 可以调整图标大小 */
+  /* display: block;
+  content: " ";
+  background-image: url("src/云端.svg");
+  background-position: right bottom;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  z-index: 99; */
+}
+
+/*图片圆角*/
+img {
+  border-radius: 4px;
+  border: none;
+}
+
+/* 图片链接文字 */
+.md-image>.md-meta {
+  border-radius: 3px;
+  font-family: "Fira", "霞鹜文楷";
+  padding: 2px 0 0 4px;
+  font-size: 0.8em;
+  color: inherit;
+}
+
+/* 图片报错提示 */
+.md-img-error>.md-meta:first-of-type:before {
+  color: #f44336;
+  font-size: 1.6rem;
+}
+
+/* .md-image:not(.md-image-multi-line)>.md-meta, */
+.md-img-error>.md-meta {
+  display: inline;
+  padding-bottom: 1px;
+  border-bottom: 2.5px red solid;
+  border-radius: 0px !important;
+}
+
+/* 波浪线 */
+@keyframes waveMove {
+  from {
+    background-position: 0 100%;
+  }
+
+  to {
+    background-position: -20px 100%;
+  }
+}
+
+span[alt='wave'] {
+  padding-bottom: 5px;
+  animation: waveMove 0.5s infinite linear;
+  background: url("./Icon_font/wave-line.svg") repeat-x 0 100%;
+  background-size: 25px auto;
+}
+
+/* 源代码模式，行号 */
+#typora-source .CodeMirror-activeline .CodeMirror-linenumber,
+#typora-source .CodeMirror-linenumber.CodeMirror-linenumber-show {
+  font-family: "HarmonyOS";
+}
+
+/* mermaid 图 */
+#write.enable-diagrams>[mermaid-type=gantt].md-fences:not(.md-focus) {
+  width: auto;
+  /* margin-left: calc(-49vw + 50%); */
+}
+
+/* 代码块输入框 */
+#write .code-tooltip {
+  width: auto;
+  line-height: 1.5;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: relative;
+  top: 20px;
+}
+
+.code-tooltip .ty-input {
+  border: none;
+  margin: 0;
+  padding: 1px 0;
+  min-width: 201px;
+}
+
+
+/* 开启源代码模式符号 */
+/* .fa-code:before {
+  font-size: .9rem;
+} */
+
+/* 光标所在行背景色 */
+/* p.md-focus {
+  background-color: #edf7f2;
+  border-radius: 5px;
+} */
+
+/* ——————————————————————————————————————————折叠块设置————————————————————————————————————————————— */
+details {
+  display: block;
+  padding: 16px;
+  margin: 1em 0;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 18px;
+  font-family: "霞鹜文楷";
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  border: 2px solid #fff;
+}
+
+/* 折叠标签 */
+summary {
+  display: list-item;
+}
+
+details summary {
+  cursor: pointer;
+  padding: 10px;
+  margin: -16px;
+  border-radius: 3px;
+  color: #135699;
+  font-size: 0.9rem !important;
+  font-weight: bolder;
+  font-family: "玄宋45S";
+  position: relative;
+  line-height: normal;
+}
+
+details[open]>summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+details>summary {
+  background: #ebf9ed;
+  color: #428bca;
+}
+
+/* 折叠块打开 */
+details[open] {
+  border-color: #81b29a;
+}
+
+summary::marker {
+  color: #e07a5f;
+}
+
+details[open]>summary {
+  margin-bottom: 0;
+  color: #428bca;
+}
+
+/* 折叠框点击时,会出现黑色边框，极不美观，去除 */
+summary:focus {
+  outline: none !important;
+}
+
+/* 分隔线 */
+hr {
+  height: 2px;
+  padding: 0;
+  margin: 2rem 0;
+  background-color: #ddd;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+/* 任务列表已完成样式 */
+.task-list-done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* 加粗 */
+#write strong {
+  font-family: "HarmonyOS";
+  padding: 0 1px;
+  color: #000000;
+  font-weight: bolder;
+  /* background-color: #f9f9f9;
+  border-radius: 2px; */
+}
+
+/* 斜体 */
+#write em {
+  padding: 0 5px 0 2px;
+  font-family: "Lora-Italic", "玄宋45S";
+}
+
+
+/* 高亮 */
+#write mark {
+  font-family: "Fira", "玄宋45S";
+  /* background-color: #fae4bb; */
+  background-color: #7c9dca;
+  border-radius: 3px;
+  /* 类似于马克笔涂抹效果 */
+  /* background-color: #fff;
+  box-shadow: 0 -.9em 0 0 #f5de77 inset; */
+  padding: 0px 3px;
+  padding-top: 1px;
+  margin: 0 2px;
+  color: #fff;
+  font-size: 19px;
+}
+
+/* 删除 */
+#write del {
+  padding: 1px 2px;
+  color: #777;
+}
+
+/* 任务列表 */
+.md-task-list-item>input {
+  margin-left: -1.3em;
+}

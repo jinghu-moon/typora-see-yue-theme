@@ -1,0 +1,546 @@
+/* 本主题魔改于 Vue 主题 */
+
+
+/* 字体引用 */
+@import "./SeeYue/fonts.css";
+
+/* 零散的样式修改 */
+@import "./SeeYue/code-snippet.css";
+
+/* 代码块显示代码语言 */
+@import "./SeeYue/code-language.css";
+
+/* 侧边栏 */
+@import "./SeeYue/sidebar.css";
+
+/* 正文标题 */
+@import "./SeeYue/headline.css";
+
+/* 导出 PDF 设置 */
+@import "./SeeYue/to-pdf.css";
+
+/* 正文目录 */
+@import "./SeeYue/contents.css";
+
+/* 代码块 */
+@import "./SeeYue/code-block.css";
+
+/* 自动编号 */
+/* @import "./SeeYue/auto-number.css"; */
+
+/* 网页logo */
+@import "./SeeYue/website-icon.css";
+
+/* 毛玻璃效果 */
+/* @import "./SeeYue/frosted-glass.css"; */
+
+
+
+:root {
+  --side-bar-bg-color: #edf2f4;
+  --control-text-color: #777;
+  --table-border-radius: 5px;
+  --table-border-color: #ccc;
+}
+
+/* ——————————————————————————————————————————正文设置—————————————————————————————————————————————— */
+
+html {
+  font-size: 20px;
+}
+
+/* 背景方格线 */
+/* content {
+  background-image: linear-gradient(90deg, rgba(60, 10, 30, 04) 3%, transparent 0), linear-gradient(1turn, rgba(60, 10, 30.04)3%, transparent 0);
+  background-size: 20px 20px;
+  background-position: 50%;
+} */
+
+body {
+  font-family: "Lora-Regular", "玄宋45S", HelveticaNeue, Arial, sans-serif !important;
+  color: #000000;
+  line-height: 1.6rem;
+  letter-spacing: 0;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/*页面宽度*/
+#write {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 100px;
+}
+
+.typora-node #write {
+  min-height: 100%;
+  top: 0;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+#write p {
+  line-height: 1.6rem;
+  word-spacing: 0.05rem;
+}
+
+#write>ul:first-child,
+#write>ol:first-child {
+  margin-top: 30px;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* 同一行距 */
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+  margin: 1em 0;
+}
+
+li>ol,
+li>ul {
+  margin: 0;
+}
+
+body>h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body>h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body>h1:first-child+h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body>h3:first-child,
+body>h4:first-child,
+body>h5:first-child,
+body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+  margin-top: 0;
+}
+
+/* ———————————————————————————————————————————————列表设置—————————————————————————————————————————— */
+
+li p.first {
+  display: inline-block;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+/* #write ul {
+    list-style-type: disc;
+} */
+
+#write ol {
+  list-style: decimal-leading-zero;
+}
+
+#write ol ol {
+  list-style-type: upper-alpha;
+  padding-left: 3%;
+}
+
+#write ol ol ol {
+  list-style-type: lower-alpha;
+  padding-left: 30px;
+}
+
+/* 列表前符号 */
+::marker,
+li::before {
+  color: #8ebba6;
+  font-family: "HarmonyOS";
+  font-size: 18px;
+}
+
+li.md-focus-container::marker {
+  color: #e2542e !important;
+  font-family: "HarmonyOS";
+  font-size: 18px;
+}
+
+/* 调整列表符号与文字的距离 */
+/* #write ol li {
+    text-indent: 0.2rem;
+} */
+
+/* —————————————————————————————————————————————引用块基础设置——————————————————————————————————————— */
+
+/*引用基础设置*/
+blockquote {
+  border-left: 0.2em solid #35455b;
+  border-color: #8496b0;
+  padding: 10px 10px;
+  color: #999;
+  background-color: rgb(236, 244, 249, .5);
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "霞鹜文楷";
+}
+
+blockquote p {
+  margin: .6em 0;
+}
+
+/* ————————————————————————————————————————————— 提示块样式——————————————————————————————————————— */
+
+blockquote>h3:first-child,
+blockquote>h4:first-child,
+blockquote>h5:first-child,
+blockquote>h6:first-child {
+  font-weight: 700;
+  font-size: 19px !important;
+  margin: -10px -16px -5px -16px !important;
+  padding: 12px 12px 0px !important;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+blockquote>h3:first-child {
+  color: #c00000 !important;
+}
+
+blockquote>h3:first-child::before,
+blockquote>h3.md-focus:before {
+  background-image: url("./SeeYue/Icon_font/警告.svg");
+  vertical-align: middle;
+  content: " ";
+  width: 20px;
+  height: 19px;
+  display: inline-block;
+  margin: 0 4px;
+  margin-left: 1px;
+  position: initial;
+  background-repeat: no-repeat;
+}
+
+blockquote>h4:first-child {
+  color: #428bca !important;
+}
+
+blockquote>h4:first-child::before,
+blockquote>h4.md-focus:before {
+  background-image: url("./SeeYue/Icon_font/参考.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 4px;
+  margin-left: 1px;
+  position: initial;
+}
+
+blockquote>h5:first-child {
+  color: #ffae00 !important;
+}
+
+blockquote>h5:first-child::before,
+blockquote>h5.md-focus:before {
+  background-image: url("./SeeYue/Icon_font/想法.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  content: " ";
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin: 0 4px;
+  margin-left: 0;
+  position: initial;
+}
+
+blockquote>h6:first-child {
+  color: #004d41 !important;
+}
+
+blockquote>h6:first-child::before,
+blockquote>h6.md-focus:before {
+  background-image: url("./SeeYue/Icon_font/其他.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  content: " ";
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin: 0 4px;
+  position: initial;
+}
+
+/* ————————————————————————————————————————————————表格设置————————————————————————————————————————— */
+
+/* 表格宽度随内容增加而增加 */
+/* .md-table {
+    width: auto;
+} */
+
+/* 阴影模拟表格边框 */
+figure,
+figure.md-focus,
+.md-table-fig,
+.md-table-fig:active {
+  box-shadow: 0 0 0 1.5px #ccc;
+  border-radius: 4px;
+}
+
+table {
+  padding: 0;
+  word-break: initial;
+  border-spacing: 0;
+}
+
+table tr {
+  margin: 0;
+  padding: 0;
+}
+
+/* 表头 */
+table tr th {
+  border: 1.5px solid var(--table-border-color);
+  font-weight: bolder;
+  border-bottom: 2.5px solid #888;
+  padding: 5px 10px;
+  color: #e2542e;
+  font-family: 'HarmonyOS';
+}
+
+/* 表体 */
+table tbody td {
+  border: 1.5px solid var(--table-border-color);
+  padding: 5px 10px;
+  background-color: #ffffff;
+}
+
+/* 偶数行底色 */
+/* table tr:nth-child(2n) {
+    background-color: #fff !important;
+}
+
+/* 奇数行底色 */
+/* tbody tr:nth-child(2n-1) {
+    background-color: #fff !important;
+} */
+
+table tr th {
+  border-top: none !important;
+}
+
+table tbody td {
+  border-bottom: none;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+  margin-top: 0;
+  border-left-width: 0px !important;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  margin-bottom: 0;
+  border-right-width: 0px !important;
+}
+
+/* —————————————————————————————————————————————链接设置———————————————————————————————————————————— */
+
+#write a {
+  text-decoration: none;
+  /* color: #e2542e; */
+  color: #81b29a;
+  font-weight: normal;
+  /* border-bottom: 1px dashed #e2542e; */
+  border-bottom: 1px dashed #81b29a;
+  cursor: pointer !important;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+/*已被访问过的链接*/
+a:visited {
+  color: #d2d2d4;
+}
+
+/*鼠标悬浮在上的链接*/
+#write a:hover {
+  color: #e2542e;
+  /* background-color: #ddd; */
+  border-bottom: 1px solid #e2542e;
+}
+
+/*鼠标点中激活链接*/
+a:active {
+  color: #d2d2d4;
+}
+
+#write a[href*="http"]::after {
+  font-family: 'ITS';
+  content: "\e809";
+  padding-left: 5px;
+  display: inline-block;
+  font-size: 92%;
+  opacity: 0.7;
+  font-weight: 400 !important;
+  /* color: #e76f51; */
+  color: #81b29a;
+  font-style: normal !important;
+}
+
+#write a[href*="http"]:hover::after {
+  font-family: 'ITS';
+  content: "\e809";
+  padding-left: 5px;
+  display: inline-block;
+  font-size: 92%;
+  opacity: 0.7;
+  font-weight: 400 !important;
+  /* color: rgb(226, 84, 46, .6); */
+  color: rgb(226, 84, 46, .6);
+  font-style: normal !important;
+}
+
+/*下划线*/
+u {
+  background-color: inherit;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1.6px solid #f47c35;
+  padding-bottom: 1px;
+}
+
+
+
+/* ———————————————————————————————————————以下为原主题（Vue）代码———————————————————————————————————— */
+
+.md-fences {
+  background-color: #f8f8f8;
+}
+
+#write pre.md-meta-block {
+  padding: 1rem;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border: 0;
+  border-radius: 3px;
+  color: #777777;
+  margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+  bottom: 0.375rem;
+}
+
+.md-tag {
+  color: inherit;
+}
+
+.md-toc {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sidebar-tabs {
+  border-bottom: none;
+}
+
+#typora-quick-open {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+  background-color: #fafafa;
+  border-color: #fefefe #e5e5e5 #e5e5e5 #eee;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#md-notification:before {
+  top: 10px;
+}
+
+/** focus mode */
+
+.on-focus-mode blockquote {
+  border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+  font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+  visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+  background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+  color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+  --item-hover-bg-color: #e6f0fe;
+}

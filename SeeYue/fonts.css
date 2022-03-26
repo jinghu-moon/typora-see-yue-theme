@@ -1,0 +1,170 @@
+/* 本文件为字体引用设置 */
+
+/* 正文中文 */
+@font-face {
+  font-family: "玄宋45S";
+  src: url("Chinese_fonts/HYXuanSong45S.woff2");
+}
+
+/* 侧边栏、右键菜单、底部栏、引用块、代码块中文 */
+@font-face {
+  font-family: "霞鹜文楷";
+  src: url("Chinese_fonts/LXGWWenKai-Regular.woff2");
+}
+
+/* 标题、加粗 */
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("Chinese_fonts/HarmonyOS_Sans_SC_Regular.woff2");
+}
+
+/* 行间代码 */
+@font-face {
+  font-family: "Fira";
+  src: url("English_fonts/FiraCode-Regular.woff2");
+}
+
+/* 正文英文 */
+@font-face {
+  font-family: "Lora-Regular";
+  src: url("English_fonts/Lora-Regular.woff2");
+}
+
+/* 斜体文字 */
+@font-face {
+  font-family: "Lora-Italic";
+  src: url("English_fonts/Lora-Italic.woff2");
+}
+
+/* 正文目录英文 */
+@font-face {
+  font-family: "RobotoMono";
+  src: url("English_fonts/RobotoMono-Regular.woff2");
+}
+
+
+@font-face {
+  font-family: "Lucida";
+  src: url("English_fonts/Lucida-Sans-Typewriter-Regular.woff2");
+}
+
+
+@font-face {
+  font-family: "iosevka-sans-serif";
+  src: url("English_fonts/iosevka-regular.woff2");
+}
+
+@font-face {
+  font-family: "iosevka-serif";
+  src: url("English_fonts/iosevka-slab-medium.woff2");
+}
+
+/* 链接尾部 logo */
+@font-face {
+  font-family: "ITS";
+  src: url("English_fonts/its.woff");
+}
+
+/* 图标 */
+@font-face {
+  font-family: "iconfont";
+  src: url('Icon_font/iconfont.woff2') format('woff2'),
+    url('Icon_font/iconfont.woff') format('woff'),
+    url('Icon_font/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tishi:before {
+  content: "\e606";
+}
+
+.icon-tishi1:before {
+  content: "\e73c";
+}
+
+.icon-tishi2:before {
+  content: "\e614";
+}
+
+.icon-wenzhang-copy:before {
+  content: "\e643";
+}
+
+.icon-zhuyi1:before {
+  content: "\e610";
+}
+
+.icon-zhuyi2:before {
+  content: "\e604";
+}
+
+.icon-zhuyi3:before {
+  content: "\e663";
+}
+
+.icon-a-9:before {
+  content: "\e605";
+}
+
+.icon-cankao:before {
+  content: "\e68b";
+}
+
+.icon-cankaowenjian:before {
+  content: "\e619";
+}
+
+.icon-yinyong:before {
+  content: "\e634";
+}
+
+.icon-yinyong1:before {
+  content: "\e62c";
+}
+
+.icon-yinyong2:before {
+  content: "\e617";
+}
+
+.icon-yinyong2-copy-copy:before {
+  content: "\e601";
+}
+
+.icon-wentijieda:before {
+  content: "\ec2e";
+}
+
+.icon-zerenwenti:before {
+  content: "\e656";
+}
+
+.icon-shuqian:before {
+  content: "\e624";
+}
+
+.icon-star__:before {
+  content: "\e670";
+}
+
+.icon-yiwen:before {
+  content: "\e60c";
+}
+
+.icon-bookmark-full:before {
+  content: "\ea0f";
+}
+
+.icon-bijijilu:before {
+  content: "\e6f3";
+}
+
+.icon-xiangfa:before {
+  content: "\e61e";
+}

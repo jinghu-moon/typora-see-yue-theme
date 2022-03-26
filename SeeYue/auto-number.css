@@ -1,0 +1,315 @@
+@import "fonts.css";
+
+/* ——————————————————————————————————————————正文标题编号———————————————————————————————————————————— */
+/* 取消一级标题 */
+#write h1:before {
+  display: none;
+}
+
+#write {
+  counter-reset: h1-counter 0 h2-counter 0 h3-counter 0 h4-counter 0 h5-counter 0 h6-counter 0;
+}
+
+h1 {
+  counter-increment: h1-counter;
+  counter-reset: h2-counter 0;
+}
+
+h2 {
+  counter-increment: h2-counter;
+  counter-reset: h3-counter 0;
+}
+
+h3 {
+  counter-increment: h3-counter;
+  counter-reset: h4-counter 0;
+}
+
+h4 {
+  counter-increment: h4-counter;
+  counter-reset: h5-counter 0;
+}
+
+h5 {
+  counter-increment: h5-counter;
+  counter-reset: h6-counter 0;
+}
+
+h6 {
+  counter-increment: h6-counter;
+}
+
+/* #write h1:before, */
+#write h2:before,
+#write h3:before,
+#write h4:before,
+#write h5:before,
+#write h6:before {
+  font-family: "HarmonyOS";
+  color: rgb(129, 178, 154, 0.7);
+}
+
+#write h1:before {
+  counter-increment: h1-text;
+  content: counter(h1-counter) "\00A0";
+}
+
+#write h2:before {
+  counter-increment: h2-text;
+  content: counter(h1-counter) "."counter(h2-counter) "\00A0";
+}
+
+#write h3:before,
+h3.md-focus.md-heading:before {
+  counter-increment: h3-text;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "\00A0";
+}
+
+#write h4:before,
+h4.md-focus.md-heading:before {
+  counter-increment: h4-text;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "\00A0";
+}
+
+#write h5:before,
+h5.md-focus.md-heading:before {
+  counter-increment: h5-text;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "."counter(h5-counter) "\00A0";
+}
+
+#write h6:before,
+h6.md-focus.md-heading:before {
+  counter-increment: h6-text;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "."counter(h5-counter) "."counter(h6-counter) "\00A0";
+}
+
+/* #write>h1.md-focus:before, */
+#write>h2.md-focus:before,
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+  color: inherit;
+  border: none;
+  border-radius: inherit;
+  position: inherit;
+  left: initial;
+  float: none;
+  top: initial;
+  font-size: inherit;
+  padding-left: inherit;
+  padding-right: inherit;
+  vertical-align: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* ———————————————————————————————————————————正文目录编号——————————————————————————————————————————— */
+
+.md-toc-h1:before {
+  display: none;
+}
+
+.md-toc-inner {
+  text-decoration: none;
+}
+
+.md-toc-content {
+  counter-reset: h1-counter 0 h2-counter 0 h3-counter 0 h4-counter 0 h5-counter 0 h6-counter 0;
+}
+
+.md-toc-h1 {
+  margin-left: 0;
+  font-size: 1.05rem;
+  margin-top: 0.5em;
+  counter-increment: h1-counter;
+  counter-reset: h2-counter 0;
+}
+
+/* .md-toc-content .md-toc-h1:nth-child(1) {
+    margin-top: 0;
+} */
+
+.md-toc-h2 {
+  font-size: 1rem;
+  padding-left: 2rem;
+  counter-increment: h2-counter;
+  counter-reset: h3-counter 0;
+}
+
+.md-toc-h3 {
+  padding-left: 3rem;
+  font-size: 1rem;
+  counter-increment: h3-counter;
+  counter-reset: h4-counter 0;
+}
+
+.md-toc-h4 {
+  padding-left: 4rem;
+  font-size: 1rem;
+  counter-increment: h4-counter;
+  counter-reset: h5-counter 0;
+}
+
+.md-toc-h5 {
+  padding-left: 5rem;
+  font-size: 1rem;
+  counter-increment: h5-counter;
+  counter-reset: h6-counter 0;
+}
+
+.md-toc-h6 {
+  padding-left: 6rem;
+  font-size: 1rem;
+  counter-increment: h6-counter;
+}
+
+.md-toc-h1:before,
+.md-toc-h2:before,
+.md-toc-h3:before,
+.md-toc-h4:before,
+.md-toc-h5:before,
+.md-toc-h6:before {
+  font-family: 'RobotoMono';
+}
+
+.md-toc-h1:before {
+  counter-increment: h1-toc;
+  content: counter(h1-counter) "\00A0";
+}
+
+/* .md-toc-h1 .md-toc-inner {
+  color: #000 !important;
+  margin-left: 5px;
+} */
+
+.md-toc-h2:before {
+  color: black;
+  counter-increment: h2-toc;
+  content: counter(h1-counter) "."counter(h2-counter) "\00A0";
+}
+
+.md-toc-h2 .md-toc-inner {
+  margin-left: 0;
+  text-decoration: none;
+}
+
+.md-toc-h3:before {
+  color: black;
+  counter-increment: h3-toc;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "\00A0";
+  margin-left: 0.2em;
+}
+
+.md-toc-h3 .md-toc-inner {
+  margin-left: 0;
+}
+
+.md-toc-h4:before {
+  color: black;
+  counter-increment: h4-toc;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "\00A0";
+  margin-left: 0.4em;
+}
+
+.md-toc-h4 .md-toc-inner {
+  margin-left: 0;
+}
+
+.md-toc-h5:before {
+  color: black;
+  counter-increment: h5-toc;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "."counter(h5-counter) "\00A0";
+  margin-left: 0.6em;
+}
+
+.md-toc-h5 .md-toc-inner {
+  margin-left: 0;
+}
+
+.md-toc-h6:before {
+  color: black;
+  counter-increment: h6-toc;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "."counter(h5-counter) "."counter(h6-counter) "\00A0";
+  margin-left: 0.8em;
+}
+
+.md-toc-h6 .md-toc-inner {
+  margin-left: 0;
+}
+
+/* ——————————————————————————————————————————侧边栏大纲编号—————————————————————————————————————————— */
+
+/* 隐藏侧边栏一级标题编号 */
+.outline-h1>.outline-item>.outline-label:before {
+  display: none;
+}
+
+.sidebar-content {
+  counter-reset: h1-counter 0 h2-counter 0 h3-counter 0 h4-counter 0 h5-counter 0 h6-counter 0;
+}
+
+.outline-h1 {
+  counter-increment: h1-counter;
+  counter-reset: h2-counter 0;
+}
+
+.outline-h2 {
+  counter-increment: h2-counter;
+  counter-reset: h3-counter 0;
+}
+
+.outline-h3 {
+  counter-increment: h3-counter;
+  counter-reset: h4-counter 0;
+}
+
+.outline-h4 {
+  counter-increment: h4-counter;
+  counter-reset: h5-counter 0;
+}
+
+.outline-h5 {
+  counter-increment: h5-counter;
+  counter-reset: h6-counter 0;
+}
+
+.outline-h6 {
+  counter-increment: h6-counter;
+}
+
+/* 隐藏侧边栏一级标题编号 */
+.outline-h1>.outline-item>.outline-label:before {
+  counter-increment: h1-sidebar;
+  content: counter(h1-counter) "\00A0";
+  display: none;
+}
+
+.outline-h2>.outline-item>.outline-label:before {
+  counter-increment: h2-sidebar;
+  content: counter(h1-counter) "."counter(h2-counter) "\00A0";
+}
+
+.outline-h3>.outline-item>.outline-label:before {
+  counter-increment: h3-sidebar;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "\00A0";
+}
+
+.outline-h4>.outline-item>.outline-label:before {
+  counter-increment: h4-sidebar;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "\00A0";
+}
+
+.outline-h5>.outline-item>.outline-label:before {
+  counter-increment: h5-sidebar;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "."counter(h5-counter) "\00A0";
+}
+
+.outline-h6>.outline-item>.outline-label:before {
+  counter-increment: h6-sidebar;
+  content: counter(h1-counter) "."counter(h2-counter) "."counter(h3-counter) "."counter(h4-counter) "."counter(h5-counter) "."counter(h6-counter) "\00A0";
+}

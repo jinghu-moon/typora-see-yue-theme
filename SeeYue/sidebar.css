@@ -1,0 +1,289 @@
+/* 本文件为侧边栏和底部栏设置 */
+
+@import "fonts.css";
+
+
+/* 侧边栏阴影 */
+#typora-sidebar,
+.typora-node #typora-sidebar {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 侧边栏查找框 */
+#file-library-search-input {
+  width: 100%;
+  height: 24px;
+  font-family: "RobotoMono", '霞鹜文楷';
+  border-radius: 4px;
+}
+
+/* 侧边栏移动 */
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
+  top: 12px;
+  /* left: 10px; */
+  border-radius: 10px;
+  height: 98%;
+  border: none !important;
+  font-family: "RobotoMono", '霞鹜文楷';
+}
+
+.info-panel-tab-title {
+  font-family: "HarmonyOS";
+}
+
+/* 底部栏距离侧边栏 */
+/* .pin-outline #outline-btn {
+  margin-left: 10px;
+} */
+
+/* 调整正文，使之居中 */
+/* .typora-node #write {
+  padding-right: 33px !important;
+} */
+
+/* ———————————————————————————————————————————————————————大纲——————————————————————————————————————————————————————— */
+/* 侧边栏大纲线 */
+.outline-item-open.outline-h1.outline-item-wrapper li::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #a7bbc3;
+  left: 8.5px;
+  z-index: 99;
+}
+
+.outline-item-open.outline-h2.outline-item-wrapper li::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #a7bbc3;
+  left: 32.5px;
+  z-index: 99;
+}
+
+.outline-item-open.outline-h3.outline-item-wrapper li::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #a7bbc3;
+  left: 56.5px;
+  z-index: 99;
+}
+
+.outline-item-open.outline-h4.outline-item-wrapper li::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #a7bbc3;
+  left: 80.5px;
+  z-index: 99;
+}
+
+.outline-item-open.outline-h5.outline-item-wrapper li::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #a7bbc3;
+  left: 104.5px;
+  z-index: 99;
+}
+
+.outline-h2>.outline-item {
+  padding-left: 1.6em;
+}
+
+.outline-h3>.outline-item {
+  padding-left: 3.2em;
+}
+
+.outline-h4>.outline-item {
+  padding-left: 4.8em;
+}
+
+.outline-h5>.outline-item {
+  padding-left: 6.4em;
+}
+
+.outline-h6>.outline-item {
+  padding-left: 8em;
+}
+
+.outline-item-open.outline-h2.outline-item-wrapper li {
+  border: none !important;
+}
+
+ul .outline-children::before {
+  border: none;
+}
+
+/* 大纲前符号 */
+.outline-expander:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  content: "\25BC";
+  font-family: '霞鹜文楷';
+  font-size: 10px;
+}
+
+.outline-expander::before,
+.outline-expander:hover::before {
+  content: "▶";
+  font-size: 10px;
+  font-family: '霞鹜文楷';
+  /* vertical-align: bottom; */
+}
+
+#outline-content {
+  display: block;
+  height: 100%;
+  overflow-x: hidden;
+  line-height: 0.9rem;
+  font-family: "RobotoMono", '霞鹜文楷';
+  font-size: 15px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  color: #555;
+  bottom: 12px;
+  top: 10px;
+  word-break: break-all;
+}
+
+/* 悬浮去掉下划线 */
+.outline-label:hover {
+  text-decoration: none;
+}
+
+/* 大纲、文件下方横条 */
+.info-panel-tab-border {
+  color: #457b9d;
+}
+
+/* 侧边栏大纲选中突出样式 */
+.outline-item.outline-item-active {
+  color: #457b9d;
+  border-right: 5px solid #457b9d;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* 侧边栏大纲悬浮样式 */
+.outline-item:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  white-space: initial;
+}
+
+/* —————————————————————————————————————————————文件———————————————————————————————————————————————— */
+
+/* 侧边栏（文件） */
+.allow-file-tree-scroll .file-node-title {
+  color: #555;
+}
+
+/* 文件小图标 */
+.fa-file-text-o:before {
+  padding-left: 5px;
+}
+
+/* 侧边栏（文件）换行 */
+.allow-file-tree-scroll .file-node-title {
+  white-space: initial;
+}
+
+/* 新建文件处文字样式 */
+.active-tab-files.use-file-tree-style:not(.ty-no-mount-folder) .sidebar-footer {
+  font-family: "RobotoMono", '霞鹜文楷';
+}
+
+/* 侧边栏（文件）设置 */
+#file-library {
+  font-family: "RobotoMono", '霞鹜文楷';
+  font-size: 15px;
+}
+
+/* 文件夹前小箭头 */
+.fa-caret-right:before {
+  position: relative;
+  top: -1px;
+}
+
+/* 文件夹 */
+.fa-folder:before {
+  content: "\f07b";
+  margin-left: 4px;
+}
+
+/* 去掉侧边栏问文件点击虚线框 */
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+  /* outline-color: #000; */
+  outline: none !important;
+}
+
+.file-node-content:hover {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.file-library-node .file-tree-node .file-node-collapsed {
+  padding-left: 10px;
+}
+
+.file-tree-node.active>.file-node-background {
+  border-right: 5px solid #457b9d !important;
+  border-left: none !important;
+  background-color: #fff;
+  color: #457b9d !important;
+}
+
+.file-tree-node.active .file-node-content:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+}
+
+.file-node-content {
+  padding-left: 8px;
+}
+
+.file-tree-node {
+  padding-left: 0;
+  transition-duration: unset !important;
+}
+
+/* ——————————————————————————————————————————————————————底部栏——————————————————————————————————————————————————————— */
+.show-footer footer.ty-footer,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) footer.ty-footer {
+  font-family: '霞鹜文楷';
+  font-size: 0.7em;
+}
+
+/* 底部栏毛玻璃效果 */
+/* footer.ty-footer {
+  margin: 0 2rem;
+  bottom: .3rem;
+  box-shadow: 0px 0px 10px 0 rgb(0 0 0 / 20%);
+  background: #dde7eb !important;
+  border-radius: 5px;
+  color: #555 !important;
+}
+
+footer.ty-footer:before {
+  content: "";
+  display: flex;
+  width: 100%;
+  backdrop-filter: blur(70px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -99;
+  min-height: 80%;
+  border-radius: 5px;
+  background-blend-mode: overlay;
+} */

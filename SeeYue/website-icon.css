@@ -1,0 +1,165 @@
+@import "fonts.css";
+
+a::before {
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1.1em 1.1em;
+    top: 0.2em;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 0.2em;
+}
+
+a[href*="aliyundrive.com"]::before {
+    content: "";
+    background-image: url("./Icon/aliyundrive.ico");
+}
+
+a[href*="iconfont.cn"]::before {
+    content: "";
+    background-image: url("./Icon/iconfont.ico");
+}
+
+a[href*="ld246.com"]::before {
+    content: "";
+    background-image: url("./Icon/liandi.svg");
+}
+
+a[href*="obsidian.md"]::before {
+    content: "";
+    background-image: url("./Icon/obsidian.ico");
+}
+
+a[href*="baidu.com"]::before {
+    content: "";
+    background-image: url("./Icon/baidu.svg");
+}
+
+a[href*="bilibili.com"]::before {
+    content: "";
+    background-image: url("./Icon/bilibili.svg");
+}
+
+a[href*="cn.bing.com"]::before {
+    content: "";
+    background-image: url("./Icon/bing.svg");
+}
+
+a[href*="cnblogs.com"]::before {
+    content: "";
+    background-image: url("./Icon/cnblogs2.svg");
+}
+
+a[href*="csdn.net"]::before {
+    content: "";
+    background-image: url("./Icon/csdn.svg");
+}
+
+a[href*="gitee.com"]::before {
+    content: "";
+    background-image: url("./Icon/gitee.svg");
+}
+
+a[href*="github.com"]::before {
+    content: "";
+    background-image: url("./Icon/github.svg");
+}
+
+a[href*="lanzou.com"]::before,
+a[href*="lanzoui.com"]::before,
+a[href*="lanzoux.com"]::before,
+a[href*="lanzous.com"]::before {
+    content: "";
+    background-image: url("./Icon/lanzou.svg");
+}
+
+a[href*="jianguoyun.com"]::before {
+    content: "";
+    background-image: url("./Icon/jianguoyun.svg");
+}
+
+a[href*="pan.baidu.com"]::before {
+    content: "";
+    background-image: url("./Icon/pan.baidu.svg");
+}
+
+a[href*="imooc.com"]::before {
+    content: "";
+    background-image: url("./Icon/imooc.svg");
+}
+
+a[href*="icourse163.org"]::before {
+    content: "";
+    background-image: url("./Icon/icourse163.png");
+}
+
+a[href*="developer.mozilla.org"]::before {
+    content: "";
+    background-image: url("./Icon/mozilla.png");
+}
+
+a[href*="runoob.com"]::before {
+    content: "";
+    background-image: url("./Icon/runoob.ico");
+}
+
+a[href*="sspai.com"]::before {
+    content: "";
+    background-image: url("./Icon/sspai.svg");
+}
+
+a[href*="taobao.com"]::before {
+    content: "";
+    background-image: url("./Icon/taobao.svg");
+}
+
+a[href*="jd.com"]::before {
+    content: "";
+    background-image: url("./Icon/jingdong.svg");
+}
+
+a[href*="mi.com"]::before {
+    content: "";
+    background-image: url("./Icon/mi.svg");
+}
+
+a[href*="yuque.com"]::before {
+    content: "";
+    background-image: url("./Icon/yuque.svg");
+}
+
+a[href*="zhihu.com"]::before {
+    content: "";
+    background-image: url("./Icon/zhihu.svg");
+}
+
+a[href*="jianshu.com"]::before {
+    content: "";
+    background-image: url("./Icon/jianshu.svg");
+}
+
+a[href*="appinn.com"]::before {
+    content: "";
+    background-image: url("./Icon/appinn.jpg");
+}
+
+a[href*="topbook.cc"]::before {
+    content: "";
+    background-image: url("./Icon/topbook.png");
+}
+
+a[href*="open.163.com"]::before {
+    content: "";
+    background-image: url("./Icon/open.163.ico");
+}
+
+a[href*="study.163.com"]::before {
+    content: "";
+    background-image: url("./Icon/study.163.svg");
+}
+
+a[href*="coding.net"]::before {
+    content: "";
+    background-image: url("./Icon/coding.svg");
+}

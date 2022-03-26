@@ -1,0 +1,133 @@
+/* 本文件为正文目录样式设置 */
+
+@import "fonts.css";
+
+/* ——————————————————————————————————————————————————目录设置————————————————————————————————————————*/
+
+span.md-toc-item.md-toc-h1 a.md-toc-inner span {
+  border-left: 3px transparent solid;
+}
+
+.md-toc {
+  margin-top: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  page-break-after: always;
+}
+
+.md-toc::before {
+  display: inline-block;
+  content: "目录";
+  font-family: "玄宋45S";
+  font-size: 1.8rem;
+  font-weight: bolder;
+  /* margin-bottom: 1em; */
+  /* color: #fff; */
+  /* background-color: #7c93b2; */
+  /* border-radius: 5px; */
+  line-height: 2;
+  padding: 0 2px;
+  border-bottom: 2px solid #000;
+  width: 100%;
+}
+
+.md-toc-h1 {
+  font-family: "HarmonyOS";
+  font-weight: bolder;
+}
+
+.md-toc-h2,
+.md-toc-h3,
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+  font-family: "Lora-Regular", "玄宋45S";
+}
+
+.md-toc-h2:before,
+.md-toc-h3:before,
+.md-toc-h4:before,
+.md-toc-h5:before,
+.md-toc-h6:before {
+  font-family: "RobotoMono";
+}
+
+#write .md-toc-h1 .md-toc-inner,
+#write .md-toc-h2 .md-toc-inner,
+#write .md-toc-h3 .md-toc-inner,
+#write .md-toc-h4 .md-toc-inner,
+#write .md-toc-h5 .md-toc-inner,
+#write .md-toc-h6 .md-toc-inner,
+#write .md-toc-h1:hover .md-toc-inner,
+#write .md-toc-h2:hover .md-toc-inner,
+#write .md-toc-h3:hover .md-toc-inner,
+#write .md-toc-h4:hover .md-toc-inner,
+#write .md-toc-h5:hover .md-toc-inner,
+#write .md-toc-h6:hover .md-toc-inner {
+  color: #003172;
+  text-decoration: none;
+  border: none;
+  border-right: 300px solid transparent;
+  font-weight: normal !important;
+}
+
+#write .md-toc-h1 .md-toc-inner,
+#write .md-toc-h1:hover .md-toc-inner {
+  font-size: 1.05rem;
+  color: #000 !important;
+  font-weight: bolder !important;
+}
+
+.md-toc-h1:hover,
+.md-toc-h2:hover,
+.md-toc-h3:hover,
+.md-toc-h4:hover,
+.md-toc-h5:hover,
+.md-toc-h6:hover {
+  background-color: rgb(129, 178, 154, 0.2);
+  border-radius: 5px;
+}
+
+.md-toc-h2,
+.md-toc-h3,
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+  font-size: 1rem;
+  font-family: "RobotoMono", "玄宋45S";
+}
+
+/* 第一个一级标题取消 margin */
+.md-toc-content .md-toc-h1:first-child {
+  margin-top: -10px;
+}
+
+.md-toc-h1 {
+  margin-top: 10px;
+}
+
+.md-toc-h1 .md-toc-inner {
+  margin-left: 0em;
+}
+
+.md-toc-h2 .md-toc-inner {
+  margin-left: 2em;
+}
+
+.md-toc-h3 .md-toc-inner {
+  margin-left: 3.2em;
+}
+
+.md-toc-h4 .md-toc-inner {
+  margin-left: 4.4em;
+}
+
+.md-toc-h5 .md-toc-inner {
+  margin-left: 5.6em;
+}
+
+.md-toc-h6 .md-toc-inner {
+  margin-left: 6.8em;
+}

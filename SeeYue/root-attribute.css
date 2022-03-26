@@ -1,0 +1,94 @@
+/* typora 根属性，可自行修改。 */
+
+:root {
+    /* color setting */
+    --theme-color: #ff8080; /* 主题色，整个界面的主要强调色彩 */
+    --theme-color-weak: #ffe5e5; /* 较淡的主题色 */
+    --color-text: #333; /* 正文的字体颜色 */
+    --text-color: var(--color-text);
+    --color-em: #111; /* 强调下的字体颜色 */
+    --color-strong: #000; /* 加粗下的字体颜色 */
+    --color-weak: #595959; /* 较淡的字体颜色，比如：引用下的字体颜色 */
+    --color-weakest: #808080;/* 最淡的字体颜色，比如：脚注下的字体颜色 */
+
+    --md-char-color: #ff4d4d; /* 编辑时 markdown 符号的颜色 */
+    --meta-content-color: var(--color-weakest); /* 编辑时 markdown 符号包裹的字体的颜色 */
+
+    --color-title: var(--color-em);  /* 标题的字体颜色 */
+    --color-title-h1: var(--color-em); /* 标题 1 的字体颜色 */
+    --color-title-h2: var(--color-em); /* 标题 2 的字体颜色 */
+    --color-title-h3: var(--color-em); /* 标题 3 的字体颜色 */
+    --color-title-h4: var(--color-em); /* 标题 4 的字体颜色 */
+    --color-title-h5: var(--color-em); /* 标题 5 的字体颜色 */
+    --color-title-h6: var(--color-em); /* 标题 6 的字体颜色 */
+
+    --color-quote: var(--color-weak); /* 引用的字体颜色 */
+    --color-code: var(--color-text); /* 代码的字体颜色 */
+    --color-link: var(--theme-color); /* 链接的字体颜色 */
+    --color-italic: var(--color-em); /* 强调的字体颜色 */
+    --color-strong: var(--color-strong); /* 加粗的字体颜色 */
+    --color-highlight: var(--color-strong); /* 高亮的字体颜色 */
+    --color-strike: var(--color-weakest); /* 删除的字体颜色 */
+    --color-footnote: var(--color-weak); /* 脚注的字体颜色 */
+
+    --thead-color: var(--color-em); /* 表头的字体颜色 */
+    --tbody-color: var(--color-text); /* 表体的字体颜色 */
+    --tbody-color-opt: var(--color-text); /* 可选的表体的字体颜色 */
+    --color-thead-hover: var(--color-weak); /* 鼠标滑过时表头的字体颜色 */
+    --color-tbody-hover: var(--color-weak); /* 鼠标滑过时表体的字体颜色 */
+
+    --link-hover-color: #464343; /* 鼠标滑过时链接的字体颜色 */
+    --link-hover-bg: none; /* 鼠标滑过时链接的背景颜色 */
+
+    /* background setting */
+    --bg-contents: #f1f1f1; /* 正文外的背景颜色 */
+    --bg-write: #fff; /* 正文的背景颜色 */
+    --bg-color: var(--bg-contents);
+    --bg-title: none; /* 标题的背景颜色 */
+    --bg-title-h1: none; /* 标题 1 的背景颜色 */
+    --bg-title-h2: none; /* 标题 2 的背景颜色 */
+    --bg-title-h3: none; /* 标题 3 的背景颜色 */
+    --bg-title-h4: none; /* 标题 4 的背景颜色 */
+    --bg-title-h5: none; /* 标题 5 的背景颜色 */
+    --bg-title-h6: none; /* 标题 6 的背景颜色 */
+
+    --bg-quote: #f2f2f2; /* 引用的背景颜色 */
+    --bg-code: #ffe5e5; /* 代码的背景颜色 */
+    --bg-code-block: #f2f2f2; /* 代码块的背景颜色 */
+    --bg-link: none; /* 链接的背景颜色 */
+    --bg-italic: none; /* 倾斜的背景颜色 */
+    --bg-strong: none; /* 加粗的背景颜色 */
+    --bg-highlight: #ffb3b3; /* 高亮的背景颜色 */
+    --bg-strike: none; /* 删除的背景颜色 */
+    --bg-footnote: none; /* 脚注的背景颜色 */
+
+    --bg-thead: var(--theme-color-weak); /* 表头的背景颜色 */
+    --bg-tbody: var(--bg-write); /* 表体的背景颜色 */
+    --bg-tbody-opt: #fcfcfc; /* 可选的表体的背景颜色 */
+    --bg-thead-hover: var(--bg-contents); /* 鼠标滑过时表头的背景颜色 */
+    --bg-tbody-hover: var(--bg-contents); /* 鼠标滑过时表体的背景颜色 */
+
+    /* ui setting */
+    --blur-text-color: #bfbfbf;
+    --active-file-bg-color: #fcfcfc;
+    /* 文件列表 当前文件激活 背景色*/
+    --active-file-text-color: #ff8080;
+    --active-file-border-color: #ff8080;
+    /* 树形结构下文件激活边框色 */
+    --side-bar-bg-color: #f2f2f2;
+    /*文件 大纲 侧边栏 背景色*/
+    --item-hover-bg-color: #e6e6e6;
+    /* 打开文文件夹、正文菜单、最近使用 hover 效果 */
+    --item-hover-text-color: inherit;
+
+    --primary-color: #ff8080;
+    /* color of primary buttons */
+    --primary-btn-border-color: #ff8080;
+    --primary-btn-text-color: #ffffff;
+
+    --select-text-bg-color: #ff8080;
+    --select-text-font-color: #ffffff;
+    --active-bg: #fafafa;
+
+    --control-text-color: var(--color-text);
+}

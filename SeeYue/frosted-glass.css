@@ -1,0 +1,79 @@
+@import "fonts.css";
+
+body {
+    background-color: white;
+    background-image: var(--allen-background-image);
+    background-position: center top;
+    background-size: cover;
+    margin: 10px auto;
+}
+
+content,
+.on-focus-mode content,
+#typora-sidebar {
+    background-image: url("./Picture/灰绿.jpg");
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+content,
+.on-focus-mode content {
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer.ty-footer {
+    margin: 0 2rem;
+    bottom: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+#write,
+ul.dropdown-menu,
+.md-fences *,
+footer.ty-footer,
+.modal-content {
+    background: transparent !important;
+    border-radius: 5px;
+}
+
+#write:before,
+#write:after,
+ul.dropdown-menu:before,
+#typora-sidebar:before,
+footer.ty-footer:before,
+#typora-quick-open:before,
+.modal-content:before {
+    content: "";
+    display: flex;
+    width: 100%;
+    backdrop-filter: blur(70px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+    min-height: 80%;
+    border-radius: 10px;
+    background-blend-mode: overlay;
+}
+
+.info-panel-tab,
+#file-library-search,
+#outline-content {
+    z-index: 99;
+}
+
+#typora-sidebar:before {
+    z-index: 1;
+}
+
+#typora-sidebar-resizer {
+    background: transparent;
+    backdrop-filter: blur(50px);
+}

@@ -1,0 +1,70 @@
+/* 本文件为导出 PDF 设置 */
+
+@import "fonts.css";
+
+/* 导出 PDF，基本设置 */
+@media print {
+  html {
+    font-size: 18px;
+  }
+
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    word-wrap: break-word;
+  }
+
+  h1 {
+    page-break-before: always;
+  }
+
+  h1:first-of-type {
+    page-break-before: avoid;
+  }
+}
+
+/* 修改导出的PDF的页边距 */
+@page {
+  margin: 10mm -6mm;
+  size: A4;
+  /* 以A4纸张的大小 */
+}
+
+/* 导出PDF，使得标题等级提示消失 */
+@media print {
+  .typora-export * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  #write h2::before,
+  #write h3::before,
+  #write h4::before,
+  #write h5::before,
+  #write h6::before {
+    display: none;
+  }
+}
+
+/* 导出PDF，防止无序列表大纲线错位 */
+@media print {
+  blockquote ul ul::before {
+    content: '';
+    border-left: 1px solid rgb(129, 178, 154, 0.3);
+    position: absolute;
+    left: -16px;
+    top: -15px;
+    bottom: 5px;
+  }
+
+  ul ul::before {
+    content: '';
+    border-left: 1px solid rgb(129, 178, 154, 0.3);
+    position: absolute;
+    left: -16.5px;
+    top: -15px;
+    bottom: 5px;
+  }
+}
