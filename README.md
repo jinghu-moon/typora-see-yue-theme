@@ -310,6 +310,8 @@ a[href*="xxx.com"]::before {
 
 ![10-引用样式块](https://img.00000.host/2022/03/27/88aabba054a913e2cfe1d2802f7554ea.png)
 
+> 此功能来自 
+
 ### 1.4.12 summary 折叠标签
 
 相关代码在 `code-snippet.css` 文件 259 到 326 行。
