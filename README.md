@@ -167,7 +167,7 @@ See Yue 主题在色彩的选用上比较克制，主要使用绿色、蓝色、
 
 <span style="color:#b91919;font-weight:bolder">注意：</span>修改后，会出现问题，两个二级标题中间没有文字、空格时，它们会合并到一行上去。如果有文字、则不会合并。
 
-> 此代码来自于 [@萌佬](https://github.com/Zuoqiu-Yingyi) 的思源笔记主题 [Zuoqiu-Yingyi/siyuan-theme-dark-plus: 思源笔记的一款暗黑主题(A dark theme of SiYuan Note) (github.com)](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus) 。我只做了简单修改。感谢萌佬！
+> 此代码来自于 [@萌佬](https://github.com/Zuoqiu-Yingyi) 的思源笔记主题 [Zuoqiu-Yingyi/siyuan-theme-dark-plus: 思源笔记的一款暗黑主题(A dark theme of SiYuan Note)](https://github.com/Zuoqiu-Yingyi/siyuan-theme-dark-plus) 。我只做了简单修改。感谢萌佬！
 
 ### 1.4.3 代码块显示编程语言
 
