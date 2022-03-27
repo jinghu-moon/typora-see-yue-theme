@@ -80,6 +80,7 @@ span.md-toc-item.md-toc-h1 a.md-toc-inner span {
   font-weight: bolder !important;
 }
 
+/* 悬浮底色 */
 .md-toc-h1:hover,
 .md-toc-h2:hover,
 .md-toc-h3:hover,

@@ -29,7 +29,7 @@
 /* @import "./SeeYue/auto-number.css"; */
 
 /* 网页logo */
-@import "./SeeYue/website-icon.css";
+/* @import "./SeeYue/website-icon.css"; */
 
 /* 毛玻璃效果 */
 /* @import "./SeeYue/frosted-glass.css"; */
@@ -220,7 +220,7 @@ blockquote {
   border-color: #8496b0;
   padding: 10px 10px;
   color: #999;
-  background-color: rgb(236, 244, 249, .5);
+  background-color: rgb(236, 244, 249, .6);
   border-radius: 5px;
   font-size: 18px;
   font-family: "霞鹜文楷";

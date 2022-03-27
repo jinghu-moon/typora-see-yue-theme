@@ -19,12 +19,18 @@
 
 /* 侧边栏移动 */
 .typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
-  top: 12px;
+  top: 10px;
   /* left: 10px; */
   border-radius: 10px;
-  height: 98%;
+  height: 98.5%;
   border: none !important;
   font-family: "RobotoMono", '霞鹜文楷';
+  border-bottom-left-radius: 0;
+}
+
+/* 使底部栏上框线与侧边栏底部上框线对齐 */
+footer.ty-footer {
+  height: 31px;
 }
 
 .info-panel-tab-title {

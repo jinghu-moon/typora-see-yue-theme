@@ -140,6 +140,8 @@ mjx-container[jax="SVG"] {
   padding: 0;
 }
 
+/* —————————————————————————————————————————————图片设置———————————————————————————————————————————— */
+
 /* 网络图片标识 */
 .md-img-loaded[data-src*="https"]::before,
 p>.md-img-loaded[data-src*="https"]::before {
