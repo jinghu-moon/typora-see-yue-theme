@@ -1,6 +1,6 @@
 **在提问前，请先仔细阅读本文。谢谢。**
 
-目录在右上角  <img src = 'https://s3.bmp.ovh/imgs/2022/03/4294cd54506b64a0.png' />
+目录在左上角  <img src = 'https://s3.bmp.ovh/imgs/2022/03/4294cd54506b64a0.png' />
 
 ![目录](https://s3.bmp.ovh/imgs/2022/03/e6bc68c922085d20.png)
 
