@@ -8,7 +8,7 @@
 
 1、下载右侧的 `Releases` 包。
 
-2、解压后的文件直接放入 Typora 的 `themes` 文件夹。
+2、解压后的文件**直接**放入 Typora 的 `themes` 文件夹。
 
 3、重启 Typora，主题选择 `See Yue`，开始愉快地写作！
 
