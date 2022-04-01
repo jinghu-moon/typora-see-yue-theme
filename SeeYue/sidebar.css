@@ -257,7 +257,7 @@ ul .outline-children::before {
 }
 
 .file-tree-node {
-  padding-left: 0;
+  /* padding-left: 0; */
   transition-duration: unset !important;
 }
 
