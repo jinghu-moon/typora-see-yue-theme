@@ -12,7 +12,7 @@
 
 3、重启 Typora，主题选择 `See Yue`，开始愉快地写作！
 
-下载失败，请点击这个链接： https://xianchengyue.lanzout.com/iX1cV024uxid 。
+下载失败，请点击这个链接： https://xianchengyue.lanzout.com/iVD6402j78ah 。打不开，请将 `lanzout` 换成 `lanzoui` 或者 `lanzous` 或者 `lanzoux` 。
 
 ## 1.2 主题介绍
 
