@@ -172,11 +172,12 @@ See Yue 主题在色彩的选用上比较克制，主要使用绿色、蓝色、
 
 ### 1.4.3 代码块显示编程语言
 
+![03-代码块显示语言](https://s3.bmp.ovh/imgs/2022/03/794165ceefbd4100.png)
+
 相关代码在 `code-language.css` 文件。
 
 代码块会自动在右上角显示你选择的编程语言。如果没有显示，有两种可能。
 
-![03-代码块显示语言](https://s3.bmp.ovh/imgs/2022/03/794165ceefbd4100.png)
 
 1. 选择代码块语言时，是自己输入的字符，不能被识别。建议在输入框选择自己的代码语言。
 
@@ -269,7 +270,7 @@ a[href*="xxx.com"]::before {
 
 ### 1.4.10 波浪线效果
 
-相关代码在在 `code-snippet.css` 文件 197 到 213 行。
+相关代码在 `code-snippet.css` 文件 197 到 213 行。
 
 使用方法：
 
@@ -311,7 +312,7 @@ a[href*="xxx.com"]::before {
 
 示例：
 
-![10-引用样式块](https://img.00000.host/2022/03/27/88aabba054a913e2cfe1d2802f7554ea.png)
+![11-引用样式块](https://s3.bmp.ovh/imgs/2022/04/14/2bad5ffa22b45abe.png)
 
 > 此功能来自 [@li3zhen1](https://github.com/li3zhen1) 的 Typora 主题 [Fluent](https://github.com/li3zhen1/Fluent-Typora) 。我做了点修改，优化了显示。感谢主题制作者。
 
@@ -347,7 +348,7 @@ Typora 没有折叠文字、代码的功能，但我们可以用 `summary` 标�
 
 效果如下：
 
-![12-毛玻璃效果](https://img.00000.host/2022/03/27/22b0fbf9b424b6a944433433e43f9714.png)
+![12-毛玻璃效果](https://s3.bmp.ovh/imgs/2022/04/14/c97bfe1842f83d4d.png)
 
 好丑。 😐
 
@@ -411,7 +412,7 @@ Typora 没有折叠文字、代码的功能，但我们可以用 `summary` 标�
 
 封面模板 1 适合字数较少的笔记名，封面模板 2 适合字数较多的笔记名。
 
-> ~~对我来说，美化没有尽头。~~目前，暂告一段落。
+> ~~对我来说，美化没有尽头~~。目前，暂告一段落。
 >
 > See Yue 主题,个人认为已经很完善了。（在没有发现 Bug 之前）
 
