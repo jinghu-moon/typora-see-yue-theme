@@ -12,7 +12,7 @@
 
 3、重启 Typora，主题选择 `See Yue`，开始愉快地写作！
 
-下载失败，请点击这个链接： https://xianchengyue.lanzout.com/iVD6402j78ah 。打不开，请将 `lanzout` 换成 `lanzoui` 或者 `lanzous` 或者 `lanzoux` 。
+下载失败，请点击这个链接：   <a href="https://xianchengyue.lanzout.com/iVD6402j78ah" target="_blank">https://xianchengyue.lanzout.com/iVD6402j78ah</a> 。打不开，请将 `lanzout` 换成 `lanzoui` 或者 `lanzous` 或者 `lanzoux` 。
 
 ## 1.2 主题介绍
 
@@ -20,7 +20,7 @@ See Yue 主题是一个自定义样式极多、简约、充满细节的 Typora *
 
 See Yue 主题针对**中文**做了优化。See Yue 可译为**望月**。
 
-See Yue 主题以  [vue](https://github.com/blinkfox/typora-vue-theme) 主题为框架，参考了网上诸多的教程和 Typora 主题，才制作出来。非常感谢他们的无私分享！
+See Yue 主题以  <a href="https://github.com/blinkfox/typora-vue-theme" target="_blank">Vue</a> 主题为框架，参考了网上诸多的教程和 Typora 主题，才制作出来。非常感谢他们的无私分享！
 
 ### 1.2.1 设计思路
 
@@ -29,10 +29,10 @@ See Yue 主题以  [vue](https://github.com/blinkfox/typora-vue-theme) 主题为
 我将 Typora 整个界面分为两部分：写作区、侧边栏
 
 - 写作区分为正文、目录、标题。
-  - 正文使用 Lora ＋ [汉仪玄宋 45S](https://www.hanyi.com.cn/productdetail?id=8216) 。宋体让我有种看纸质书的感觉。
+  - 正文使用 Lora ＋   <a href="https://www.hanyi.com.cn/productdetail?id=8216" target="_blank">汉仪玄宋 45S</a>。宋体让我有种看纸质书的感觉。
   - 正文目录使用 RobotoMono（等宽字体）＋ 汉仪玄宋 45S。为了对齐目录，使用等宽字体。
-  - 标题使用 [HarmonyOS](https://developer.harmonyos.com/cn/docs/design/font-0000001157868583) 。黑体与正文区分开。
-- 侧边栏和底部栏统一使用 RobotoMono ＋ [霞鹜文楷](https://www.maoken.com/freefonts/9704.html) 。做到缩进一致，区分侧边栏与写作区。
+  - 标题使用   <a href="https://developer.harmonyos.com/cn/docs/design/font-0000001157868583" target="_blank">HarmonyOS</a>。黑体与正文区分开。
+- 侧边栏和底部栏统一使用 RobotoMono ＋   <a href="https://www.maoken.com/freefonts/9704.html" target="_blank">霞鹜文楷</a>。做到缩进一致，区分侧边栏与写作区。
 - 正文的字号（20px）相较于其他主题，大了不少。因为宋体的字号不够大的话，看起来会很难看。相应的，标题的字号也很大。
 
 个人认为宋体和楷体的搭配，还是挺不错的。
