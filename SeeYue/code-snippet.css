@@ -1,15 +1,16 @@
-/* 本文为一些小的样式修改 */
+/* 本文件为一些小的样式修改 */
+
 
 @import "fonts.css";
 
 
-/* 无序列表竖线 */
+/* 无序列表层级竖线 */
 ul ul {
   position: relative;
 }
 
 ul ul::before {
-  content: '';
+  content: "";
   border-left: 1.5px solid rgb(129, 178, 154, 0.3);
   position: absolute;
   left: -13.5px;
@@ -17,20 +18,15 @@ ul ul::before {
   bottom: 5px;
 }
 
-/* 光标所在列表的符号 */
+/* 光标所在列表的符号样式 */
 li.md-focus-container::marker {
   color: #e2542e !important;
   font-family: "HarmonyOS";
   font-size: 18px;
 }
 
-/* 鼠标滚轮 */
-::-webkit-scrollbar-thumb {
-  /* background: #e9c46a !important; */
-  border-radius: 3px;
-}
-
-[md-inline='inline_math'] {
+/* 数学公式 */
+[md-inline="inline_math"] {
   /* color: blue; */
   font-size: 105%;
 }
@@ -51,29 +47,23 @@ li.md-focus-container::marker {
   float: right;
   line-height: inherit;
   font-size: .9em;
-  font-family: 'Fira';
+  font-family: "Fira";
   opacity: .7;
 }
 
-/* 以下代码，没写注释，我也不知道是干嘛的，就先放这儿吧 :( */
-/* .menu-item-container a.menu-style-btn {
-  color: #000 !important;
+/* 右键菜单，鼠标悬浮在快捷键上的悬浮框 */
+.ty-tooltip {
+  font-family: "Fira", "霞鹜文楷";
 }
 
-.info-panel-tab-title {
-  line-height: 1.2rem;
-  padding-bottom: 0.2rem;
-  -webkit-app-region: no-drag;
-  font-size: 1.2em;
-  font-family: 'HarmonyOS';
-} */
 
-/* ————————————————————————————————————————————脚注设置—————————————————————————————————————————————*/
+/* ———————————————————————————————————————————— 脚注设置 —————————————————————————————————————————————*/
+
 /* 正文脚注 */
 #write .md-footnote {
   /* background-color: #f8f8f8; */
   color: #e96900;
-  font-family: "RobotoMono", '霞鹜文楷' !important;
+  font-family: "RobotoMono-simplify", "霞鹜文楷" !important;
   font-size: .6rem;
 }
 
@@ -82,11 +72,62 @@ sup {
   top: -0.9em;
 }
 
+/* 正文脚注悬浮框 */
+.code-tooltip.md-hover-tip {
+  right: auto;
+  bottom: auto;
+  color: #fff;
+  background: #2e3440;
+  border-radius: 4px;
+  padding: 0;
+  white-space: pre-wrap;
+  box-shadow: none;
+  min-width: 50px;
+  font-family: "RobotoMono-simplify", "霞鹜文楷";
+  font-size: .8;
+  opacity: 1;
+}
+
+/* 悬浮框内容 */
+.md-hover-tip .code-tooltip-content {
+  border-radius: 4px;
+  opacity: .95;
+  margin-top: -2px;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-align: justify;
+}
+
+/* 小三角 */
+.md-hover-tip .md-arrow:after {
+  background: #2e3440;
+}
+
+.footnotes img,
+.md-f-tooltip img {
+  width: 25%;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+/* 正文脚注样式 */
+/* #write .md-footnote>.md-text:before {
+  content: "[";
+  font-family: "RobotoMono-simplify";
+}
+
+#write .md-footnote>.md-text:after {
+  content: "]";
+  font-family: "RobotoMono-simplify";
+} */
+
 /* 脚注内容 */
 .footnotes {
   font-size: .8rem;
-  font-family: "RobotoMono", '霞鹜文楷' !important;
+  font-family: "RobotoMono-simplify", "霞鹜文楷" !important;
   color: #777;
+  position: relative;
 }
 
 #write sup.md-footnote a {
@@ -96,20 +137,41 @@ sup {
   background-color: inherit;
 }
 
-/* 脚注样式 */
-/* #write .md-footnote>.md-text:before {
-  content: '[';
-  font-family: 'RobotoMono';
+/* 脚注提示 */
+/* 参考：https://juejin.cn/post/6844903741661904903 */
+.footnotes::before {
+  font-family: "三极古拙楷书简";
+  position: absolute;
+  content: url("./Iconfont/信息.svg") " 脚注";
+  border-bottom: 2px solid #999;
+  width: 100%;
+  top: -150%;
+  font-size: 1.2em;
+  color: #81b29a;
+  /* text-align: center; */
+  font-weight: bold;
 }
 
-#write .md-footnote>.md-text:after {
-  content: ']';
-  font-family: 'RobotoMono';
-} */
+/* 选择相邻的两个相同标签 */
+/* 相邻：本身与它的上一个相同标签 */
+.footnotes+.footnotes::before {
+  display: none;
+}
 
+/* 给脚注提示样式让位子 */
+.footnotes {
+  margin-top: 4em !important;
+  margin-bottom: 0 !important;
+}
+
+.footnotes+.footnotes {
+  margin-top: 0 !important;
+}
+
+/* 脚注尾部符号 */
 .reversefootnote {
   border: none !important;
-  color: #0f4b9b !important;
+  color: #1d59a8 !important;
 }
 
 /* 脚注内容尾部符号样式 */
@@ -129,8 +191,9 @@ sup {
   border-bottom: none !important;
 }
 
-#write.footnotes:first-child {
-  background-color: red;
+/* 脚注编号对齐 */
+.md-def-name {
+  padding-right: 3ch;
 }
 
 /* 行间公式 */
@@ -140,35 +203,14 @@ mjx-container[jax="SVG"] {
   padding: 0;
 }
 
-/* —————————————————————————————————————————————图片设置———————————————————————————————————————————— */
+/* ———————————————————————————————————————————— 图片设置 ——————————————————————————————————————————— */
 
-/* 网络图片标识 */
-.md-img-loaded[data-src*="https"]::before,
-p>.md-img-loaded[data-src*="https"]::before {
-  content: url("./Icon_font/云端.svg");
-  position: absolute;
-  top: 5px;
-  right: 0.5%;
-  z-index: 99;
-  line-height: 1;
-  /* background-color: #f3f3f3; */
-  border-radius: 5px;
-  padding: 0 3px;
-  margin: 0 !important;
-  /* 代码二 可以调整图标大小 */
-  /* display: block;
-  content: " ";
-  background-image: url("src/云端.svg");
-  background-position: right bottom;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  z-index: 99; */
-}
-
-/*图片圆角*/
 img {
-  border-radius: 4px;
+  border-radius: 5px;
   border: none;
+  transition: .4s;
+  width: 85%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* 图片链接文字 */
@@ -194,6 +236,171 @@ img {
   border-radius: 0px !important;
 }
 
+/* 图片加载失败，悬浮提示框 */
+.md-image>.md-show-hint:after {
+  color: red !important;
+  border-radius: 5px;
+}
+
+/* 鼠标悬浮，图片放大 */
+.md-image:hover img {
+  transform: scale(1.02);
+}
+
+p>.md-img-loaded {
+  position: relative;
+}
+
+/* 本地图片标识 */
+/* p>.md-img-loaded[data-src]::before {
+  content: url("./Iconfont/Img-logo/本地-实心1.svg");
+  position: absolute;
+  top: 7px;
+  right: 7.8%;
+  z-index: 99;
+  line-height: 1;
+  border-radius: 5px;
+  padding: 0 3px;
+  margin: 0 !important;
+  transition: .4s;
+}
+
+.md-image:hover.md-img-loaded[data-src]::before {
+  position: absolute;
+  top: 0px;
+  right: 7%;
+} */
+
+/* 网络图片标识 */
+p>.md-img-loaded[data-src*="https"]::before,
+p>.md-img-loaded[data-src*="http"]::before {
+  content: url("./Iconfont/Img-logo/云端.svg");
+  position: absolute;
+  top: 5px;
+  right: 8%;
+  z-index: 99;
+  line-height: 1;
+  border-radius: 5px;
+  padding: 0 3px;
+  margin: 0 !important;
+  transition: .4s;
+
+  /* 代码二 可以调整图标大小 */
+  /* display: block;
+  content: " ";
+  background-image: url("./src/云端.svg");
+  background-position: right bottom;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  z-index: 99; */
+}
+
+.md-image:hover.md-img-loaded[data-src]::before {
+  position: absolute;
+  top: 0px;
+  right: 7.2%;
+}
+
+/* gitee */
+/* p>.md-img-loaded[data-src*="gitee"]::before {
+  content: url("./Iconfont/Img-logo/gitee.svg") !important;
+  position: absolute;
+  top: 8px;
+  right: 8%;
+}
+
+.md-image:hover.md-img-loaded[data-src*="gitee"]::before {
+  top: 3px;
+} */
+
+/* GitHub */
+/* p>.md-img-loaded[data-src*="github"]::before {
+  content: url("./Iconfont/Img-logo/github.svg") !important;
+  position: absolute;
+  top: 8px;
+  right: 8%;
+}
+
+.md-image:hover.md-img-loaded[data-src*="github"]::before {
+  top: 3px;
+} */
+
+/* coding */
+/* p>.md-img-loaded[data-src*="coding"]::before {
+  content: url("./Iconfont/Img-logo/coding.svg") !important;
+  position: absolute;
+  top: 8px;
+  right: 8%;
+}
+
+.md-image:hover.md-img-loaded[data-src*="coding"]::before {
+  top: 3px;
+} */
+
+/* jsDelivr */
+/* p>.md-img-loaded[data-src*="jsdelivr"]::before {
+  content: url("./Iconfont/Img-logo/jsDelivr.svg") !important;
+  position: absolute;
+  top: 5px;
+right: 7.8%;
+}
+
+.md-image:hover.md-img-loaded[data-src*="jsdelivr"]::before {
+  top: 0px;
+  right: 7%;
+} */
+
+/* 阿里云 */
+/* p>.md-img-loaded[data-src*="aliyun"]::before {
+  content: url("./Iconfont/Img-logo/阿里云.svg") !important;
+  position: absolute;
+  top: 5px;
+  right: 8%;
+}
+
+.md-image:hover.md-img-loaded[data-src*="aliyun"]::before {
+  top: 0px;
+} */
+
+/* 腾讯云 */
+/* p>.md-img-loaded[data-src*="myqcloud"]::before {
+  content: url("./Iconfont/Img-logo/腾讯云.svg") !important;
+  position: absolute;
+  top: 7px;
+  right: 8%;
+}
+
+.md-image:hover.md-img-loaded[data-src*="myqcloud"]::before {
+  top: 2px;
+} */
+
+/* 又拍云 */
+/* p>.md-img-loaded[data-src*="upcdn"]::before {
+  content: url("./Iconfont/Img-logo/又拍云.svg") !important;
+  position: absolute;
+  top: 8px;
+  right: 7.8%;
+}
+
+.md-image:hover.md-img-loaded[data-src*="upcdn"]::before {
+  right: 7%;
+  top: 3px;
+} */
+
+/* 七牛云 */
+/* p>.md-img-loaded[data-src*="qiniu"]::before {
+  content: url("./Iconfont/Img-logo/七牛云.svg") !important;
+  position: absolute;
+  top: 6px;
+  right: 7.7%;
+}
+
+.md-image:hover.md-img-loaded[data-src*="jsdelivr"]::before {
+  top: 2px;
+  right: 6.9%;
+} */
+
+
 /* 波浪线 */
 @keyframes waveMove {
   from {
@@ -205,10 +412,10 @@ img {
   }
 }
 
-span[alt='wave'] {
+span[alt="wave"] {
   padding-bottom: 5px;
   animation: waveMove 0.5s infinite linear;
-  background: url("./Icon_font/wave-line.svg") repeat-x 0 100%;
+  background: url("./Iconfont/wave-line.svg") repeat-x 0 100%;
   background-size: 25px auto;
 }
 
@@ -256,7 +463,8 @@ span[alt='wave'] {
   border-radius: 5px;
 } */
 
-/* ——————————————————————————————————————————折叠块设置————————————————————————————————————————————— */
+/* ————————————————————————————————————————— 折叠块设置 ———————————————————————————————————————————— */
+
 details {
   display: block;
   padding: 16px;
@@ -265,14 +473,14 @@ details {
   background: #fff;
   font-size: 18px;
   font-family: "霞鹜文楷";
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
   border: 2px solid #fff;
 }
 
@@ -330,7 +538,7 @@ hr {
   height: 2px;
   padding: 0;
   margin: 2rem 0;
-  background-color: #ddd;
+  background-color: #ccc;
   border: 0 none;
   overflow: hidden;
   box-sizing: content-box;
@@ -340,6 +548,11 @@ hr {
 .task-list-done {
   text-decoration: line-through;
   color: #999;
+}
+
+/* 任务列表 */
+.md-task-list-item>input {
+  margin-left: -1.3em;
 }
 
 /* 加粗 */
@@ -358,13 +571,13 @@ hr {
   font-family: "Lora-Italic", "玄宋45S";
 }
 
-
 /* 高亮 */
 #write mark {
   font-family: "Fira", "玄宋45S";
   /* background-color: #fae4bb; */
   background-color: #7c9dca;
   border-radius: 3px;
+
   /* 类似于马克笔涂抹效果 */
   /* background-color: #fff;
   box-shadow: 0 -.9em 0 0 #f5de77 inset; */
@@ -375,13 +588,73 @@ hr {
   font-size: 19px;
 }
 
-/* 删除 */
+/* 删除文字样式 */
 #write del {
   padding: 1px 2px;
   color: #777;
 }
 
-/* 任务列表 */
-.md-task-list-item>input {
-  margin-left: -1.3em;
+
+/* ————————————————————————————————————————————滚轮设置—————————————————————————————————————————————*/
+
+/*
+::-webkit-scrollbar                      整个滚动条，控制滑块的大小。
+::-webkit-scrollbar-button               滚动条上的按钮（上下箭头）。
+::-webkit-scrollbar-thumb                滚动条上的滚动滑块。
+::-webkit-scrollbar-track                滚动条轨道。
+::-webkit-scrollbar-track-piece          滚动条没有滑块的轨道部分。
+::-webkit-scrollbar-corner               当同时有垂直滚动条和水平滚动条时交汇的部分。
+::-webkit-resizer                        出现在某些元素底角的可拖动调整大小的滑块。
+*/
+
+/* 统一滚轮样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px !important;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: #e9ecef;
+}
+
+/* 正文滚轮 */
+content::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* 鼠标悬浮在正文滚轮 */
+content::-webkit-scrollbar-thumb:hover,
+/* 鼠标按住正文滚轮 */
+content::-webkit-scrollbar-thumb:hover {
+  background-color: #888 !important;
+}
+
+/* 侧边栏滚轮 */
+div.sidebar-content-content::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* 鼠标悬浮在侧边栏滚轮 */
+div.sidebar-content-content::-webkit-scrollbar-thumb:hover,
+/* 鼠标按住侧边栏滚轮 */
+div.sidebar-content-content::-webkit-scrollbar-thumb:hover {
+  background-color: #888 !important;
+}
+
+/* 代码块滚轮 */
+#write pre::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+#write pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+#write pre::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa !important;
 }

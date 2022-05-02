@@ -1,8 +1,10 @@
 /* 本文件为代码块样式设置 */
 
-@import "fonts.css";
 
-/* ——————————————————————————————————————————基础设置——————————————————————————————————————————————— */
+@import "./fonts.css";
+
+
+/* ————————————————————————————————————————— 基础设置 —————————————————————————————————————————————— */
 
 /* 代码块 */
 #write .md-fences {
@@ -10,23 +12,32 @@
   -webkit-font-smoothing: initial;
   margin: 0.8rem 0 !important;
   padding: 0.3rem 0 !important;
-  line-height: 1.43rem;
+  line-height: 1.45rem;
   /* 背景色 */
   background-color: #f5f9fd !important;
-  font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
-  font-size: 0.85rem;
+  font-family: Consolas, "霞鹜文楷";
+  font-size: 0.8rem;
   word-wrap: normal;
-  /* border: 2px solid #000; */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 0.3em;
+  border-radius: 0.4em;
 }
 
 #write .CodeMirror-wrap .CodeMirror-code pre {
+  margin-right: 12px;
   padding-left: 12px;
+  padding-right: 0 !important;
   font-family: Consolas, "霞鹜文楷";
   font-size: 18.5px;
-  border-radius: 5em;
+  /* 使得鼠标悬浮在滚轮上时候的样式与悬浮在代码块其他地方的样式不同 */
+  cursor: auto;
 }
+
+/* 代码块横向滚轮 */
+/* #write .CodeMirror-wrap .CodeMirror-code pre {
+  overflow-x: scroll !important;
+  white-space: nowrap !important;
+  line-height: 1.25rem;
+} */
 
 /* 行间代码 */
 #write code,
@@ -41,13 +52,16 @@ tt {
   font-size: 19px;
 }
 
+/* 行号竖线 */
 #write .CodeMirror-gutters {
   border-color: #313335;
-  border-right: 1.5px solid #999999;
+  border-right: 1.5px solid #999;
 }
 
-/* ——————————————————————————————————————代码块各语言颜色设置———————————————————————————————————————— */
 
+/* ————————————————————————————————————— 代码块各语言颜色设置 ——————————————————————————————————————— */
+
+/* 参考：https://www.jb51.net/css/753133.html */
 /* ported from https://codemirror.net/theme/material.css */
 .cm-s-inner {
   background-color: #263238;
@@ -101,8 +115,9 @@ tt {
 
 /* 光标所在行背景色 */
 /* .md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background, */
-.md-fences.md-focus .CodeMirror-code>div.CodeMirror-activeline{
-  background: #eee;
+.md-fences.md-focus .CodeMirror-code>div.CodeMirror-activeline {
+  /* background: #fff; */
+  background-image: #fdfbfb;
 }
 
 /* 关键字 */

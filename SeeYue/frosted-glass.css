@@ -1,8 +1,12 @@
-@import "fonts.css";
+/* 本文件为毛玻璃效果 */
+
+
+@import "./fonts.css";
+
 
 body {
   background-color: transparent;
-  background-image: url("./Picture/灰绿.jpg");
+  background-image: url("./Background/灰绿.jpg");
   background-position: center;
   background-size: cover;
   margin: 10px auto;
@@ -11,7 +15,7 @@ body {
 content,
 .on-focus-mode content,
 #typora-sidebar {
-  background-image: url("./Picture/灰绿.jpg");
+  background-image: url("./Background/灰绿.jpg");
   background-attachment: fixed;
   background-position-x: center;
   background-position-y: center;
@@ -88,7 +92,7 @@ footer.ty-footer:before,
   border-radius: 0px;
   height: 100% !important;
   border: none !important;
-  font-family: "RobotoMono", '霞鹜文楷';
+  font-family: "RobotoMono-Simplify", "霞鹜文楷";
   background-color: transparent;
 }
 

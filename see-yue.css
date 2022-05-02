@@ -1,4 +1,6 @@
 /* 本主题魔改于 Vue 主题 */
+/* 本主题 GitHub 地址：https: //github.com/jinghu-moon/typora-see-yue-theme */
+/* 有问题请到 GitHub 上提 Issues 或者 QQ 联系我。我的 QQ 号：2027004326 */
 
 
 /* 字体引用 */
@@ -16,14 +18,14 @@
 /* 正文标题 */
 @import "./SeeYue/headline.css";
 
-/* 导出 PDF 设置 */
-@import "./SeeYue/to-pdf.css";
-
 /* 正文目录 */
 @import "./SeeYue/contents.css";
 
 /* 代码块 */
 @import "./SeeYue/code-block.css";
+
+/* 导出 PDF 设置 */
+@import "./SeeYue/to-pdf.css";
 
 /* 自动编号 */
 /* @import "./SeeYue/auto-number.css"; */
@@ -37,13 +39,14 @@
 
 
 :root {
+  /* 侧边栏底色 */
   --side-bar-bg-color: #edf2f4;
-  --control-text-color: #777;
-  --table-border-radius: 5px;
+  /* 表格边框颜色 */
   --table-border-color: #ccc;
 }
 
-/* ——————————————————————————————————————————正文设置—————————————————————————————————————————————— */
+
+/* ————————————————————————————————————————— 正文设置 ————————————————————————————————————————————— */
 
 html {
   font-size: 20px;
@@ -64,6 +67,8 @@ body {
   margin: 0;
   overflow: hidden;
   box-sizing: border-box;
+  /* 文字两端对齐 */
+  text-align: justify;
 }
 
 /*页面宽度*/
@@ -98,7 +103,7 @@ body>*:last-child {
   margin-bottom: 0 !important;
 }
 
-/* 同一行距 */
+/* 统一行距 */
 p,
 blockquote,
 ul,
@@ -155,14 +160,15 @@ h6 p {
   margin-top: 0;
 }
 
-/* ———————————————————————————————————————————————列表设置—————————————————————————————————————————— */
+
+/* —————————————————————————————————————————————— 列表设置 ————————————————————————————————————————— */
 
 li p.first {
   display: inline-block;
 }
 
 ul {
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 ul:first-child,
@@ -193,6 +199,14 @@ ol:last-child {
   padding-left: 30px;
 }
 
+#write ul ul {
+  list-style-type: circle;
+}
+
+#write ul ul ul {
+  list-style-type: square;
+}
+
 /* 列表前符号 */
 ::marker,
 li::before {
@@ -201,10 +215,8 @@ li::before {
   font-size: 18px;
 }
 
-li.md-focus-container::marker {
-  color: #e2542e !important;
-  font-family: "HarmonyOS";
-  font-size: 18px;
+ol li::marker {
+  font-size: 19px !important;
 }
 
 /* 调整列表符号与文字的距离 */
@@ -212,7 +224,8 @@ li.md-focus-container::marker {
     text-indent: 0.2rem;
 } */
 
-/* —————————————————————————————————————————————引用块基础设置——————————————————————————————————————— */
+
+/* ———————————————————————————————————————————— 引用块基础设置 —————————————————————————————————————— */
 
 /*引用基础设置*/
 blockquote {
@@ -230,7 +243,8 @@ blockquote p {
   margin: .6em 0;
 }
 
-/* ————————————————————————————————————————————— 提示块样式——————————————————————————————————————— */
+
+/* —————————————————————————————————————————————— 提示块样式 ——————————————————————————————————————— */
 
 blockquote>h3:first-child,
 blockquote>h4:first-child,
@@ -253,7 +267,7 @@ blockquote>h3:first-child {
 
 blockquote>h3:first-child::before,
 blockquote>h3.md-focus:before {
-  background-image: url("./SeeYue/Icon_font/警告.svg");
+  background-image: url("./SeeYue/Iconfont/blockquote/警告.svg");
   vertical-align: middle;
   content: " ";
   width: 20px;
@@ -271,7 +285,7 @@ blockquote>h4:first-child {
 
 blockquote>h4:first-child::before,
 blockquote>h4.md-focus:before {
-  background-image: url("./SeeYue/Icon_font/参考.svg");
+  background-image: url("./SeeYue/Iconfont/blockquote/参考.svg");
   background-repeat: no-repeat;
   vertical-align: middle;
   content: " ";
@@ -289,7 +303,7 @@ blockquote>h5:first-child {
 
 blockquote>h5:first-child::before,
 blockquote>h5.md-focus:before {
-  background-image: url("./SeeYue/Icon_font/想法.svg");
+  background-image: url("./SeeYue/Iconfont/blockquote/想法.svg");
   background-repeat: no-repeat;
   vertical-align: middle;
   content: " ";
@@ -307,7 +321,7 @@ blockquote>h6:first-child {
 
 blockquote>h6:first-child::before,
 blockquote>h6.md-focus:before {
-  background-image: url("./SeeYue/Icon_font/其他.svg");
+  background-image: url("./SeeYue/Iconfont/blockquote/其他.svg");
   background-repeat: no-repeat;
   vertical-align: middle;
   content: " ";
@@ -318,7 +332,8 @@ blockquote>h6.md-focus:before {
   position: initial;
 }
 
-/* ————————————————————————————————————————————————表格设置————————————————————————————————————————— */
+
+/* ——————————————————————————————————————————————— 表格设置 ———————————————————————————————————————— */
 
 /* 表格宽度随内容增加而增加 */
 /* .md-table {
@@ -392,7 +407,13 @@ table tr td:last-child {
   border-right-width: 0px !important;
 }
 
-/* —————————————————————————————————————————————链接设置———————————————————————————————————————————— */
+/* 表格工具栏（三个小点） */
+button.md-table-more {
+  font-family: '霞鹜文楷';
+}
+
+
+/* ———————————————————————————————————————————— 链接设置 ——————————————————————————————————————————— */
 
 #write a {
   text-decoration: none;
@@ -402,6 +423,7 @@ table tr td:last-child {
   /* border-bottom: 1px dashed #e2542e; */
   border-bottom: 1px dashed #81b29a;
   cursor: pointer !important;
+  position: relative;
 }
 
 a,
@@ -421,6 +443,7 @@ a:visited {
   color: #e2542e;
   /* background-color: #ddd; */
   border-bottom: 1px solid #e2542e;
+  transition: .5s;
 }
 
 /*鼠标点中激活链接*/
@@ -464,8 +487,7 @@ u {
 }
 
 
-
-/* ———————————————————————————————————————以下为原主题（Vue）代码———————————————————————————————————— */
+/* —————————————————————————————————————— 以下为原主题（Vue）代码 ——————————————————————————————————— */
 
 .md-fences {
   background-color: #f8f8f8;
@@ -515,7 +537,7 @@ u {
   top: 10px;
 }
 
-/** focus mode */
+/* focus mode */
 
 .on-focus-mode blockquote {
   border-left-color: rgba(85, 85, 85, 0.12);

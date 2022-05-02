@@ -1,7 +1,12 @@
-@import "fonts.css";
+/* 本文件实现正文、正文目录、侧边栏标题编号 */
 
-/* ——————————————————————————————————————————正文标题编号———————————————————————————————————————————— */
-/* 取消一级标题 */
+
+@import "./fonts.css";
+
+
+/* ————————————————————————————————————————— 正文标题编号 ——————————————————————————————————————————— */
+
+/* 隐藏正文标题一级标题编号 */
 #write h1:before {
   display: none;
 }
@@ -108,8 +113,10 @@ h6.md-focus:before {
   line-height: inherit;
 }
 
-/* ———————————————————————————————————————————正文目录编号——————————————————————————————————————————— */
 
+/* —————————————————————————————————————————— 正文目录编号 —————————————————————————————————————————— */
+
+/* 隐藏正文目录一级标题编号 */
 .md-toc-h1:before {
   display: none;
 }
@@ -130,40 +137,41 @@ h6.md-focus:before {
   counter-reset: h2-counter 0;
 }
 
+/* 正文目录第一个一级标题 */
 /* .md-toc-content .md-toc-h1:nth-child(1) {
     margin-top: 0;
 } */
 
 .md-toc-h2 {
   font-size: 1rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   counter-increment: h2-counter;
   counter-reset: h3-counter 0;
 }
 
 .md-toc-h3 {
-  padding-left: 3rem;
+  padding-left: 2rem;
   font-size: 1rem;
   counter-increment: h3-counter;
   counter-reset: h4-counter 0;
 }
 
 .md-toc-h4 {
-  padding-left: 4rem;
+  padding-left: 3rem;
   font-size: 1rem;
   counter-increment: h4-counter;
   counter-reset: h5-counter 0;
 }
 
 .md-toc-h5 {
-  padding-left: 5rem;
+  padding-left: 4rem;
   font-size: 1rem;
   counter-increment: h5-counter;
   counter-reset: h6-counter 0;
 }
 
 .md-toc-h6 {
-  padding-left: 6rem;
+  padding-left: 5rem;
   font-size: 1rem;
   counter-increment: h6-counter;
 }
@@ -174,7 +182,7 @@ h6.md-focus:before {
 .md-toc-h4:before,
 .md-toc-h5:before,
 .md-toc-h6:before {
-  font-family: 'RobotoMono';
+  font-family: "RobotoMono";
 }
 
 .md-toc-h1:before {
@@ -242,7 +250,8 @@ h6.md-focus:before {
   margin-left: 0;
 }
 
-/* ——————————————————————————————————————————侧边栏大纲编号—————————————————————————————————————————— */
+
+/* ————————————————————————————————————————— 侧边栏大纲编号 ————————————————————————————————————————— */
 
 /* 隐藏侧边栏一级标题编号 */
 .outline-h1>.outline-item>.outline-label:before {
@@ -282,11 +291,9 @@ h6.md-focus:before {
   counter-increment: h6-counter;
 }
 
-/* 隐藏侧边栏一级标题编号 */
 .outline-h1>.outline-item>.outline-label:before {
   counter-increment: h1-sidebar;
   content: counter(h1-counter) "\00A0";
-  display: none;
 }
 
 .outline-h2>.outline-item>.outline-label:before {

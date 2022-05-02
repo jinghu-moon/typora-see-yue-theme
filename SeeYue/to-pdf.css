@@ -1,6 +1,8 @@
 /* 本文件为导出 PDF 设置 */
 
-@import "fonts.css";
+
+@import "./fonts.css";
+
 
 /* 导出 PDF，基本设置 */
 @media print {
@@ -29,21 +31,33 @@
 /* 修改导出的PDF的页边距 */
 @page {
   margin: 10mm -6mm;
-  size: A4;
   /* 以A4纸张的大小 */
+  size: A4;
 }
 
-/* 导出PDF，使得标题等级提示消失 */
+/* 标题设置 */
 @media print {
+  #write h1 {
+    margin-top: 0 !important;
+    padding-top: 1rem !important;
+  }
+
+  /* #write h2,
+  #write h3,
+  #write h4,
+  #write h5,
+  #write h6 {} */
+
   .typora-export * {
     -webkit-print-color-adjust: exact;
   }
 
-  #write h2::before,
-  #write h3::before,
-  #write h4::before,
-  #write h5::before,
-  #write h6::before {
+  /* 导出PDF，使得标题等级提示消失 */
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
     display: none;
   }
 }
@@ -51,7 +65,7 @@
 /* 导出PDF，防止无序列表大纲线错位 */
 @media print {
   blockquote ul ul::before {
-    content: '';
+    content: "";
     border-left: 1px solid rgb(129, 178, 154, 0.3);
     position: absolute;
     left: -16px;
@@ -60,11 +74,55 @@
   }
 
   ul ul::before {
-    content: '';
+    content: "";
     border-left: 1px solid rgb(129, 178, 154, 0.3);
     position: absolute;
     left: -16.5px;
     top: -15px;
     bottom: 5px;
+  }
+}
+
+/* 导出取消代码块横向滚轮 */
+/* @media print {
+  #write .CodeMirror-wrap .CodeMirror-code pre {
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+} */
+
+/* 脚注设置 */
+@media print {
+  .footnotes-area {
+    font-size: .85rem;
+    font-family: "RobotoMono", "霞鹜文楷" !important;
+    color: #777;
+    line-height: 1;
+  }
+}
+
+/* 导出，不显示第一个一级标题 */
+@media print {
+
+  /* 正文标题 */
+  /* #write h1:nth-of-type(1) {
+    color: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1px !important;
+  } */
+
+  /* 正文目录 */
+  /* #write .md-toc-content .md-toc-h1:first-child {
+    display: none;
+  } */
+}
+
+/* 图片设置 */
+@media print {
+  #write img {
+    padding: 0 auto !important;
+    margin: 0 auto !important;
+    border: none !important;
   }
 }
