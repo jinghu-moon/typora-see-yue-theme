@@ -1,4 +1,4 @@
-See Yue 主题开发计划： [typora-seee-yue 开发计划 (github.com)](https://github.com/users/jinghu-moon/projects/1/views/1)
+See Yue 主题开发计划： https://github.com/users/jinghu-moon/projects/1/views/1
 
 GitHub 地址：[jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自定义样式极多、简约、充满细节的 Typora 明亮主题。](https://github.com/jinghu-moon/typora-see-yue-theme)
 
