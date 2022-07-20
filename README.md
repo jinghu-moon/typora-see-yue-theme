@@ -34,6 +34,7 @@ GitHub 地址： [jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自�
   - 导出 HTML，无法滑动
   - 导出 PDF，不显示脚注内容
   - 光标聚焦表格时，表格外边框消失
+  - 侧边栏选中文件，边框被悬浮样式挡住
 
 ## 🎉 See Yue v1.2
 - **增加项**

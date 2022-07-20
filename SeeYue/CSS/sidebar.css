@@ -289,14 +289,16 @@ ul .outline-children::before {
 
 /* 侧边栏（文件） */
 .use-file-tree-style #file-library-tree {
-  display: block;
+  display      : block;
+  padding-right: 0;
+  padding-left : 0;
 }
 
 .file-node-content {
-  padding-left  : 8px;
+  padding-left     : 8px;
   /* 防止悬浮样式覆盖选中样式 */
-  margin-right  : 2px;
-  /* white-space: nowrap; */
+  /* margin-right  : 10%; */
+  /* white-space   : nowrap; */
 }
 
 /* 侧边栏（文件）换行 */
@@ -400,9 +402,8 @@ ul .outline-children::before {
 }
 
 /* 选中文件样式（MD 文件） */
-.file-tree-node.active>.file-node-background {
-  border-right    : var(--active-filetree-mdFile-name-right-line);
-  border-left     : none;
+.file-tree-node .file-tree-node.active .file-node-background {
+  border-left     : var(--active-filetree-mdFile-name-right-line);
   background-color: var(--active-filetree-mdFile-name-bg-color);
   color           : var(--active-filetree-mdFile-name-color) !important;
 }
