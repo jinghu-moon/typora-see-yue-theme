@@ -6,6 +6,11 @@ GitHub 地址： [jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自�
 
 蓝奏云下载链接： https://xianchengyue.lanzout.com/b027inxfe ，密码：5zjc。打不开，请将 `lanzout` 换成 `lanzoui` / `lanzous` / `lanzoux` 。
 
+## 🎉 See Yue v1.3.1
+
+- **修复项**
+  - 侧边栏选中文件，边框被悬浮样式挡住
+
 ## 🎉 See Yue v1.3
 
 - **增加项**
@@ -34,7 +39,6 @@ GitHub 地址： [jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自�
   - 导出 HTML，无法滑动
   - 导出 PDF，不显示脚注内容
   - 光标聚焦表格时，表格外边框消失
-  - 侧边栏选中文件，边框被悬浮样式挡住
 
 ## 🎉 See Yue v1.2
 - **增加项**
