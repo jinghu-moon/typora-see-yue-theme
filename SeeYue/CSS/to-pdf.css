@@ -164,7 +164,7 @@
   } */
 
   /* tab 大小 */
-  /* span.md-toc-item.md-toc-h1 a.md-toc-inner span {
+  span.md-toc-item.md-toc-h1 a.md-toc-inner span {
     border-left: var(--contents-h1-tab-space);
-  } */
+  }
 }

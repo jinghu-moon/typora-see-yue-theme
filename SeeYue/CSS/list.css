@@ -39,7 +39,7 @@ ol li::marker {
   line-height: 1.1;
 }
 
-/* 第二级无序列表符号 */
+/* 第二级无序列表符号样式 */
 /* 第二级无序列表符号改为透明色 */
 /* ul>li>ul>li::marker,
 ul>li>ul>li.md-focus-container::marker {

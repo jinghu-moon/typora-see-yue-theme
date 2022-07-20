@@ -10,7 +10,7 @@
 }
 
 /* 侧边栏、右键菜单、底部栏、引用块、代码块、脚注、悬浮提示框中文 */
-/* 使用 LXGWWenKai-Regular + RobotoMono-Regular 合并得到 */
+/* 使用 LXGW WenKai Lite-Regular + RobotoMono-Regular 合并得到 */
 @font-face {
   font-family: "霞鹜文楷";
   src        : url("../Fonts/Chinese-Fonts/LXGWWenKai+RobotoMono.woff2");
@@ -22,7 +22,7 @@
   src        : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Bold.woff2");
 }
 
-/* 备用 */
+/* 一些字符 */
 @font-face {
   font-family: "HarmonyOS-Regular";
   src        : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Regular.woff2");

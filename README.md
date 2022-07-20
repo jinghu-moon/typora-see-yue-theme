@@ -2,11 +2,9 @@ See Yue 主题开发计划： https://github.com/users/jinghu-moon/projects/1/vi
 
 GitHub 地址： [jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自定义样式极多、简约、充满细节的 Typora 明亮主题。](https://github.com/jinghu-moon/typora-see-yue-theme)
 
-只是简短的更新内容介绍，详细内容请看 `主题介绍.md` 。
+只是简短的更新记录，详细内容请看 `主题说明（必看）.md` 。
 
-蓝奏云链接： https://xianchengyue.lanzout.com/b026y85of ，密码：c7c3。打不开，请将 `lanzout` 换成 `lanzoui` / `lanzous` / `lanzoux` 。
-
-> 
+蓝奏云下载链接： https://xianchengyue.lanzout.com/b027inxfe ，密码：5zjc。打不开，请将 `lanzout` 换成 `lanzoui` / `lanzous` / `lanzoux` 。
 
 ## 🎉 See Yue v1.3
 
@@ -15,21 +13,21 @@ GitHub 地址： [jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自�
   - 表格宽度自适应
   - 字数统计栏、正文目录增加图标
   - 界面背景色（护眼色） / 背景图，二选一
-  - 增加 See Yue 主题开发计划看板，见上
-  - 修改二级无序列表符号样式，默认关闭
-  - 任务列表样式修改
+  - 增加 See Yue 主题开发计划看板，见本文开头链接
+  - 修改二级无序列表符号样式，默认不使用
+  - 修改任务列表样式
 - **改进项**
   - 正文字号改为 `18px` ，其它文本大小随之改动
   - 界面图标尽可能使用 iconfont 字体
   - 高亮样式改为马克笔涂抹效果
-  - 大纲页小三角悬浮效果及折叠、展开旋转动画
-  - 代码块边框高度减小，更加自然、美观
+  - 大纲页小三角悬浮效果及折叠、展开的旋转动画
+  - 代码块边框高度减小，小圆点缩小，更加自然、美观
   - 优化代码结构，精简部分代码
-  - 整理、分类主题使用文件，便于管理、查找
+  - 整理、分类主题文件，便于管理、查找
   - 优化图片不显示样式
   - 优化正文脚注显示样式
   - 移除毛玻璃效果代码
-  - 移除标题自动编号修改代码
+  - 移除标题自动编号效果代码
 - **修复项**
   - 编程语言显示错误
   - 任务列表层级线错位
@@ -78,7 +76,7 @@ GitHub 地址： [jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自�
 
   - 网络图片提示
 
-  - 参插入图像错误显示
+  - 插入图像错误显示
 
   - 部分网站链接显示其 logo
 
