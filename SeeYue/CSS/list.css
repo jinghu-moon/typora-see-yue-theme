@@ -1,0 +1,171 @@
+/* 本文件为有序列表、无序列表、任务列表设置 */
+/* ================================================================= */
+
+
+/* 无序列表层级竖线 */
+ul ul {
+  position: relative;
+}
+
+ul ul::before {
+  display    : var(--unordered-list-hierarchical-line-state);
+  content    : "";
+  border-left: var(--unordered-list-left-vertical-line);
+  position   : absolute;
+  left       : -12.5px;
+  top        : -15px;
+  bottom     : 5px;
+}
+
+/* 光标所在列表的符号样式 */
+li.md-focus-container::marker {
+  color      : var(--focus-list-symbol-color) !important;
+  font-family: var(--focus-list-symbol-font);
+  transition : all .3s ease;
+}
+
+/* 无序列表前符号 */
+ul li::marker {
+  color      : var(--unordered-list-symbol-color);
+  font-family: var(--unordered-list-symbol-font);
+  font-size  : 16px;
+}
+
+/* 有序列表前符号 */
+ol li::marker {
+  font-family: var(--orderly-list-symbol-font);
+  font-size  : var(--orderly-list-symbol-size);
+  color      : var(--orderly-list-symbol-color);
+  line-height: 1.1;
+}
+
+/* 第二级无序列表符号 */
+/* 第二级无序列表符号改为透明色 */
+/* ul>li>ul>li::marker,
+ul>li>ul>li.md-focus-container::marker {
+  color: transparent !important;
+}
+
+ul>li>ul>li>ul>li.md-focus-container::marker {
+  color: var(--focus-list-symbol-color) !important;
+}
+
+ul>li>ul>li>ul>li::marker {
+  color: var(--unordered-list-symbol-color) !important;
+}
+
+#write ul>li>ul>li.md-list-item:not(.md-task-list-item)::before {
+  content    : "\ec42";
+  color      : var(--unordered-list-symbol-color);
+  font-family: 'iconfont';
+  font-size  : 7px;
+  position   : absolute;
+  left       : -15.5px;
+  top        : 11.5px;
+  transition : all .3s ease;
+  line-height: 1;
+}
+
+#write ul>li>ul>li.md-focus-container:not(.md-task-list-item):before {
+  color: var(--focus-list-symbol-color) !important;
+}
+
+#write ul ul>li>ul>li::before {
+  display: none;
+} */
+
+/* 任务列表层级竖线 */
+.task-list-item.md-task-list-item ul::before {
+  content    : "";
+  border-left: var(--task-list-left-vertical-line);
+  position   : absolute;
+  left       : -20px;
+  top        : -5px;
+  display    : var(--task-list-vertical-line-state);
+}
+
+blockquote .task-list-item.md-task-list-item ul::before {
+  left: -19px;
+}
+
+/* 任务列表框框设置 */
+#write .md-task-list-item>input {
+  appearance   : initial;
+  display      : block;
+  position     : absolute;
+  top          : 0px;
+  left         : 2px;
+  border       : var(--task-list-box-border-width) solid var(--task-list-box-border-color);
+  border-radius: var(--task-list-box-border-radius);
+  margin-top   : 4.5px;
+  height       : var(--task-list-box-size);
+  width        : var(--task-list-box-size);
+  padding      : 0 !important;
+  box-shadow   : 0px 0px 5px 0px rgb(0 0 0 / 10%);
+  transition   : all .3s ease;
+}
+
+#write blockquote .md-task-list-item>input {
+  margin-top: 4.5px;
+}
+
+/* 鼠标悬浮在任务列表框框样式 */
+#write .md-task-list-item>input:hover {
+  background-color: var(--hover-task-list-box-bg-color) !important;
+}
+
+/* 任务列表打钩 */
+#write .md-task-list-item>input[checked]::before {
+  content    : "\e666";
+  position   : absolute;
+  top        : 8%;
+  left       : 2%;
+  font-weight: bold;
+  font-size  : var(--task-list-finished-tick-size);
+  color      : var(--task-list-finished-tick-color);
+  font-family: 'iconfont';
+}
+
+#write blockquote .md-task-list-item>input[checked]::before {
+  top      : 5%;
+  left     : 2%;
+  font-size: .9rem;
+}
+
+/* #write .md-task-list-item>input[checked]::before {
+  content         : '';
+  position        : absolute;
+  top             : 34%;
+  left            : 22%;
+  height          : 53%;
+  width           : 2.5px;
+  transform       : rotate(-40deg);
+  background-color: #ee6c4d;
+}
+
+#write .md-task-list-item>input[checked]::after {
+  content         : '';
+  position        : absolute;
+  top             : 8.5%;
+  left            : 57%;
+  height          : 80%;
+  width           : 2.7px;
+  transform       : rotate(38deg);
+  background-color: #ee6c4d;
+} */
+
+.task-list-item.md-task-list-item {
+  padding-left: 8px;
+}
+
+/* 任务列表已完成样式 */
+.task-list-done {
+  text-decoration: line-through;
+  color          : var(--task-list-finished-text-color);
+}
+
+/* 引用块，任务列表已完成样式 */
+blockquote .task-list-done {
+  text-decoration: line-through;
+  color          : #ccc;
+}

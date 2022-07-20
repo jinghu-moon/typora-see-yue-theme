@@ -1,0 +1,170 @@
+/* 本文件为导出 PDF 设置 */
+/* ================================================================= */
+
+
+/* 导出 PDF，基本设置 */
+@media print {
+  html {
+    font-size: 18px;
+  }
+
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    word-wrap: break-word;
+  }
+
+  h1 {
+    page-break-before: always;
+  }
+
+  h1:first-of-type {
+    page-break-before: avoid;
+  }
+}
+
+/* 修改导出的 PDF 的页边距 */
+@page {
+  margin: 10mm -4mm;
+}
+
+
+/* 标题设置 */
+@media print {
+  #write h1 {
+    margin-top : 0 !important;
+    padding-top: 1rem !important;
+  }
+
+  .typora-export * {
+    print-color-adjust        : exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* 导出PDF，使得标题等级提示消失 */
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    display: none;
+  }
+
+  /* 保留引用样式块的图标 */
+  blockquote h2::before,
+  blockquote h3::before,
+  blockquote h4::before,
+  blockquote h5::before,
+  blockquote h6::before {
+    display: block;
+  }
+}
+
+/* 导出PDF，防止无序列表、任务列表层级线错位 */
+@media print {
+
+  /* 无序列表 */
+  ul ul::before {
+    position         : absolute;
+    left             : -16.5px !important;
+    border-left-width: 2px !important;
+  }
+
+  blockquote ul ul::before {
+    position: absolute;
+    left    : -16.5px !important;
+  }
+
+  /* 任务列表 */
+  .task-list-item.md-task-list-item ul::before {
+    position: absolute;
+    left    : -21px !important;
+  }
+
+  blockquote .task-list-item.md-task-list-item ul::before {
+    position: absolute;
+    left    : -19.5px !important;
+  }
+
+  /* 自定义二级无序列表符号样式 */
+  /* #write ul>li>ul>li:not(.md-task-list-item)::before {
+    content    : "\ec42" !important;
+    color      : #8ebba6;
+    font-family: 'iconfont' !important;
+    font-size  : 7.5px !important;
+    position   : absolute;
+    left       : -18.5px !important;
+    top        : 12px !important;
+    transition : all .3s ease;
+    line-height: 1;
+  } */
+
+  /* #write ul ul>li>ul>li::before {
+    display: none;
+  } */
+}
+
+/* 导出取消代码块横向滚轮 */
+/* @media print {
+  #write .CodeMirror-wrap .CodeMirror-code pre {
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+} */
+
+/* 脚注设置 */
+@media print {
+  .footnotes-area {
+    font-size  : .85rem;
+    font-family: "霞鹜文楷";
+    color      : #777 !important;
+    line-height: 1.5;
+  }
+
+  .footnotes-area hr {
+    margin-top   : 0 !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* 图片设置 */
+@media print {
+  #write img {
+    padding: 0 auto !important;
+    margin : 0 auto !important;
+    border : none !important;
+  }
+}
+
+/* 引用块设置 */
+@media print {
+  blockquote {
+    background-color: rgb(236, 244, 249, .6) !important;
+  }
+}
+
+/* 这是开发者的个人习惯 */
+/* 导出，不显示第一个一级标题 */
+@media print {
+
+  /* 正文标题 */
+  /* #write h1:nth-of-type(1) {
+    color    : transparent !important;
+    margin   : 0 !important;
+    padding  : 0 !important;
+    font-size: 1px !important;
+  } */
+
+  /* 正文目录 */
+  /* #write .md-toc-content .md-toc-h1:first-child {
+    display: none;
+  } */
+
+  /* tab 大小 */
+  /* span.md-toc-item.md-toc-h1 a.md-toc-inner span {
+    border-left: var(--contents-h1-tab-space);
+  } */
+}

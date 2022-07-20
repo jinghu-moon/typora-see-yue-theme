@@ -1,0 +1,302 @@
+/* 本文件为字体引用设置 */
+/* ================================================================= */
+
+
+/* —————————————————————————————————————————— 中文字体 —————————————————————————————————————————— */
+/* 正文中文 */
+@font-face {
+  font-family: "玄宋45S";
+  src        : url("../Fonts/Chinese-Fonts/HYXuanSong45S.woff2");
+}
+
+/* 侧边栏、右键菜单、底部栏、引用块、代码块、脚注、悬浮提示框中文 */
+/* 使用 LXGWWenKai-Regular + RobotoMono-Regular 合并得到 */
+@font-face {
+  font-family: "霞鹜文楷";
+  src        : url("../Fonts/Chinese-Fonts/LXGWWenKai+RobotoMono.woff2");
+}
+
+/* 标题、加粗 */
+@font-face {
+  font-family: "HarmonyOS-Bold";
+  src        : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Bold.woff2");
+}
+
+/* 备用 */
+@font-face {
+  font-family: "HarmonyOS-Regular";
+  src        : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Regular.woff2");
+}
+
+
+/* —————————————————————————————————————————— 英文字体 —————————————————————————————————————————— */
+/* 正文英文 */
+@font-face {
+  font-family: "Lora-Regular";
+  src        : url("../Fonts/English-Fonts/Lora-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Lora-Bold";
+  src        : url("../Fonts/English-Fonts/Lora-Bold.woff2");
+}
+
+/* 行间代码 */
+/* @font-face {
+  font-family: "Fira";
+  src        : url("../Fonts/English-Fonts/FiraCode-Regular.woff2");
+} */
+
+@font-face {
+  font-family: "Fira";
+  src        : url("../Fonts/Simplify-Fonts/FiraCode-Regular.woff");
+}
+
+/* —————————————————————————————————————————— 简化字体 —————————————————————————————————————————— */
+/* 正文目录、侧边栏、脚注英文 */
+/* 基于 RobotoMono-Regular，只能显示大小写字母、数字、英文标点 */
+@font-face {
+  font-family: "RobotoMono-Simplify";
+  src        : url("../Fonts/Simplify-Fonts/RobotoMono-Simplify.woff2");
+}
+
+/* 正文目录英文 */
+/* 基于 HarmonyOS_Sans_SC_Regular，只能显示大小写字母、数字、英文标点 */
+@font-face {
+  font-family: "HarmonyOS-Contents";
+  src        : url("../Fonts/Simplify-Fonts/HarmonyOS-Simplify.woff2");
+}
+
+/* Typora 默认显示 HTML 代码的字体 */
+@font-face {
+  font-family: "Lucida";
+  src        : url("../Fonts/English-Fonts/Lucida-Sans-Typewriter-Regular.woff2");
+}
+
+/* 链接尾部图标 */
+@font-face {
+  font-family: "ITS";
+  src        : url("../Fonts/Iconfont/its.woff");
+}
+
+/* 只能显示 脚注文件大纲查找 */
+@font-face {
+  font-family: "三极古拙楷书简";
+  src        : url("../Fonts/Simplify-Fonts/三极古拙楷书简.woff2") format("truetype");
+}
+
+
+/* 字体图标 */
+@font-face {
+  font-family: "iconfont";
+  src        : url("../Fonts/Iconfont/iconfont.woff2") format("truetype");
+}
+
+/* 下面是图标名 */
+.iconfont {
+  font-family            : "iconfont" !important;
+  font-size              : 16px;
+  font-style             : normal;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fanhui:before {
+  content: "\e67a";
+}
+
+.icon-error-fill:before {
+  content: "\e86f";
+}
+
+.icon-fuzhilianjiemian:before {
+  content: "\e61f";
+}
+
+.icon-lianjie1:before {
+  content: "\e626";
+}
+
+.icon-lianjie2:before {
+  content: "\e627";
+}
+
+.icon-lianjie3:before {
+  content: "\e6c9";
+}
+
+.icon-lianjie4:before {
+  content: "\e61a";
+}
+
+.icon-icon_article:before {
+  content: "\e611";
+}
+
+.icon-wenzhang2:before {
+  content: "\e681";
+}
+
+.icon-jinggao:before {
+  content: "\e607";
+}
+
+.icon-a-ziyuan35:before {
+  content: "\e60d";
+}
+
+.icon-cankaowenjian1:before {
+  content: "\e628";
+}
+
+.icon-shangsanjiaoxing:before {
+  content: "\e644";
+}
+
+.icon-shangsanjiaoxing-copy:before {
+  content: "\f1ec";
+}
+
+.icon-dir:before {
+  content: "\e67f";
+}
+
+.icon-dagangguanli_moren:before {
+  content: "\e623";
+}
+
+.icon-tongji2:before {
+  content: "\e609";
+}
+
+.icon-tongji3:before {
+  content: "\e60a";
+}
+
+.icon-tongji4:before {
+  content: "\e66a";
+}
+
+.icon-juyouduiqi:before {
+  content: "\e6e6";
+}
+
+.icon-juzuoduiqi:before {
+  content: "\e6e7";
+}
+
+.icon-liangduanduiqi:before {
+  content: "\e6f4";
+}
+
+.icon-tongji:before {
+  content: "\e608";
+}
+
+.icon-shanchu1:before {
+  content: "\e74b";
+}
+
+.icon-shanchu2:before {
+  content: "\e8b6";
+}
+
+.icon-four-squares:before {
+  content: "\ea3e";
+}
+
+.icon-shanchu:before {
+  content: "\e602";
+}
+
+.icon-ditu-huan:before {
+  content: "\ec42";
+}
+
+.icon-icon:before {
+  content: "\e62f";
+}
+
+.icon-kuangzhonggou:before {
+  content: "\e666";
+}
+
+.icon-wenjianjia:before {
+  content: "\e61d";
+}
+
+.icon-markdown:before {
+  content: "\e946";
+}
+
+.icon-xinxi:before {
+  content: "\e65e";
+}
+
+.icon-xinxi1:before {
+  content: "\e630";
+}
+
+.icon-zhushi:before {
+  content: "\e633";
+}
+
+.icon-weixian:before {
+  content: "\ea22";
+}
+
+.icon-xiangfa1:before {
+  content: "\e66e";
+}
+
+.icon-tishi:before {
+  content: "\e606";
+}
+
+.icon-wenzhang-copy:before {
+  content: "\e643";
+}
+
+.icon-zhuyi2:before {
+  content: "\e604";
+}
+
+.icon-zhuyi3:before {
+  content: "\e663";
+}
+
+.icon-a-9:before {
+  content: "\e605";
+}
+
+.icon-cankao:before {
+  content: "\e68b";
+}
+
+.icon-cankaowenjian:before {
+  content: "\e619";
+}
+
+.icon-yinyong:before {
+  content: "\e634";
+}
+
+.icon-yinyong1:before {
+  content: "\e62c";
+}
+
+.icon-zerenwenti:before {
+  content: "\e656";
+}
+
+.icon-star__:before {
+  content: "\e670";
+}
+
+.icon-yiwen:before {
+  content: "\e60c";
+}
+
+.icon-xiangfa:before {
+  content: "\e61e";
+}

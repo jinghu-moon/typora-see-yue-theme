@@ -1,0 +1,153 @@
+/* 本文件为脚注设置 */
+/* ================================================================= */
+
+
+/* ———————————————————————————————————————— 正文脚注 ———————————————————————————————————————— */
+#write .md-footnote {
+  font-family     : var(--body-area-footnote-font);
+  font-size       : var(--body-area-footnote-size);
+  background-color: var(--body-area-footnote-bg-color);
+  border-radius   : var(--body-area-footnote-bg-radius);
+  color           : var(--body-area-footnote-color);
+}
+
+/* 正文脚注样式 []*/
+#write .md-footnote>.md-text::before,
+#write .md-footnote>.md-text::after {
+  display    : var(--body-area-footnote-text-Brackets-state);
+  font-family: var(--body-area-footnote-text-Brackets-font);
+  color      : var(--body-area-footnote-text-Brackets-color);
+  font-size  : var(--body-area-footnote-text-Brackets-size);
+}
+
+/* 前 */
+#write .md-footnote>.md-text::before {
+  content: "[";
+}
+
+/* 后 */
+#write .md-footnote>.md-text::after {
+  content: "]";
+}
+
+/* 调整脚注位置 */
+sup {
+  top: var(--body-area-footnote-text-top-position);
+}
+
+/* 正文脚注悬浮框 */
+.code-tooltip.md-hover-tip {
+  right        : auto;
+  bottom       : auto;
+  color        : #fff;
+  background   : #2e3440;
+  border-radius: 4px;
+  padding      : 0;
+  white-space  : pre-wrap;
+  box-shadow   : none;
+  min-width    : 50px;
+  font-family  : "霞鹜文楷";
+  font-size    : .8rem;
+  opacity      : 1;
+}
+
+/* 悬浮框内容 */
+.md-hover-tip .code-tooltip-content {
+  border-radius: 4px;
+  opacity      : .95;
+  margin-top   : -2px;
+  line-height  : 1.2em;
+  color        : #ffffff;
+  text-align   : justify;
+}
+
+/* 小三角 */
+.md-hover-tip .md-arrow:after {
+  background: #2e3440;
+}
+
+.footnotes img,
+.md-f-tooltip img {
+  width       : 25%;
+  float       : left;
+  margin-right: 5px;
+  margin-top  : 5px;
+}
+
+
+/* ———————————————————————————————————————— 脚注内容 ———————————————————————————————————————— */
+.footnotes {
+  font-size  : var(--end-footnote-area-size);
+  font-family: var(--end-footnote-area-font);
+  color      : var(--end-footnote-area-color);
+  position   : relative;
+  opacity    : var(--end-footnote-area-opacity);
+  line-height: 2;
+}
+
+#write sup.md-footnote a {
+  color           : inherit !important;
+  border-bottom   : none !important;
+  padding         : 1px;
+  background-color: inherit;
+}
+
+/* 脚注提示 */
+.footnotes::before {
+  font-family  : var(--end-footnote-area-prompt-content-font);
+  line-height  : var(--footnote-prompt-division-line-distance);
+  background   : no-repeat var(--footnote-content-footnote-prompt-logo-position) url("../Images/footnote-prompt.svg");
+  content      : var(--end-footnote-area-prompt-content);
+  border-bottom: var(--footnote-content-footnote-prompt-division-line);
+  font-size    : var(--end-footnote-area-prompt-content-size);
+  color        : var(--end-footnote-area-prompt-content-color);
+  font-weight  : var(--end-footnote-area-prompt-content-weight);
+  position     : absolute;
+  width        : 100%;
+  top          : -150%;
+}
+
+/* + 号：选择相邻的两个相同标签 */
+/* 相邻：本身与它的上一个相同标签 */
+.footnotes+.footnotes::before {
+  display: none;
+}
+
+/* 给脚注提示样式让位子 */
+.footnotes {
+  margin-top   : 4rem !important;
+  margin-bottom: 0 !important;
+}
+
+.footnotes+.footnotes {
+  margin-top: 0 !important;
+}
+
+/* 脚注尾部符号 */
+.reversefootnote {
+  border: none !important;
+  color : var(--footnote-content-end-hook-color) !important;
+}
+
+/* 脚注内容尾部符号样式 */
+.md-reverse-footnote-area a {
+  text-decoration: var(--footnote-content-end-hook-underline) !important;
+  padding        : 0 2px;
+  border-bottom  : none !important;
+  font-size      : var(--footnote-content-end-hook-size) !important;
+}
+
+.md-reverse-footnote-area a:hover {
+  text-decoration : none !important;
+  border-radius   : var(--hover-footnote-content-end-hook-bg-radius);
+  padding         : 0 2px;
+  background-color: var(--hover-footnote-content-end-hook-bg-color);
+  color           : var(--hover-footnote-content-end-hook-color) !important;
+  cursor          : pointer;
+  border-bottom   : none !important;
+}
+
+/* 脚注编号对齐 */
+.md-def-name {
+  padding-right: 3ch;
+}
