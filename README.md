@@ -6,6 +6,13 @@ GitHub 地址： [jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自�
 
 蓝奏云下载链接： https://xianchengyue.lanzout.com/b027inxfe ，密码：5zjc。打不开，请将 `lanzout` 换成 `lanzoui` / `lanzous` / `lanzoux` 。
 
+## 🎉 See Yue v1.3.2
+
+- **改进项**
+  - 优化侧边栏文件页样式、悬浮动画
+- **修复项**
+  - 侧边栏点击标题，跳转有误
+
 ## 🎉 See Yue v1.3.1
 
 - **修复项**

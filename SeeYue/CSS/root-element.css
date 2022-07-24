@@ -178,7 +178,7 @@
   /* 鼠标悬浮在某一级标题时，该行的背景颜色 */
   --hover-sidebar-outline-headline-bg-color      : #fff;
   /* 鼠标悬浮在某一级标题时，该行的背景颜色显示时间 */
-  --hover-sidebar-outline-headline-animation-time: 0.5s;
+  --hover-sidebar-outline-headline-animation-time: 0s;
 
   /* ======================== 文件页面设置 ======================== */
   /* 文件页面文本字体 */
@@ -222,17 +222,19 @@
   /* 文件图标与非 MD 文件 、文件夹名间距，用 padding-right 实现 */
   --folder-left-logo-foldername-distance    : 5px;
   /* 鼠标悬浮在文件图标时，文件图标颜色 */
-  --hover-sidebar-foldername-left-logo-color: #526874;
+  --hover-sidebar-foldername-left-logo-color: #485e69;
 
   /* 鼠标悬浮在文件、文件夹时，该文件、文件夹背景颜色 */
   --hover-sidebar-filetree-filename-bg-color: #fff;
   /* 鼠标悬浮在某一文件、文件夹名时，该文件、文件夹背景颜色显示时间 */
   --hover-filetree-filename-animation-time  : 0.4s;
 
-  /* 文件夹层级线颜色，用 border-left 实现 */
-  --sidebar-filetree-folder-left-line-color: 1.5px solid #a7bbc3;
   /* 文件夹层级线左右位置，用 margin-left 实现 */
-  --filetree-folder-left-line-left-positon : 8.5px;
+  --sidebar-filetree-folder-left-line-state: block;
+  /* 文件夹层级线颜色，用 background-color 实现 */
+  --sidebar-filetree-folder-left-line-color: #a7bbc3;
+  /* 文件夹层级线颜色，用 width 实现 */
+  --sidebar-filetree-folder-left-line-width: 1.5px;
 
 
   /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 底部栏设置（sidebar.css） ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */

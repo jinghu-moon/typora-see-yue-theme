@@ -296,8 +296,6 @@ ul .outline-children::before {
 
 .file-node-content {
   padding-left     : 8px;
-  /* 防止悬浮样式覆盖选中样式 */
-  /* margin-right  : 10%; */
   /* white-space   : nowrap; */
 }
 
@@ -316,46 +314,32 @@ ul .outline-children::before {
 /* 侧边栏小三角 */
 .file-node-open-state {
   position     : relative;
-  /* 小三角占据的范围 */
-  width        : 0.5rem;
-  height       : 0.5rem;
   cursor       : pointer;
-  padding-left : 4px;
-  padding-right: 4px;
+  padding-left : 0px;
+  padding-right: 0px;
   color        : var(--sidebar-filetree-left-triangle-color);
 }
 
-/* 文件夹前小箭头（折叠） */
+/* 文件夹前小三角（折叠） */
+.file-node-open-state .fa-caret-down:before,
+/* 文件夹前小三角（打开） */
 .file-node-open-state .fa-caret-right:before {
   font-family: "iconfont";
   content    : "\e644";
   font-size  : var(--sidebar-filetree-left-triangle-size);
-  padding    : var(--hover-filetree-left-triangle-bg-scope);
   position   : absolute;
-  top        : 3px;
-  left       : -7px;
-  transform  : rotate(0deg);
 }
 
-/* 文件夹前小箭头（打开） */
+.file-node-open-state .fa-caret-right:before {
+  top      : 4px;
+  left     : -5px;
+  transform: rotate(0deg);
+}
+
 .file-node-open-state .fa-caret-down:before {
-  font-family: "iconfont";
-  content    : "\e644";
-  font-size  : var(--sidebar-filetree-left-triangle-size);
-  padding    : var(--hover-filetree-left-triangle-bg-scope);
-  position   : absolute;
-  top        : 3px;
-  left       : -7px;
-  transform  : rotate(90deg);
-}
-
-.file-node-open-state .fa-caret-right:hover::before,
-.file-node-open-state .fa-caret-down:hover::before {
-  padding         : var(--hover-filetree-left-triangle-bg-scope);
-  background-color: var(--hover-filetree-left-triangle-bg-color);
-  border-radius   : 3px;
-  transition      : all 0.3s ease;
-  color           : var(--hover-filetree-left-triangle-color);
+  top      : 4px;
+  left     : -5px;
+  transform: rotate(90deg);
 }
 
 /*  MD 文件小图标 */
@@ -363,7 +347,6 @@ ul .outline-children::before {
   content      : "\e946";
   padding-left : 5px;
   font-family  : "iconfont";
-  padding-left : 5px;
   position     : relative;
   top          : -1px;
   left         : 0px;
@@ -375,7 +358,6 @@ ul .outline-children::before {
 /* 文件夹小图标 */
 .fa-folder:before {
   content      : "\e61d";
-  margin-left  : 4px;
   font-family  : "iconfont";
   margin-left  : 4px;
   font-size    : var(--sidebar-filetree-folder-left-logo-size);
@@ -385,7 +367,17 @@ ul .outline-children::before {
 
 /* 悬浮文件夹 */
 .file-node-content:hover .fa-folder:before {
-  color: var(--hover-sidebar-foldername-left-logo-color);
+  transition: all 0.3s ease;
+  color     : var(--hover-sidebar-foldername-left-logo-color);
+}
+
+/* 小三角 */
+.file-node-open-state .fa-caret-right:hover::before,
+.file-node-open-state .fa-caret-down:hover::before,
+.file-node-content:hover .fa-caret-right::before,
+.file-node-content:hover.fa-caret-down::before {
+  transition: all 0.3s ease;
+  color     : var(--hover-filetree-left-triangle-color);
 }
 
 /* 去掉侧边栏文件点击虚线框 */
@@ -395,15 +387,23 @@ ul .outline-children::before {
 
 /* 文件悬浮样式 */
 .file-node-content:hover {
-  background-color: var(--hover-sidebar-filetree-filename-bg-color);
-  transition      : all var(--hover-filetree-filename-animation-time) ease;
-  border-radius   : 5px;
-  cursor          : pointer;
+  background-color   : var(--hover-sidebar-filetree-filename-bg-color);
+  transition         : background-color var(--hover-filetree-filename-animation-time) ease;
+  /* border-radius   : 5px; */
+  cursor             : pointer;
+  padding-bottom     : 1px;
+  margin-bottom      : -1px;
+}
+
+.file-node-content {
+  padding-left: 100px;
+  margin-left : -100px;
 }
 
 /* 选中文件样式（MD 文件） */
-.file-tree-node .file-tree-node.active .file-node-background {
-  border-left     : var(--active-filetree-mdFile-name-right-line);
+.file-tree-node .file-tree-node.active>.file-node-background {
+  border-right    : var(--active-filetree-mdFile-name-right-line);
+  border-left     : none;
   background-color: var(--active-filetree-mdFile-name-bg-color);
   color           : var(--active-filetree-mdFile-name-color) !important;
 }
@@ -415,12 +415,27 @@ ul .outline-children::before {
 
 .file-tree-node {
   transition-duration: unset !important;
+  padding-left       : 10px;
 }
 
-.file-node-expanded>.file-node-children {
-  border-left: var(--sidebar-filetree-folder-left-line-color);
-  margin-left: var(--filetree-folder-left-line-left-positon);
+.file-node-expanded>.file-node-children:not(:only-child) {
   position   : relative;
+  margin-left: 10px;
+  display    : block;
+}
+
+.file-node-expanded>.file-node-children::before {
+  display         : var(--sidebar-filetree-folder-left-line-state);
+  content         : "";
+  position        : absolute;
+  width           : var(--sidebar-filetree-folder-left-line-width);
+  height          : 100%;
+  background-color: var(--sidebar-filetree-folder-left-line-color);
+  left            : -9.5px;
+  z-index         : 99;
+  /* 虚线 */
+  /* background   : linear-gradient(to bottom, #a7bbc3, #a7bbc3 7.5px, transparent 7.5px, transparent);
+  background-size : 100% 15px; */
 }
 
 /* 侧边栏列表模式，文件文本溢出效果 */
