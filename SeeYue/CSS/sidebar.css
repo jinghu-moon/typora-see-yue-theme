@@ -61,9 +61,10 @@ footer.ty-footer {
   color         : var(--sidebar-topBar-content-color);
 }
 
-/* 大纲、文件下方横条 */
+/* 大纲、文件、查找下方横条 */
 .active-tab-files #info-panel-tab-file .info-panel-tab-border,
-.active-tab-outline #info-panel-tab-outline .info-panel-tab-border {
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border,
+.ty-show-search #info-panel-tab-search .info-panel-tab-border {
   /* 大纲、文件下方横条高度 */
   height          : var(--topBar-content-bottom-line-height);
   background-color: var(--topBar-content-bottom-line-color);

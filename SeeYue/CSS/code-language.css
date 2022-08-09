@@ -5,9 +5,10 @@
 /* 仿 Mac 窗口设计（代码块） */
 pre.md-fences:before {
   content      : " ";
-  height       : var(--code-block-topBar-all-dot-size);
-  width        : var(--code-block-topBar-all-dot-size);
-  background   : var(--code-block-topBar-redDot-color);
+  /* height、width、background 加 !important */
+  height       : var(--code-block-topBar-all-dot-size) !important;
+  width        : var(--code-block-topBar-all-dot-size) !important;
+  background   : var(--code-block-topBar-redDot-color) !important;
   /* 阴影模拟小圆点 */
   /* 参考：https  ://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow */
   box-shadow   : var(--code-block-topBar-dots-distance) 0 var(--code-block-topBar-yellowDot-color), calc(var(--code-block-topBar-dots-distance)*2) 0 var(--code-block-topBar-greenDot-color);

@@ -1,10 +1,30 @@
+**在使用本主题时，发现了 Bug，请升级至 See Yue 主题最新版本。若处于最新版本，Bug 仍然存在，请提 Issues，我会及时解决。**
+
+> **如何查看当前使用的 See Yue 主题版本号？**
+>
+> 请看 `see-yue.css` 文件首行（v1.3.3 版本添加） / `README.md` 文件。
+
 See Yue 主题开发计划： https://github.com/users/jinghu-moon/projects/1/views/1
 
 GitHub 地址： [jinghu-moon/typora-see-yue-theme: See Yue 主题是一个自定义样式极多、简约、充满细节的 Typora 明亮主题。](https://github.com/jinghu-moon/typora-see-yue-theme)
 
-只是简短的更新记录，详细内容请看 `主题说明（必看）.md` 。
+本文仅是简短的更新记录，详细内容请看 `主题说明（必看）.md` 。
 
 蓝奏云下载链接： https://xianchengyue.lanzout.com/b027inxfe ，密码：5zjc。打不开，请将 `lanzout` 换成 `lanzoui` / `lanzous` / `lanzoux` 。
+
+## 🎉 See Yue v1.3.3
+
+- **增加项**
+  - 自定义选中文本样式
+  - 正文区域（包括源代码模式）增加毛玻璃效果
+- **改进项**
+  - 调整页面配色
+  - 调整代码块样式
+
+- **修复项**
+  - 选中文本极易把前面所有内容全部选中
+  - 列表中使用代码块，导致代码块仿 Mac 窗口样式失效
+  
 
 ## 🎉 See Yue v1.3.2
 

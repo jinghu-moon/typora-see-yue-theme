@@ -16,6 +16,13 @@
   src        : url("../Fonts/Chinese-Fonts/LXGWWenKai+RobotoMono.woff2");
 }
 
+/* 用于引用块 */
+/* 使用 LXGW WenKai Lite-Regular + Fira-Regular 合并得到 */
+@font-face {
+  font-family: "LXGWWenKai+Fira";
+  src        : url("../Fonts/Chinese-Fonts/LXGWWenKai+Fira.woff2");
+}
+
 /* 标题、加粗 */
 @font-face {
   font-family: "HarmonyOS-Bold";

@@ -100,8 +100,8 @@ blockquote code {
 .cm-s-inner .CodeMirror-guttermarker-subtle,
 /* 行号 */
 .cm-s-inner .CodeMirror-linenumber {
-  color      : #999999;
-  font-family: "Fira";
+  color      : #999;
+  font-family: "RobotoMono-Simplify";
 }
 
 /* 代码块光标 */
@@ -133,8 +133,7 @@ blockquote code {
 /* 光标所在行背景色 */
 /* .md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background, */
 .md-fences.md-focus .CodeMirror-code>div.CodeMirror-activeline {
-  /* background: #fff; */
-  background-image: #fdfbfb;
+  background: var(--focus-code-line-bg-color);
 }
 
 /* 关键字 */

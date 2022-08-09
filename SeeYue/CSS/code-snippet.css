@@ -186,13 +186,13 @@ hr {
 
 /* 高亮 */
 #write mark {
-  font-family     : "Fira", "玄宋45S";
+  font-family     : var(--marked-text-font);
+  color           : var(--marked-text-color);
+  font-size       : var(--marked-text-size);
   background-color: transparent !important;
   box-shadow      : 0 var(--marked-text-bg-height) 0 0 var(--marked-text-bg-color) inset;
   padding         : 0px 3px;
   margin          : 0 2px;
-  color           : var(--marked-text-color);
-  font-size       : var(--marked-text-size);
 }
 
 /* 删除文字样式 */
@@ -277,4 +277,17 @@ div.sidebar-content-content::-webkit-scrollbar-thumb:hover {
 .md-htmlblock-container:hover {
   background-color: #fff !important;
   border-radius   : 5px !important;
+}
+
+/* 文本选中样式 */
+:not(pre)::selection {
+  color           : var(--selected-text-color);
+  background-color: var(--selected-text-bg-color);
+}
+
+/* 源代码模式，光标所在行行号 */
+#typora-source .CodeMirror-gutter-wrapper.CodeMirror-activeline-gutter .CodeMirror-linenumber.CodeMirror-gutter-elt {
+  color      : #ff5252;
+  font-weight: bolder;
+  opacity    : 1;
 }

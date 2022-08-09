@@ -1,3 +1,4 @@
+/* 当前版本: 1.3.3 */
 /* 本主题魔改于 typora-vue-theme 主题 */
 /* 本主题 GitHub 地址：https://github.com/jinghu-moon/typora-see-yue-theme */
 /* 有问题请到 GitHub 上提 Issues 或者 QQ 联系我。我的 QQ 号：2027004326 */
@@ -47,40 +48,37 @@
 /* ———————————————————————————————————————— 正文设置 ———————————————————————————————————————————— */
 
 html {
+  /* 全局字体大小 */
   font-size: var(--interface-default-text-size);
+
+  /* 全局背景图片 */
+  background-image              : var(--interface-default-bg-img);
+  background-size               : cover !important;
+  background-repeat             : no-repeat;
+  background-position           : center;
+  background-attachment         : fixed;
+  /* background                 : no-repeat center/cover var(--interface-default-bg-img) rgba(255, 255, 255, 0.4) fixed; */
 }
 
-/* 背景方格线 */
-/* content {
-  background-image: linear-gradient(90deg, rgba(60, 10, 30, 04) 3%, transparent 0), linear-gradient(1turn, rgba(60, 10, 30.04)3%, transparent 0);
-  background-size: 20px 20px;
-  background-position: 50%;
-} */
-
-/* 全局背景 */
+/* 全局背景色 */
 content,
 .on-focus-mode content {
-  background      : center no-repeat var(--interface-default-bg-img) !important;
-  background-size : cover !important;
   background-color: var(--interface-default-bg-color) !important;
 }
 
-/* 背景模糊 */
-#write::before,
-write::after {
-  content              : "";
-  display              : block;
-  width                : 100%;
-  backdrop-filter      : blur(var(--interface-default-bg-img-blur));
-  position             : absolute;
-  top                  : 0;
-  left                 : 0;
-  right                : 0;
-  bottom               : 0;
-  z-index              : -99;
-  min-height           : 100%;
-  border-radius        : 5px;
-  background-blend-mode: overlay;
+#typora-source {
+  top   : 0;
+  bottom: 0;
+}
+
+/* 毛玻璃效果 */
+#write,
+/* 源代码模式 */
+#typora-source .CodeMirror-lines {
+  position       : relative;
+  /* 文字区域透明度 */
+  background     : var(--interface-text-area-bg-color);
+  backdrop-filter: blur(var(--interface-default-bg-img-blur));
 }
 
 body {
@@ -98,6 +96,11 @@ body {
   max-width: var(--interface-default-content-width);
   margin   : 0 auto;
   padding  : 20px 30px 100px;
+}
+
+/* 源代码模式 */
+#typora-source .CodeMirror-lines {
+  max-width: var(--interface-default-content-width);
 }
 
 /* 行间距 */
@@ -135,7 +138,6 @@ body>*:first-child {
 body>*:last-child {
   margin-bottom: 0 !important;
 }
-
 
 li>ol,
 li>ul {
@@ -372,8 +374,9 @@ table {
 figure.md-focus,
 .md-table-fig,
 .md-table-fig:active {
-  border-radius: 4px;
-  box-shadow   : 0 0 0 1.5px #ccc !important;
+  border-radius: var(--table-external-border-radius);
+  box-shadow   : 0 0 0 var(--table-external-border-width) var(--table-external-border-color) !important;
+  margin       : 1.5rem 0;
 }
 
 table {

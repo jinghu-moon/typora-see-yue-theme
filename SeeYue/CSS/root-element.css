@@ -18,16 +18,22 @@
 
 
   /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 全局设置（see-yue.css） ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-  /* 界面默认背景颜色 */
-  --interface-default-bg-color : #f1f5f5;
-  /* 界面默认背景图片 */
-  /* --interface-default-bg-img: url("./SeeYue/Images/Background/bg1.jpg"); */
-
-  /* 界面默认背景图片模糊度 */
-  /* backdrop-filter 详解 https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter */
-  /* --interface-default-bg-img-blur: 15px; */
+  /* ======================== 背景色 / 背景图 ======================== */
   /* 背景色与背景图只能二选一。选择颜色，需注释图片代码，反之亦然。*/
+  /* 界面背景颜色 */
+  --interface-default-bg-color: #eaefef;
+
+  /* 界面默认背景图片设置 */
+  /* 图片路径 */
+  /* --interface-default-bg-img: url("./SeeYue/Images/Background/bg1.jpg"); */
+  /* 图片模糊度 */
+  /* backdrop-filter 详解 https://developer.mozilla.org/zh-CN/docs/Web/CSS/backdrop-filter */
+  /* --interface-default-bg-img-blur: 40px; */
+  /* 文字区域背景透明度，范围 0 ~ 1，数字越小，透明度越高 */
+  /* --interface-text-area-bg-color : rgba(255, 255, 255, 0.4); */
+
   /* 注意图片路径是相对于 see-yue.css 文件 */
+  /* ======================== 背景色 / 背景图 ======================== */
 
   /* 界面默认字体 */
   --interface-default-text-font            : "Lora-Regular", "玄宋45S";
@@ -45,7 +51,10 @@
   --interface-default-text-align-style: initial;
   /* 界面默认正文占据界面的宽度 */
   --interface-default-content-width   : 1000px;
-
+  /* 选中文本颜色 */
+  --selected-text-color               : #fff;
+  /* 选中文本背景颜色 */
+  --selected-text-bg-color            : #7caad2;
 
   /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 侧边栏设置（sidebar.css） ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
   /* ======================== 侧边栏整体设置 ======================== */
@@ -66,7 +75,7 @@
   --sidebar-border-bottom-left-radius : 0px;
 
   /* 侧边栏整体背景颜色 */
-  --sidebar-whole-bg-color  : #edf3f5;
+  --sidebar-whole-bg-color  : #dbe3e3;
   /* 侧边栏整体阴影 */
   --sidebar-box-shadow      : 0px 0px 8px rgba(0, 0, 0, 0.3);
   /* 侧边栏上划查找框字体 */
@@ -163,7 +172,7 @@
   /* 大纲标题左侧小三角大小 */
   --sidebar-outline-left-triangle-size      : 12.5px;
   /* 小三角（折叠状态）上下位置，用 top 实现*/
-  --outline-left-triangle-top-position      : 4px;
+  --outline-left-triangle-top-position      : 3px;
   /* 鼠标悬浮在小三角时，小三角颜色 */
   --hover-outline-left-triangle-color       : rgb(253, 124, 94);
   /* 鼠标悬浮在小三角时，小三角背景颜色 */
@@ -354,12 +363,12 @@
   --line-code-font     : "Fira", "霞鹜文楷";
   --line-code-color    : #ee822a;
   --line-code-size     : 16.5px;
-  --line-code-bg-color : #eceff4;
+  --line-code-bg-color : #f2f4f8;
   /* 行内代码背景圆角 */
   --line-code-bg-radius: 0.2rem;
 
   /* 高亮 */
-  --marked-text-font     : "玄宋45S";
+  --marked-text-font     : "Fira", "玄宋45S";
   --marked-text-color    : #000;
   --marked-text-size     : 18px;
   /* 高亮文本背景色，类似马克笔涂抹效果 */
@@ -396,7 +405,7 @@
 
   /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 引用块设置（see-yue.css） ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
   /* 引用块文本字体 */
-  --blockquote-text-font  : "Fira", "霞鹜文楷";
+  --blockquote-text-font  : "LXGWWenKai+Fira";
   /* 引用块文本颜色 */
   --blockquote-text-color : #999;
   /* 引用块文本大小 */
@@ -404,7 +413,7 @@
   /* 引用块的左边框 */
   --blockquote-left-border: 0.25em solid #8496b0;
   /* 引用块背景颜色 */
-  --blockquote-bg-color   : #e9f0f5;
+  --blockquote-bg-color   : #e3ebf0;
   /* 引用块背景圆角 */
   --blockquote-bg-radius  : 4px;
 
@@ -459,9 +468,9 @@
   /* 表头字体颜色 */
   --table-thead-text-color       : #e2542e;
   /* 表头文本与边框间距 */
-  --theadText-and-border-distance: 5px 10px;
+  --theadText-and-border-distance: 6px 12px;
   /* 表格除表头部分与边框间距 */
-  --tbodyText-and-border-distance: 5px 10px;
+  --tbodyText-and-border-distance: 6px 12px;
 
 
   /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 列表设置（list.css see-yue.css） ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -538,11 +547,13 @@
   /* 代码块文本大小 */
   --code-block-text-size        : 16.5px;
   /* 代码块背景色 */
-  --code-block-bg-color         : #f5f9fd !important;
+  --code-block-bg-color         : #f0f8ff !important;
   /* 代码块背景圆角 */
   --code-block-bg-radius        : 0.4rem;
   /* 代码块内，光标所在行的光标样式，用 border-left 实现 */
   --focus-code-line-cursor-style: 3px solid #6495ed !important;
+  /* 代码块内，光标所在行背景色 */
+  --focus-code-line-bg-color    : #fff;
 
   /* ======================== 代码块顶栏左侧仿 Mac 窗口设置（code-language.css） ======================== */
   /* 代码块顶栏颜色 */
@@ -745,7 +756,7 @@
   --focus-contents-bottom-line          : 3px solid #999;
   /* 增大一级标题 tab 的宽度，开发者习惯一级标题用一个 tab 距离分隔章节和章节名 */
   --contents-h1-tab-space               : 2px transparent solid;
-  /* 1 ~ 6 级标题右侧透明边框，扩大用户可点击范围 */
+  /* 1 ~ 6 级标题右侧透明边框，扩大用户可点击范围，使用 border-right 实现 */
   --contents-h1-click-right-border-width: 370px;
   --contents-h2-click-right-border-width: 320px;
   --contents-h3-click-right-border-width: 280px;
