@@ -1,0 +1,228 @@
+/* 本文件为正文目录样式设置 */
+/* ================================================================= */
+
+
+/* ———————————————————————————————————————————————— 目录设置 ——————————————————————————————————————*/
+
+/* 正文目录整体 */
+.md-toc{
+background-color: var(--blockquote-bg-color);
+}
+/* 正文目录主体内容 */
+.md-toc-content {
+  padding: 0 10px;
+  margin : 0;
+}
+
+/* 聚焦正文目录时 */
+.md-toc:focus .md-toc-content {
+  border       : none;
+  border-bottom: var(--focus-contents-bottom-line);
+}
+
+/* 增大一级标题 tab 的宽度 */
+span.md-toc-item.md-toc-h1 a.md-toc-inner span {
+  border-left: var(--contents-h1-tab-space);
+}
+
+.md-toc {
+  margin-top      : 0;
+  margin-left     : 0;
+  margin-right    : 0;
+  padding-left    : 0;
+  padding-right   : 0;
+  /* 目录后分页 */
+  page-break-after: always;
+}
+
+/* 正文目录工具栏 */
+#write div.md-toc-tooltip {
+  background-color: transparent;
+}
+
+/* 正文目录工具栏添加目录图标 */
+#write div.md-toc-tooltip::before {
+  content     : "\e67f";
+  font-family : "iconfont";
+  font-size   : var(--toolbar-left-logo-size);
+  margin-right: var(--toolbar-left-text-logo-distance);
+  color       : var(--toolbar-left-logo-color);
+  margin-left : var(--toolbar-left-text-logo-distance);
+}
+
+/* 正文目录工具栏删除图标 */
+.md-toc-tooltip .ty-delete:before {
+  font-size: var(--toolbar-right-delete-logo-size);
+  /* 扩大可点击范围 */
+  border   : 2px solid transparent;
+}
+
+/* 目录删除图标 */
+.ty-delete:hover {
+  color     : var(--hover-toolbar-right-delete-logo-color);
+  transition: all var(--toolbar-right-delete-logo-animation-time) ease;
+}
+
+/* 正文目录样式 */
+.md-toc::before {
+  display       : var(--contents-top-text-state);
+  /* 样式1 */
+  /* 单词间有间隙 */
+  /* content    : "C""\202F""o""\202F""n""\202F""t""\202F""e""\202F""n""\202F""t""\202F""s"; */
+  /* 样式2 */
+  content       : var(--contents-top-text);
+  font-family   : var(--contents-top-text-font);
+
+  /* content: "目  录";
+  font-family: "三极古拙楷书简"; */
+  font-size    : var(--contents-top-text-size);
+  font-weight  : bolder;
+  color        : var(--contents-top-text-color);
+  padding      : 0 2px;
+  width        : 100%;
+  line-height  : 1;
+  text-align   : var(--contents-top-text-align);
+  position     : relative;
+  top          : var(--contents-top-text-top-position);
+  margin-bottom: var(--top-text-contents-distance);
+  margin-top: var(--top-text-contents-distance);
+}
+
+/* 正文目录一级标题样式 */
+#write .md-toc-h1 .md-toc-inner,
+#write .md-toc-h1:hover .md-toc-inner {
+  font-size  : var(--contents-h1-size);
+  color      : var(--contents-h1-color) !important;
+  font-family: var(--contents-h1-font);
+}
+
+.md-toc-h2,
+.md-toc-h3,
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+  font-size     : var(--contents-h2-to-h6-size);
+  /* font-family: "HarmonyOS-Simplify", "玄宋45S"; */
+  font-family   : var(--contents-h2-to-h6-font);
+}
+
+/* 自动编号的字体 */
+.md-toc-h2:before,
+.md-toc-h3:before,
+.md-toc-h4:before,
+.md-toc-h5:before,
+.md-toc-h6:before {
+  font-family: "RobotoMono-Simplify";
+}
+
+#write .md-toc-h1 .md-toc-inner,
+#write .md-toc-h2 .md-toc-inner,
+#write .md-toc-h3 .md-toc-inner,
+#write .md-toc-h4 .md-toc-inner,
+#write .md-toc-h5 .md-toc-inner,
+#write .md-toc-h6 .md-toc-inner,
+#write .md-toc-h1:hover .md-toc-inner,
+#write .md-toc-h2:hover .md-toc-inner,
+#write .md-toc-h3:hover .md-toc-inner,
+#write .md-toc-h4:hover .md-toc-inner,
+#write .md-toc-h5:hover .md-toc-inner,
+#write .md-toc-h6:hover .md-toc-inner {
+  color          : var(--contents-h2-to-h6-color);
+  text-decoration: none;
+  border         : none;
+}
+
+/* 增大正文目录的点击范围 */
+#write .md-toc-h1 .md-toc-inner,
+#write .md-toc-h1:hover .md-toc-inner {
+  border-right: var(--contents-h1-click-right-border-width) solid transparent;
+}
+
+#write .md-toc-h2 .md-toc-inner,
+#write .md-toc-h2:hover .md-toc-inner {
+  border-right: var(--contents-h2-click-right-border-width) solid transparent;
+}
+
+#write .md-toc-h3 .md-toc-inner,
+#write .md-toc-h3:hover .md-toc-inner {
+  border-right: var(--contents-h3-click-right-border-width) solid transparent;
+}
+
+#write .md-toc-h4 .md-toc-inner,
+#write .md-toc-h4:hover .md-toc-inner {
+  border-right: var(--contents-h4-click-right-border-width) solid transparent;
+}
+
+#write .md-toc-h5 .md-toc-inner,
+#write .md-toc-h5:hover .md-toc-inner {
+  border-right: var(--contents-h5-click-right-border-width) solid transparent;
+}
+
+#write .md-toc-h6 .md-toc-inner,
+#write .md-toc-h6:hover .md-toc-inner {
+  border-right: var(--contents-h6-click-right-border-width) solid transparent;
+}
+
+/* 正文目录悬浮底色 */
+.md-toc-h1:hover,
+.md-toc-h2:hover,
+.md-toc-h3:hover,
+.md-toc-h4:hover,
+.md-toc-h5:hover,
+.md-toc-h6:hover {
+  background-color: var(--hover-contents-headline-bg-color);
+  border-radius   : 5px;
+  transition      : background-color .5s;
+}
+
+/* 第一个一级标题取消 margin */
+.md-toc-content .md-toc-h1:first-child {
+  margin-top: -10px;
+}
+
+.md-toc-h1 {
+  margin-top: 10px;
+}
+
+.md-toc-h1 .md-toc-inner {
+  margin-left: 0em;
+}
+
+.md-toc-h2 .md-toc-inner {
+  margin-left: .8em;
+}
+
+/* 使用 RobotoMono-Simplify 字体 */
+.md-toc-h3 .md-toc-inner {
+  margin-left: 2em;
+}
+
+.md-toc-h4 .md-toc-inner {
+  margin-left: 3.2em;
+}
+
+.md-toc-h5 .md-toc-inner {
+  margin-left: 4.4em;
+}
+
+.md-toc-h6 .md-toc-inner {
+  margin-left: 5.6em;
+}
+
+
+/* 使用 HarmonyOS-Simplify 字体 */
+/* .md-toc-h3 .md-toc-inner {
+  margin-left: 1.7em;
+}
+
+.md-toc-h4 .md-toc-inner {
+  margin-left: 2.6em;
+}
+
+.md-toc-h5 .md-toc-inner {
+  margin-left: 3.5em;
+}
+
+.md-toc-h6 .md-toc-inner {
+  margin-left: 4.4em;
+} */

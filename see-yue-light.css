@@ -8,7 +8,7 @@
 @import "./SeeYue/CSS/fonts.css";
 
 /* root 属性 */
-@import "./SeeYue/CSS/root-element.css";
+@import "./SeeYue/CSS/root-element-light.css";
 
 /* 零散的样式修改 */
 @import "./SeeYue/CSS/code-snippet.css";
@@ -17,10 +17,10 @@
 @import "./SeeYue/CSS/headline.css";
 
 /* 正文目录 */
-@import "./SeeYue/CSS/contents.css";
+@import "./SeeYue/CSS/contents-light.css";
 
 /* 代码块 */
-@import "./SeeYue/CSS/code-block.css";
+@import "./SeeYue/CSS/code-block-light.css";
 
 /* 侧边栏 */
 @import "./SeeYue/CSS/sidebar.css";
