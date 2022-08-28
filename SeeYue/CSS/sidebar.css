@@ -27,7 +27,8 @@
   border-bottom-left-radius : var(--sidebar-border-bottom-left-radius);
   font-family               : var(--sidebar-word-font);
   background-color          : var(--sidebar-whole-bg-color);
-  border                    : none !important;
+  border                    : none;
+  border-right: 1px solid rgba(255, 255, 255, 0.6)
 }
 
 /* 底部栏距离侧边栏 margin-left 值 = 上面的 left 值 */
@@ -471,6 +472,7 @@ span.file-list-item-file-name-part {
   font-size  : var(--bottom-bar-text-size);
   color      : var(--bottom-bar-text-color);
   opacity    : 1 !important;
+  background-color: var(--interface-default-bg-color);
 }
 
 /* 字数统计、拼写检查 */

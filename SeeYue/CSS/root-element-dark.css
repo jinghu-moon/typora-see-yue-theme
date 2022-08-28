@@ -21,7 +21,7 @@
     /* ======================== 背景色 / 背景图 ======================== */
     /* 背景色与背景图只能二选一。选择颜色，需注释图片代码，反之亦然。*/
     /* 界面背景颜色 */
-    --interface-default-bg-color: #313131;
+    --interface-default-bg-color: #000;
   
     /* 界面默认背景图片设置 */
     /* 图片路径 */
@@ -75,7 +75,7 @@
     --sidebar-border-bottom-left-radius : 0px;
   
     /* 侧边栏整体背景颜色 */
-    --sidebar-whole-bg-color  : #313131;
+    --sidebar-whole-bg-color  : #000;
     /* 侧边栏整体阴影 */
     --sidebar-box-shadow      : 0px 0px 8px rgba(0, 0, 0, 0.3);
     /* 侧边栏上划查找框字体 */
@@ -86,7 +86,7 @@
     /* 侧边栏顶部文字字体 */
     --sidebar-topBar-content-font : "三极古拙楷书简";
     /* 侧边栏顶部文字颜色 */
-    --sidebar-topBar-content-color: #000;
+    --sidebar-topBar-content-color: #fff;
     /* 侧边栏顶部文字大小 */
     --sidebar-topBar-content-size : .9rem;
   
@@ -105,7 +105,7 @@
     /* 大纲页面文本字体 */
     --sidebar-outline-text-font : "霞鹜文楷";
     /* 大纲页面文字颜色 */
-    --sidebar-outline-text-color: #f5f5f5;
+    --sidebar-outline-text-color: #fafafa;
     /* 大纲页面文字大小 */
     --sidebar-outline-text-size : 0.8rem;
     /* 大纲页面内边距 */
@@ -118,7 +118,7 @@
     /* 大纲页面选中标题大小 */
     --active-outline-headline-size     : 0.8rem;
     /* 大纲页面选中标题的背景颜色 */
-    --active-outline-headline-bg-color : #fff;
+    --active-outline-headline-bg-color : #3c3c3c;
     /* 大纲页面选中标题背景圆角 */
     --active-outline-headline-bg-radius: 0.2rem;
   
@@ -185,7 +185,7 @@
     /* 是否开启六级标题前小三角，table-cell —— 开启，none —— 关闭 */
     --sidebar-outline-h6-left-triangle-state       : none;
     /* 鼠标悬浮在某一级标题时，该行的背景颜色 */
-    --hover-sidebar-outline-headline-bg-color      : #fff;
+    --hover-sidebar-outline-headline-bg-color      : #3c3c3c;
     /* 鼠标悬浮在某一级标题时，该行的背景颜色显示时间 */
     --hover-sidebar-outline-headline-animation-time: 0s;
   
@@ -193,7 +193,7 @@
     /* 文件页面文本字体 */
     --sidebar-filetree-text-font : "霞鹜文楷";
     /* 文件页面文字颜色 */
-    --sidebar-filetree-text-color: #555;
+    --sidebar-filetree-text-color: #fff;
     /* 文件页面文字大小 */
     --sidebar-filetree-text-size : 0.8rem;
   
@@ -218,7 +218,7 @@
     /* 当前编辑 MD 文件名称颜色 */
     --active-filetree-mdFile-name-color     : #457b9d;
     /* 当前编辑 MD 文件名称背景颜色 */
-    --active-filetree-mdFile-name-bg-color  : #fff;
+    --active-filetree-mdFile-name-bg-color  : #3c3c3c;
     /* 当前编辑 MD 文件名称右侧竖线，用 border-right 实现 */
     --active-filetree-mdFile-name-right-line: 5px solid #457b9d !important;
     /* 当前编辑 MD 文件左侧图标颜色 */
@@ -234,7 +234,7 @@
     --hover-sidebar-foldername-left-logo-color: #485e69;
   
     /* 鼠标悬浮在文件、文件夹时，该文件、文件夹背景颜色 */
-    --hover-sidebar-filetree-filename-bg-color: #fff;
+    --hover-sidebar-filetree-filename-bg-color: #3c3c3c;
     /* 鼠标悬浮在某一文件、文件夹名时，该文件、文件夹背景颜色显示时间 */
     --hover-filetree-filename-animation-time  : 0.4s;
   
@@ -251,20 +251,20 @@
     --bottom-bar-text-font: "RobotoMono-Simplify",
       "霞鹜文楷";
     /* 底部栏文本颜色 */
-    --bottom-bar-text-color: #555;
+    --bottom-bar-text-color: #fff;
     /* 底部栏文本大小 */
     --bottom-bar-text-size : 0.7rem;
   
     /* 字数统计栏标题字体 */
     --character-statistics-column-headline-font         : 'HarmonyOS-Bold';
     /* 字数统计栏标题颜色 */
-    --character-statistics-column-headline-color        : #504e4e;
+    --character-statistics-column-headline-color        : #000;
     /* 字数统计栏标题大小 */
     --character-statistics-column-headline-size         : .9rem;
     /* 是否开启字数统计栏标题前图标，inherit —— 开启，none —— 关闭 */
     --character-statistics-column-headline-logo-state   : inherit;
     /* 字数统计栏标题前图标颜色 */
-    --character-statistics-column-headline-logo-color   : #504e4e;
+    --character-statistics-column-headline-logo-color   : #fff;
     /* 字数统计栏标题前图标大小 */
     --character-statistics-column-headline-logo-size    : 1rem;
     /* 图标与标题间距，用 margin-right 实现 */
@@ -282,7 +282,7 @@
     /* 拼写检查栏文本字体 */
     --spell-check-panel-text-font : "霞鹜文楷";
     /* 拼写检查栏文本颜色 */
-    --spell-check-panel-text-color: #555;
+    --spell-check-panel-text-color: #fff;
     /* 拼写检查栏文本大小 */
     --spell-check-panel-text-size : 12px;
   
@@ -342,13 +342,13 @@
     /* 加粗文本字体 */
     --bold-text-font : "HarmonyOS-Bold";
     /* 加粗文本颜色 */
-    --bold-text-color: #CCCC99;
+    --bold-text-color: #fc5c65;
     /* 加粗文本大小 */
     --bold-text-size : 17.5px;
   
     /* 斜体文本 */
     --tilt-text-font : "HarmonyOS-Regular";
-    --tilt-text-color: #000000;
+    --tilt-text-color: #3f3f3f;
     --tilt-text-size : 17.5px;
   
     /* 删除文本颜色 */
@@ -369,12 +369,12 @@
   
     /* 高亮 */
     --marked-text-font     : "Fira", "玄宋45S";
-    --marked-text-color    : #000;
+    --marked-text-color    : #3c3c3c;
     --marked-text-size     : 18px;
     /* 高亮文本背景色，类似马克笔涂抹效果 */
     --marked-text-bg-color : #fff2b2;
-    /* 背景颜色高度，范围：-1 ~ 0，越小，覆盖文本部分越多*/
-    --marked-text-bg-height: -0.85rem;
+    /* 背景颜色高度，范围：< 0，越小，覆盖文本部分越多*/
+    --marked-text-bg-height: -1.4rem;
   
     /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 超链接设置（see-yue.css） ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
     /* 两个为一组，第一个为默认样式，第二个为鼠标悬浮时样式 */
@@ -411,7 +411,7 @@
     /* 引用块文本大小 */
     --blockquote-text-size  : 17px;
     /* 引用块的左边框 */
-    --blockquote-left-border: 0.25em solid #8496b0;
+    --blockquote-left-border: 0.25em solid rgb(129, 178, 154);
     /* 引用块背景颜色 */
     --blockquote-bg-color   : #e3ebf0;
     /* 引用块背景圆角 */
@@ -547,13 +547,13 @@
     /* 代码块文本大小 */
     --code-block-text-size        : 16.5px;
     /* 代码块背景色 */
-    --code-block-bg-color         : #f0f8ff !important;
+    --code-block-bg-color         : #2d2d2d !important;
     /* 代码块背景圆角 */
     --code-block-bg-radius        : 0.4rem;
     /* 代码块内，光标所在行的光标样式，用 border-left 实现 */
     --focus-code-line-cursor-style: 3px solid #6495ed !important;
     /* 代码块内，光标所在行背景色 */
-    --focus-code-line-bg-color    : #fff;
+    /* --focus-code-line-bg-color    : #fff; */
   
     /* ======================== 代码块顶栏左侧仿 Mac 窗口设置（code-language.css） ======================== */
     /* 代码块顶栏颜色 */
@@ -601,11 +601,11 @@
     /* 正文区域脚注字体 */
     --body-area-footnote-font             : "HarmonyOS-Regular";
     /* 正文区域脚注颜色 */
-    --body-area-footnote-color            : #516181;
+    --body-area-footnote-color            : #000;
     /* 正文区域脚注大小 */
     --body-area-footnote-size             : 0.6rem;
     /* 正文区域脚注背景颜色 */
-    --body-area-footnote-bg-color         : rgb(222, 226, 235, 0.5);
+    --body-area-footnote-bg-color         : rgba(236, 236, 238, 0.5);
     /* 正文区域脚注背景圆角 */
     --body-area-footnote-bg-radius        : 0.2rem;
     /* 正文区域脚注文本上下位置，用 top 实现*/
@@ -626,7 +626,7 @@
     /* 文末脚注内容字体 */
     --end-footnote-area-font   : "霞鹜文楷";
     /* 文末脚注内容颜色 */
-    --end-footnote-area-color  : #777;
+    --end-footnote-area-color  : #999;
     /* 文末脚注内容大小 */
     --end-footnote-area-size   : .8rem;
   
@@ -747,7 +747,7 @@
     /* 目录顶部文本上下位置，使用 top 实现 */
     --contents-top-text-top-position: -20px;
     /* 目录顶部文本与下方目录距离，使用 margin-bottom 实现 */
-    --top-text-contents-distance    : 1rem;
+    --top-text-contents-distance    : .5rem;
   
     /* ======================== 其他设置 ======================== */
     /* 正文目录标题悬浮背景颜色 */
