@@ -1,0 +1,306 @@
+/* 本文件为一些小的样式修改 */
+/* ================================================================= */
+/* 左键菜单 */
+.menu-item-container a.menu-style-btn {
+  color: #000;
+}
+/* 侧边栏部分base效果 */
+/* 文件页面列表模式下当前编辑文件的背景色 */
+.file-list-item.active {
+  background-color: var(--active-outline-headline-bg-color) !important;
+}
+/* 文件页面树形模式下当前编辑文件的字体颜色 */
+.allow-file-tree-scroll .file-node-title {
+  color: #ccc;
+}
+/* 数学公式 */
+[md-inline="inline_math"] {
+  /* color: blue; */
+  font-size: 105%;
+}
+
+/* 右键菜单 */
+.context-menu.dropdown-menu > li > a {
+  padding: 4px 20px;
+  color: inherit;
+  cursor: default;
+  border: none !important;
+  font-family: "Fira", "霞鹜文楷";
+  font-size: 13px;
+  color: #000 !important;
+}
+
+/* 右键快捷键样式 */
+.ty-menu-shortcut {
+  float: right;
+  line-height: inherit;
+  font-size: 0.9em;
+  font-family: "Fira", "霞鹜文楷";
+  opacity: 0.7;
+}
+
+/* 右键菜单，鼠标悬浮在快捷键上的悬浮框 */
+.ty-tooltip {
+  font-family: "Fira", "霞鹜文楷";
+}
+
+/* 行间公式 */
+mjx-container[jax="SVG"] {
+  direction: ltr;
+  margin: 0 !important;
+  padding: 0;
+}
+
+/* 波浪线 */
+@keyframes waveMove {
+  from {
+    background-position: 0 100%;
+  }
+
+  to {
+    background-position: -20px 100%;
+  }
+}
+
+span[alt="wave"] {
+  padding-bottom: 5px;
+  animation: waveMove 0.5s infinite linear;
+  background: url("../Images/wave-line.svg") repeat-x 0 100%;
+  background-size: 25px auto;
+}
+
+/* 源代码模式，行号 */
+#typora-source .CodeMirror-activeline .CodeMirror-linenumber,
+#typora-source .CodeMirror-linenumber.CodeMirror-linenumber-show {
+  font-family: "HarmonyOS";
+}
+
+/* mermaid 图 */
+#write.enable-diagrams > [mermaid-type="gantt"].md-fences:not(.md-focus) {
+  width: auto;
+  /* margin-left: calc(-49vw + 50%); */
+}
+
+/* 开启源代码模式符号 */
+/* .fa-code:before {
+  font-size: .9rem;
+} */
+
+/* 光标所在行背景色 */
+/* p.md-focus {
+  background-color: #edf7f2;
+  border-radius: 5px;
+} */
+
+/* ———————————————————————————————————————— 折叠块设置 ——————————————————————————————————————————— */
+details {
+  display: block;
+  padding: 16px;
+  margin: 1em 0;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 18px;
+  font-family: "霞鹜文楷";
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  border: 2px solid transparent;
+}
+
+/* 折叠标签 */
+summary {
+  display: list-item;
+}
+
+details summary {
+  cursor: pointer;
+  padding: 10px;
+  margin: -16px;
+  border-radius: 3px;
+  color: #135699;
+  font-size: 0.9rem !important;
+  font-weight: bolder;
+  font-family: "玄宋45S";
+  position: relative;
+  line-height: normal;
+}
+
+details[open] > summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+details > summary {
+  background: #ebf9ed;
+  color: #428bca;
+}
+
+/* 折叠块打开 */
+details[open] {
+  border-color: #81b29a;
+}
+
+summary::marker {
+  color: #e07a5f;
+}
+
+details[open] > summary {
+  margin-bottom: 0;
+  color: #428bca;
+}
+
+/* 折叠框点击时,会出现黑色边框，极不美观，去除 */
+summary:focus {
+  outline: none !important;
+}
+
+/* 分隔线 */
+hr {
+  height: 2px;
+  padding: 0;
+  margin: 2rem 0;
+  background-color: #ccc;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+/* 任务列表 */
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+/* 加粗 */
+#write strong {
+  font-family: var(--bold-text-font);
+  padding: 0 1px;
+  color: var(--bold-text-color);
+  font-weight: normal !important;
+  font-size: var(--bold-text-size);
+  padding: 0 1px;
+}
+
+/* 斜体 */
+#write em {
+  padding: 0 5px 0 2px;
+  font-family: var(--tilt-text-font);
+  color: var(--tilt-text-color);
+  font-size: var(--tilt-text-size);
+}
+
+/* 高亮 */
+#write mark {
+  font-family: var(--marked-text-font);
+  color: var(--marked-text-color);
+  font-size: var(--marked-text-size);
+  background-color: transparent !important;
+  box-shadow: 0 var(--marked-text-bg-height) 0 0 var(--marked-text-bg-color)
+    inset;
+  padding: 0px 3px;
+  margin: 0 2px;
+}
+
+/* 删除文字样式 */
+#write del {
+  padding: 1px 2px;
+  color: var(--deleted-text-color);
+}
+
+/* —————————————————————————————————————————— 滚轮设置 —————————————————————————————————————————— */
+
+/*
+::-webkit-scrollbar                      整个滚动条，控制滑块的大小。
+::-webkit-scrollbar-button               滚动条上的按钮（上下箭头）。
+::-webkit-scrollbar-thumb                滚动条上的滚动滑块。
+::-webkit-scrollbar-track                滚动条轨道。
+::-webkit-scrollbar-track-piece          滚动条没有滑块的轨道部分。
+::-webkit-scrollbar-corner               当同时有垂直滚动条和水平滚动条时交汇的部分。
+::-webkit-resizer                        出现在某些元素底角的可拖动调整大小的滑块。
+来源 https://developer.mozilla.org/zh-CN/docs/Web/CSS/::-webkit-scrollbar
+*/
+
+/* 统一滚轮样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px !important;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: #e9ecef;
+}
+
+/* 正文滚轮 */
+content::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer !important;
+}
+
+content::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* 鼠标悬浮在正文滚轮 */
+content::-webkit-scrollbar-thumb:hover,
+/* 鼠标按住正文滚轮 */
+content::-webkit-scrollbar-thumb:hover {
+  background-color: #888 !important;
+}
+
+/* 侧边栏滚轮 */
+div.sidebar-content-content::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* 鼠标悬浮在侧边栏滚轮 */
+div.sidebar-content-content::-webkit-scrollbar-thumb:hover,
+/* 鼠标按住侧边栏滚轮 */
+div.sidebar-content-content::-webkit-scrollbar-thumb:hover {
+  background-color: #888 !important;
+}
+
+/* 代码块滚轮 */
+#write pre::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+#write pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+#write pre::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa !important;
+}
+
+/* html 块 */
+.md-htmlblock-container,
+.md-htmlblock-container:hover {
+  background-color: #fff !important;
+  border-radius: 5px !important;
+}
+
+/* 文本选中样式 */
+:not(pre)::selection {
+  color: var(--selected-text-color);
+  background-color: var(--selected-text-bg-color);
+}
+
+/* 源代码模式，光标所在行行号 */
+#typora-source
+  .CodeMirror-gutter-wrapper.CodeMirror-activeline-gutter
+  .CodeMirror-linenumber.CodeMirror-gutter-elt {
+  color: #ff5252;
+  font-weight: bolder;
+  opacity: 1;
+}

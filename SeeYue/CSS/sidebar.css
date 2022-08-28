@@ -27,8 +27,7 @@
   border-bottom-left-radius : var(--sidebar-border-bottom-left-radius);
   font-family               : var(--sidebar-word-font);
   background-color          : var(--sidebar-whole-bg-color);
-  border                    : none;
-  border-right: 1px solid rgba(255, 255, 255, 0.6)
+  border                    : none!important;
 }
 
 /* 底部栏距离侧边栏 margin-left 值 = 上面的 left 值 */
