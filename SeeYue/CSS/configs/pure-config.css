@@ -124,11 +124,11 @@
   /* 标题文本字距 */
   --headline-text-letter-space  : 2px;
   /* 二级标题文本背景颜色 */
-  --h2-text-bg-color            : linear-gradient(to bottom, #ccc, #ddd);
+  --h2-text-bg-color            : linear-gradient(to bottom, #7b88a1, #a3acbf);
   /* 二级标题文本背景圆角 */
   --h2-text-bg-radius           : 5px;
   /* 二级标题底部边框颜色 */
-  --h2-bottom-border-color      : #ddd;
+  --h2-bottom-border-color      : #c3c8d2;
   /* 二级标题底部横线高度 */
   --h2-bottom-border-height     : 4px;
   /* 标题文本与底部边框间距 */
