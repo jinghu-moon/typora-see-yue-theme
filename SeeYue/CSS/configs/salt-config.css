@@ -1,0 +1,1349 @@
+/* 本文件为 See Yue Salt 护眼主题配置文件，便于用户自定义主题样式 */
+/* CSS 文件介绍: https://www.zhixi.com/view/7545df13 */
+/* 我不会给每个 root 属性写注释，如果没写，一定是该属性与它上方的属性类似，参照即可。 */
+/* VS Code  折叠全部内容快捷键: Ctrl + k + 0 */
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 一些颜色 ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  --theme-color-01: #e96900;
+  --theme-color-02: #e2ecef;
+  --theme-color-03: #f87759;
+  --theme-color-04: #e07a5f;
+  --theme-color-05: #457b9d;
+  --theme-color-06: #7c9dca;
+  --theme-color-07: #ffee99;
+  --theme-color-08: #428bca;
+  --theme-color-09: #f76e40;
+  --theme-color-10: #f0f5f9;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 正文样式（write-area.css） ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 界面默认背景颜色 */
+  --interface-default-bg-color      : #eaefef80;
+  /* 界面写作区域文本字体 */
+  --writeArea-text-font             : "Zhudou", "HarmonyOS-Sans", "HarmonyOS-Regular";
+  /* 界面写作区域文本颜色 */
+  --writeArea-text-color            : #111;
+  /* 界面写作区域文本大小 */
+  --writeArea-text-size             : 16px;
+  /* 界面写作区域文本行间距 */
+  --writeArea-text-line-spacing     : 1.6rem;
+  /* 界面写作区域文本段间距，用 margin-bottom 实现*/
+  --writeArea-text-paragraph-spacing: 1.2rem;
+  /* 界面写作区域文本对齐方式，justify —— 两端对齐，initial —— 默认值，应该是左对齐 */
+  --writeArea-text-align-style      : initial;
+  /* 界面写作区域默认宽度 */
+  --writeArea-default-width         : 1000px;
+  /* 界面写作区域选中文本颜色 */
+  --writeArea-selected-text-color   : #fff;
+  /* 界面写作区域选中文本背景颜色 */
+  --writeArea-selected-text-bg-color: #7caad2;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 零散样式（snippets.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 页面没有内容时，显示图片，不建议与毛玻璃效果一起试用 */
+  /* 图片路径 */
+  /* --empty-interface-bg-img-path: url("../Images/Background/light-2.jpg"); */
+
+  /* 输入框提示字符颜色（侧边栏、写作区域的搜索框、写作区域底部栏的拼写检查菜单） */
+  --all-input-box-prompt-text-color: #aaa;
+
+  /* 分隔线高度 */
+  --writeArea-divider-height           : 2.5px;
+  /* 分隔线颜色 */
+  --writeArea-divider-color            : #ccc;
+  /* 分隔线上下间距 */
+  --writeArea-divider-top-bottom-margin: 2rem;
+
+  /* 按钮提示框背景色 */
+  --btn-tooltip-bg-color  : #fff;
+  /* 按钮提示框背景色 */
+  --btn-tooltip-text-color: #222;
+
+  /* 此菜单出现于 Ctrl + T 添加表格时、未保存文件，退出软件时 */
+  /* 弹出菜单背景色 */
+  --pop-up-menu-bg-color                : #fff;
+  /* 弹出菜单文本颜色 */
+  --pop-up-menu-text-color              : #000;
+  /* 弹出菜单底部确认按钮文本颜色 */
+  --menu-footer-OK-btn-text-color       : #fff;
+  /* 弹出菜单底部确认按钮背景色 */
+  --menu-footer-OK-btn-bg-color         : #428bca;
+  /* 鼠标悬浮在弹出菜单底部确认按钮，按钮背景色 */
+  --hover-menu-footer-OK-btn-bg-color   : #4086c3;
+  /* 弹出菜单底部其他按钮文本颜色 */
+  --menu-footer-other-btn-text-color    : #000;
+  /* 弹出菜单底部其他按钮背景色 */
+  --menu-footer-other-btn-bg-color      : #eee;
+  /* 鼠标悬浮在弹出菜单底部其他按钮，按钮背景色 */
+  --hover-menu-footer-other-btn-bg-color: #ddd;
+
+  /* 鼠标悬浮在公式块、HTML 块上，其背景色 */
+  --hover-math-html-block-bg-color            : #fff;
+  /* 鼠标悬浮在公式块、HTML 工具栏右侧按钮上，其背景色 */
+  --hover-math-html-block-tooltip-btn-bg-color: #eee;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 毛玻璃效果（frosted-glass.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 用于保证全屏背景 */
+  --frosted-glass-interface-bg-color   : #ffffff00;
+  /* 背景图片路径，路径是相对于 frosted-glass.css 文件 */
+  --frosted-glass-interface-bg-img     : url("../Images/Background/light-1.jpg");
+  /* 背景图片模糊度 */
+  --frosted-glass-interface-bg-img-blur: 40px;
+  /* 写作区域背景透明度，范围 0 ~ 1，数字越小，透明度越高 */
+  --frosted-glass-writeArea-bg-color   : rgba(255, 255, 255, 0.4);
+  /* 开启毛玻璃效果的写作区域阴影 */
+  --frosted-glass-writeArea-shadow     : 0 4px 12px rgba(120, 120, 120, 0.35);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 正文标题（headline.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 标题字体 */
+  --all-headline-font: "HarmonyOS-Bold";
+
+  /* 标题文本颜色 */
+  --h1-color   : #f87759;
+  --h2-color   : #ffffff;
+  --h3-h4-color: #81b29a !important;
+  --h5-color   : rgb(129, 178, 154, .7);
+  --h6-color   : rgb(129, 178, 154, .5);
+
+  /* 标题文本大小 */
+  --h1-size: 2rem;
+  --h2-size: 1.7rem;
+  --h3-size: 1.5rem;
+  --h4-size: 1.3rem;
+  --h5-size: 1.2rem;
+  --h6-size: 1.1rem;
+
+  /* 标题文本字距 */
+  --headline-text-letter-space  : 2px;
+  /* 二级标题文本背景颜色 */
+  --h2-text-bg-color            : linear-gradient(to bottom, #82cfa9, #b7e4c7);
+  /* 二级标题文本背景圆角 */
+  --h2-text-bg-radius           : 5px;
+  /* 二级标题底部边框颜色 */
+  --h2-bottom-border-color      : #b6dcc8;
+  /* 二级标题底部横线高度 */
+  --h2-bottom-border-height     : 4px;
+  /* 标题文本与底部边框间距 */
+  --h2-text-bottom-line-distance: 10px;
+
+  /* 是否开启标题等级提示，inline-block —— 开启，none —— 关闭 */
+  --headline-rating-prompt-state     : inline-block;
+  /* 标题等级提示颜色 */
+  --headline-rating-prompt-word-color: #999 !important;
+  /* 标题等级提示文字大小 */
+  --headline-rating-prompt-word-size : 12px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 正文目录设置（contents.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 目录背景色 */
+  --contents-bg-color: #f6f8fa;
+
+  /* ======================== 目录标题设置 ======================== */
+  /* 1 级标题文本字体 */
+  --contents-h1-font       : "HarmonyOS-Bold";
+  /* 1 级标题文本颜色 */
+  --contents-h1-color      : #000;
+  /* 1 级标题文本大小 */
+  --contents-h1-size       : 1rem;
+  /* 2 ~ 6 级标题文本字体 */
+  --contents-h2-to-h6-font : "HarmonyOS-Sans", "玄宋45S";
+  /* 2 ~ 6 级标题文本字体 */
+  --contents-h2-to-h6-color: #003172;
+  /* 2 ~ 6 级标题文本字体 */
+  --contents-h2-to-h6-size : 1rem;
+
+  /* ======================== 工具栏设置 ======================== */
+  /* 工具栏两侧图标大小 */
+  --contents-toolbar-all-icon-size          : .9rem;
+  /* 工具栏左侧图标与目录二字间距，使用 margin-right 实现 */
+  --contents-toolbar-left-text-icon-distance: 5px;
+  /* 鼠标悬浮在删除图标时，图标颜色 */
+  --hover-toolbar-right-delete-icon-color   : #f44336;
+
+  /* ======================== 目录顶部设置 ======================== */
+  /* 是否目录顶部文本内容，inline-block —— 开启，none —— 关闭*/
+  --contents-top-text-state       : inline-block;
+  /* 目录顶部文本内容 */
+  --contents-top-text             : "Contents";
+  /* 目录顶部文本字体 */
+  --contents-top-text-font        : "Lora-Bold";
+  /* 目录顶部文本颜色 */
+  --contents-top-text-color       : #396caf;
+  /* 目录顶部文本大小 */
+  --contents-top-text-size        : 2.5rem;
+  /* 目录顶部文本对齐方式 */
+  --contents-top-text-align       : center;
+  /* 目录顶部文本上下位置，使用 top 实现 */
+  --contents-top-text-top-position: -20px;
+  /* 目录顶部文本与下方目录距离，使用 margin-bottom 实现 */
+  --top-text-contents-distance    : 1rem;
+
+  /* ======================== 其他设置 ======================== */
+  /* 正文目录标题悬浮背景颜色 */
+  --hover-contents-headline-bg-color    : #eee;
+  /* 增大一级标题 tab 的宽度，开发者习惯一级标题用一个 Tab 距离分隔章节和章节名 */
+  --contents-h1-tab-space               : 2px transparent solid;
+  /* 1 ~ 6 级标题右侧透明边框，扩大用户可点击范围，使用 border-right 实现 */
+  --contents-h1-click-right-border-width: 370px;
+  --contents-h2-click-right-border-width: 400px;
+  --contents-h3-click-right-border-width: 340px;
+  --contents-h4-click-right-border-width: 300px;
+  --contents-h5-click-right-border-width: 250px;
+  --contents-h6-click-right-border-width: 220px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 行内文本样式（inline-element.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 加粗文本字体 */
+  --bold-text-font : "HarmonyOS-Bold";
+  /* 加粗文本颜色 */
+  --bold-text-color: #000;
+  /* 加粗文本大小 */
+  --bold-text-size : inherit;
+
+  /* 斜体文本字体 */
+  --italic-text-font: "HarmonyOS-Regular";
+  /* 斜体文本大小 */
+  --italic-text-size: inherit;
+
+  /* 删除文本颜色 */
+  --deleted-text-color: #bbb;
+
+  /* 下划线文本，用 border-bottom 实现 */
+  --text-underline             : 1.6px solid #f47c35;
+  /* 文本与下边框间距 */
+  --text-bottom-border-distance: 1px;
+
+  /* 行内代码字体 */
+  --line-code-font               : "Fira", "霞鹜文楷";
+  /* 行内代码颜色 */
+  --line-code-color              : #f5872e;
+  /* 行内代码大小 */
+  --line-code-size               : .9em;
+  /* 行内代码背景色 */
+  --line-code-bg-color           : #f5f7f9;
+  /* 引用块，行内代码背景色 */
+  --blockquote-line-code-bg-color: #f5f7f9;
+  /* 表格，行内代码背景色 */
+  --table-line-code-bg-color     : #f5f7f9;
+  /* 行内代码背景圆角 */
+  --line-code-bg-radius          : 3px;
+
+  /* 高亮 */
+  /* 高亮文本背景色，类似马克笔涂抹效果 */
+  --marked-text-bg-color : #ffe97f;
+  /* 背景颜色高度，范围：-1 ~ 0，越小，覆盖文本部分越多*/
+  --marked-text-bg-height: -0.85em;
+
+  /* 行内元素提示符号 */
+  --inline-element-prompt-char-color: #bbb;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 链接样式（link.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 链接文本大小 */
+  --link-text-size       : inherit;
+  /* 链接文本颜色 */
+  --link-text-color      : #81b29a;
+  /* 链接文本字重 */
+  --link-text-font-weight: normal;
+  /* 鼠标悬浮在链接上，文本颜色 */
+  --hover-link-text-color: #81b29a;
+
+  /* 链接尾部 icon 颜色 */
+  --link-text-tail-icon-color  : #81b29a;
+  /* icon 大小，建议使用百分比 */
+  --link-text-tail-icon-size   : 80%;
+  /* icon 与文本间距 */
+  --tail-icon-and-text-distance: 5px;
+  /* 鼠标悬浮在链接上，链接尾部 icon 颜色 */
+  --hover-link-tail-icon-color : #81b29a;
+  /* icon 透明度，范围：0 ~ 1 */
+  --link-text-tail-icon-opacity: 0.7;
+
+  /* 链接文本必须在同一行，否则会失效 */
+  /* 链接 hover 样式 —— 线移动（左 ——> 右） */
+  /* 链接底部线条开始颜色 */
+  --hover-link-bottom-line-start-color: #81b29a;
+  /* 链接底部线条结束颜色 */
+  --hover-link-bottom-line-end-color  : #81b29a80;
+
+  /* 链接 hover 样式 —— 块底纹（下 ——> 上） */
+  /* 链接底部线条开始颜色 */
+  --hover-link-bg-bottom-color: #81b29a60;
+  /* 链接底部线条结束颜色 */
+  --hover-link-bg-top-color   : #81b29a80;
+  /* 链接文本颜色 */
+  --hover-link-bg-text-color  : #fff;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 列表样式（list.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* ======================== 有序列表 ======================== */
+  /* 列表符号样式详解 https://developer.mozilla.org/zh-CN/docs/Web/CSS/list-style-type */
+  /* 1 级有序列表符号样式 */
+  --level-1-orderly-list-symbol-style   : decimal;
+  /* 2 级有序列表符号样式 */
+  --level-2-orderly-list-symbol-style   : upper-alpha;
+  /* 3 级及以下级别有序列表符号样式 */
+  --level-more-orderly-list-symbol-style: lower-alpha;
+  /* 有序列表层级缩进 */
+  /* 缩进距离：所在层级 × 输入值 */
+  --orderly-list-level-indentation      : 25px;
+
+  /* 有序列表前符号颜色 */
+  --orderly-list-symbol-color: #8ebba6;
+  /* 有序列表前符号大小 */
+  --orderly-list-symbol-size : inherit;
+
+  /* 是否开启有序列表层级线，block —— 开启，none —— 关闭 */
+  --orderly-list-level-line-state: block;
+  /* 有序列表层级线，border-left 实现 */
+  --orderly-list-left-level-line : 1.5px solid rgb(129, 178, 154, 0.3);
+
+  /* ======================== 无序列表 ======================== */
+  /* 无序列表层级缩进 */
+  /* 缩进距离：所在层级 × 输入值 */
+  --unordered-list-level-indentation: 25px;
+
+  /* 无序列表前符号颜色 */
+  --unordered-list-symbol-color: #8ebba6;
+  /* 无序列表前符号大小 */
+  --unordered-list-symbol-size : .9em;
+
+  /* 是否开启无序列表层级线，block ——  开启，none —— 关闭 */
+  --unordered-list-level-line-state: block;
+  /* 无序列表层级线样式，用 border-left 实现 */
+  --unordered-list-left-level-line : 1.5px solid rgb(129, 178, 154, 0.3);
+
+  /* ======================== 任务列表 ======================== */
+  /* 任务列表方框大小 */
+  --task-list-box-size          : 1.05em;
+  /* 任务列表方框边框 */
+  --task-list-box-border        : 1.5px solid #ccc;
+  /* 任务列表方框边框圆角 */
+  --task-list-box-border-radius : 2.5px;
+  /* 任务列表方框背景颜色 */
+  --task-list-box-bg-color      : #fff;
+  /* 鼠标悬浮在任务列表方框时，方框背景颜色 */
+  --hover-task-list-box-bg-color: rgb(129, 178, 154, 0.2);
+
+  /* 任务列表方框 √ 颜色 */
+  --task-list-checked-tick-color           : #fff;
+  /* 任务列表方框 √ 大小 */
+  --task-list-checked-tick-size            : .8em;
+  /* 已完成任务列表方框背景色 */
+  --task-list-checked-box-bg-color         : #8ebba6;
+  /* 已完成任务列表的文本颜色 */
+  --task-list-checked-text-color           : #aaa;
+  /* 引用块内已完成任务列表的文本颜色 */
+  --blockquote-task-list-checked-text-color: #ccc;
+
+  /* 是否开启任务列表层级线，block ——  开启，none —— 关闭 */
+  --task-list-level-line-state: block;
+  /* 任务列表层级线样式，用 border-left 实现 */
+  --task-list-left-level-line : 1.5px solid rgb(129, 178, 154, 0.3);
+
+  /* 光标所在任一有序、无序、任务列表行，该行列表符号颜色 */
+  --focus-list-symbol-color: #e2542e !important;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 表格样式（table.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* ======================== 基本设置 ======================== */
+  /* 表格最大高度 */
+  /* css布局单位详解 https://juejin.cn/post/6859282467535519752 */
+  --table-max-height                 : 50vh;
+  /* 表格是否水平居中（使用 auto-scroll.css），auto —— 开启，inherit —— 关闭 */
+  --table-horizontal-center          : inherit;
+  /* 表格最小宽度（使用 auto-scroll.css） */
+  --table-min-width                  : 50%;
+  /* 表格背景色 */
+  --table-bg-color                   : #f7f7f7;
+  /* 表格背景圆角 */
+  --table-bg-radius                  : 3px;
+  /* 表格单元格内边距 */
+  --table-all-cell-padding           : 6px 12px;
+  /* 表格表体奇数行背景色 */
+  --table-tbody-oddNum-line-bg-color : inherit;
+  /* 表格表体偶数行背景色 */
+  --table-tbody-evenNum-line-bg-color: #dbe6e1;
+
+  /* 表格单元格边框 */
+  --table-all-cell-border            : 1.5px solid #e8e8e8;
+  /* 表格表头行下边框 */
+  --table-thead-line-bottom-border   : 1.5px solid #e8e8e8;
+  /* 表格第一列左边框 */
+  --table-first-col-cell-left-border : none;
+  /* 表格最后一列右边框 */
+  --table-last-col-cell-right-border : none;
+  /* 表格第一行上边框 */
+  --table-first-row-cell-top-border  : none;
+  /* 表格最后一行下边框 */
+  --table-last-row-cell-bottom-border: none;
+  /* 表格阴影模拟外边框 */
+  --table-outer-border-shadow        : none;
+
+  /* 使用 full-scroll.css，表格单元格最小宽度失效 */
+  /* 使用 auto-scroll.css，表格单元格最小宽度有效，当表格列数过多，会出现底部滚动条 */
+  /* 表格单元格最小宽度，不需要 —— auto，需要 —— 输入具体数值 */
+  --table-cell-min-width: 120px;
+
+  /* 表头字体 */
+  --table-thead-text-font : "HarmonyOS-Bold";
+  /* 表头字体颜色 */
+  --table-thead-text-color: #fff;
+  /* 表头背景色 */
+  --table-thead-bg-color  : #81b29a;
+
+  /* 光标定位在任一单元格上，该单元格是否显示下划线，inline-block —— 显示，none —— 隐藏 */
+  --focus-table-td-bottom-line-state      : inline-block;
+  /* 光标定位在表格任一单元格上，该单元格下划线高度 */
+  --focus-table-td-bottom-line-height     : 3px;
+  /* 光标定位在表格表头任一单元格上，该单元格下划线颜色 */
+  --focus-table-thead-td-bottom-line-color: #fd7c5e;
+  /* 光标定位在表格表体任一单元格上，该单元格下划线颜色 */
+  --focus-table-tbody-td-bottom-line-color: #37856b;
+
+  /* ======================== 表格工具栏设置 ======================== */
+  /* 表格工具栏上下位置 */
+  --table-edit-panel-position         : translateY(-2px);
+  /* 表格工具栏按钮图标颜色 */
+  --table-edit-panel-btn-color        : #333;
+  /* 表格工具栏所有按钮图标大小 */
+  --table-edit-panel-all-btn-size     : 16px;
+  /* 表格工具栏左侧按钮图标背景大小，padding 实现 */
+  --table-edit-panel-left-btn-bg-size : 2px;
+  /* 鼠标悬浮、选中在表格工具栏所有按钮（除开表格大小调整按钮），按钮背景色 */
+  --hover-edit-panel-all-btn-bg-color : #fff;
+  /* 鼠标悬浮在表格工具栏左侧按钮（除开更多操作按钮），按钮背景圆角 */
+  --hover-edit-panel-all-btn-bg-radius: 3px;
+
+  /* 鼠标悬浮在表格大小调整按钮，按钮颜色 */
+  --hover-table-resize-btn-color     : #37856b;
+  /* 鼠标悬浮在表格大小调整按钮，按钮背景色 */
+  --hover-table-resize-btn-bg-color  : #d1e5dd;
+  /* 表格大小调整按钮与表格单元格对齐按钮距离 */
+  --table-resize-btn-align-btn-margin: 6px;
+
+  /* 鼠标悬浮在表格单元格对齐按钮，按钮背景色 */
+  --hover-table-align-btn-bg-color: #e8e8e8;
+  /* 已选中表格单元格对齐按钮，按钮颜色 */
+  --hover-table-align-btn-color   : #3abd7e;
+  /* 表格单元格对齐按钮之间间距  */
+  --hover-table-align-btn-margin  : 5px;
+
+  /* 鼠标悬浮在更多操作按钮，按钮与显示文本的颜色 */
+  --hover-table-more-btn-whole-color: #3abd7e;
+
+  /* 鼠标悬浮在表格删除按钮，按钮颜色 */
+  --hover-table-delete-btn-color: #f44336;
+
+  /* ======================== 表格大小选择菜单设置 ======================== */
+  /* 表格大小选择菜单宽度 */
+  --table-resize-menu-width   : 140px;
+  /* 表格大小选择菜单背景色 */
+  --table-resize-menu-bg-color: #fff;
+
+  /* 菜单内小方框大小 */
+  --table-resize-menu-box-size  : 14px;
+  /* 菜单内小方框边框 */
+  --table-resize-menu-box-border: 1px solid #bbb;
+  /* 菜单内小方框圆角 */
+  --table-resize-menu-box-radius: 2.5px;
+
+  /* 菜单内已选中的小方框第一行颜色（表头） */
+  --selected-table-resize-menu-thead-box-color: #999;
+  /* 菜单内已选中的小方框剩余行颜色（表体） */
+  --selected-table-resize-menu-tbody-box-color: #ddd;
+
+  /* 鼠标悬浮在菜单内小方框第一行，方框颜色（表头） */
+  --hover-table-resize-menu-thead-box-color: #2a694f;
+  /* 鼠标悬浮在菜单内小方框其他行，方框颜色（表体） */
+  --hover-table-resize-menu-tbody-box-color: #bcd5c9;
+
+  /* 方框与底部输入栏的分隔线 */
+  --table-resize-menu-box-bottom-number-divider: 1px solid #eee;
+  /* 菜单下方行列数输入栏文字边框 */
+  --table-resize-menu-bottom-number-border     : 1px solid #bbb;
+  /* 菜单下方行列数输入栏文字边框圆角 */
+  --resize-menu-bottom-number-border-radius    : 4px;
+  /* 菜单下方行列数输入栏文字边框宽度 */
+  --resize-menu-bottom-number-border-width     : 32px;
+
+  /* 行列数输入栏的确认按钮大小 */
+  --menu-bottom-table-size-confirm-btn-size   : 14px;
+  /* 行列数输入栏的确认按钮颜色 */
+  --menu-bottom-table-size-confirm-btn-color  : #16b364;
+  /* 行列数输入栏的确认按钮背景大小，padding 实现 */
+  --menu-bottom-table-size-confirm-btn-bg-size: 2px;
+  /* 鼠标悬浮在确认按钮，按钮背景色 */
+  --hover-table-size-confirm-btn-bg-color     : rgb(22, 179, 100, .2);
+  /* 鼠标悬浮在确认按钮，按钮背景圆角 */
+  --hover-table-size-confirm-btn-bg-radius    : 2.5px;
+
+  /* ======================== 移动表格设置 ======================== */
+  /* 移动表格行列的小三角提示图标颜色 */
+  --move-table-row-col-triangle-icon-color: #fd7c5e;
+  /* 移动表格行列的小三角指示图标大小 */
+  --move-table-row-col-triangle-icon-size : 18px;
+  /* 移动表格行列留下的区域颜色 */
+  --move-table-row-col-back-area-color    : #ddd;
+  /* 移动表格行列，该行、列的透明度 */
+  --moving-table-row-col-opacity          : .5;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 引用块样式（blockquote.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 引用块文本字体 */
+  --blockquote-text-font              : "HarmonyOS-Sans", "霞鹜文楷";
+  /* 引用块文本颜色 */
+  --blockquote-text-color             : #999;
+  /* 引用块文本大小 */
+  --blockquote-text-size              : calc(var(--writeArea-text-size) - 1px);
+  /* 引用块的左侧竖线默认宽度，使用伪元素实现 */
+  --blockquote-left-line-default-width: 4.5px;
+  /* 引用块的左侧竖线默认颜色，使用伪元素实现 */
+  --blockquote-left-line-default-color: #2e3440;
+  /* 引用块背景颜色 */
+  --blockquote-bg-color               : #eaefef;
+  /* 引用块背景圆角 */
+  --blockquote-bg-radius              : 3px;
+  /* 引用块左右缩进，用 margin 实现 */
+  --blockquote-left-right-indent      : 10px;
+
+  /* 是否开启引用块左上角图标，block ——  开启，none —— 关闭 */
+  --blockquote-top-left-icon-state: block;
+  /* 引用块左上角图标颜色 */
+  --blockquote-top-left-icon-color: #2e3440;
+  /* 引用块左上角图标大小 */
+  --blockquote-top-left-icon-size : 1.3rem;
+
+  /* ======================== Admonitions 引用块 ======================== */
+  /* 引用样式块标题字体 */
+  --admonitions-blockquote-title-font         : "HarmonyOS-Bold";
+  /* 引用样式块标题大小 */
+  --admonitions-blockquote-title-size         : 1.1rem;
+  /* 引用样式块标题与文本的间距 */
+  --admonitions-blockquote-title-text-distance: 1.1rem;
+  /* 引用样式块的左侧竖线宽度，使用伪元素实现，必须 ≥ 默认宽度 */
+  --admonitions-blockquote-left-line-width    : 4.5px;
+
+  /* ================ 例子 / example 样式块 ================ */
+  /* example 样式块标题和 icon 颜色 */
+  --h1-example-blockquote-title-icon-color   : #6a1b9a !important;
+  /* example 样式块标题背景色 */
+  --h1-example-blockquote-title-line-bg-color: rgb(106, 27, 154, .2);
+  /* example 样式块 logo 大小 */
+  --h1-example-blockquote-logo-size          : 1.05rem;
+  /* example 样式块，标题与 logo 的间距 */
+  --h1-example-title-and-logo-distance       : 7px;
+  /* warning 样式块左侧竖线颜色 */
+  --h1-example-blockquote-left-line-color    : #6a1b9a;
+  /* 下面五种引用样式块，参照 example 样式块注释修改 */
+
+  /* ================ 问题 / question 样式块 ================ */
+  --h2-question-blockquote-title-icon-color   : #2e7d32 !important;
+  --h2-question-blockquote-title-line-bg-color: rgb(46, 125, 50, 0.2);
+  --h2-question-blockquote-logo-size          : 1.05rem;
+  --h2-question-title-and-logo-distance       : 7px;
+  --h2-question-blockquote-left-line-color    : #2e7d32;
+
+  /* ================ 注意 / Warning 样式块 ================ */
+  --h3-warning-blockquote-title-icon-color   : #c62828 !important;
+  --h3-warning-blockquote-title-line-bg-color: rgb(198, 40, 40, 0.2);
+  --h3-warning-blockquote-logo-size          : 1.05rem;
+  --h3-warning-title-and-logo-distance       : 7px;
+  --h3-warning-blockquote-left-line-color    : #c62828;
+
+  /* ================ 参考 / Quote 样式块 ================ */
+  --h4-quote-blockquote-title-icon-color   : #3b83c1 !important;
+  --h4-quote-blockquote-title-line-bg-color: rgb(59, 131, 193, 0.2);
+  --h4-quote-blockquote-logo-size          : 1.05rem;
+  --h4-quote-title-and-logo-distance       : 7px;
+  --h4-quote-blockquote-left-line-color    : #3b83c1;
+
+  /* ================ 提示 / Tips 样式块 ================ */
+  --h5-tips-blockquote-title-icon-color   : #f9a825 !important;
+  --h5-tips-blockquote-title-line-bg-color: rgb(249, 168, 37, 0.2);
+  --h5-tips-blockquote-logo-size          : 1.05rem;
+  --h5-tips-title-and-logo-distance       : 7px;
+  --h5-tips-blockquote-left-line-color    : #f9a825;
+
+  /* ================ 拓展 / Expand 样式块 ================ */
+  --h6-expand-blockquote-title-icon-color   : #3abd7e !important;
+  --h6-expand-blockquote-title-line-bg-color: rgb(58, 189, 126, 0.2);
+  --h6-expand-blockquote-logo-size          : 1.05rem;
+  --h6-expand-title-and-logo-distance       : 7px;
+  --h6-expand-blockquote-left-line-color    : #3abd7e;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 代码块样式 ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* ======================== 基本设置（code-block.css） ======================== */
+  /* 代码块字体 */
+  --code-block-text-font        : Consolas, Monaco, "霞鹜文楷";
+  /* 代码块文本大小 */
+  --code-block-text-size        : calc(var(--writeArea-text-size) - 1px);
+  /* 代码块文本行高 */
+  --code-block-text-line-height : 1.3rem;
+  /* 代码块背景色 */
+  --code-block-bg-color         : #edf5f9 !important;
+  /* 代码块阴影 */
+  --code-block-shadow           : 0px 0px 10px rgba(0, 0, 0, 0.15);
+  /* 代码块边框 */
+  --code-block-border           : none;
+  /* 代码块背景圆角 */
+  --code-block-bg-radius        : 5px;
+  /* 代码块内，光标所在行的光标样式，用 border-left 实现 */
+  --focus-code-line-cursor-style: 3px solid #6495ed !important;
+  /* 代码块内，光标所在行背景色 */
+  --focus-code-line-bg-color    : rgb(228, 235, 238, .4);
+
+  /* 代码块行号文本颜色 */
+  --code-block-line-number-color       : #bbb;
+  /* 代码块行号文本对齐方式 */
+  --code-block-line-number-align-style : right;
+  /* 代码块行号文本右侧竖线 */
+  --code-block-line-number-right-border: 1.5px solid transparent;
+
+  /* 代码语言输入框、选择框宽度 */
+  --code-lang-input-selection-box-width   : 205px;
+  /* 代码语言输入框、选择框背景色 */
+  --code-lang-input-selection-box-bg-color: #fff;
+
+  /* 代码语言输入框文本大小 */
+  --code-lang-input-box-text-size        : 15px;
+  /* 代码语言输入框文本颜色 */
+  --code-lang-input-box-text-color       : #2c74c7;
+  /* 代码块语言输入框默认提示文本 */
+  --code-lang-input-box-prompt-text-color: rgb(44, 116, 199, 0.6);
+
+  /* 代码语言侯选框最大高度 */
+  --code-lang-selection-box-max-height    : 250px;
+  /* 代码语言侯选框文本大小 */
+  --code-lang-selection-box-text-size     : 14px;
+  /* 鼠标悬浮在语言侯选框列表，该列表文本颜色 */
+  --hover-lang-selection-box-li-text-color: #2a68cc;
+  /* 鼠标悬浮在语言侯选框列表，该列表背景色 */
+  --hover-lang-selection-box-li-bg-color  : #d5dfea;
+
+  /* 代码块最大高度，用于代码块滚动显示，开启 —— 50vh，关闭 —— initial */
+  --code-block-max-height                  : 50vh;
+  /* 是否开启代码块任意行横向滚动，是 —— pre，否 —— normal  */
+  --code-block-lines-horizontal-white-space: normal;
+  --code-block-lines-horizontal-overflow-x : auto;
+
+  /* ======================== 代码块顶栏（top-bar.css） ======================== */
+  /* 代码块顶栏，border-top 实现 */
+  --code-block-top-bar: 25px solid rgb(167, 187, 195, 0.5);
+
+  /* ============ 左侧小圆点 ============ */
+  /* 阴影模拟小圆点 */
+  /* 代码块顶栏左侧小圆点大小，用 width、height 实现 */
+  --code-block-topBar-left-all-dot-size      : 10px;
+  /* 代码块顶栏左侧红色小圆点颜色 */
+  --code-block-topBar-left-redDot-color      : #ff5f5a;
+  /* 代码块顶栏左侧黄色小圆点颜色 */
+  --code-block-topBar-left-yellowDot-color   : #ffbe2e;
+  /* 代码块顶栏左侧绿色小圆点颜色 */
+  --code-block-topBar-left-greenDot-color    : #2aca44;
+  /* 代码块顶栏左侧小圆点与小圆点间距 */
+  --code-block-topBar-left-dots-distance     : 25px;
+  /* 代码块顶栏左侧小圆点上下位置，top 实现 */
+  --code-block-topBar-left-dots-top-position : -17px;
+  /* 代码块顶栏左侧小圆点左右位置，left 实现 */
+  --code-block-topBar-left-dots-left-position: 8px;
+
+  /* ============ 右侧编程语言 ============ */
+  /* 代码块顶栏右侧编程语言文本颜色 */
+  --code-block-topBar-right-program-lang-color         : #2665ae;
+  /* 代码块顶栏右侧编程语言文本大小 */
+  --code-block-topBar-right-program-lang-size          : 15px;
+  /* 代码块顶栏右侧编程语言文本上下位置，top 实现 */
+  --code-block-topBar-right-program-lang-top-position  : -24px;
+  /* 代码块顶栏右侧编程语言文本左右位置，right 实现 */
+  --code-block-topBar-right-program-lang-right-position: 8px;
+
+  /* ======================== 代码块编程语言（code-lang.css） ======================== */
+  /* 代码块右侧编程语言文本颜色 */
+  --code-block-right-program-lang-text-color    : #abb7c2;
+  /* 代码块右侧编程语言文本大小 */
+  --code-block-right-program-lang-text-size     : 12px;
+  /* 代码块右侧编程语言文本上下位置，top 实现 */
+  --code-block-right-program-lang-top-position  : 0;
+  /* 代码块右侧编程语言文本左右位置，right 实现 */
+  --code-block-right-program-lang-right-position: 3px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 图片样式（images.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 图片最大宽度 */
+  --image-max-width   : 85%;
+  /* 图片圆角 */
+  --image-radius      : 4px;
+  /* 图片阴影 */
+  --image-shadow      : 0px 0px 10px rgba(0, 0, 0, 0.15);
+  /* 图片变暗程度，0 ~ 100% */
+  /* 示例 ![]( alt="dark-") */
+  /* 示例 <img src="" alt="dark-"/> */
+  --image-darker-level: brightness(80%);
+
+  /* 鼠标悬浮在图片上，图片放大倍数，使用 transform 的 scale 实现 */
+  /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform */
+  --hover-image-bigger-multiple: 1.02;
+
+  /* 图片链接文本颜色 */
+  --image-link-text-color: #999;
+  /* 图片链接文本大小 */
+  --image-link-text-size : .8rem;
+
+  /* 图片不显示，文本和图标颜色 */
+  --error-image-link-text-icon-color    : #f44336;
+  /* 图片不显示，链接下划线，用 border-bottom 实现 */
+  --error-image-link-underline          : 2.5px #f44336 solid;
+  /* 图片不显示，鼠标悬浮提示框背景色 */
+  --hover-error-image-tipsBox-bg-color  : #fff;
+  /* 图片不显示，鼠标悬浮提示框文本颜色 */
+  --hover-error-image-tipsBox-text-color: #f44336;
+
+  /* 是否开启网络图片提示，inline-block —— 开启，none —— 关闭 */
+  --internet-image-prompt-state     : inline-block;
+  /* 网络图片提示图标颜色 */
+  --internet-image-prompt-icon-color: #528bc8;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 脚注设置（footnote.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* ======================== 正文区域脚注设置 ======================== */
+  /* 正文区域脚注颜色 */
+  --writeArea-footnote-color            : #516181;
+  /* 正文区域脚注大小 */
+  --writeArea-footnote-size             : 9px;
+  /* 正文区域脚注背景颜色 */
+  --writeArea-footnote-bg-color         : #dfe4ea;
+  /* 正文区域脚注背景圆角 */
+  --writeArea-footnote-bg-radius        : 2px;
+  /* 正文区域脚注文本上下位置，用 top 实现*/
+  --writeArea-footnote-text-top-position: -10px;
+
+  /* 是否开启正文区域脚注内容首尾中括号 []，inline-block —— 开启，none —— 关闭 */
+  --writeArea-footnote-text-brackets-state: inline-block;
+  /* 正文区域脚注内容首尾中括号颜色 [] */
+  --writeArea-footnote-text-brackets-color: inherit;
+  /* 正文区域脚注内容首尾中括号大小 [] */
+  --writeArea-footnote-text-brackets-size : inherit;
+
+  /* 正文脚注悬浮框文本颜色 */
+  --hover-writeArea-footnote-tip-text-color: #fff;
+  /* 正文脚注悬浮框文本大小 */
+  --hover-writeArea-footnote-tip-text-size : 12px;
+  /* 正文脚注悬浮框背景色 */
+  --hover-writeArea-footnote-tip-bg-color  : #2e3440;
+
+  /* ======================== 文末脚注设置 ======================== */
+  /* 文末脚注内容字体 */
+  --end-footnote-area-font      : "HarmonyOS-Sans", "霞鹜文楷";
+  /* 文末脚注内容大小 */
+  --end-footnote-area-text-size : .8rem;
+  /* 文末脚注内容颜色 */
+  --end-footnote-area-text-color: #aaa;
+
+  /* 是否开启文末脚注内容区域提示，block —— 开启，none —— 关闭 */
+  --end-footnote-area-prompt-state       : block;
+  /* 文末脚注内容区域提示文字 */
+  --end-footnote-area-prompt-content     : "Footnotes";
+  /* 文末脚注内容区域提示文字字体 */
+  --end-footnote-area-prompt-content-font: "HarmonyOS-Bold";
+  /* 文末脚注内容区域提示文字大小 */
+  --end-footnote-area-prompt-content-size: 10px;
+  /* 文末脚注内容区域提示文字颜色 */
+  --end-footnote-area-prompt-color       : #808080;
+  /* 分隔脚注内容与提示样式，使用 border-bottom 实现 */
+  --footnote-content-prompt-divider      : 1.5px solid #aaa;
+
+  /* 文末脚注内容末端小钩颜色 */
+  --footnote-content-end-hook-color         : #1d59a8;
+  /* 文末脚注内容末端小钩大小 */
+  --footnote-content-end-hook-size          : 1rem;
+  /* 鼠标悬浮在小钩上时，小钩颜色 */
+  --hover-footnote-content-end-hook-color   : #fff;
+  /* 鼠标悬浮在小钩上时，小钩背景颜色 */
+  --hover-footnote-content-end-hook-bg-color: #829dc9;
+
+  /* 光标定位在脚注上的默认样式符号 [^] */
+  --focus-footnote-default-prompt-symbol-color: #bbb;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 侧边栏整体设置（sidebar.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 侧边栏文本字体 */
+  --sidebar-text-font      : "HarmonyOS-Sans", "霞鹜文楷";
+  /* 侧边栏文字颜色 */
+  --sidebar-text-color     : #555;
+  /* 侧边栏文字大小 */
+  --sidebar-text-size      : calc(var(--writeArea-text-size) - 2px);
+  /* 侧边栏圆角 */
+  --sidebar-border-radius  : 0px;
+  /* 侧边栏整体背景颜色 */
+  --sidebar-whole-bg-color : #dbe3e3;
+  /* 侧边栏整体阴影 */
+  --sidebar-box-shadow     : 0px 0px 8px rgba(0, 0, 0, .3);
+  /* 是否固定侧边栏滚动条，scroll —— 是，auto —— 否 */
+  --sidebar-scrollbar-state: srcoll;
+
+  /* 侧边栏顶部文字颜色 */
+  --sidebar-topBar-content-color      : #000;
+  /* 侧边栏顶部文字大小 */
+  --sidebar-topBar-content-size       : .9rem;
+  /* 鼠标悬浮在侧边栏顶部文字上，文字颜色 */
+  --hover-sidebar-topBar-content-color: #000;
+
+  /* 大纲、文件字符下方横条颜色 */
+  --topBar-content-bottom-line-color   : #457b9d;
+  /* 大纲、文件字符下方横条宽度 */
+  --topBar-content-bottom-line-width   : 90px;
+  /* 大纲、文件字符下方横条高度 */
+  --topBar-content-bottom-line-height  : 4px;
+  /* 侧边栏顶部文字与下方横条间距 */
+  --topBar-content-bottom-line-distance: .2rem;
+
+  /* 标题、 文件名文本溢出部分用省略号表示，不换行 */
+  /* 大纲页面标题显示的部分，0 ~ 100% */
+  --outline-all-headline-width : 90%;
+  /* 文件页面标题显示的部分，0 ~ 100% */
+  --filetree-all-filename-width: 90%;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 侧边栏大纲页面（outline-page.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 1~5 级标题大纲文本行间距 */
+  --sidebar-all-headline-line-height: 1.5;
+  /* 大纲页面内边距 */
+  --sidebar-outline-padding         : .5rem .8rem;
+  /* 鼠标悬浮在某一级标题时，该行的背景颜色 */
+  --hover-outline-headline-bg-color : #d0dbdb;
+
+  /* 大纲页面选中标题颜色 */
+  --active-outline-headline-color    : #457b9d;
+  /* 大纲页面选中标题的背景颜色 */
+  --active-outline-headline-bg-color : #fff;
+  /* 大纲页面选中标题背景圆角 */
+  --active-outline-headline-bg-radius: 4px;
+
+  /* 是否开启选中标题末尾小竖线，inline-block —— 开启，none —— 关闭 */
+  --active-headline-endLine-state   : inline-block;
+  /* 大纲页面选中标题末尾小竖线颜色 */
+  --active-headline-endLine-color   : #fd7c5e;
+  /* 大纲页面选中标题末尾小竖线宽度 */
+  --active-headline-endLine-width   : 4px;
+  /* 大纲页面选中标题末尾小竖线高度 */
+  --active-headline-endLine-height  : 22px;
+  /* 大纲页面选中标题末尾小竖线圆角 */
+  --active-headline-endLine-radius  : 11px;
+  /* 小竖线与标题文本间距，用 padding-right 实现 */
+  --active-headline-endLine-distance: 8px;
+
+  /* CSS 垂直居中的12种实现方式 https://juejin.cn/post/6844903550909153287 */
+  /* 大纲页面选中标题末尾小竖线相较于本行标题的上下位置，使用 top 实现 */
+  --active-headline-endLine-top-position  : calc(50% - 11px);
+  /* 大纲页面选中标题末尾小竖线相较于本行标题的左右位置，使用 right 实现 */
+  --active-headline-endLine-right-position: 5px;
+
+  /* 是否开启 1 ~ 5 级标题大纲层级线，block —— 开启，none —— 关闭 */
+  --sidebar-h1-level-line-state: block;
+  --sidebar-h2-level-line-state: block;
+  --sidebar-h3-level-line-state: block;
+  --sidebar-h4-level-line-state: block;
+  --sidebar-h5-level-line-state: block;
+
+  /* 大纲页面右键菜单选择【大纲视图（无折叠）】，是否开启大纲层级线 */
+  /* block —— 开启，none —— 关闭；点击标题，才会出现层级线 */
+  --nofold-headline-level-line-state: none;
+
+  /* 1 ~ 5 级标题大纲层级线颜色 */
+  --sidebar-h1-level-line-color: #a7bbc3;
+  --sidebar-h2-level-line-color: #a7bbc3;
+  --sidebar-h3-level-line-color: #a7bbc3;
+  --sidebar-h4-level-line-color: #a7bbc3;
+  --sidebar-h5-level-line-color: #a7bbc3;
+
+  /* 1 ~ 5 级标题大纲层级线宽度 */
+  --all-headline-level-line-width: 1.5px;
+
+  /* 1 ~ 5 级标题大纲层级线与页面最左侧距离 */
+  --h1-level-line-left-distance: 12px;
+  --h2-level-line-left-distance: 31px;
+  --h3-level-line-left-distance: 50px;
+  --h4-level-line-left-distance: 69.5px;
+  --h5-level-line-left-distance: 88.5px;
+
+  /* 大纲标题左侧小三角大小 */
+  --sidebar-outline-left-triangle-size  : 12.5px;
+  /* 大纲标题左侧小三角颜色 */
+  --sidebar-outline-left-triangle-color : #aaa;
+  /* 鼠标悬浮在小三角时，小三角颜色 */
+  --hover-outline-left-triangle-color   : rgb(253, 124, 94);
+  /* 鼠标悬浮在小三角时，小三角背景颜色 */
+  --hover-outline-left-triangle-bg-color: rgb(253, 124, 94, 0.2);
+  /* 鼠标悬浮在小三角时，小三角背景大小，用 padding 实现 */
+  --hover-outline-left-triangle-bg-size : 2.5px;
+
+  /* 大纲页面右键菜单选择【高亮当前标题】，标题背景色 */
+  --highlight-active-headline-bg-color    : #eec869;
+  /* 大纲页面搜索结果背景色 */
+  --sidebar-outline-match-content-bg-color: rgb(252, 211, 77, .35);
+
+  /* 设置 outline-indent.css 文件标题等极提示符号颜色 */
+  /* Typora 版本在 v1.5.5 以下，无法使用 */
+  --outline-page-headline-indent-rating-prompt-icon-color: #fd7c5e;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 侧边栏文件页面（file-page.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* ================================ 文件视图 ================================ */
+  /* 侧边栏文件树左侧小三角颜色 */
+  --sidebar-filetree-left-triangle-color: #aaa;
+  /* 侧边栏文件树左侧小三角大小 */
+  --sidebar-filetree-left-triangle-size : 12.5px;
+  /* 鼠标悬浮在小三角时，小三角颜色 */
+  --hover-filetree-left-triangle-color  : #fd7c5e;
+
+  /* MD 和 TXT 文件左侧图标颜色 */
+  --sidebar-filetree-MD-TXT-file-icon-color: #999;
+  /* MD 和 TXT 文件左侧图标大小 */
+  --sidebar-filetree-MD-TXT-file-icon-size : 21px;
+
+  /* 当前编辑 MD、TXT 文件名称文本颜色 */
+  --active-MD-TXT-filename-text-color : #457b9d;
+  /* 当前编辑 MD、TXT 文件名称背景颜色 */
+  --active-MD-TXT-filename-bg-color   : #fff;
+  /* 当前编辑 MD、TXT 文件左侧图标颜色 */
+  --active-MD-TXT-file-left-icon-color: #457b9d;
+
+  /* 侧边栏文件夹名称左侧文件图标颜色 */
+  --filetree-folder-left-icon-color: #728995;
+  /* 侧边栏非 MD 文件 、文件夹名左侧文件图标大小 */
+  --filetree-folder-left-icon-size : 20px;
+
+  /* 鼠标悬浮在文件、文件夹时，该文件、文件夹背景颜色 */
+  --hover-filetree-filename-bg-color: #d0dbdb;
+
+  /* 是否开启文件夹层级线，block —— 开启，none —— 关闭 */
+  --filetree-folder-level-line-state        : block;
+  /* 文件夹层级线颜色 */
+  --filetree-folder-level-line-color        : #a7bbc3;
+  /* 文件夹层级线颜色，用 width 实现 */
+  --filetree-folder-level-line-width        : 1.5px;
+  /* 文件夹层级线左右位置 */
+  --filetree-folder-level-line-left-position: -8.5px;
+
+  /* 是否开启选中文件名末尾小竖线，inline-block —— 开启，none —— 关闭 */
+  --active-filename-endLine-state : inline-block;
+  /* 文件树页面选中文件名末尾小竖线颜色 */
+  --active-filename-endLine-color : #fd7c5e;
+  /* 文件树页面选中文件名末尾小竖线宽度 */
+  --active-filename-endLine-width : 4px;
+  /* 文件树页面选中文件名末尾小竖线高度 */
+  --active-filename-endLine-height: 22px;
+  /* 文件树页面选中文件名末尾小竖线圆角 */
+  --active-filename-endLine-radius: 11px;
+
+  /* CSS 垂直居中的12种实现方式 https://juejin.cn/post/6844903550909153287 */
+  /* 文件树页面选中文件名末尾小竖线相较于本行标题的上下位置，使用 top 实现 */
+  --active-filename-endLine-top-position  : calc(50% - 11px);
+  /* 文件树页面选中文件名末尾小竖线相较于本行标题的左右位置，使用 right 实现 */
+  --active-filename-endLine-right-position: 5px;
+
+  /* ================================ 列表视图 ================================ */
+  /* 是否开启侧边栏文件列表分隔线，block —— 是，none —— 否 */
+  --sidebar-filelist-divider-state : none;
+  /* 侧边栏文件列表分隔线 */
+  --sidebar-filelist-divider       : 1px solid #ccc;
+  /* 悬浮在列表上，列表背景色 */
+  --hover-sidebar-filelist-bg-color: #d0dbdb;
+
+  /* 列表文件路径、创建时间文本大小 */
+  --filelist-path-time-text-size       : 12px;
+  /* 列表文件路径、创建时间文本颜色 */
+  --filelist-path-time-text-color      : #999;
+  /* 列表文件名文本颜色 */
+  --filelist-filename-text-color       : #000;
+  /* 列表文件类型文本颜色 */
+  --filelist-file-type-text-color      : #999;
+  /* 未选中的列表透明度 */
+  --not-active-sidebar-filelist-opacity: .7;
+
+  /* 选中列表背景色 */
+  --active-sidebar-filelist-bg-color   : #fff;
+  /* 选中列表背景圆角 */
+  --active-sidebar-filelist-bg-radius  : 6px;
+  /* 选中列表文字颜色（除开文件路径、创建时间） */
+  --active-filelist-text-color         : #457b9d;
+  /* 选中列表右上角小圆点颜色 */
+  --active-filelist-top-right-dot-color: #fd7c5e;
+  /* 选中列表右上角小圆点大小 */
+  --active-filelist-top-right-dot-size : 6px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 侧边栏搜索页面（search-page.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 是否开启搜索结果列表分隔线，block —— 是，none —— 否 */
+  --search-result-list-divider-state           : none;
+  /* 搜索结果列表分隔线 */
+  --search-result-list-divider                 : 1px solid #ccc;
+  /* 鼠标悬浮在搜索结果列表，列表背景色 */
+  --hover-search-result-list-bg-color          : #d0dbdb;
+  /* 选中搜索结果列表，列表背景色 */
+  --selected-search-result-list-bg-color       : #fff;
+  /* 选中搜索结果列表，列表文件名文本颜色 */
+  --selected-search-result-list-filename-color : #457b9d;
+  /* 鼠标悬浮在搜索结果列表任一行，该行文本颜色 */
+  --hover-search-result-list-line-text-color   : #457b9d;
+  /* 鼠标悬浮在搜索结果列表任一行，该行背景色 */
+  --hover-search-result-list-line-bg-color     : var(--sidebar-whole-bg-color);
+  /* 选中搜索结果列表任一行，该行文本颜色 */
+  --selected-search-result-list-line-text-color: #457b9d;
+  /* 选中搜索结果列表任一行，该行背景色 */
+  --selected-search-result-list-line-bg-color  : #fff;
+
+  /* 搜索结果列表文件名前图标透明度 */
+  --search-result-list-filename-head-logo-opacity: .5;
+  /* 搜索结果列表文件名文本颜色 */
+  --sidebar-search-result-list-filename-color    : #000;
+  /* 搜索结果列表文件类型、路径文本颜色 */
+  --search-result-list-file-type-path-text-color : #777;
+  /* 搜索结果列表尾部匹配数字大小 */
+  --search-result-list-end-match-number-size     : 9px;
+  /* 搜索结果列表尾部匹配数字颜色 */
+  --search-result-list-end-match-number-color    : #333;
+  /* 搜索结果列表尾部匹配数字背景色 */
+  --search-result-list-end-match-number-bg-color : rgb(55, 133, 107, .2);
+
+  /* 搜索结果列表行数过多时，剩余行数展开按钮内容 */
+  --search-result-list-lines-expend-btn-content         : "Show More";
+  /* 搜索结果列表行数过多时，剩余行数展开按钮内容颜色 */
+  --search-result-list-lines-expend-btn-content-color   : #333;
+  /* 搜索结果列表行数过多时，剩余行数展开按钮内容大小 */
+  --search-result-list-lines-expend-btn-content-size    : 8.5px;
+  /* 搜索结果列表行数过多时，剩余行数展开按钮内容背景色 */
+  --search-result-list-lines-expend-btn-content-bg-color: rgb(66, 139, 202, .2);
+  /* 鼠标悬浮在展开按钮，按钮背景色 */
+  --hover-search-result-list-lines-expend-btn-bg-color  : rgb(66, 139, 202, .4);
+
+  /* 搜索结果列表匹配的文字背景色 */
+  --search-result-list-match-content-bg-color     : rgb(252, 211, 77, .35);
+  /* 写作区域匹配的文字背景大小，padding 实现 */
+  --search-result-list-match-content-bg-size      : 1px 2px;
+  /* 点击搜索结果列表某一行，写作区域对应的匹配文字颜色 */
+  --parallel-line-writeArea-match-content-color   : #fff;
+  /* 点击搜索结果列表某一行，写作区域对应的匹配文字背景色 */
+  --parallel-line-writeArea-match-content-bg-color: #457b9d;
+  /* 点击搜索结果列表某一行，写作区域对应的匹配文字背景大小 */
+  --parallel-line-writeArea-match-content-bg-size : 2px 4px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 侧边栏顶部搜索框（top-search-panel.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 搜索框与侧边栏内容分隔线 */
+  --searchPanel-bottom-divider    : 1px solid #ccc;
+  /* 侧边栏搜索框背景色 */
+  --sidebar-searchPanel-bg-color  : #fff;
+  /* 侧边栏搜索框边框 */
+  --sidebar-searchPanel-border    : 1px solid #ddd;
+  /* 光标定位到搜索框时，边框颜色 */
+  --focus-searchPanel-border-color: #428bca;
+  /* 侧边栏搜索框高度 */
+  --sidebar-searchPanel-height    : 24px;
+
+  /* 侧边栏搜索框右侧搜索选项按钮颜色 */
+  --searchpanel-search-option-btn-color   : #999;
+  /* 鼠标悬浮 / 选中选项按钮，按钮背景圆角 */
+  --search-option-btn-bg-radius           : 3px;
+  /* 鼠标悬浮在选项按钮，按钮背景色 */
+  --hover-search-option-btn-bg-color      : #eee;
+  /* 鼠标选中选项按钮，按钮颜色 */
+  --selected-search-option-btn-color      : rgb(55, 133, 107);
+  /* 鼠标选中选项按钮，按钮背景色 */
+  --selected-search-option-btn-bg-color   : rgb(55, 133, 107, .2);
+  /* 搜索选项按钮间距 */
+  --searchpanel-search-option-btn-distance: 4px;
+
+  /* 处于大纲页时，搜索框右侧关闭按钮颜色 */
+  --outline-close-searchPanel-btn-color: #999;
+  /* 处于大纲页时，鼠标悬浮在关闭按钮，按钮颜色 */
+  --hover-close-searchPanel-btn-color  : #f44336;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 侧边栏文件页面底部工具栏设置（flie-page-footer.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 底部工具栏与上方内容分隔线 */
+  --sidebar-footer-divider  : 1px solid #bbb;
+  /* 底部工具栏文本大小 */
+  --sidebar-footer-text-size: 12px;
+
+  /* 工具栏两侧按钮大小 */
+  --sidebar-footer-both-icon-size   : 12px;
+  /* 工具栏两侧按钮颜色 */
+  --sidebar-footer-both-icon-color  : #777;
+  /* 鼠标悬浮在两侧按钮，按钮颜色 */
+  --hover-footer-both-icon-color    : #333;
+  /* 鼠标悬浮在两侧按钮，按钮背景大小，padding 实现 */
+  --hover-footer-both-icon-bg-size  : 6px;
+  /* 鼠标悬浮在两侧按钮，按钮背景圆角 */
+  --hover-footer-both-icon-bg-radius: 3px;
+
+  /* 鼠标悬浮左侧新建文件按钮，按钮背景色 */
+  --hover-footer-left-icon-bg-color : rgb(0, 82, 217, 0.2);
+  /* 鼠标悬浮在右侧视图切换按钮，按钮背景色 */
+  --hover-footer-right-icon-bg-color: rgb(55, 133, 107, 0.2);
+
+  /* 鼠标悬浮在工具栏中间文件名，文件名背景色 */
+  --hover-footer-center-filename-bg-color: #fff;
+
+  /* 鼠标悬浮在工具栏弹出的文件菜单任一行，该行背景色 */
+  --hover-footer-files-menu-line-bg-color : #fff;
+  /* 鼠标悬浮在工具栏弹出的文件菜单任一行，该行背景圆角 */
+  --hover-footer-files-menu-line-bg-radius: 3px;
+
+  /* 工具栏弹出文件菜单右上角关闭按钮大小 */
+  --footer-files-menu-closed-btn-logo-size : 12px;
+  /* 工具栏弹出文件菜单右上角关闭按钮颜色 */
+  --footer-files-menu-closed-btn-logo-color: #333;
+  /* 鼠标悬浮在工具栏弹出文件菜单右上角关闭按钮，按钮颜色 */
+  --hover-files-menu-closed-btn-logo-color : #f44336;
+
+  /* 文件菜单，文件排序类型按钮大小 */
+  --files-menu-file-sort-type-btn-logo-size  : 12px;
+  /* 文件菜单，文件排序类型按钮颜色 */
+  --files-menu-file-sort-type-btn-logo-color : #999;
+  /* 鼠标悬浮在文件排序类型按钮，按钮背景色 */
+  --hover-file-sort-type-btn-logo-bg-color   : #eee;
+  /* 选中文件排序类型按钮，按钮颜色 */
+  --selected-file-sort-type-btn-logo-color   : #2a68cc;
+  /* 选中文件排序类型按钮，按钮背景色 */
+  --selected-file-sort-type-btn-logo-bg-color: rgb(0, 82, 217, 0.1);
+  /* 文件排序类型按钮背景圆角 */
+  --file-sort-type-btn-logo-bg-radius        : 3px;
+
+  /* 文件菜单，最近使用目录下选中行背景色 */
+  --files-menu-recently-used-dir-active-line-bg-color: #fff;
+  /* 文件菜单，最近使用目录末尾竖线颜色 */
+  --files-menu-recently-used-dir-endLine-color       : #fd7c5e;
+  /* 文件菜单，最近使用目录前方图标颜色 */
+  --files-menu-recently-used-dir-head-logo-color     : #60747f;
+  /* 文件菜单，最近使用目录前方图标大小 */
+  --files-menu-recently-used-dir-head-logo-size      : 13px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 右键菜单设置（context-menu.css）━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 右键菜单宽度 */
+  --context-menu-width     : 210px;
+  /* 右键菜单背景色 */
+  --context-menu-bg-color  : #fff;
+  /* 右键菜单内文本字体 */
+  --context-menu-text-font : "RobotoMono", "霞鹜文楷";
+  /* 右键菜单内文本颜色 */
+  --context-menu-text-color: #333;
+  /* 右键菜单内文本大小 */
+  --context-menu-text-size : 13px;
+
+  /* 鼠标悬浮在右键菜单内任一行 / 按钮，该行文本颜色 */
+  --hover-context-menu-list-line-text-color: #2a68cc;
+  /* 鼠标悬浮在右键菜单内任一行 / 按钮，该行背景色 */
+  --hover-context-menu-list-line-bg-color  : #d5dfea;
+
+  /* 右键菜单任一行右侧快捷键文本大小 */
+  --context-menu-right-shortcut-size   : 11px;
+  /* 右键菜单任一行右侧快捷键文本透明度 */
+  --context-menu-right-shortcut-opacity: .7;
+
+  /* 右键菜单当前光标所在块类型标识大小 */
+  --context-menu-block-type-icon-size : 11px;
+  /* 右键菜单当前光标所在块类型标识颜色 */
+  --context-menu-block-type-icon-color: #fd7c5e;
+
+  /* 右键菜单按钮大小 */
+  --context-menu-btn-size    : 15px;
+  /* 右键菜单按钮背景色 */
+  --context-menu-btn-bg-color: #f8fafc;
+
+  /* 鼠标悬浮在右键菜单内任一按钮，该按钮文本颜色 */
+  --hover-context-menu-list-btn-text-color: #2a68cc;
+  /* 鼠标悬浮在右键菜单内任一按钮，该按钮背景色 */
+  --hover-context-menu-list-btn-bg-color  : #d5dfea;
+
+  /* 右键菜单分隔线 */
+  --context-menu-list-divider: 1px solid #eee;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 底部栏设置（footer.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 底部栏文本字体 */
+  --footer-text-font : "HarmonyOS-Sans", "霞鹜文楷";
+  /* 底部栏文本颜色 */
+  --footer-text-color: #777;
+  /* 底部栏文本大小 */
+  --footer-text-size : .7rem;
+
+  /* 底部栏按钮颜色 */
+  --footer-btn-icon-color         : inherit;
+  /* 底部栏按钮大小 */
+  --footer-btn-icon-size          : 15px;
+  /* 鼠标悬浮在按钮上，按钮颜色 */
+  --hover-footer-btn-icon-color   : #3670bc !important;
+  /* 鼠标悬浮在按钮上，按钮背景色 */
+  --hover-footer-btn-icon-bg-color: #c9d7e3 !important;
+
+  /* 底部栏弹出菜单文本颜色 */
+  --footer-up-menu-text-color           : #555;
+  /* 底部栏弹出菜单文本大小 */
+  --footer-up-menu-text-size            : 13px;
+  /* 底部栏弹出菜单背景色 */
+  --footer-up-menu-bg-color             : #fff;
+  /* 鼠标悬浮在底部栏弹出菜单任一行，该行文字颜色 */
+  --hover-footer-up-menu-line-text-color: #2a68cc !important;
+  /* 鼠标悬浮在底部栏弹出菜单任一行，该行背景色 */
+  --hover-footer-up-menu-line-bg-color  : #d9e4ec !important;
+
+  /* 拼写检查语言选择区域右侧语言简称文本透明度 */
+  --spell-check-panel-lang-list-abbr-text-opacity: .7;
+
+  /* 当前拼写检查选择的语言标识图标大小 */
+  --spell-check-panel-checked-lang-icon-size : 13px;
+  /* 当前拼写检查选择的语言标识图标颜色 */
+  --spell-check-panel-checked-lang-icon-color: #fd7c5e;
+  /* 拼写检查语言输入框背景色 */
+  --spell-check-panel-input-box-bg-color     : #fff;
+
+  /* 字数统计菜单标题颜色 */
+  --word-count-panel-headline-color: #444;
+  /* 字数统计菜单标题大小 */
+  --word-count-panel-headline-size : 15px;
+
+  /* 是否开启字数统计菜单标题前图标，inherit —— 开启，none —— 关闭 */
+  --word-count-panel-headline-icon-state   : inherit;
+  /* 字数统计菜单标题前图标颜色 */
+  --word-count-panel-headline-icon-color   : #444;
+  /* 字数统计菜单标题前图标大小 */
+  --word-count-panel-headline-icon-size    : 16px;
+  /* 图标与标题间距，用 margin-right 实现 */
+  --word-count-panel-icon-headline-distance: 5px;
+
+  /* 字数统计菜单内容数字与单位的间距，用 padding-right 实现 */
+  --word-count-panel-number-unit-distance    : 10px;
+  /* 字数统计菜单标题与内容分隔线，用 border-top 实现 */
+  --word-count-panel-headline-content-divider: 1px solid #eee;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 写作区域搜索面板设置（search-panel.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 写作区域搜索面板阴影 */
+  --writeArea-search-panel-shadow       : 0 1px 10px 5px rgb(0, 0, 0, .15);
+  /* 写作区域搜索面板底部边框 */
+  --writeArea-search-panel-bottom-border: none;
+  /* 写作区域搜索面板背景色 */
+  --writeArea-search-panel-bg-color     : #dbe3e3;
+  /* 写作区域搜索面板文本字体 */
+  --writeArea-search-panel-text-font    : "HarmonyOS-Sans", "霞鹜文楷";
+  /* 写作区域搜索面板文本大小 */
+  --writeArea-search-panel-text-size    : 13px;
+  /* 写作区域搜索面板文本颜色 */
+  --writeArea-search-panel-text-color   : #333;
+
+  /* 鼠标悬浮在搜索面板按钮，按钮背景色 */
+  --hover-search-panel-btn-bg-color : #fff;
+  /* 鼠标悬浮在搜索面板按钮，按钮背景圆角 */
+  --hover-search-panel-btn-bg-radius: 3px;
+
+  /* 搜索面板输入框背景色 */
+  --search-panel-input-box-bg-color: #fff;
+  /* 搜索面板输入框 */
+  --search-panel-input-box-border  : 1px solid #ccc;
+  /* 光标定位到搜索框时，边框颜色 */
+  --focus-searchPanel-border-color : #428bca;
+
+  /* 搜索面板输入框搜索选项按钮图标颜色 */
+  --search-panel-input-box-btn-color            : #888;
+  /* 鼠标悬浮在搜索选项按钮，按钮背景色 */
+  --hover-search-panel-input-box-btn-bg-color   : #eee;
+  /* 选中搜索选项按钮，按钮颜色 */
+  --selected-search-panel-input-box-btn-color   : rgb(55, 133, 107);
+  /* 选中搜索选项按钮，按钮颜背景色 */
+  --selected-search-panel-input-box-btn-bg-color: rgb(55, 133, 107, .2);
+
+  /* 搜索面板右侧匹配数为 0，提示文本颜色 */
+  --search-panel-right-no-match-content-color: #f44336;
+
+  /* 鼠标悬浮在搜索面板关闭按钮，按钮颜色 */
+  --hover-search-panel-closed-btn-color: #f44336;
+
+  /* 全部替换完成通知文本颜色 */
+  --search-panel-all-replace-notice-text-color: #888;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 网站 Icon 设置（website-icon.css）━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 是否显示网站 Icon，是 —— inline-block，否 —— none */
+  --link-head-icon-state: inline-block;
+  /* 网站 Icon 大小 */
+  --link-head-icon-size : 1em;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━ 滚动条设置（scrollbar.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* 默认滚动块圆角 */
+  --default-scroll-thumb-radius: 4px;
+  /* 默认滚动块宽度 */
+  --default-scroll-thumb-width : 6px;
+  /* 默认滚动块高度 */
+  --default-scroll-thumb-height: 6px;
+
+  /* ======================== 写作区域 ======================== */
+  --writeArea-scroll-thumb-width      : 6px;
+  --writeArea-scroll-thumb-color      : #aaa;
+  /* 鼠标悬浮 / 按在滚动块上，滚动块颜色 */
+  --hover-writeArea-scroll-thumb-color: #888;
+
+  /* ======================== 侧边栏 ======================== */
+  --sidebar-scroll-thumb-width        : 6px;
+  /* 侧边栏底部横向滚动块高度 */
+  --sidebar-bottom-scroll-thumb-height: 6px;
+  --sidebar-scroll-thumb-color        : #a0b5b5;
+  --hover-sidebar-scroll-thumb-color  : #8fa4a4;
+
+  /* ======================== 代码块 ======================== */
+  /* 代码块右侧竖向滚动块宽度 */
+  --code-block-scroll-thumb-width      : 5px;
+  /* 代码块行横向滚动块高度 */
+  --code-block-line-scroll-thumb-height: 5px;
+  --code-block-scroll-thumb-color      : #d2dbe3;
+  --hover-code-block-scroll-box-color  : #aaa;
+
+  /* 代码块语言选择框 */
+  --code-lang-selection-box-scroll-thumb-width    : 6px;
+  --code-lang-selection-box-scroll-thumb-color    : #ccc;
+  --hover-code-lang-selection-box-scroll-box-color: #aaa;
+
+  /* ======================== 底部栏拼写检查栏检查语言选择区域 ======================== */
+  --spell-check-panel-lang-list-scroll-thumb-width     : 5px;
+  --spell-check-panel-lang-list-scroll-thumb-color     : #ccc;
+  --hover--spell-check-panel-lang-list-scroll-box-color: #aaa;
+
+  /* ======================== 表格 ======================== */
+  --table-scroll-thumb-width        : 6px;
+  /* 表格底部横向滚动块高度 */
+  --table-bottom-scroll-thumb-height: 6px;
+  --table-scroll-thumb-color        : rgb(192, 211, 211, .75);
+  --hover-table-scroll-thumb-color  : rgb(163, 187, 187, .75);
+}

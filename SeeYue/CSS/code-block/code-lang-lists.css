@@ -1,0 +1,653 @@
+/* 本文件显示代码块对应编程语言 */
+/* ================================================================= */
+
+
+/* 解释性文本 */
+pre[lang="TXT"]:after,
+pre[lang="txt"]:after {
+  content: "TXT";
+}
+
+
+/* 以下为代码语言显示字符 */
+/* ———————————————————— A ———————————————————— */
+pre[lang="ABAP"]:after {
+  content: "ABAP";
+}
+
+pre[lang="apl"]:after {
+  content: "APL";
+}
+
+pre[lang="asciiarmor"]:after {
+  content: "ASCII-Armor";
+}
+
+pre[lang="ASN.1"]:after {
+  content: "ASN.1";
+}
+
+pre[lang="asp"]:after {
+  content: "ASP";
+}
+
+pre[lang="assembly"]:after {
+  content: "Assembly";
+}
+
+/* ———————————————————— B ———————————————————— */
+pre[lang="bash"]:after {
+  content: "Bash";
+}
+
+pre[lang="basic"]:after {
+  content: "BASIC";
+}
+
+/* ———————————————————— C ———————————————————— */
+pre[lang="C"]:after {
+  content: "C";
+}
+
+pre[lang="c#"]:after,
+pre[lang="csharp"]:after {
+  content: "C#";
+}
+
+pre[lang="c++"]:after,
+pre[lang="cpp"]:after {
+  content: "C++";
+}
+
+pre[lang="cassandra"]:after {
+  content: "Cassandra";
+}
+
+pre[lang="ceylon"]:after {
+  content: "Ceylon";
+}
+
+pre[lang="clike"]:after {
+  content: "C-like";
+}
+
+pre[lang="clojure"]:after {
+  content: "Clojure";
+}
+
+pre[lang="CMake"]:after r {
+  content: "CMake";
+}
+
+pre[lang="cobol"]:after {
+  content: "COBOL";
+}
+
+pre[lang="coffeescript"]:after {
+  content: "CoffeeScript";
+}
+
+pre[lang="commonlisp"]:after {
+  content: "Common Lisp";
+}
+
+pre[lang="CQL"]:after {
+  content: "CQL";
+}
+
+pre[lang="crystal"]:after {
+  content: "Crystal";
+}
+
+pre[lang="css"]:after {
+  content: "CSS";
+}
+
+pre[lang="cypher"]:after {
+  content: "Cypher";
+}
+
+pre[lang="cython"]:after {
+  content: "Cython";
+}
+
+/* ———————————————————— D ———————————————————— */
+pre[lang="D"]:after {
+  content: "D";
+}
+
+pre[lang="dart"]:after {
+  content: "Dart";
+}
+
+pre[lang="diff"]:after {
+  content: "Diff";
+}
+
+pre[lang="django"]:after {
+  content: "Django";
+}
+
+pre[lang="Dockerfile"]:after {
+  content: "Dockerfile";
+}
+
+pre[lang="DTD"]:after {
+  content: "DTD";
+}
+
+pre[lang="Dylan"]:after {
+  content: "Dylan";
+}
+
+/* ———————————————————— E ———————————————————— */
+pre[lang="ejs"]:after {
+  content: "EJS";
+}
+
+pre[lang="Elixir"]:after {
+  content: "Elixir";
+}
+
+pre[lang="Elm"]:after {
+  content: "Elm";
+}
+
+pre[lang="embeddedjs"]:after {
+  content: "Embedded JS";
+}
+
+pre[lang="erb"]:after {
+  content: "ERB";
+}
+
+pre[lang="Erlang"]:after {
+  content: "Erlang";
+}
+
+/* ———————————————————— F ———————————————————— */
+pre[lang="F#"]:after,
+pre[lang="Fsharp"]:after {
+  content: "F#";
+}
+
+pre[lang="flow"]:after {
+  content: "Flow";
+}
+
+pre[lang="forth"]:after {
+  content: "Forth";
+}
+
+pre[lang="fortran"]:after {
+  content: "Fortran";
+}
+
+/* ———————————————————— G ———————————————————— */
+pre[lang="gas"]:after {
+  content: "Gas";
+}
+
+pre[lang="gfm"]:after {
+  content: "GFW";
+}
+
+pre[lang="gherkin"]:after {
+  content: "Gherkin";
+}
+
+pre[lang="glsl"]:after {
+  content: "GLSL";
+}
+
+pre[lang="Go"]:after {
+  content: "Go";
+}
+
+pre[lang="Groovy"]:after {
+  content: "Groovy";
+}
+
+/* ———————————————————— H ———————————————————— */
+pre[lang="Handlebars"]:after {
+  content: "Handlebars";
+}
+
+pre[lang="Haskell"]:after {
+  content: "Haskell";
+}
+
+pre[lang="Haxe"]:after {
+  content: "Haxe";
+}
+
+pre[lang="Hive"]:after {
+  content: "Hive";
+}
+
+pre[lang="Htaccess"]:after {
+  content: "Htaccess";
+}
+
+pre[lang="HTML"]:after {
+  content: "HTML";
+}
+
+pre[lang="HTTP"]:after {
+  content: "HTTP";
+}
+
+pre[lang="HXML"]:after {
+  content: "HXML";
+}
+
+/* ———————————————————— I ———————————————————— */
+pre[lang="IDL"]:after {
+  content: "IDL";
+}
+
+pre[lang="INI"]:after {
+  content: "INI";
+}
+
+/* ———————————————————— J ———————————————————— */
+pre[lang="Jade"]:after {
+  content: "Jade";
+}
+
+pre[lang="Java"]:after {
+  content: "Java";
+}
+
+pre[lang="JavaScript"]:after,
+pre[lang="JS"]:after {
+  content: "JavaScript";
+}
+
+pre[lang="Jinja2"]:after {
+  content: "Jinja2";
+}
+
+pre[lang="JSON"]:after {
+  content: "JSON";
+}
+
+pre[lang="JSP"]:after {
+  content: "JSP";
+}
+
+pre[lang="JSX"]:after {
+  content: "JSX";
+}
+
+pre[lang="Julia"]:after {
+  content: "Julia";
+}
+
+/* ———————————————————— K ———————————————————— */
+pre[lang="Kotlin"]:after {
+  content: "Kotlin";
+}
+
+/* ———————————————————— L ———————————————————— */
+pre[lang="Latex"]:after {
+  content: "LaTeX";
+}
+
+pre[lang="Less"]:after {
+  content: "Less";
+}
+
+pre[lang="LISP"]:after {
+  content: "LISP";
+}
+
+pre[lang="LiveScript"]:after {
+  content: "LiveScript";
+}
+
+pre[lang="lua"]:after {
+  content: "Lua";
+}
+
+/* ———————————————————— M ———————————————————— */
+pre[lang="Makefile"]:after {
+  content: "Makefile";
+}
+
+pre[lang="MariaDB"]:after {
+  content: "MariaDB";
+}
+
+pre[lang="Markdown"]:after {
+  content: "Markdown";
+}
+
+pre[lang="Mathematica"]:after {
+  content: "Mathematica";
+}
+
+pre[lang="MATLAB"]:after {
+  content: "MATLAB";
+}
+
+pre[lang="MBOX"]:after {
+  content: "MBOX";
+}
+
+pre[lang="Mermaid"]:after {
+  content: "Mermaid";
+}
+
+pre[lang="MSSQL"]:after {
+  content: "MSSQL";
+}
+
+pre[lang="MySQL"]:after {
+  content: "MySQL";
+}
+
+/* ———————————————————— N ———————————————————— */
+pre[lang="Nginx"]:after {
+  content: "Nginx";
+}
+
+pre[lang="Nim"]:after {
+  content: "Nim";
+}
+
+pre[lang="NSIS"]:after {
+  content: "NSIS";
+}
+
+/* ———————————————————— O ———————————————————— */
+pre[lang="objc"]:after,
+pre[lang="objective-c"]:after {
+  content: "Objective-C";
+}
+
+pre[lang="OCaml"]:after {
+  content: "OCaml";
+}
+
+pre[lang="Octave"]:after {
+  content: "Octave";
+}
+
+pre[lang="Oz"]:after {
+  content: "Oz";
+}
+
+
+/* ———————————————————— P ———————————————————— */
+pre[lang="Pascal"]:after {
+  content: "Pascal";
+}
+
+pre[lang="Perl"]:after {
+  content: "Perl";
+}
+
+pre[lang="perl6"]:after {
+  content: "Perl 6";
+}
+
+pre[lang="PGP"]:after {
+  content: "PGP";
+}
+
+pre[lang="PHP"]:after {
+  content: "PHP";
+}
+
+pre[lang="php+HTML"]:after {
+  content: "PHP+HTML";
+}
+
+pre[lang="plsql"]:after {
+  content: "PL/SQL";
+}
+
+pre[lang="postgresql"]:after {
+  content: "PostgreSQL";
+}
+
+pre[lang="PowerShell"]:after {
+  content: "PowerShell";
+}
+
+pre[lang="Properties"]:after {
+  content: "Properties";
+}
+
+pre[lang="Protobuf"]:after {
+  content: "Protobuf";
+}
+
+pre[lang="Pseudocode"]:after {
+  content: "Pseudocode";
+}
+
+pre[lang="pug"]:after {
+  content: "Pug";
+}
+
+pre[lang="Python"]:after {
+  content: "Python";
+}
+
+/* ———————————————————— Q ———————————————————— */
+pre[lang="Q"]:after {
+  content: "Q";
+}
+
+/* ———————————————————— R ———————————————————— */
+pre[lang="R"]:after {
+  content: "R";
+}
+
+pre[lang="react"]::after {
+  content: "React";
+}
+
+pre[lang="reStructuredText"]:after,
+pre[lang="rst"]:after {
+  content: "reStructuredText";
+}
+
+pre[lang="Ruby"]:after {
+  content: "Ruby";
+}
+
+pre[lang="Rust"]:after {
+  content: "Rust";
+}
+
+/* ———————————————————— S ———————————————————— */
+pre[lang="SAS"]:after {
+  content: "SAS";
+}
+
+pre[lang="scala"]:after {
+  content: "Scala";
+}
+
+pre[lang="Scheme"]:after {
+  content: "Scheme";
+}
+
+pre[lang="Sass"]:after {
+  content: "Sass";
+}
+
+pre[lang="Sequence"]:after {
+  content: "Sequence";
+}
+
+pre[lang^="sh"]:after,
+pre[lang="shell"]:after {
+  content: "Shell";
+}
+
+pre[lang="Smalltalk"]:after {
+  content: "Smalltalk";
+}
+
+pre[lang="smarty"]:after {
+  content: "Smarty";
+}
+
+pre[lang="Solidity"]:after {
+  content: "Solidity";
+}
+
+pre[lang="SPARQL"]:after {
+  content: "SPARQL";
+}
+
+pre[lang="Spreadsheet"]:after {
+  content: "Spreadsheet";
+}
+
+pre[lang="SQL"]:after {
+  content: "SQL";
+}
+
+pre[lang="SQLite"]:after {
+  content: "SQLite";
+}
+
+pre[lang="squirrel"]:after {
+  content: "Squirrel";
+}
+
+pre[lang="stata"]:after {
+  content: "Stata";
+}
+
+pre[lang="Stylus"]:after {
+  content: "Stylus";
+}
+
+pre[lang="Swift"]:after {
+  content: "Swift";
+}
+
+pre[lang="systemverilog"]:after {
+  content: "SystemVerilog";
+}
+
+/* ———————————————————— T ———————————————————— */
+pre[lang="TCL"]:after {
+  content: "TCL";
+}
+
+pre[lang="TeX"]:after {
+  content: "TeX";
+}
+
+pre[lang="TiddlyWiki"]:after {
+  content: "TiddlyWiki";
+}
+
+pre[lang="tiki wiki"]:after {
+  content: "Tikiwiki";
+}
+
+pre[lang="TOML"]:after {
+  content: "TOML";
+}
+
+pre[lang="TSX"]:after {
+  content: "TSX";
+}
+
+pre[lang="Turtle"]:after {
+  content: "Turtle";
+}
+
+pre[lang="Twig"]:after {
+  content: "Twig";
+}
+
+pre[lang="TypeScript"]:after,
+pre[lang="TS"]:after {
+  content: "TypeScript";
+}
+
+/* ———————————————————— U ———————————————————— */
+
+
+/* ———————————————————— V ———————————————————— */
+pre[lang="V"]:after {
+  content: "V";
+}
+
+pre[lang="VB"]:after {
+  content: "VB";
+}
+
+pre[lang="VBScript"]:after {
+  content: "VBScript";
+}
+
+pre[lang="Velocity"]:after {
+  content: "Velocity";
+}
+
+pre[lang="Verilog"]:after {
+  content: "Verilog";
+}
+
+pre[lang="VHDL"]:after {
+  content: "VHDL";
+}
+
+pre[lang="visual basic"]:after {
+  content: "Visual Basic";
+}
+
+pre[lang="Vue"]:after {
+  content: "Vue";
+}
+
+/* ———————————————————— W ———————————————————— */
+pre[lang="web-idl"]:after {
+  content: "Web IDL";
+}
+
+pre[lang="Wiki"]:after {
+  content: "Wiki";
+}
+
+/* ———————————————————— X ———————————————————— */
+pre[lang="XAML"]:after {
+  content: "XAML";
+}
+
+pre[lang="XML"]:after {
+  content: "XML";
+}
+
+pre[lang="xml-dtd"]:after {
+  content: "XML DTD";
+}
+
+pre[lang="XQuery"]:after {
+  content: "XQuery";
+}
+
+/* ———————————————————— Y ———————————————————— */
+pre[lang="Yacas"]:after {
+  content: "Yacas";
+}
+
+pre[lang="YAML"]:after {
+  content: "YAML";
+}
+
+pre[lang="yara"]:after {
+  content: "YARA";
+}
+
+/* ———————————————————— Z ———————————————————— */

@@ -1,0 +1,172 @@
+/* 本文件为滚动条样式设置 */
+/* ================================================================= */
+
+/*
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/::-webkit-scrollbar
+::-webkit-scrollbar                      整个滚动条，控制滑块的大小。
+::-webkit-scrollbar-button               滚动条上的按钮（上下箭头）。
+::-webkit-scrollbar-thumb                滚动条上的滚动滑块。
+::-webkit-scrollbar-track                滚动条轨道。
+::-webkit-scrollbar-track-piece          滚动条没有滑块的轨道部分。
+::-webkit-scrollbar-corner               当同时有垂直滚动条和水平滚动条时交汇的部分。
+::-webkit-resizer                        出现在某些元素底角的可拖动调整大小的滑块。
+*/
+
+/* 统一滚轮样式 */
+::-webkit-scrollbar {
+  width : var(--default-scroll-box-width);
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: var(--default-scroll-box-height);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: var(--default-scroll-thumb-radius) !important;
+  cursor       : pointer !important;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: transparent;
+  cursor          : pointer !important;
+}
+
+
+/* —————————————————————————————— 写作区域滚轮 —————————————————————————————— */
+content::-webkit-scrollbar {
+  width: var(--writeArea-scroll-thumb-width) !important;
+}
+
+content::-webkit-scrollbar-thumb {
+  background: var(--writeArea-scroll-thumb-color);
+}
+
+content::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-writeArea-scroll-thumb-color) !important;
+}
+
+/* —————————————————————————————— 侧边栏滚轮 —————————————————————————————— */
+div.sidebar-content-content::-webkit-scrollbar {
+  width : var(--sidebar-scroll-thumb-width) !important;
+  height: var(--sidebar-bottom-scroll-thumb-height) !important;
+}
+
+div.sidebar-content-content::-webkit-scrollbar:horizontal {
+  height: var(--sidebar-bottom-scroll-thumb-height) !important;
+}
+
+div.sidebar-content-content::-webkit-scrollbar-thumb,
+.ty-on-search #file-library-search-result::-webkit-scrollbar-thumb {
+  background: var(--sidebar-scroll-thumb-color) !important;
+}
+
+/* 鼠标悬浮在侧边栏滚轮 */
+div.sidebar-content-content::-webkit-scrollbar-thumb:hover,
+.ty-on-search #file-library-search-result::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-sidebar-scroll-thumb-color) !important;
+}
+
+/* 侧边栏处于搜索查找结果列表时 */
+.ty-on-search #file-library-search-result::-webkit-scrollbar {
+  width :var(--sidebar-scroll-thumb-width) !important;
+  height:var(--sidebar-bottom-scroll-thumb-height) !important;
+}
+
+/* —————————————————————————————— 代码块滚轮 —————————————————————————————— */
+/* 代码块行横向滚轮 */
+#write pre::-webkit-scrollbar,
+/* 代码块右侧竖向滚轮 */
+#write pre>div>div.CodeMirror-scroll::-webkit-scrollbar {
+  width : var(--code-block-scroll-thumb-width);
+  height: var(--code-block-line-scroll-thumb-height);
+}
+
+#write pre::-webkit-scrollbar:horizontal,
+#write pre>div>div.CodeMirror-scroll::-webkit-scrollbar:horizontal {
+  height: var(--code-block-line-scroll-thumb-height);
+}
+
+#write pre::-webkit-scrollbar-thumb,
+#write pre>div>div.CodeMirror-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--code-block-scroll-thumb-color);
+}
+
+#write pre::-webkit-scrollbar-thumb:hover,
+#write pre>div>div.CodeMirror-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-code-block-scroll-box-color) !important;
+}
+
+/* 代码块语言选择框 */
+.auto-suggest-container::-webkit-scrollbar {
+  width: var(--code-lang-selection-box-scroll-thumb-width);
+}
+
+.auto-suggest-container::-webkit-scrollbar-thumb {
+  background-color: var(--code-lang-selection-box-scroll-thumb-color);
+}
+
+.auto-suggest-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-code-lang-selection-box-scroll-box-color) !important;
+}
+
+/* ————————————————————————— 底部栏拼写检查栏检查语言选择区域 ————————————————————————— */
+#spell-check-panel .ty-lang-list::-webkit-scrollbar {
+  width: var(--spell-check-panel-lang-list-scroll-thumb-width) !important;
+}
+
+#spell-check-panel .ty-lang-list::-webkit-scrollbar-thumb {
+  background: var(--spell-check-panel-lang-list-scroll-thumb-color);
+}
+
+#spell-check-panel .ty-lang-list::-webkit-scrollbar-thumb:hover {
+  background: var(--hover--spell-check-panel-lang-list-scroll-box-color) !important;
+}
+
+/* ————————————————————————— 表格 ————————————————————————— */
+/* 全宽 full-scroll.css */
+figure>table tbody::-webkit-scrollbar {
+  width: var(--table-scroll-thumb-width) !important;
+}
+
+figure>table tbody::-webkit-scrollbar-thumb {
+  background: var(--table-scroll-thumb-color);
+}
+
+figure>table tbody::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-table-scroll-thumb-color) !important;
+}
+
+/* 宽度自适应 auto-scroll.css */
+/* 纵向滚动条 */
+figure::-webkit-scrollbar,
+/* 横向滚动条 */
+figure::-webkit-scrollbar:horizontal {
+  width : var(--table-scroll-thumb-width) !important;
+  height: var(--table-bottom-scroll-thumb-height) !important;
+}
+
+figure::-webkit-scrollbar-thumb,
+figure::-webkit-scrollbar-thumb:horizontal {
+  background   : var(--table-scroll-thumb-color);
+  border-radius: 3px !important;
+}
+
+figure::-webkit-scrollbar-thumb:hover,
+figure::-webkit-scrollbar-thumb:hover:horizontal {
+  background: var(--hover-table-scroll-thumb-color) !important;
+}
+
+/* ————————————————————————— HTML 块 ————————————————————————— */
+
+:is(.md-mathjax-preview, .md-math-container)::-webkit-scrollbar {
+  height: var(--writeArea-scroll-thumb-width) !important;
+}
+
+:is(.md-mathjax-preview, .md-math-container)::-webkit-scrollbar-thumb {
+  background: var(--writeArea-scroll-thumb-color);
+}
+
+:is(.md-mathjax-preview, .md-math-container)::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-writeArea-scroll-thumb-color) !important;
+}

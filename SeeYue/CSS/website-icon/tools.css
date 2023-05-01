@@ -1,0 +1,478 @@
+/* 工具类网站 */
+/* =================================================================*/
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1 搜索 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="baidu.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/baidu.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="google.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/google.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="bing.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/bing.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="cn.bing.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/bingcn.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="fsoufsou.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/fsou.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="yandex.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/Yandex.svg");
+    content         : " ";
+  }
+
+  #write a[href*="duckduckgo.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/duckduckgo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="so.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/360so.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sogou.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/sogou.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="wuzhuiso.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/wuzhuiso.svg") !important;
+    content         : " ";
+    border-radius   : 50% !important;
+  }
+
+  #write a[href*="kaifa.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/baidukaifa.svg") !important;
+    content         : " ";
+    border-radius   : 50% !important;
+  }
+
+  #write a[href*="gogo.webbillion.cn"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/gogo1.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="magi.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/magi.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="suche.dasnetzundich.de"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/searxng.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="you.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/you.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="ecosia.org"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/ecosia.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="neeva.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/neeva.svg") !important;
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="startpage.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/startpage.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="yahoo.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/yahoo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mijisou.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/mijisou.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="ask.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/ask.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qwant.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.1-Search/qwant.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2 云盘 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="aliyundrive.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/aliyundrive.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pan.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/baidupan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lanzou.com"]::before,
+  #write a[href*="lanzoui.com"]::before,
+  #write a[href*="lanzoux.com"]::before,
+  #write a[href*="lanzous.com"]::before,
+  #write a[href*="woozooo.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/lanzou.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pan.quark.cn"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/quarkpan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jianguoyun.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/jianguoyun.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="teracloud.jp"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/teracloud.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="4shared.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/4shared.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="box.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/box.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cloud.189.cn"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/189cloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="115.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/115cloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cowtransfer.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/cowtransfer.svg");
+    content         : " ";
+  }
+
+  #write a[href*="musetransfer.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/musetransfer.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wenshushu.cn"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/wenshushu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mypikpak.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/pikpak.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pan-yz.chaoxing.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/chaoxingpan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="weiyun.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/weiyun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="drive.google.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/googledrive.svg");
+    content         : " ";
+  }
+
+  #write a[href*="onedrive.live.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/onedrive.svg");
+    content         : " ";
+  }
+
+  #write a[href*="yun.139.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/139yun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tmp.link"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/tmp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="weiyun.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/weiyun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="123pan.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/123pan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="icloud.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/icloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dropbox.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/dropbox.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mega.io"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/mega.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ctfile.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/ctfile.svg");
+    content         : " ";
+  }
+
+  #write a[href*="feimaoyun.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/feimaoyun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xunlei.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.2-Cloud/xunlei.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3 邮箱 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="mail.qq.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/qqmail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mail.163.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/163mail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mail.aliyun.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/alimail.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="outlook.live.com/mail"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/outlook.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mail.google.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/gmail.svg");
+    content         : " ";
+    border-radius   : 4px;
+  }
+
+  #write a[href*="mail.sohu.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/sohumail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mail.10086.cn"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/10086mail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="webmail30.189.cn"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/189mail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mail.21cn.net"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/21cnmail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="petalmail.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/petalmail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mail.sina.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/sinamail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mail.yandex.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/yandexmail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zoho.com/mail/"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/zohomail.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fastmail.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/fastmail.svg");
+    content         : " ";
+    border-radius   : 50% !important;
+  }
+
+  #write a[href*="proton.me/mail"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.3-Mail/protonmail.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4 文件处理 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="convertio.co"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/convertio.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cloudconvert.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/cloudconvert.svg");
+    content         : " ";
+  }
+
+  #write a[href*="clipdrop.co"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/clipdrop.svg");
+    content         : " ";
+  }
+
+  #write a[href*="alltoall.net"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/alltoall.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xunjiepdf.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/xunjiepdf.svg");
+    content         : " ";
+  }
+
+  #write a[href*="baimiaoapp.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/baimiaoapp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pearocr.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/pearocr.svg");
+    content         : " ";
+  }
+
+  #write a[href*="squoosh.app"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/squoosh.svg");
+    content         : " ";
+  }
+
+  #write a[href*="docsmall.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/docsmall.svg");
+    content         : " ";
+  }
+
+  #write a[href*="picdiet.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/picdiet.svg");
+    content         : " ";
+  }
+
+  #write a[href*="imgupscaler.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/imgupscaler.svg");
+    content         : " ";
+  }
+
+  #write a[href*="waifu2x.udp.jp"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/waifu2x.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zuohaotu.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/zuohaotu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="remove.bg"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/remove.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bgsub.cn"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.4-File-Deal/bgsub.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5 翻译 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="fanyi.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.5-Translate/baidufanyi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="translate.google.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.5-Translate/googletranslate.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="bing.com/translator"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.5-Translate/bingtranslate.svg");
+    content         : " ";
+  }
+
+  #write a[href*="deepl.com/translator"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.5-Translate/deepl.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fanyi.sogou.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.5-Translate/sogoufanyi.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="fanyi.qq.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.5-Translate/qqfanyi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fanyi.youdao.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.5-Translate/youdao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fanyi.caiyunapp.com"]::before {
+    background-image: url("../../Images/Favicon/02-Tools-Websites/2.5-Translate/caiyunxiaoyi.svg");
+    content         : " ";
+  }
+}

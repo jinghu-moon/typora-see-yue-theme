@@ -1,0 +1,205 @@
+/* 本文件为侧边栏搜索结果界面设置 */
+/* ================================================================= */
+
+
+.ty-on-search #file-library-search-result {
+  padding-bottom: 0;
+  overflow-x    : auto !important;
+  white-space   : nowrap;
+}
+
+/* 搜索结果块 */
+#file-library-search-result .ty-search-item {
+  border-bottom: none;
+  position     : relative;
+  transition   : all .3s ease;
+  opacity      : 1;
+  color        : var(--sidebar-text-color) !important;
+}
+
+/* 结果块分隔线 */
+.ty-search-item::before {
+  display      : var(--search-result-list-divider-state);
+  content      : "";
+  width        : calc(var(--sidebar-width) - 12px);
+  height       : 1px;
+  position     : absolute;
+  border-bottom: var(--search-result-list-divider);
+  top          : 0px;
+  left         : 6px;
+}
+
+/* 取消被选中块上下分隔线 */
+.ty-search-item:first-child.active::before,
+.ty-search-item.active+.ty-search-item::before,
+.ty-search-item+.ty-search-item.active::before {
+  display: none;
+}
+
+/* 展开状态 */
+#file-library-search-result .ty-search-item:hover {
+  background-color: var(--hover-search-result-list-bg-color);
+}
+
+#file-library-search-result .ty-search-item.active {
+  background-color: var(--selected-search-result-list-bg-color);
+  border-radius   : 5px;
+  position        : relative;
+}
+
+.ty-search-item-summary .file-list-item-file-name {
+  padding-left: 20px;
+}
+
+/* 选中块标题 */
+.ty-search-item.active .ty-search-item-summary .file-list-item-file-name-part {
+  color: var(--selected-search-result-list-filename-color);
+}
+
+/* 搜索结果块名称栏 */
+.ty-search-item .ty-search-item-summary {
+  font-size  : var(--sidebar-text-size);
+  padding    : 6px 0 5px 0;
+  margin-left: 6px;
+}
+
+.ty-search-item.active.ty-search-item-collapse {
+  background-color: transparent !important;
+}
+
+/* 折叠状态 */
+.ty-search-item.active.ty-search-item-collapse:hover {
+  background-color: var(--hover-search-result-list-bg-color) !important;
+  border-radius   : 0 !important;
+}
+
+.ty-search-item.active.ty-search-item-collapse .ty-search-item-summary {
+  background-color: var(--selected-search-result-list-bg-color);
+  border-radius   : 5px
+}
+
+/* 文件名左侧图标 */
+.ty-search-item-summary .ty-search-item-collapse-icon {
+  opacity     : var(--search-result-list-filename-head-logo-opacity);
+  padding-left: 7px;
+}
+
+.ty-search-item-summary .ty-search-item-collapse-icon:hover {
+  opacity   : .8;
+  transition: all .3 ease;
+}
+
+/* 文件名 */
+.ty-search-item-summary .file-list-item-file-name .file-list-item-file-name-part {
+  font-family: "HarmonyOS-Bold";
+  color      : var(--sidebar-search-result-list-filename-color);
+}
+
+/* 文件名右侧文件后缀 */
+.ty-search-item-summary .file-list-item-file-name .file-list-item-file-ext-part {
+  color      : var(--search-result-list-file-type-path-text-color);
+  opacity    : 1;
+  font-weight: normal;
+}
+
+/* 文件名下方文件路径 */
+.ty-search-item .ty-search-item-summary .file-list-item-parent-loc {
+  color       : var(--search-result-list-file-type-path-text-color);
+  width       : 100%;
+  opacity     : 1;
+  padding-left: 22px;
+  font-size   : .75em;
+  line-height : 1.2;
+  padding-top : 2px;
+}
+
+/*  搜索结果块尾部匹配数量 */
+.ty-search-item-summary .file-list-item-right .file-list-item-count {
+  color           : var(--search-result-list-end-match-number-color);
+  background-color: var(--search-result-list-end-match-number-bg-color) !important;
+  font-size       : var(--search-result-list-end-match-number-size);
+  border-radius   : 2px;
+  line-height     : 1.6;
+  margin          : -2px 5px 0 0;
+}
+
+/* 搜索结果块匹配行 */
+.ty-search-item .ty-search-item-matches .ty-search-item-line {
+  font-family: var(--sidebar-text-font);
+  font-size  : var(--sidebar-text-size);
+  transition : all .3s ease;
+  line-height: 1.5;
+  overflow   : visible;
+}
+
+.ty-search-item .ty-search-item-matches .ty-search-item-line:hover {
+  background-color: var(--hover-search-result-list-line-bg-color);
+  color           : var(--hover-search-result-list-line-text-color);
+}
+
+.ty-search-item .ty-search-item-matches .ty-search-item-line.active {
+  background-color: var(--selected-search-result-list-line-bg-color);
+  color           : var(--selected-search-result-list-line-text-color);
+  font-weight     : normal;
+}
+
+/* 展示更多匹配项按钮（隐藏原有的按钮） */
+.ty-search-item .ty-search-item-matches .ty-search-item-line-expand,
+.ty-search-item .ty-search-item-matches .ty-search-item-line-expand:hover {
+  color     : transparent;
+  background: transparent;
+  width     : 50%;
+}
+
+.ty-search-item .ty-search-item-matches {
+  position: relative;
+}
+
+.ty-search-item .ty-search-item-matches .ty-search-item-line-expand::before {
+  content         : var(--search-result-list-lines-expend-btn-content);
+  color           : var(--search-result-list-lines-expend-btn-content-color);
+  background-color: var(--search-result-list-lines-expend-btn-content-bg-color);
+  font-size       : var(--search-result-list-lines-expend-btn-content-size);
+  font-family     : "HarmonyOS-Bold";
+  font-weight     : normal;
+  padding         : 2px 4px;
+  border-radius   : 3px;
+  transition      : all .3s ease;
+  position        : absolute;
+  bottom          : 9px;
+  /* 水平居中 */
+  left            : 50%;
+  transform       : translateX(-50%);
+}
+
+.ty-search-item .ty-search-item-matches .ty-search-item-line-expand:hover::before {
+  background-color: var(--hover-search-result-list-lines-expend-btn-bg-color);
+}
+
+/* 搜索页面（侧边栏+写作区域）匹配的文本 */
+.ty-search-item-line .ty-file-search-match-text,
+#write .md-search-hit {
+  background-color: var(--search-result-list-match-content-bg-color);
+  padding         : var(--search-result-list-match-content-bg-size);
+  margin          : 0 1.5px;
+  border-radius   : 2px;
+}
+
+/* 点击搜索结果列表某一行，写作区域对应的匹配文字 */
+#write :is(.md-search-hit.md-search-select, .cm-search-hit) {
+  color        : var(--parallel-line-writeArea-match-content-color);
+  background   : var(--parallel-line-writeArea-match-content-bg-color);
+  padding      : var(--parallel-line-writeArea-match-content-bg-size);
+  position     : relative;
+  z-index      : 10;
+  border-radius: 2px;
+}
+
+/* 写作区域对应的匹配文字遮罩（不包括代码块、引用块） */
+#write .md-search-hit.md-search-select::before {
+  content   : "";
+  position  : absolute;
+  box-shadow: 0 0 0 1000vmax rgb(0, 0, 0, .75);
+  z-index   : -10;
+}
+

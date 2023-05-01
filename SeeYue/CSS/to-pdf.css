@@ -2,11 +2,14 @@
 /* ================================================================= */
 
 
+/* 修改导出的 PDF 的页边距 */
+@page {
+  margin   : 15mm -10mm !important;
+  /* margin: 27mm 16mm 27mm 16mm; */
+}
+
 /* 导出 PDF，基本设置 */
 @media print {
-  html {
-    font-size: 18px;
-  }
 
   table,
   pre {
@@ -17,27 +20,21 @@
     word-wrap: break-word;
   }
 
-  h1 {
+  /* h1 {
     page-break-before: always;
-  }
+  } */
 
-  h1:first-of-type {
+  /* h1:first-of-type {
     page-break-before: avoid;
-  }
+  } */
 }
-
-/* 修改导出的 PDF 的页边距 */
-@page {
-  margin: 10mm -4mm;
-}
-
 
 /* 标题设置 */
 @media print {
-  #write h1 {
+  /* #write h1 {
     margin-top : 0 !important;
     padding-top: 1rem !important;
-  }
+  } */
 
   .typora-export * {
     print-color-adjust        : exact;
@@ -50,76 +47,16 @@
   h4::before,
   h5::before,
   h6::before {
-    display: none;
-  }
-
-  /* 保留引用样式块的图标 */
-  blockquote h2::before,
-  blockquote h3::before,
-  blockquote h4::before,
-  blockquote h5::before,
-  blockquote h6::before {
-    display: block;
+    display: none !important;
   }
 }
-
-/* 导出PDF，防止无序列表、任务列表层级线错位 */
-@media print {
-
-  /* 无序列表 */
-  ul ul::before {
-    position         : absolute;
-    left             : -16.5px !important;
-    border-left-width: 2px !important;
-  }
-
-  blockquote ul ul::before {
-    position: absolute;
-    left    : -16.5px !important;
-  }
-
-  /* 任务列表 */
-  .task-list-item.md-task-list-item ul::before {
-    position: absolute;
-    left    : -21px !important;
-  }
-
-  blockquote .task-list-item.md-task-list-item ul::before {
-    position: absolute;
-    left    : -19.5px !important;
-  }
-
-  /* 自定义二级无序列表符号样式 */
-  /* #write ul>li>ul>li:not(.md-task-list-item)::before {
-    content    : "\ec42" !important;
-    color      : #8ebba6;
-    font-family: 'iconfont' !important;
-    font-size  : 7.5px !important;
-    position   : absolute;
-    left       : -18.5px !important;
-    top        : 12px !important;
-    transition : all .3s ease;
-    line-height: 1;
-  } */
-
-  /* #write ul ul>li>ul>li::before {
-    display: none;
-  } */
-}
-
-/* 导出取消代码块横向滚轮 */
-/* @media print {
-  #write .CodeMirror-wrap .CodeMirror-code pre {
-    overflow: visible !important;
-    white-space: normal !important;
-  }
-} */
 
 /* 脚注设置 */
 @media print {
+
   .footnotes-area {
     font-size  : .85rem;
-    font-family: "霞鹜文楷";
+    font-family: "HarmonyOS-Regular";
     color      : #777 !important;
     line-height: 1.5;
   }
@@ -141,8 +78,41 @@
 
 /* 引用块设置 */
 @media print {
-  blockquote {
-    background-color: rgb(236, 244, 249, .6) !important;
+
+  /* 保留引用样式块的图标 */
+  #write blockquote :is(h1, h2, h3, h4, h5, h6)h2::before {
+    display: block !important;
+  }
+
+  #write blockquote {
+    background-color: #fff !important;
+  }
+}
+
+/* 取消导出目录的右边框 */
+@media print {
+
+  #write :is(.md-toc-h1, .md-toc-h2, .md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6) .md-toc-inner,
+  #write :is(.md-toc-h1, .md-toc-h2, .md-toc-h3, .md-toc-h4, .md-toc-h5, .md-toc-h6):hover .md-toc-inner {
+    border-right: none !important;
+  }
+}
+
+/* 正文目录 */
+@media print {
+  #write .md-toc {
+    margin          : 20px 0;
+    box-shadow      : none;
+    padding         : 35px 0 20px 0;
+    background-color: transparent !important;
+    /* 目录后分页 */
+    page-break-after: always;
+  }
+
+  #write .md-toc::before {
+    width           : 100%;
+    background-color: rgb(57, 108, 175, 0.15) !important;
+    padding         : 6px !important;
   }
 }
 
@@ -152,19 +122,57 @@
 
   /* 正文标题 */
   /* #write h1:nth-of-type(1) {
-    color    : transparent !important;
-    margin   : 0 !important;
-    padding  : 0 !important;
-    font-size: 1px !important;
+    color     : transparent !important;
+    margin    : 0 !important;
+    margin-top: -40px !important;
+    padding   : 0 !important;
+    font-size : 0 !important;
   } */
 
-  /* 正文目录 */
+  /* 隐藏正文目录的第一个一级标题（目录） */
   /* #write .md-toc-content .md-toc-h1:first-child {
     display: none;
+  }
+
+  #write h1,
+  #write h1 a {
+    padding-top: 0 !important;
+    margin-top : -10px !important;
+  }
+
+  #write .md-toc::before {
+    margin: 0 !important;
   } */
 
   /* tab 大小 */
   span.md-toc-item.md-toc-h1 a.md-toc-inner span {
     border-left: var(--contents-h1-tab-space);
+  }
+
+  /* 一级标题 tab 大小 */
+  /* #write h1 span {
+    margin-left: 15px;
+  } */
+}
+
+/* 代码块 */
+@media print {
+
+  /* 防止代码块最后一行显示不完整 */
+  pre div.CodeMirror-scroll,
+  #write pre div.CodeMirror-scroll {
+    padding-bottom: 4px !important;
+  }
+
+  #write .CodeMirror-gutters {
+    border-width: 2px !important;
+    height      : 105% !important;
+  }
+}
+
+@media print {
+  #write a[alt|=badge] {
+    position: relative;
+    display : initial !important;
   }
 }

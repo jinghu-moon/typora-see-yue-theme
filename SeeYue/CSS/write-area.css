@@ -1,0 +1,61 @@
+/* 本文件为写作区域基本设置 */
+/* ================================================================= */
+
+
+html {
+  /* 全局字体大小 */
+  font-size       : var(--writeArea-text-size);
+  background-color: var(--interface-default-bg-color);
+}
+
+body {
+  font-family   : var(--writeArea-text-font) !important;
+  color         : var(--writeArea-text-color);
+  text-align    : var(--writeArea-text-align-style);
+  box-sizing    : border-box;
+  letter-spacing: 0;
+  margin        : 0;
+}
+
+/* 页面宽度 */
+#write {
+  position : static;
+  max-width: var(--writeArea-default-width);
+  margin   : 0 auto;
+  padding  : 20px 52px 100px;
+  transform: none;
+}
+
+/* 源代码模式 */
+#typora-source .CodeMirror-lines {
+  max-width: var(--writeArea-default-width);
+}
+
+/* 行间距 */
+#write p {
+  line-height: var(--writeArea-text-line-spacing);
+}
+
+/* 统一段距 */
+:is(p, blockquote, ul, ol, dl, table) {
+  margin-top   : 1rem;
+  margin-bottom: var(--writeArea-text-paragraph-spacing);
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* 文本选中样式 */
+::selection,
+/* 代码块文本选中样式 */
+pre ::selection,
+.CodeMirror-selected,
+.CodeMirror-selectedtext {
+  color           : var(--writeArea-selected-text-color) !important;
+  background-color: var(--writeArea-selected-text-bg-color) !important;
+}

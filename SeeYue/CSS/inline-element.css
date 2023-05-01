@@ -1,0 +1,71 @@
+/* 本文件为行内元素样式设置 */
+/* ================================================================= */
+
+
+/* 加粗 */
+#write strong {
+  font-family: var(--bold-text-font);
+  color      : var(--bold-text-color);
+  font-size  : var(--bold-text-size);
+  font-weight: normal !important;
+  padding    : 0 1px;
+}
+
+/* 斜体 */
+#write em {
+  font-family: var(--italic-text-font);
+  font-size  : var(--italic-text-size);
+  color      : inherit;
+  padding    : 0 5px 0 2px;
+}
+
+/* 高亮 */
+#write mark {
+  background-color: transparent !important;
+  color           : inherit;
+  box-shadow      : 0 var(--marked-text-bg-height) 0 0 var(--marked-text-bg-color) inset;
+  padding         : 0 2px 1px 2px;
+  margin          : 0 1px;
+}
+
+/* 删除文字 */
+#write del {
+  color  : var(--deleted-text-color);
+  padding: 0px 2px;
+}
+
+
+/* 行间代码 */
+#write :is(code, tt) {
+  margin          : 0 2px;
+  padding         : 1.5px 3px 0px;
+  font-family     : var(--line-code-font);
+  color           : var(--line-code-color);
+  background-color: var(--line-code-bg-color);
+  border-radius   : var(--line-code-bg-radius);
+  font-size       : var(--line-code-size);
+}
+
+#write blockquote code {
+  background-color: var(--blockquote-line-code-bg-color);
+}
+
+#write table code {
+  background-color: var(--table-line-code-bg-color);
+}
+
+/* 下划线 */
+#write u {
+  background-color: inherit;
+  color           : inherit;
+  font-size       : inherit;
+  text-decoration : none;
+  /* 下边框模拟下划线 */
+  border-bottom   : var(--text-underline);
+  padding-bottom  : var(--text-bottom-border-distance);
+}
+
+/* 行内元素提示符号 */
+.md-meta {
+  color: var(--inline-element-prompt-char-color);
+}

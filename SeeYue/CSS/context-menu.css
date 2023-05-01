@@ -1,0 +1,270 @@
+/* 本文件为右键菜单样式设置 */
+/* ================================================================= */
+
+
+.context-menu {
+  width: var(--context-menu-width);
+}
+
+/* 右键菜单整体（排除侧边栏文件页底部栏更多菜单） */
+.dropdown-menu:not(#sidebar-files-menu) {
+  background-color: var(--context-menu-bg-color);
+  padding         : 4px 6px;
+  border          : none !important;
+  /* 调整菜单弹出位置 */
+  transform       : translateY(2.2em);
+}
+
+/* 右键菜单文字行 */
+.context-menu.dropdown-menu>li>a {
+  font-family: var(--context-menu-text-font);
+  font-size  : var(--context-menu-text-size);
+  color      : var(--context-menu-text-color) !important;
+  padding    : 4px 20px;
+  border     : none !important;
+  transition : all 0.3s ease;
+}
+
+.context-menu.dropdown-menu>li>a:hover,
+.context-menu.dropdown-menu>.active>a {
+  background-color: var(--hover-context-menu-list-line-bg-color) !important;
+  color           : var(--hover-context-menu-list-line-text-color) !important;
+  cursor          : pointer;
+  border-radius   : 4px;
+}
+
+/* 右键快捷键样式 */
+.context-menu .ty-menu-shortcut {
+  font-size  : var(--context-menu-right-shortcut-size);
+  opacity    : var(--context-menu-right-shortcut-opacity);
+  font-family: var(--context-menu-text-font);
+  float      : right;
+  line-height: inherit;
+  position   : relative;
+  top        : 2px;
+}
+
+/* 右键菜单当前块类型标识 */
+.context-menu .state-on:before {
+  display     : inline-block !important;
+  font-family : "iconfont";
+  content     : "\e644";
+  font-size   : var(--context-menu-block-type-icon-size);
+  color       : var(--context-menu-block-type-icon-color);
+  margin-left : 0;
+  margin-right: 0;
+  position    : absolute;
+  top         : calc(50% - 5.5px);
+  left        : -3px;
+  line-height : 1;
+}
+
+/* 取消未选中类型前的伪元素 */
+.context-menu .state-off:before {
+  display: none;
+}
+
+/* 右键菜单按钮行 */
+.context-menu .menu-item-container {
+  font-family: var(--context-menu-text-font);
+  color      : var(--context-menu-text-color) !important;
+  padding    : 2px 19.5px 2px 15px;
+}
+
+/* 与上一行按钮对齐 */
+.context-menu li[data-group="block-tab"] .menu-item-container {
+  padding-right: 18px;
+}
+
+/* 右键菜单按钮 */
+.context-menu .menu-item-container a.menu-style-btn,
+.context-menu .menu-item-container a.menu-style-btn:active {
+  margin       : 2px 0;
+  color        : var(--context-menu-text-color);
+  font-size    : var(--context-menu-btn-size);
+  background   : var(--context-menu-btn-bg-color);
+  box-shadow   : inset 0 0 0 1px rgb(16 22 26 / 7%), inset 0 -1px 0 rgb(16 22 26 / 0%);
+  cursor       : pointer;
+  border       : none;
+  transition   : all 0.3s ease;
+  border-radius: 4px;
+}
+
+.context-menu .menu-item-container a.menu-style-btn:hover {
+  background-color: var(--hover-context-menu-list-btn-bg-color) !important;
+  color           : var(--hover-context-menu-list-btn-text-color) !important;
+}
+
+/* 分隔线 */
+.dropdown-menu .divider {
+  border-top: var(--context-menu-list-divider);
+  margin    : 4px 0;
+  opacity   : 1;
+}
+
+/* 替换原来的按钮图标 */
+.context-menu .menu-style-btn *::before {
+  font-family: "iconfont" !important;
+  font-size  : 15px;
+}
+
+.context-menu .menu-style-btn[data-key="cut"] .ty-cut:before {
+  content: "\e650";
+}
+
+.context-menu .menu-style-btn[data-key="copy"] .ty-copy:before {
+  content: "\ec7a";
+}
+
+.context-menu .menu-style-btn[data-key="paste"] .ty-paste:before {
+  content: "\ec37";
+}
+
+.context-menu .menu-style-btn[data-key="backspace"] .ty-delete1:before {
+  content: "\ec7b";
+}
+
+.context-menu .menu-style-btn[data-style="strong"] .ty-bold:before {
+  content: "\e610";
+}
+
+.context-menu .menu-style-btn[data-style="em"] .ty-italic:before {
+  content: "\ec87";
+}
+
+.context-menu .menu-style-btn[data-style="code"] .ty-code:before {
+  content: "\e612";
+}
+
+.context-menu .menu-style-btn[data-style="link"] .ty-link-icon:before {
+  content: "\ec7f";
+}
+
+.context-menu .menu-style-btn[data-indent="blockquote"] .ty-quote:before {
+  content: "\ec81";
+}
+
+.context-menu .menu-style-btn[data-indent="ol"] .ty-number:before {
+  content: "\ec82";
+}
+
+.context-menu .menu-style-btn[data-indent="ul"] .ty-bullet-list:before {
+  content: "\ec80";
+}
+
+.context-menu .menu-style-btn[data-indent="tasklist"] .ty-check:before {
+  content: "\ed1b";
+}
+
+/* 左右缩进按钮 */
+.context-menu .menu-item-container a.menu-style-btn-2width {
+  padding-left: 0;
+  width       : 50%;
+  text-align  : center;
+}
+
+.context-menu .menu-style-btn[data-tab="left"] .ty-left:before {
+  content: "\f1ef";
+}
+
+.context-menu .menu-style-btn[data-tab="right"] .ty-right:before {
+  content: "\e61f";
+}
+
+/* 悬浮在某一行时，弹出的菜单 */
+.ext-context-menu {
+  min-width     : var(--context-menu-width);
+  padding-top   : 5px !important;
+  padding-bottom: 5px !important;
+}
+
+/* 右键菜单选中弹出菜单行 */
+.ext-context-menu li a {
+  padding-left : 10px !important;
+  padding-right: 10px !important;
+}
+
+/* 隐藏原有的文字 */
+/* 【复制或粘贴为…】行 → 复制为 Markdown 行（未选中文本） */
+.context-menu .disabled a span[data-localize="Copy as Markdown"],
+/* 【复制或粘贴为…】行 → 复制为 Markdown 行（选中文本） */
+.context-menu a span[data-localize="Copy as Markdown"],
+/* 【复制或粘贴为……】行 → 复制为 HTML 行（未选中文本） */
+.context-menu .disabled a span[data-localize="Copy as HTML Code"],
+/* 【复制或粘贴为……】行 → 复制为 HTML 行（选中文本）*/
+.context-menu a span[data-localize="Copy as HTML Code"] {
+  color         : transparent !important;
+  position      : relative;
+  transition    : all 0.3s ease !important;
+  width         : 80px;
+  height        : 20px;
+  display       : inline-block;
+  vertical-align: bottom;
+}
+
+.context-menu :is(.disabled, *) a span[data-localize="Copy as Markdown"]::before,
+.context-menu :is(.disabled, *) a span[data-localize="Copy as HTML Code"]::before {
+  color   : var(--context-menu-text-color);
+  position: absolute;
+  top     : -2.5px;
+  left    : 0;
+}
+
+/* 更改 */
+.context-menu :is(.disabled, *) a span[data-localize="Copy as Markdown"]::before {
+  content: "复制\00A0\00A0\00A0\00A0\00A0MD";
+}
+
+.context-menu :is(.disabled, *) a span[data-localize="Copy as HTML Code"]::before {
+  content: "复制\00A0\00A0\00A0\00A0\00A0HTML";
+}
+
+/* 箭头 */
+.context-menu :is(.disabled, *) a span[data-localize="Copy as Markdown"]::after,
+.context-menu :is(.disabled, *) a span[data-localize="Copy as HTML Code"]::after {
+  font-family: "iconfont";
+  content    : "\eb08";
+  position   : absolute;
+  top        : -6px;
+  left       : 28px;
+  color      : var(--context-menu-text-color);
+  font-size  : 18px !important;
+}
+
+.ext-context-menu li a:hover span[data-localize="Copy as Markdown"]::before,
+.ext-context-menu li a:hover span[data-localize="Copy as HTML Code"]::before,
+.ext-context-menu li a:hover span[data-localize="Copy as Markdown"]::after,
+.ext-context-menu li a:hover span[data-localize="Copy as HTML Code"]::after {
+  color: var(--hover-context-menu-list-line-text-color) !important;
+}
+
+/* 图片语法转换菜单 */
+#switch-img-syntax-menu li a {
+  color   : transparent !important;
+  position: relative;
+}
+
+/* MD 语法 */
+#switch-img-syntax-menu li[data-key="switch-img-syntax-markdown"] a span::before,
+/* HTML 语法 */
+#switch-img-syntax-menu li[data-key="switch-img-syntax-html"] a span::before {
+  position: absolute;
+  top     : 4px;
+  left    : 10px;
+  color   : var(--context-menu-text-color);
+  opacity : .7;
+}
+
+#switch-img-syntax-menu li[data-key="switch-img-syntax-markdown"]:hover a span::before,
+#switch-img-syntax-menu li[data-key="switch-img-syntax-html"]:hover a span::before {
+  color     : var(--hover-context-menu-list-line-text-color) !important;
+  transition: all 0.3s ease;
+}
+
+#switch-img-syntax-menu li[data-key="switch-img-syntax-markdown"] a span::before {
+  content: "转换为 Markdown 语法";
+}
+
+#switch-img-syntax-menu li[data-key="switch-img-syntax-html"] a span::before {
+  content: '转换为 HTML/IMG 标签';
+}

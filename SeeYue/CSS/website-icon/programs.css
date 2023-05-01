@@ -1,0 +1,645 @@
+/* 编程类网站 */
+/* =================================================================*/
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1 代码托管 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="github.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/github.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gitee.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/gitee.svg");
+    content         : " ";
+  }
+
+  #write a[href*="coding.net"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/coding.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gitlab.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/gitlab.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gitlab.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/gitlabcn.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="gitea.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/gitea.svg");
+    content         : " ";
+  }
+
+  #write a[href*="framagit.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/framagit.svg");
+    content         : " ";
+  }
+
+  #write a[href*="opensource.google"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/googleopensource.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="sourceforge.net"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/sourceforge.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bitbucket.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/bitbucket.svg");
+    content         : " ";
+  }
+
+  #write a[href*="codeup.aliyun.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/codeup.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="codeberg.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/codeberg.svg");
+    content         : " ";
+  }
+
+  #write a[href*="codefever.pgyer.com"]::before,
+  #write a[href*="codefever.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/codefever.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gogs.io"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/gogs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xiaolvyun.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.1-CodeHost/baiduxiaolvyun.svg");
+    content         : " ";
+    background-color: transparent;
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2 教程 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="freecodecamp.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/freecodecamp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="imooc.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/imooc.svg");
+    content         : " ";
+    transform       : scale(1.3);
+  }
+
+  #write a[href*="mozilla.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/mozilla.svg");
+    content         : " ";
+  }
+
+  #write a[href*="runoob.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/runoob.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="vuejs.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/vuejs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="reactjs.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/reactjs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="angular.io"]::before,
+  #write a[href*="angular.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/angular.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bookstack.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/bookstack.svg");
+    content         : " ";
+  }
+
+  #write a[href*="w3school.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/w3school.svg");
+    content         : " ";
+  }
+
+  #write a[href*="w3cschool.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/w3cschool.svg");
+    content         : " ";
+  }
+
+  #write a[href*="how2j.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/how2j.svg");
+    content         : " ";
+  }
+
+  #write a[href*="codegym.cc"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/codegym.svg");
+    content         : " ";
+  }
+
+  #write a[href*="yiibai.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/yiibai.svg");
+    content         : " ";
+  }
+
+  #write a[href*="biancheng.net"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/biancheng.svg");
+    content         : " ";
+  }
+
+  #write a[href*="time.geekbang.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/geektime.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bitejiuyeke.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/bitejiuyeke.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ife.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.2-Tutorial/baiduife.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3 论坛 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="cnblogs.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/cnblogs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ld246.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/liandi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jianshu.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/jianshu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="51cto.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/51cto.svg");
+    content         : " ";
+  }
+
+  #write a[href*="infoq.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/infoq.svg");
+    content         : " ";
+  }
+
+  #write a[href*="oschina.net"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/oschina.svg");
+    content         : " ";
+  }
+
+  #write a[href*="v2ex.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/v2ex.svg");
+    content         : " ";
+  }
+
+  #write a[href*="juejin.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/juejin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="csdn.net"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/csdn.svg");
+    content         : " ";
+  }
+
+  #write a[href*="segmentfault.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/segmentfault.svg");
+    content         : " ";
+  }
+
+  #write a[href*="stackoverflow.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/stackoverflow.svg");
+    content         : " ";
+    transform       : scale(1.5);
+  }
+
+  #write a[href*="mdnice.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.3-Forum/mdnice.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4 博客 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="blogger.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/blogger.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hexo.io"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/hexo.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="gohugo.io"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/hugo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="vuepress.vuejs.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/vuepress.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="jekyllrb.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/jekyllrb.svg");
+    content         : " ";
+  }
+
+  #write a[href*="getpelican.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/pelican.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gitbook.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/gitbook.svg");
+    content         : " ";
+  }
+
+  #write a[href*="docsify.js.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/docsify.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gridea.dev"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/gridea.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="gatsbyjs.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/gatsby.svg");
+    content         : " ";
+  }
+
+  #write a[href*="astro.build"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/astro.svg");
+    content         : " ";
+  }
+
+  #write a[href*="docusaurus.io"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/docusaurus.svg");
+    content         : " ";
+  }
+
+  #write a[href*="squidfunk.github.io/mkdocs-material/"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/mkdocs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mrdoc.pro"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/mrdoc.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="typecho.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/typecho.svg");
+    content         : " ";
+  }
+
+  #write a[href*="halo.run"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/halo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="b3log.org/solo"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/solo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="github.com/adlered/bolo-solo"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/bolo.svg");
+    content         : " ";
+    transform       : scale(1.25);
+  }
+
+  #write a[href*="wordpress.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/wordpress.svg");
+    content         : " ";
+  }
+
+  #write a[href*="modstart.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/modstart.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zblogcn.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.4-Blog/zblog.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5 刷题 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="leetcode.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.5-Practice/leetcode.svg");
+    content         : " ";
+  }
+
+  #write a[href*="luogu.com.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.5-Practice/luogu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="nowcoder.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.5-Practice/nowcoder.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lintcode.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.5-Practice/lintcode.svg");
+    content         : " ";
+  }
+
+  #write a[href*="topcoder.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.5-Practice/topcoder.svg");
+    content         : " ";
+  }
+
+  #write a[href*="coderbyte.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.5-Practice/coderbyte.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6 云服务 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="cloud.tencent.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/tencentcloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="aliyun.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/aliyun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="huaweicloud.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/huaweicloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jdcloud.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/jdcloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cloud.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/baiducloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="upyun.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/upyun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qiniu.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/qiniu.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="ctyun.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/ctyun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ecloud.10086.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/10086cloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ksyun.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/ksyun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ucloud.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/ucloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dogecloud.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/dogecloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wangsucloud.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/wangsucloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cloud.inspur.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/inspurcloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fit2cloud.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/fit2cloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qingcloud.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/qingcloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xycloud.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/xycloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mtyun.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/mtyun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sf.163.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/163sf.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bocloud.com.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/bocloud.svg");
+    content         : " ";
+  }
+
+  #write a[href*="aws.amazon.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/aws.svg");
+    content         : " ";
+  }
+
+  #write a[href*="azure.microsoft.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/azure.svg");
+    content         : " ";
+  }
+
+  #write a[href*="vultr.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/vultr.svg");
+    content         : " ";
+  }
+
+  #write a[href*="contabo.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/contabo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="racknerd.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/racknerd.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cloudcone.com.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/cloudcone.svg");
+    content         : " ";
+  }
+
+  #write a[href*="linode.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/linode.svg");
+    content         : " ";
+    transform       : scale(1.3);
+  }
+
+  #write a[href*="greencloudvps.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/greencloudvps.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cloud.google.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/googlecloud.svg");
+    content         : " ";
+    transform       : scale(1.5);
+  }
+
+  #write a[href*="hostkvm.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/hostkvm.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hosthatch.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/hosthatch.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ion.krypt.asia"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/ion.svg");
+    content         : " ";
+  }
+
+  #write a[href*="spartanhost.net"]::before,
+  #write a[href*="spartanhost.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/spartanhost.svg");
+    content         : " ";
+  }
+
+  #write a[href*="saltyfish.io"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/saltyfish.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="hetzner.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/hetzner.svg");
+    content         : " ";
+  }
+
+  #write a[href*="olink.cloud"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/olink.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cloudflare.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/cloudflare.svg");
+    content         : " ";
+  }
+
+  #write a[href*="vercel.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/vercel.svg");
+    content         : " ";
+  }
+
+  #write a[href*="netlify.app"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/netlify.svg");
+    content         : " ";
+  }
+
+  #write a[href*="4everland.org"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/4everland.svg");
+    content         : " ";
+  }
+
+  #write a[href*="surge.sh"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.6-CloudService/surge.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7 在线编程 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="codepen.io"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.7-CodingOnline/codepen.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jsfiddle.net"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.7-CodingOnline/jsfiddle.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jsbin.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.7-CodingOnline/jsbin.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="runkit.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.7-CodingOnline/runkit.svg");
+    content         : " ";
+    transform       : scale(1.4);
+  }
+
+  #write a[href*="regex101.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.7-CodingOnline/regex101.svg");
+    content         : " ";
+  }
+
+  #write a[href*="codesandbox.io"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.7-CodingOnline/codesandbox.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="stackblitz.com"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.7-CodingOnline/stackblitz.svg");
+    content         : " ";
+  }
+
+  #write a[href*="code.juejin.cn"]::before {
+    background-image: url("../../Images/Favicon/04-Programs-Websites/4.7-CodingOnline/juejincode.svg");
+    content         : " ";
+  }
+}

@@ -1,0 +1,35 @@
+/* 本文件为代码块顶栏设置 */
+/* ================================================================= */
+
+
+/* 代码块加上边框，作为小圆点和编程语言的背景 */
+#write pre.md-fences {
+  border-top: var(--code-block-top-bar);
+}
+
+/* 仿 Mac 窗口设计【左侧】 */
+pre.md-fences:before {
+  content   : " ";
+  height    : var(--code-block-topBar-left-all-dot-size) !important;
+  width     : var(--code-block-topBar-left-all-dot-size) !important;
+  background: var(--code-block-topBar-left-redDot-color) !important;
+  /* 阴影模拟小圆点 */
+  box-shadow: var(--code-block-topBar-left-dots-distance) 0 var(--code-block-topBar-left-yellowDot-color),
+    calc(var(--code-block-topBar-left-dots-distance)*2) 0 var(--code-block-topBar-left-greenDot-color);
+  border-radius: 50%;
+  position     : absolute;
+  top          : var(--code-block-topBar-left-dots-top-position);
+  left         : var(--code-block-topBar-left-dots-left-position);
+}
+
+/* 代码语言显示【右侧】 */
+#write pre::after {
+  font-family   : "HarmonyOS-Sans";
+  font-weight   : bolder;
+  font-size     : var(--code-block-topBar-right-program-lang-size);
+  color         : var(--code-block-topBar-right-program-lang-color);
+  position      : absolute;
+  top           : var(--code-block-topBar-right-program-lang-top-position);
+  right         : var(--code-block-topBar-right-program-lang-right-position);
+  letter-spacing: 1px;
+}

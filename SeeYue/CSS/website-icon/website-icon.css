@@ -1,0 +1,28 @@
+/* 本文件为网站 logo 设置 */
+/* ================================================================= */
+
+
+/*
+选择器                  描述
+attribute              用于选取带有指定属性的元素。
+attribute=value        用于选取带有指定属性和值的元素。
+attribute~=value       用于选取属性值中包含指定词汇的元素。
+attribute|=value       用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。
+attribute^=value       匹配属性值以指定值开头的每个元素。
+attribute$=value       匹配属性值以指定值结尾的每个元素。
+attribute*=value       匹配属性值中包含指定值的每个元素。
+源自：https://www.w3school.com.cn/css/css_selector_attribute.asp
+*/
+
+
+#write a[href*="http"]::before {
+  display          : var(--link-head-icon-state);
+  position         : relative;
+  top              : 5px;
+  background-repeat: no-repeat;
+  background-size  : var(--link-head-icon-size);
+  width            : var(--link-head-icon-size);
+  height           : var(--link-head-icon-size);
+  margin-right     : 4px;
+  border-radius    : 4px;
+}

@@ -1,0 +1,70 @@
+/* 本文件为侧边栏文件页面顶部搜索框设置 */
+/* ================================================================= */
+
+
+/* 搜索框与侧边栏内容分隔线 */
+.ty-sidebar-search-panel {
+  border-bottom: var(--searchPanel-bottom-divider);
+}
+
+/* 侧边栏搜索面板 */
+.searchpanel-search-option-btn {
+  opacity: 1 !important;
+}
+
+/* 侧边栏查找框 */
+.ty-sidebar-search-panel #file-library-search-input {
+  height       : var(--sidebar-searchPanel-height);
+  font-family  : var(--sidebar-text-font);
+  border-radius: 4px;
+  border       : var(--sidebar-searchPanel-border);
+  background   : var(--sidebar-searchPanel-bg-color);
+  color        : var(--sidebar-text-color);
+}
+
+.ty-sidebar-search-panel #file-library-search-input:focus {
+  border-color: var(--focus-searchPanel-border-color);
+}
+
+/* 三个查找选项按钮（未选中） */
+:is(.ty-sidebar-search-panel, .ty-sidebar-search-panel:hover) .searchpanel-search-option-btn {
+  color        : var(--searchpanel-search-option-btn-color);
+  border-radius: var(--search-option-btn-bg-radius);
+  transition   : all .3s ease;
+  opacity      : 1 !important;
+}
+
+/* 三个查找选项按钮（悬浮） */
+.ty-sidebar-search-panel .searchpanel-search-option-btn:hover {
+  background-color: var(--hover-search-option-btn-bg-color) !important;
+}
+
+/* 三个查找选项按钮（选中） */
+.ty-sidebar-search-panel:hover .searchpanel-search-option-btn.select,
+.ty-sidebar-search-panel .searchpanel-search-option-btn.select {
+  color           : var(--selected-search-option-btn-color) !important;
+  background-color: var(--selected-search-option-btn-bg-color) !important;
+  opacity         : 1 !important;
+}
+
+/* 全字匹配 */
+.ty-sidebar-search-panel #filesearch-word-option-btn {
+  margin-right: var(--searchpanel-search-option-btn-distance) !important;
+}
+
+/* 大小写按钮 */
+.ty-sidebar-search-panel #filesearch-case-option-btn {
+  margin-right: calc(var(--searchpanel-search-option-btn-distance)*2) !important;
+}
+
+/* 大纲页搜索框关闭按钮 */
+.ty-sidebar-search-panel #close-outline-filter-btn {
+  color     : var(--outline-close-searchPanel-btn-color);
+  opacity   : 1;
+  top       : 2px;
+  transition: all .3s ease;
+}
+
+.ty-sidebar-search-panel #close-outline-filter-btn:hover {
+  color: var(--hover-close-searchPanel-btn-color);
+}

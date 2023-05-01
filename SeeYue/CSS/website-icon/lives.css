@@ -1,0 +1,1409 @@
+/* 生活类网站（88） */
+/* =================================================================*/
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1 购物 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="taobao.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/taobao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jd.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/jingdong.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tmall.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/Tmall.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="pinduoduo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/pinduoduo.svg");
+    content         : " ";
+    background-color: #e22a1f;
+  }
+
+  #write a[href*="suning.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/suning.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="amazon.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/amazon.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="vip.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/vip.svg");
+    content         : " ";
+    background-color: #d80b8c;
+  }
+
+  #write a[href*="1688.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/1688.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dangdang.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/dangdang.svg");
+    content         : " ";
+    background-color: #ff3228;
+  }
+
+  #write a[href*="miaomiaozhe.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/miaomiaozhe.svg");
+    content         : " ";
+    background-color: #ef4646;
+  }
+
+  #write a[href*="smzdm.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/smzdm.svg");
+    content         : " ";
+  }
+
+  #write a[href*="you.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/you163.svg") !important;
+    content         : " ";
+    background-color: #ffae0d;
+  }
+
+  #write a[href*="shihuo.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/shihuo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xiaomiyoupin.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/xiaomiyoupin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="weidian.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/weidian.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dewu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/dewu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lizhi.io"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/lizhi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="kongfz.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/kongfz.svg");
+    content         : " ";
+  }
+
+  #write a[href*="freshippo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/freshippo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zhuanzhuan.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/zhuanzhuan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="guazi.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/guazi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gome.com.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.1-Shopping/gome.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2 影视 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="iqiyi.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/aqiyi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="v.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/qqvideo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="youku.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/youku.svg");
+    content         : " ";
+    background-color: #ffff;
+  }
+
+  #write a[href*="bilibili.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/bilibili.svg");
+    content         : " ";
+  }
+
+  #write a[href*="youtube.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/youtube.svg");
+    content         : " ";
+  }
+
+  #write a[href*="netflix.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/netflix.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mgtv.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/mgtv.svg");
+    content         : " ";
+  }
+
+  #write a[href*="acfun.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/acfun.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ixigua.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/ixigua.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="tv.cctv.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/cctv.svg");
+    content         : " ";
+  }
+
+  #write a[href*="migu.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/migu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="douyin.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/douyin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="kuaishou.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/kuaishou.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xinpianchang.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/xinpianchang.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tudou.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/tudou.svg");
+    content         : " ";
+  }
+
+  #write a[href*="douyin.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/douyin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="weishi.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/weishi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="yangshipin.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/yangshipin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pptv.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/pptv.svg");
+    content         : " ";
+  }
+
+  #write a[href*="le.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/le.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tv.sohu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.2-Movies/sohutv.svg") !important;
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3 音乐 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="music.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/163music.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="y.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/qqmusic.svg");
+    content         : " ";
+  }
+
+  #write a[href*="kuwo.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/kuwomusic.svg");
+    content         : " ";
+  }
+
+  #write a[href*="kugou.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/kugoumusic.svg");
+    content         : " ";
+    background-color: #00a9ff;
+  }
+
+  #write a[href*="music.migu.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/migumusic.svg");
+    content         : " ";
+    background-color: #eb3f7d;
+  }
+
+  #write a[href*="music.apple.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/applemusic.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="spotify.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/spotify.svg");
+    content         : " ";
+  }
+
+  #write a[href*="music.amazon.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/amazonmusic.svg");
+    content         : " ";
+  }
+
+  #write a[href*="music.youtube.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/youtubemusic.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tidal.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/tidal.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pandora.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.3-Musics/pandora.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4 直播 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="huya.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/huya.svg");
+    content         : " ";
+    transform       : scale(1.3);
+  }
+
+  #write a[href*="douyu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/douyu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="yy.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/yy.svg");
+    content         : " ";
+  }
+
+  #write a[href*="huajiao.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/huajiao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="inke.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/inke.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cc.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/163cc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="live.nicovideo.jp"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/nicovideolive.svg");
+    content         : " ";
+  }
+
+  #write a[href*="afreecatv.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/afreecatv.svg");
+    content         : " ";
+    transform       : scale(1.3);
+  }
+
+  #write a[href*="twitch.tv"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.4-Live/twitch.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5 社交 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="zhihu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/zhihu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="weibo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/weibo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="douban.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/douban.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tieba.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/tieba.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="xiaohongshu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/xiaohongshu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="coolapk.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/coolapk.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bbs.nga.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/nga.svg");
+    content         : " ";
+    background-color: #315f81;
+  }
+
+  #write a[href*="hupu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/hupu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bbs.kafan.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/kafan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dianping.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/dianping.svg");
+    content         : " ";
+    background-color: #ff6633;
+  }
+
+  #write a[href*="weixin.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/weixin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="im.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/qq.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qzone.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/qzone.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="office.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/tim.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="tianya.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/tianya.svg");
+    content         : " ";
+  }
+
+  #write a[href*="renren.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/renren.svg");
+    content         : " ";
+  }
+
+  #write a[href*="soulapp.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/soul.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lofter.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/lofter.svg");
+    content         : " ";
+    background-color: #009c94;
+  }
+
+  #write a[href*="immomo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/immomo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dingtalk.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/dingding.svg");
+    content         : " ";
+  }
+
+  #write a[href*="work.weixin.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/workweixin.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="twitter.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/twitter.svg");
+    content         : " ";
+  }
+
+  #write a[href*="facebook.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/facebook.svg");
+    content         : " ";
+  }
+
+  #write a[href*="instagram.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/instagram.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tiktok.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/tiktok.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tumblr.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/tumblr.svg");
+    content         : " ";
+  }
+
+  #write a[href*="discord.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/discord.svg");
+    content         : " ";
+  }
+
+  #write a[href*="reddit.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.5-Contact/reddit.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6 出行 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="12306.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/12306.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="ctrip.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/ctrip.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qunar.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/qunar.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ctrip.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/ctrip.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fliggy.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/fliggy.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lvmama.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/lvmama.svg");
+    content         : " ";
+  }
+
+  #write a[href*="map.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/baidumap.svg") !important;
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="amap.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/amap.svg");
+    content         : " ";
+  }
+
+  #write a[href*="map.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/qqmap.svg");
+    content         : " ";
+  }
+
+  #write a[href*="map.sogou.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/sogoumap.svg");
+    content         : " ";
+  }
+
+  #write a[href*=".google.com/maps"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/googlemap.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="10101111.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/10101111.svg");
+    content         : " ";
+  }
+
+  #write a[href*="didiglobal.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/didiglobal.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dache.meituan.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/meituandache.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="weather.com.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/weather.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ele.me"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/ele.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hello-inc.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/hellobike.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qingjubike.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/qingjubike.svg");
+    content         : " ";
+    background-color: #38d6bf;
+  }
+
+  #write a[href*="meituan.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.6-Travel/meituan.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7 阅读 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="qidian.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/qidian.svg");
+    content         : " ";
+  }
+
+  #write a[href*="book.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/qqread.svg");
+    content         : " ";
+  }
+
+  #write a[href*="17k.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/17k.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zongheng.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/zongheng.svg");
+    content         : " ";
+  }
+
+  #write a[href*="weread.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/weread.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ciweimao.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/ciweimao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sfacg.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/boluobao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bkneng.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/bkneng.svg");
+    content         : " ";
+  }
+
+  #write a[href*="faloo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/faloo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ciyuanji.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/ciyuanji.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tadu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/tadu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="yuedu.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/163yuedu.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="du.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/163du.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="duokan.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/duokan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="motie.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/motie.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="zhangyue.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/iReader.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qimao.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/qimao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fanqienovel.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/fanqienovel.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cmread.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/miguyuedu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xrzww.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/xrzww.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="shuqi.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/shuqi.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="jjwxc.net"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/jjwxc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xxsy.net"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/xxsy.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hongxiu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/hongxiu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="read.douban.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/doubanread.svg");
+    content         : " ";
+  }
+
+  #write a[href*="e-m.jd.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/jdread.svg");
+    content         : " ";
+  }
+
+  #write a[href*="manga.bilibili.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/bilibilimanhua.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ac.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/qqac.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zymk.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/zymk.svg");
+    content         : " ";
+  }
+
+  #write a[href*="kuaikanmanhua.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/kuaikanmanhua.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dongmanmanhua.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/dongmanmanhua.svg");
+    content         : " ";
+  }
+
+  #write a[href*="chumanapp.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/chuman.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dmzj.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/dmzj.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mkzhan.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/mkzhan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="manhua.weibo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/weibomanhua.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ximalaya.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/ximalaya.svg");
+    content         : " ";
+  }
+
+  #write a[href*="missevan.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/missevan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qingting.fm"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/qingtingfm.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fm.douban.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.7-Read/doubanfm.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8 公司 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="mi.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/xiaomi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="huawei.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/huawei.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hihonor.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/honor.svg");
+    content         : " ";
+  }
+
+  #write a[href*="oppo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/oppo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="vivo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/vivo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="meizu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/meizu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ztedevices.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/zte.svg");
+    content         : " ";
+  }
+
+  #write a[href*="oneplus.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/oneplus.svg");
+    content         : " ";
+    background-color: #f5010c;
+  }
+
+  #write a[href*="realme.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/realme.svg");
+    content         : " ";
+  }
+
+  #write a[href*="nubia.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/nubia.svg");
+    content         : " ";
+  }
+
+  #write a[href*="blackshark.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/blackshark.svg");
+    content         : " ";
+  }
+
+  #write a[href*="samsung.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/samsung.svg");
+    content         : " ";
+  }
+
+  #write a[href*="apple.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/apple.svg");
+    content         : " ";
+    transform       : scale(1.3);
+  }
+
+  #write a[href*="lenovo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/lenovo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="asus.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/asus.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dell.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/dell.svg");
+    content         : " ";
+  }
+
+  #write a[href*="acer.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/acer.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="hp.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/hp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="microsoft.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/microsoft.svg");
+    content         : " ";
+    border-radius   : 0 !important;
+  }
+
+  #write a[href*="intel.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/intel.svg");
+    content         : " ";
+  }
+
+  #write a[href*="amd.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/amd.svg");
+    content         : " ";
+    border-radius   : 0 !important;
+  }
+
+  #write a[href*="ibm.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/ibm.svg");
+    content         : " ";
+  }
+
+  #write a[href*="oracle.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/oracle.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qualcomm.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/qualcomm.svg");
+    content         : " ";
+  }
+
+  #write a[href*="adobe.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/adobe.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sony.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/sony.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tsmc.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/tsmc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ymtc.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/ymtc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cxmt.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/cxmt.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bytedance.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/bytedance.svg");
+    content         : " ";
+    border-radius   : 0 !important;
+  }
+
+  #write a[href*="antgroup.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/antgroup.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dji.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/dji.svg");
+    content         : " ";
+  }
+
+  #write a[href*="iflytek.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/iflytek.svg");
+    content         : " ";
+  }
+
+  #write a[href*="haier.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/haier.svg");
+    content         : " ";
+    background-color: #005aaa;
+  }
+
+  #write a[href*="nbdeli.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/deli.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mg-pen.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/mgpen.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gree.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/gree.svg");
+    content         : " ";
+  }
+
+  #write a[href*="midea.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/midea.svg");
+    content         : " ";
+  }
+
+  #write a[href*="china-moutai.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/maotai.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wuliangye.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.8-Company/wuliangye.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9 游戏 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="pvp.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/wangzherongyao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lolm.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/lolm.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jcc.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/jcc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gp.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/qqgp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="yys.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/yys.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="id5.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/id5.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="mc.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/mc.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="sky.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/sky.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="moba.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/163moba.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="mrzh.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/mrzh.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="my.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/163my.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="coc.arkgames.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/arkgamescoc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pao.uu.cc"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/uupao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bh3.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/bh3.svg");
+    content         : " ";
+  }
+
+  #write a[href*="game.bilibili.com/blhx"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/blhx.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sunborngame.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/snqx.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ak.hypergryph.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/mrfz.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pns.kurogame.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/zspms.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ht.wanmei.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/huanta.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hs.blizzard.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/lscs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="minecraft.net"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/minecraft.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pubg.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/pubg.svg");
+    content         : " ";
+  }
+
+  #write a[href*="speed.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/qqfc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lol.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/lol.svg");
+    content         : " ";
+  }
+
+  #write a[href*="csgo.wanmei.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/csgo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cf.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/cf.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wuxia.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/qqwuxia.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wowchina.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/wow.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ff.web.sdo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/ff.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dota2.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/dota2.svg");
+    content         : " ";
+  }
+
+  #write a[href*="evepc.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/eve.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="n.163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/nsh.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="yjwujian.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/yjwujian.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wotgame.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/wotgame.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ys.mihoyo.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/genshin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="taptap.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/taptap.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ubisoft.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/ubisoft.svg");
+    content         : " ";
+  }
+
+  #write a[href*="steampowered.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/steam.svg");
+    content         : " ";
+  }
+
+  #write a[href*="epicgames.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/epic.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ea.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/ea.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wegame.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.9-Games/wegame.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.10 资讯 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="xinhuanet.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/xinhuashe.svg");
+    content         : " ";
+    border-radius   : 50% !important;
+  }
+
+  #write a[href*="paper.people.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/peoplenews.svg");
+    content         : " ";
+  }
+
+  #write a[href*="toutiao.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/toutiao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ifeng.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/ifeng.svg");
+    content         : " ";
+  }
+
+  #write a[href*="163.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/163news.svg");
+    content         : " ";
+  }
+
+  #write a[href*="guancha.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/guancha.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gmw.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/gmw.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sina.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/sina.svg");
+    content         : " ";
+  }
+
+  #write a[href*="infzm.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/infzm.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cls.cn"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/cls.svg");
+    content         : " ";
+  }
+
+  #write a[href*="caixin.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/caixin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="myzaker.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/zaker.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lifeweek.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/lifeweek.svg");
+    content         : " ";
+  }
+
+  #write a[href*="news.qq.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/tencentnews.svg");
+    content         : " ";
+  }
+
+  #write a[href*="news.cctv.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/cctv.svg");
+    content         : " ";
+  }
+
+  #write a[href*="chinadaily.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/chinadaily.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sohu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/sohunews.svg");
+    content         : " ";
+  }
+
+  #write a[href*="36kr.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/36kr.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sspai.com"]::before {
+    background-image: url("../..//Images/Favicon/01-Lives-Websites/1.10-Info/sspai.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ithome.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/ithome.svg");
+    content         : " ";
+  }
+
+  a[href*="appinn.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/appinn.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ifanr.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/ifanr.svg");
+    content         : " ";
+  }
+
+  #write a[href*="geekpark.net"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/geekpark.svg");
+    content         : " ";
+  }
+
+  #write a[href*="topbook.cc"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/topbook.svg");
+    content         : " ";
+  }
+
+  #write a[href*="williamlong.info"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/williamlong.svg");
+    content         : " ";
+  }
+
+  #write a[href*="solidot.org"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/solidot.svg");
+    content         : " ";
+  }
+
+  #write a[href*="huxiu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/huxiu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dgtle.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/dgtle.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fromgeek.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/fromgeek.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tmtpost.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/tmtpost.svg");
+    content         : " ";
+  }
+
+  #write a[href*="guifabu.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/guifabu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pingwest.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/pingwest.svg");
+    content         : " ";
+  }
+
+  #write a[href*="donews.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/donews.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cnbeta.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/cnbeta.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tipsoon.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/tipsoon.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cn.technode.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/technode.svg");
+    content         : " ";
+    border-radius   : 50% !important;
+  }
+
+  #write a[href*="zol.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/zol.svg");
+    content         : " ";
+  }
+
+  #write a[href*="alleyread.com"]::before {
+    background-image: url("../../Images/Favicon/01-Lives-Websites/1.10-Info/alleyread.svg");
+    content         : " ";
+  }
+}

@@ -1,0 +1,324 @@
+/* 本文件为侧边栏文件页面设置 */
+/* ================================================================= */
+
+
+/* 文件页已有内容 */
+#file-library #file-library-tree {
+  display      : block;
+  padding-right: 0;
+  padding-left : 0;
+}
+
+/* 切换为列表视图，隐藏文件视图 block */
+.use-file-list-style #file-library-tree {
+  display: none !important;
+}
+
+/* 文件页已有内容 */
+#file-library #file-library-tree .file-tree-node {
+  padding: 0 5px 0 10px;
+}
+
+#file-library-tree .file-tree-node .file-node-content {
+  color: var(--sidebar-text-color);
+}
+
+/* ———————————————————————————————————————— 文件视图 ———————————————————————————————————————— */
+/* —————————————————————————————— 文件夹样式 —————————————————————————————— */
+/* 文件夹小三角（折叠） */
+.file-node-collapsed[data-is-directory="true"] .file-node-content .file-node-open-state,
+/* 文件夹小三角（展开） */
+.file-node-expanded[data-is-directory="true"] .file-node-content .file-node-open-state {
+  position: relative;
+  padding : 0;
+  color   : var(--sidebar-filetree-left-triangle-color) !important;
+}
+
+/* 文件夹小三角（打开、折叠） */
+.file-node-content .file-node-open-state :is(.fa-caret-down, .fa-caret-right)::before {
+  font-family: "iconfont";
+  content    : "\e644";
+  font-size  : var(--sidebar-filetree-left-triangle-size);
+  position   : absolute;
+  top        : 4.5px;
+  left       : -4px;
+}
+
+.file-node-content .file-node-open-state .fa-caret-right:before {
+  transform: rotate(0deg);
+}
+
+.file-node-content .file-node-open-state .fa-caret-down:before {
+  transform: rotate(90deg);
+}
+
+/* 小三角 */
+.file-node-content:hover :is(.fa-caret-right, .fa-caret-down)::before {
+  transition: all .3s ease;
+  color     : var(--hover-filetree-left-triangle-color);
+}
+
+/* 文件夹图标（折叠） */
+.file-node-collapsed[data-is-directory="true"] .file-node-content .fa-folder::before,
+/* 文件夹（无法展开） */
+.file-tree-node .file-node-content .fa-folder::before {
+  content      : "\eac4";
+  font-family  : "iconfont";
+  margin-left  : 3px;
+  font-size    : var(--filetree-folder-left-icon-size);
+  color        : var(--filetree-folder-left-icon-color);
+  padding-right: 3px;
+}
+
+/* 文件夹图标（展开） */
+:not(.file-node-root).file-node-expanded[data-is-directory="true"]>.file-node-content>.fa-folder::before {
+  content: "\eac5";
+}
+
+/* 悬浮文件夹 */
+/* .file-node-content:hover .fa-folder::before {
+  transition: all .3s ease;
+  color     : var(--hover-folder-left-icon-color) !important;
+} */
+
+/* 层级线 */
+:not(.file-node-root).file-node-expanded[data-is-directory="true"]>.file-node-children:not(:only-child) {
+  position   : relative;
+  margin-left: 10px;
+  display    : block;
+}
+
+:not(.file-node-root).file-node-expanded[data-is-directory="true"]>.file-node-children::before {
+  display         : var(--filetree-folder-level-line-state);
+  content         : " ";
+  position        : absolute;
+  width           : var(--filetree-folder-level-line-width);
+  height          : 100%;
+  background-color: var(--filetree-folder-level-line-color);
+  left            : var(--filetree-folder-level-line-left-position);
+  z-index         : 99;
+}
+
+/* —————————————————————————————— MD、TXT 文件样式 —————————————————————————————— */
+/*  MD 文件小图标 */
+.file-library-file-node[data-path$="md"] .file-node-content .fa-file-text-o:before,
+/*  TXT 文件小图标 */
+.file-library-file-node[data-path$="txt"] .file-node-content .fa-file-text-o:before {
+  font-family  : "iconfont";
+  position     : relative;
+  padding-left : 5px;
+  color        : var(--sidebar-filetree-MD-TXT-file-icon-color);
+  font-size    : var(--sidebar-filetree-MD-TXT-file-icon-size);
+  padding-right: 0;
+  top          : -1px;
+  left         : 0px;
+}
+
+.file-library-file-node[data-path$="md"] .file-node-content .fa-file-text-o:before {
+  content: "\e946";
+}
+
+.file-library-file-node[data-path$="txt"] .file-node-content .fa-file-text-o:before {
+  content: "\eb63";
+}
+
+/* 当前编辑 MD、TXT 文件的图标 */
+.file-library-file-node.active .file-node-content .fa-file-text-o:before {
+  color: var(--active-MD-TXT-file-left-icon-color);
+}
+
+/* 取消默认选中文件样式（MD、TXT 文件） */
+.file-tree-node .file-library-file-node.active>.file-node-background {
+  border-left     : none !important;
+  /* .file-node-background 的高度继承 .file-tree-node 的高度 */
+  height          : inherit;
+  background-color: transparent;
+}
+
+.file-tree-node .file-node-content {
+  border-radius: 4px;
+}
+
+/* 选中文件样式（MD、TXT 文件） */
+.file-tree-node.active>.file-node-content {
+  background-color: var(--active-MD-TXT-filename-bg-color);
+  color           : var(--active-MD-TXT-filename-text-color) !important;
+  position        : relative;
+  font-weight     : bolder;
+}
+
+.file-tree-node.active>.file-node-content::after {
+  display         : inline-block;
+  position        : absolute;
+  content         : " ";
+  top             : var(--active-filename-endLine-top-position);
+  right           : var(--active-filename-endLine-right-position);
+  background-color: var(--active-filename-endLine-color);
+  width           : var(--active-filename-endLine-width);
+  height          : var(--active-filename-endLine-height);
+  border-radius   : var(--active-filename-endLine-radius);
+}
+
+.file-tree-node.active:hover>.file-node-content::after {
+  background-color: var(--hover-filetree-filename-bg-color);
+  transition      : background-color .3s ease-in-out;
+
+}
+
+/* —————————————————————————————— 其他样式 —————————————————————————————— */
+/* 去掉侧边栏文件点击虚线框 */
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+  outline: none !important;
+}
+
+/* 文件悬浮样式 */
+#file-library-tree .file-tree-node .file-node-content:hover {
+  background-color: var(--hover-filetree-filename-bg-color);
+  transition      : background-color .3s ease;
+  cursor          : pointer;
+  border          : none !important;
+}
+
+
+/* ———————————————————————————————————————— 列表视图 ———————————————————————————————————————— */
+/* 列表 */
+#file-library-list #file-library-list-children .file-list-item {
+  line-height: 1.2rem;
+  padding    : 10px;
+  position   : relative;
+  border     : none;
+  opacity    : 1 !important;
+}
+
+/* 列表分隔线 */
+#file-library-list #file-library-list-children .file-list-item::before {
+  display      : var(--sidebar-filelist-divider-state);
+  content      : " ";
+  width        : 100%;
+  height       : 1px;
+  position     : absolute;
+  top          : 0;
+  border-bottom: var(--sidebar-filelist-divider);
+}
+
+/* 出现顶部搜索框时，取消第一个列表上方分隔线 */
+.ty-show-search #file-library-list-children .file-list-item:nth-child(1):before {
+  display: none !important;
+}
+
+/* 取消被选中列表上下分隔线 */
+.file-list-item.active+.file-list-item::before,
+.file-list-item+.file-list-item.active::before {
+  display: none !important;
+}
+
+/* 未选中的列表 */
+#file-library-list #file-library-list-children .file-list-item:not(.active) {
+  opacity: var(--not-active-sidebar-filelist-opacity) !important;
+}
+
+#file-library-list #file-library-list-children .file-list-item:hover {
+  background-color: var(--hover-sidebar-filelist-bg-color);
+  border-radius   : var(--active-sidebar-filelist-bg-radius);
+  opacity         : 1 !important;
+  transition      : background-color .3s ease;
+}
+
+/* 文件路径、创建时间 */
+#file-library-list-children .file-library-file-node .file-list-item-parent-loc,
+#file-library-list-children .file-library-file-node .file-list-item-time {
+  opacity  : 1;
+  color    : var(--filelist-path-time-text-color);
+  font-size: var(--filelist-path-time-text-size);
+}
+
+/* 文件名称 */
+#file-library-list-children .file-list-item .file-list-item-file-name-part {
+  font-family: "HarmonyOS-Bold";
+  color      : var(--filelist-filename-text-color);
+}
+
+/* 文件后缀 */
+#file-library-list-children .file-list-item .file-list-item-file-ext-part {
+  opacity: 1;
+  color  : var(--filelist-file-type-text-color);
+}
+
+/* 被选中列表样式 */
+#file-library-list #file-library-list-children .file-list-item.active {
+  background-color: var(--active-sidebar-filelist-bg-color);
+  border-radius   : var(--active-sidebar-filelist-bg-radius);
+  color           : var(--active-filelist-text-color);
+}
+
+#file-library-list #file-library-list-children .file-list-item.active:hover {
+  background-color: var(--hover-sidebar-filelist-bg-color);
+}
+
+/* 选中列表标题 */
+#file-library-list-children .file-list-item.active .file-list-item-file-name-part,
+#file-library-list-children .file-list-item.active .file-list-item-file-ext-part {
+  color: var(--active-filelist-text-color);
+}
+
+/* 选中列表右上角小圆点 */
+#file-library-list #file-library-list-children .file-list-item.active::after {
+  content         : "";
+  width           : var(--active-filelist-top-right-dot-size);
+  height          : var(--active-filelist-top-right-dot-size);
+  border-radius   : 50%;
+  position        : absolute;
+  top             : 3px;
+  right           : 3px;
+  background-color: var(--active-filelist-top-right-dot-color);
+}
+
+#file-library-list #file-library-list-children .file-list-item.active:hover::after {
+  background-color: var(--hover-sidebar-filelist-bg-color);
+  transition      : background-color .3s ease;
+}
+
+/* 列表内容，文本溢出效果 */
+#file-library-list-children .file-list-item .file-list-item-summary {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow          : hidden;
+  word-break        : break-all;
+  display           : -webkit-box;
+  opacity           : 1 !important;
+}
+
+/* 文件夹折叠动画 */
+/* .file-node-collapsed>.file-node-children {
+  display    : block;
+  max-height : 0;
+  transition : max-height .5s ease-in-out;
+  overflow   : hidden;
+  margin-left: 10px;
+}
+
+.file-node-expanded>.file-node-children {
+  max-height: 600px;
+} */
+
+/* 展开文件夹背景色 */
+/* .file-tree-node .file-node-expanded {
+  background-color: #16a34a40;
+  border-radius   : 4px;
+} */
+
+/* #file-library #file-library-tree .file-tree-node.file-node-collapsed {
+  display           : grid;
+  grid-template-rows: 0fr;
+  transition        : 0.3s;
+  overflow          : hidden;
+
+}
+
+#file-library #file-library-tree .file-tree-node.file-node-expanded {
+  grid-template-rows: 1fr;
+}
+
+.file-node-collapsed>.file-node-children {
+  display: block
+} */

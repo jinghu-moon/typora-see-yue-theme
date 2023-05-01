@@ -1,0 +1,27 @@
+/* 本文件为链接 hover 样式 —— 线移动 */
+/* 链接长度不要跨行 */
+/* 来源 https://hexo.theme.oranges.zcheng.site/css-animation-design.html */
+/* ================================================================= */
+
+
+span:is([md-inline="link"], [md-inline="url"]).md-link {
+  position: relative;
+}
+
+span:is([md-inline="link"], [md-inline="url"]).md-link::after {
+  content         : "";
+  position        : absolute;
+  left            : 0;
+  right           : 0;
+  bottom          : -2px;
+  transition      : transform .5s ease;
+  height          : 1.5px;
+  background      : linear-gradient(to right, var(--hover-link-bottom-line-start-color), var(--hover-link-bottom-line-end-color));
+  transform       : scaleX(0);
+  transform-origin: center right;
+}
+
+span:is([md-inline="link"], [md-inline="url"]).md-link:hover::after {
+  transform       : scaleX(1);
+  transform-origin: center left;
+}

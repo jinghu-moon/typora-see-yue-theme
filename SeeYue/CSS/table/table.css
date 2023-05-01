@@ -1,0 +1,428 @@
+/* 本文件为表格样式设置 */
+/* ================================================================= */
+
+/* 阴影模拟边框 */
+figure,
+figure.md-focus,
+.md-table-fig,
+.md-table-fig:active {
+  box-shadow: var(--table-outer-border-shadow);
+}
+
+figure>table td {
+  cursor: text;
+}
+
+table {
+  padding         : 0;
+  word-break      : initial;
+  border-spacing  : 0;
+  background-color: var(--table-bg-color);
+}
+
+.md-table-fig+.md-table-fig {
+  margin-top: 2rem !important;
+}
+
+table tr {
+  margin         : 0;
+  padding        : 0;
+  border-collapse: collapse;
+}
+
+/* 表头 */
+table tr th {
+  border     : var(--table-all-cell-border);
+  padding    : var(--table-all-cell-padding) !important;
+  color      : var(--table-thead-text-color) !important;
+  font-family: var(--table-thead-text-font);
+  background : var(--table-thead-bg-color) !important;
+  font-weight: normal;
+}
+
+/* 去掉表头上边框 */
+table tr th {
+  border-top: var(--table-first-row-cell-top-border) !important;
+}
+
+table tr th {
+  border-bottom: var(--table-thead-line-bottom-border);
+}
+
+/* 表体 */
+table tbody tr td {
+  border          : var(--table-all-cell-border);
+  padding         : var(--table-all-cell-padding);
+  background-color: inherit;
+  color           : inherit;
+}
+
+/* 去掉表体最后一行下边框 */
+table tbody tr:last-child td {
+  border-bottom: var(--table-last-row-cell-bottom-border) !important;
+}
+
+/* 去掉表格第一列左边框 */
+table tr :is(th, td):first-child {
+  border-left: var(--table-first-col-cell-left-border) !important;
+}
+
+/* 去掉表格最后一列右边框 */
+table tr :is(th, td):last-child {
+  border-right: var(--table-last-col-cell-right-border) !important;
+}
+
+/* 奇数行底色 */
+#write figure>table tbody tr:nth-child(2n-1) {
+  background-color: var(--table-tbody-oddNum-line-bg-color) !important;
+}
+
+/* 偶数行底色 */
+#write figure>table tr:nth-child(2n) {
+  background-color: var(--table-tbody-evenNum-line-bg-color) !important;
+}
+
+
+/* ———————————— 光标所在单元格标识 ———————————— */
+table tr :is(th, td) {
+  overflow: hidden;
+}
+
+table tr :is(th, td) .md-focus {
+  display   : inline-block !important;
+  position  : relative;
+  transition: all 0.5s ease;
+}
+
+.md-table-fig table tr :is(th, td) .md-focus::after {
+  display         : var(--focus-table-td-bottom-line-state);
+  content         : " ";
+  position        : absolute;
+  bottom          : 0;
+  left            : -12px;
+  width           : 1000px;
+  height          : var(--focus-table-td-bottom-line-height);
+  background-color: var(--focus-table-tbody-td-bottom-line-color);
+  margin          : -6px 0;
+}
+
+/* 区分表头与表体 */
+.md-table-fig table tr th .md-focus::after {
+  background-color: var(--focus-table-thead-td-bottom-line-color);
+}
+
+/* 防止光标定位后，向上移动 */
+table tr :is(th, td) .td-span {
+  min-height: 17.105px;
+}
+
+/* 空白单元格不显示标识 */
+.td-span.md-focus:empty:after {
+  background-color: transparent;
+  width           : 1000px;
+  height          : var(--focus-table-td-bottom-line-height);
+}
+
+/* ———————————————————————————— 工具栏 ———————————————————————————— */
+.ty-table-edit {
+  font-family: "HarmonyOS-Bold";
+  /* 调整高度 */
+  transform  : var(--table-edit-panel-position);
+  z-index    : 99;
+  color      : var(--table-edit-panel-btn-color);
+  margin-left: 0;
+}
+
+.ty-table-edit .btn {
+  line-height: 1 !important;
+  outline    : none !important;
+  box-shadow : none !important;
+  border     : none !important;
+}
+
+.ty-table-edit:active,
+.ty-table-edit:focus {
+  box-shadow: none;
+}
+
+/* 表格行列数选择按钮 */
+.md-th-button .md-resize-table,
+/* 单元格左对齐按钮 */
+.md-align-gp .md-align-left,
+/* 单元格居中对齐按钮 */
+.md-align-gp .md-align-center,
+/* 单元格右对齐按钮 */
+.md-align-gp .md-align-right {
+  border      : none !important;
+  outline     : none !important;
+  box-shadow  : none;
+  padding     : var(--table-edit-panel-left-btn-bg-size);
+  margin-right: var(--hover-table-align-btn-margin);
+  margin-left : 0 !important;
+  transition  : all 0.3s ease;
+}
+
+/* 表格大小选择按钮 */
+.md-table-edit button.btn.btn-default.md-resize-table {
+  padding     : var(--table-edit-panel-left-btn-bg-size);
+  color       : var(-writeArea-text-color);
+  margin-right: var(--table-resize-btn-align-btn-margin);
+}
+
+.md-table-edit button.btn.btn-default.md-resize-table:hover,
+.md-table-edit button.btn.btn-default.md-resize-table:focus {
+  border-radius   : var(--hover-edit-panel-all-btn-bg-radius) !important;
+  color           : var(--hover-table-resize-btn-color) !important;
+  background-color: var(--hover-table-resize-btn-bg-color) !important;
+}
+
+/* 表格大小选择按钮图标 */
+.md-th-button .md-resize-table .ty-menu:before {
+  font-family: "iconfont";
+  content    : "\e64b";
+  font-size  : var(--table-edit-panel-all-btn-size);
+}
+
+/* 单元格对齐方式按钮 */
+.ty-table-edit span.btn-group-xs.md-align-gp button:hover {
+  background-color: var(--hover-table-align-btn-bg-color) !important;
+  color           : inherit;
+}
+
+.ty-table-edit span.btn-group-xs.md-align-gp button:is(.active, .active:hover),
+:is(.btn-group-vertical, .btn-group)>:is(.btn.active, .btn:active, .btn:focus, .btn:hover) {
+  background-color: var(--hover-edit-panel-all-btn-bg-color) !important;
+  color           : var(--hover-table-align-btn-color);
+  border-radius   : var(--hover-edit-panel-all-btn-bg-radius) !important;
+  box-shadow      : none !important;
+}
+
+/* 单元格居左对齐按钮 */
+.md-align-gp .md-align-left .ty-left-alignment:before,
+/* 单元格居中对齐按钮 */
+.md-align-gp .md-align-center .ty-justify-align:before,
+/* 单元格居右对齐按钮 */
+.md-align-gp .md-align-right .ty-right-alignment:before {
+  font-family: "iconfont";
+  font-size  : var(--table-edit-panel-all-btn-size);
+}
+
+.md-align-gp .md-align-left .ty-left-alignment:before {
+  content: "\e6e7";
+}
+
+.md-align-gp .md-align-center .ty-justify-align:before {
+  content: "\e6f4";
+}
+
+.md-align-gp .md-align-right .ty-right-alignment:before {
+  content: "\e6e6";
+}
+
+/* 表格工具栏（三个小点） */
+.md-table-edit button.md-table-more {
+  font-family: "HarmonyOS-Sans", "霞鹜文楷";
+  position   : relative;
+  left       : -15px;
+  padding    : 3px 0;
+
+}
+
+.md-table-edit button.md-table-more:is(:hover, :focus) {
+  color           : var(--hover-table-more-btn-whole-color);
+  background-color: var(--hover-edit-panel-all-btn-bg-color);
+  border-radius   : var(--hover-edit-panel-all-btn-bg-radius);
+  transition      : background-color 0.3s ease;
+}
+
+/* 表格工具栏（三个小点） */
+.md-table-edit .md-table-more .ty-dots-v {
+  margin-left: 0px !important;
+}
+
+.md-table-edit .md-table-more .ty-dots-v:before {
+  font-family: "iconfont";
+  content    : "\e78d";
+  font-size  : var(--table-edit-panel-all-btn-size);
+}
+
+/* 更多操作 */
+.md-table-edit .md-table-more-label {
+  color        : var(--hover-table-more-btn-whole-color);
+  padding-left : 8px;
+  margin-bottom: 18px;
+  position     : relative;
+  top          : -1.5px;
+}
+
+/* 表格删除图标 */
+.md-table-edit button.md-delete-table {
+  margin       : 0 !important;
+  position     : relative;
+  left         : -10px;
+  transition   : all 0.3s ease;
+  padding      : 2px !important;
+  border-radius: var(--hover-edit-panel-all-btn-bg-radius);
+}
+
+.md-table-edit button.md-delete-table .ty-delete:before {
+  font-family: "iconfont";
+  content    : "\e620";
+  font-size  : var(--table-edit-panel-all-btn-size);
+}
+
+.md-table-edit button.md-delete-table:is(:hover, :focus) {
+  color           : var(--hover-table-delete-btn-color);
+  background-color: var(--hover-edit-panel-all-btn-bg-color);
+}
+
+
+/* —————————————— 表格大小选择菜单 —————————————— */
+/* 表格大小选择菜单整体 */
+.md-resize-table-th .popover {
+  display         : block;
+  top             : 23px !important;
+  left            : 0px;
+  width           : var(--table-resize-menu-width);
+  border          : none;
+  background-color: var(--table-resize-menu-bg-color);
+  border-radius   : 5px;
+}
+
+/* 菜单顶部小三角 */
+.md-resize-table-th .popover.bottom>.arrow,
+/* 表格大小选择菜单主体 */
+.md-resize-table-th .popover .md-grid-board-wrap {
+  border-bottom-color: transparent;
+}
+
+.md-resize-table-th .popover.bottom>.arrow:after {
+  border-bottom-color: var(--table-resize-menu-bg-color);
+}
+
+/* 表格大小选择菜单的小方框 */
+.md-grid-board-wrap .md-grid-board a {
+  width           : var(--table-resize-menu-box-size);
+  height          : var(--table-resize-menu-box-size);
+  border-radius   : var(--table-resize-menu-box-radius);
+  border          : var(--table-resize-menu-box-border) !important;
+  background-color: transparent;
+  transition      : all 0.3s ease;
+}
+
+.md-grid-board-wrap .md-grid-board .md-grid-ext {
+  border-radius: var(--table-resize-menu-box-radius);
+}
+
+/* 小方框第一行（未选中） */
+.md-grid-board-wrap .md-grid-board tr[row='1'] {
+  background-color: transparent;
+}
+
+/* 已选择小方框的第一行（表头） */
+.md-grid-board-wrap .md-grid-board tr[row="1"] .md-grid-ext a {
+  background-color: var(--selected-table-resize-menu-thead-box-color);
+  border-color    : var(--selected-table-resize-menu-thead-box-color) !important;
+}
+
+/* 已选择小方框的剩余行（表体） */
+.md-grid-board-wrap .md-grid-board .md-grid-ext a {
+  background-color: var(--selected-table-resize-menu-tbody-box-color);
+  border-color    : var(--selected-table-resize-menu-tbody-box-color) !important;
+}
+
+/* 鼠标悬浮在小方框第一行 */
+.md-grid-board-wrap .md-grid-board tr[row='1'] :is(a.md-active, a:hover) {
+  background-color: var(--hover-table-resize-menu-thead-box-color) !important;
+  border-color    : var(--hover-table-resize-menu-thead-box-color) !important;
+}
+
+/* 鼠标悬浮在小方框其他行 */
+.md-grid-board-wrap .md-grid-board :is(a.md-active, a:hover) {
+  background-color: var(--hover-table-resize-menu-tbody-box-color);
+  border-color    : var(--hover-table-resize-menu-tbody-box-color) !important;
+}
+
+/* 菜单底部【列 × 行】数字栏整体 */
+.md-grid-board-wrap .popover-title {
+  padding-top: 10px;
+  border-top : var(--table-resize-menu-box-bottom-number-divider);
+}
+
+/* 【列 × 行】数字栏数字 */
+.md-grid-board-wrap input {
+  font-family  : "HarmonyOS-Bold";
+  font-size    : 14px;
+  color        : var(--writeArea-text-color);
+  width        : var(--resize-menu-bottom-number-border-width);
+  border       : var(--table-resize-menu-bottom-number-border);
+  border-radius: var(--resize-menu-bottom-number-border-radius);
+  background   : inherit;
+  text-align   : center !important;
+  padding      : 0 !important;
+}
+
+/* 手动输入行列数的确定按钮，太丑，隐藏 */
+.popover-title button#md-resize-grid {
+  font-size : 0;
+  padding   : 0;
+  margin    : 0;
+  position  : relative;
+  border    : none !important;
+  transition: all 0.3s ease;
+  outline   : none !important;
+}
+
+/* 确定按钮改为 √ */
+.popover-title button#md-resize-grid::before {
+  content    : "\e62f";
+  font-family: "iconfont";
+  position   : absolute;
+  top        : -11px;
+  left       : 6px;
+  font-size  : var(--menu-bottom-table-size-confirm-btn-size);
+  color      : var(--menu-bottom-table-size-confirm-btn-color);
+  padding    : var(--menu-bottom-table-size-confirm-btn-bg-size);
+  line-height: 1;
+}
+
+.popover-title button#md-resize-grid:is(:hover, .active)::before {
+  border          : none !important;
+  background-color: var(--hover-table-size-confirm-btn-bg-color) !important;
+  border-radius   : var(--hover-table-size-confirm-btn-bg-radius);
+  transition      : all .3s ease
+}
+
+/* 移动行列时，小三角提示图标 */
+:is(#typora-table-row-insert-marker, #typora-table-col-insert-marker) .fa {
+  font-size: var(--move-table-row-col-triangle-icon-size);
+  color    : var(--move-table-row-col-triangle-icon-color);
+}
+
+/* 移动行列留下的区域 */
+#write table .typora-on-moving :is(td, th),
+#write :is(td, th).typora-on-moving {
+  color           : transparent !important;
+  background-color: var(--move-table-row-col-back-area-color) !important;
+  opacity         : .7 !important;
+}
+
+/* 移动的行 */
+.typora-on-moving :is(td, th) {
+  background-color: inherit;
+  color           : inherit;
+  padding         : var(--table-all-cell-padding) !important;
+  border          : var(--table-all-cell-border);
+  border-top      : none !important;
+  border-bottom   : none !important;
+  opacity         : var(--moving-table-row-col-opacity) !important;
+}
+
+/* 移动的列 */
+table tr :is(td, th) {
+  opacity: var(--moving-table-row-col-opacity);
+}
+
+#write table tr :is(td, th) {
+  opacity: 1;
+}

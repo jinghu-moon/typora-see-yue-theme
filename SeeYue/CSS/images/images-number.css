@@ -1,0 +1,81 @@
+/* 本文件为图片编号设置 */
+/* 格式     : 图x-x */
+/* 第一个 x : 当前文章最高的标题级别 */
+/* 第二个 x : 以最高的标题级别分隔图片，开始计数 */
+/* 例如：【图1-1 图片注释】【图2-1 图片注释】 */
+/* 使用本文件，Typora 版本需在 v1.5.5 及以上 */
+/* ================================================================= */
+
+
+#write:has(h6) h6 {
+  counter-increment: h6-counter;
+}
+
+#write:has(h5) h5 {
+  counter-increment: h5-counter;
+}
+
+#write:has(h4) h4 {
+  counter-increment: h4-counter;
+}
+
+#write:has(h3) h3 {
+  counter-increment: h3-counter;
+}
+
+#write:has(h2) h2 {
+  counter-increment: h2-counter;
+}
+
+#write:has(h1) h1 {
+  counter-increment: h1-counter;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  counter-reset: imgNum;
+}
+
+/* 从最大的标题级别开始计数 */
+#write:has(h1) :is(h2, h3, h4, h5, h6) {
+  counter-reset: none;
+}
+
+#write:not(:has(h1)):has(h2) :is(h3, h4, h5, h6) {
+  counter-reset: none;
+}
+
+#write:not(:has(h1, h2)):has(h3) :is(h4, h5, h6) {
+  counter-reset: none;
+}
+
+#write:not(:has(h1, h2, h3)):has(h4) :is(h5, h6) {
+  counter-reset: none;
+}
+
+#write:not(:has(h1, h2, h3, h4)):has(h5) :is(h6) {
+  counter-reset: none;
+}
+
+#write:has(h6) p>.md-image:not(.md-img-error)::after {
+  content: "图 "counter(h6-counter)"-"counter(imgNum)"  "attr(alt);
+}
+
+#write:has(h5) p>.md-image:not(.md-img-error)::after {
+  content: "图 "counter(h5-counter)"-"counter(imgNum)"  "attr(alt);
+}
+
+#write:has(h4) p>.md-image:not(.md-img-error)::after {
+  content: "图 "counter(h4-counter)"-"counter(imgNum)"  "attr(alt);
+}
+
+#write:has(h3) p>.md-image:not(.md-img-error)::after {
+  content: "图 "counter(h3-counter)"-"counter(imgNum)"  "attr(alt);
+}
+
+#write:has(h2) p>.md-image:not(.md-img-error)::after {
+  content: "图 "counter(h2-counter)"-"counter(imgNum)"  "attr(alt);
+}
+
+#write:has(h1) p>.md-image:not(.md-img-error)::after {
+  content: "图 "counter(h1-counter)"-"counter(imgNum)"  "attr(alt);
+}

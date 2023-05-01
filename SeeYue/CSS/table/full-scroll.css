@@ -1,0 +1,37 @@
+/* 本文件为表格 100% 宽度 + 长表格滚动显示设置文件 */
+/* ================================================================= */
+
+
+/* 表格宽度 100% */
+:is(figure, figure.md-focus),
+:is(.md-table-fig, .md-table-fig:active) {
+  border-radius: var(--table-bg-radius);
+  margin       : 1.5rem 0;
+}
+
+
+/* —————————————————— 以下代码为固定表头、滚动显示代码 —————————————————— */
+@media screen {
+  figure>table tr {
+    display     : table;
+    width       : 100%;
+    table-layout: fixed;
+  }
+
+  figure>table tbody {
+    max-height: var(--table-max-height);
+    cursor    : auto !important;
+    overflow-y: overlay !important;
+    display   : inline-block;
+  }
+
+  figure>table thead th {
+    position: sticky !important;
+    top     : 0;
+    z-index : 10;
+  }
+
+  figure>table tbody tr td {
+    border-bottom: none !important;
+  }
+}

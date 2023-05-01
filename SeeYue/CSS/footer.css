@@ -1,0 +1,220 @@
+/* 本文件为写作区域底部栏样式设置 */
+/* ================================================================= */
+
+
+/* 底部栏 */
+.show-footer footer.ty-footer,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) footer.ty-footer {
+  font-family: var(--footer-text-font);
+  font-size  : var(--footer-text-size);
+  color      : var(--footer-text-color);
+  opacity    : 1 !important;
+  background : transparent;
+}
+
+/* 侧边栏折叠按钮 */
+.footer-item-left #outline-btn .ion-chevron-left:before,
+/* 开启源代码模式按钮 */
+.footer-item-left#toggle-sourceview-btn .fa-code:before,
+/* 拼写检查按钮 */
+#footer-spell-check .ty-spellcheck:before {
+  color    : var(--footer-btn-icon-color);
+  font-size: var(--footer-btn-icon-size) !important;
+  opacity  : 1 !important;
+}
+
+/* 侧边栏折叠按钮 */
+.footer-item-left:hover #outline-btn,
+/* 开启源代码模式按钮 */
+.footer-item-left#toggle-sourceview-btn:hover,
+/* 【拼写检查】按钮 */
+#footer-word-count:hover,
+/* 【字数统计】按钮 */
+#footer-spell-check:hover,
+/* 点击【拼写检查】按钮后，该按钮样式 */
+.ty-show-spell-check #footer-spell-check,
+/* 点击【字数统计】按钮后，该按钮样式 */
+.ty-show-word-count #footer-word-count {
+  background-color       : var(--hover-footer-btn-icon-bg-color);
+  color                  : var(--hover-footer-btn-icon-color);
+  transition             : all 0.3s ease;
+  opacity                : 1;
+  border-top-left-radius : 4px;
+  border-top-right-radius: 4px;
+}
+
+/* 底部栏左侧按钮 */
+#outline-btn,
+/* 字数统计、拼写检查 */
+#footer-spell-check,
+#footer-word-count {
+  opacity: 1 !important;
+}
+
+/* ———————————————————————————————— 左侧按钮 ———————————————————————————————— */
+/* 侧边栏折叠按钮 */
+.footer-item-left #outline-btn .ion-chevron-left:before {
+  font-family: "iconfont";
+  content    : "\e624";
+  font-size  : calc(var(--footer-btn-size) - 3px) !important;
+}
+
+/* 开启源代码模式按钮 */
+.footer-item-left#toggle-sourceview-btn .fa-code:before {
+  position   : relative;
+  top        : 1px;
+  font-family: "iconfont";
+  content    : "\e612";
+}
+
+/* 悬浮背景贴边 */
+.footer-item {
+  margin: 0
+}
+
+/* ———————————————————————————————— 右侧按钮 ———————————————————————————————— */
+/* —————————————————————— 拼写检查菜单 —————————————————————— */
+#spell-check-panel {
+  right     : 12px;
+  max-height: 360px;
+}
+
+/* 拼写检查语言输入框 */
+#spell-check-panel input {
+  background-color: var(--spell-check-panel-input-box-bg-color);
+  border-radius   : 3px;
+  margin          : 0px 5px;
+  margin-top      : 5px;
+  color           : var(--footer-up-menu-text-color);
+}
+
+/* 【是否使用拼写检查区域】、【拼写检查全局设置】 */
+#spell-check-panel .ty-lang-control,
+/* 【拼写检查语言选择区域】 */
+#spell-check-panel .ty-lang-list {
+  font-family     : var(--footer-text-font);
+  color           : var(--footer-up-menu-text-color);
+  background-color: var(--footer-up-menu-bg-color);
+  font-size       : var(--footer-up-menu-text-size);
+  opacity         : 1 !important;
+}
+
+/* 是否使用拼写检查区域 */
+#spell-check-panel .ty-lang-control .ty-spell-check-panel-item:hover,
+/* 拼写检查语言区域 */
+#ty-spell-check-dict-missing-menu li:hover,
+.ty-spell-check-panel-item.ty-active,
+.ty-spell-check-panel-item:hover,
+#spell-check-panel .ty-lang-list .ty-spell-check-panel-item:hover,
+/* 拼写检查全局设置行 */
+#spell-check-panel .ty-lang-control #ty-spell-check-global-setting:hover {
+  color           : var(--hover-footer-up-menu-line-text-color);
+  background-color: var(--hover-footer-up-menu-line-bg-color);
+  border-radius   : 3px;
+  transition      : all 0.3s ease;
+}
+
+/* 对齐语言列表 */
+.ty-spell-check-panel-item:is([data-spell-lang="auto"], [data-spell-lang="disabled"]) .ty-spell-check-panel-item-status {
+  width: 13px
+}
+
+/* 当前拼写检查语言标识 */
+.ty-checked .ty-spell-check-panel-item-status::before {
+  font-family: "iconfont";
+  content    : "\e666";
+  position   : absolute;
+  top        : 3px;
+  left       : 5px;
+  font-size  : var(--spell-check-panel-checked-lang-icon-size);
+  color      : var(--spell-check-panel-checked-lang-icon-color);
+}
+
+/* 语言区域对应英文简称 */
+.ty-lang-list .ty-spell-check-panel-item .ty-spell-check-panel-item-code {
+  font-family: var(--footer-text-font);
+  opacity    : var(--spell-check-panel-lang-list-abbr-text-opacity);
+  font-size  : 0.675rem;
+}
+
+/* —————————————————————— 字数统计 —————————————————————— */
+/* 字数统计菜单 */
+.ty-show-word-count #footer-word-count-info.dropdown-menu {
+  min-width       : 140px;
+  transition      : all 0.3s ease;
+  background-color: var(--footer-up-menu-bg-color);
+  font-family     : var(--word-count-panel-text-font);
+  color           : var(--footer-up-menu-text-color);
+  border          : none !important;
+  right           : -3.5px;
+}
+
+#footer-word-count-info .footer-word-count-info-line,
+#footer-word-count-info .footer-word-count-selection {
+  opacity: 1 !important;
+}
+
+/* #footer-word-count-info li:not(.footer-word-count-selection) .footer-word-count-info-line {
+  padding-left: 23px;
+} */
+
+/* 字符统计菜单标题行 */
+#footer-word-count-info .footer-word-count-info-line {
+  font-size  : var(--word-count-panel-headline-size);
+  font-family: "HarmonyOS-Bold";
+  color      : var(--word-count-panel-headline-color);
+}
+
+/* 字符统计菜单标题行图标 */
+#footer-word-count-info .footer-word-count-info-line::before {
+  display     : var(--word-count-panel-headline-icon-state);
+  content     : "\e609";
+  font-family : "iconfont";
+  font-size   : var(--word-count-panel-headline-icon-size);
+  color       : var --word-count-panel-headline-icon-color;
+  margin-right: var(--word-count-panel-icon-headline-distance);
+  position    : relative;
+  top         : 1px;
+}
+
+/* 字符统计菜单标题与内容分隔线 */
+#footer-word-count-info .divider {
+  border-top: var(--word-count-panel-headline-content-divider);
+}
+
+/* 字数统计数据显示区域 */
+#footer-word-count-info :is(.ty-footer-word-count-all, .footer-word-count-selection) :is(tr, td) {
+  font-size: var(--footer-up-menu-text-size) !important;
+  opacity  : 1;
+}
+
+#footer-word-count-info :is(.ty-footer-word-count-all, .footer-word-count-selection) td:first-child {
+  border-top-left-radius   : 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#footer-word-count-info :is(.ty-footer-word-count-all, .footer-word-count-selection) td:nth-child(2) {
+  border-top-right-radius   : 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#footer-word-count-info :is(.ty-footer-word-count-all, .footer-word-count-selection) table tr:hover {
+  color           : var(--hover-footer-up-menu-line-text-color) !important;
+  background-color: var(--hover-footer-up-menu-line-bg-color) !important;
+  cursor          : pointer;
+  transition      : background-color .3s ease, color .3s ease;
+}
+
+#footer-word-count-info .footer-word-count-selection table tr:hover {
+  cursor: auto;
+}
+
+/* 数字部分 */
+#footer-word-count-info td:nth-child(1) {
+  padding-right: var(--word-count-panel-number-unit-distance);
+  text-align   : right !important;
+}
+
+footer.ty-footer {
+  border-top: var(--sidebar-footer-divider);
+}

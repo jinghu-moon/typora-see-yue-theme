@@ -1,0 +1,547 @@
+ /* 笔记软件类网站 */
+/* =================================================================*/
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1 Markdown ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="typora.io"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/typora.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="milkdown.dev"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/milkdown.svg");
+    content         : " ";
+  }
+
+  #write a[href*="github.com/marktext/marktext"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/marktext.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dillinger.io"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/dillinger.svg");
+    content         : " ";
+  }
+
+  #write a[href*="soft.xiaoshujiang.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/xiaoshujiang.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zybuluo.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/zybuluo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="miaoyan.app"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/miaoyan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ulysses.app"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/ulysses.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bear.app"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/bear.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mweb.im"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/mweb.svg");
+    content         : " ";
+    transform       : scale(1.3);
+  }
+
+  #write a[href*="joplinapp.org"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/joplin.svg");
+    content         : " ";
+  }
+
+  #write a[href*="notable.app"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/notable.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="zettlr.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/zettlr.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="pad.haroopress.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/haroopress.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="markdown.lovejade.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/lovejade.svg");
+    content         : " ";
+  }
+
+  #write a[href*="simplenote.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/simplenote.svg");
+    content         : " ";
+  }
+
+  #write a[href*="app.vnote.fun"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/vnote.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="ia.net"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.1-Markdown/ia.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2 在线文档 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="docs.qq.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.2-OnlineDoc/qqdocs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="kdocs.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.2-OnlineDoc/kdocs.svg");
+    content         : " ";
+    transform       : scale(1.3);
+  }
+
+  #write a[href*="shimo.im"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.2-OnlineDoc/shimo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="docs.feishu.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.2-OnlineDoc/feishudocs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="iflydocs.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.2-OnlineDoc/iflydocs.svg");
+    content         : " ";
+  }
+
+  #write a[href*="thoughts.teambition.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.2-OnlineDoc/thoughts.svg");
+    content         : " ";
+  }
+
+  #write a[href*="yuque.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.2-OnlineDoc/yuque.svg");
+    content         : " ";
+  }
+
+  #write a[href*="docs.dingtalk.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.2-OnlineDoc/dingtalkdocs.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3 导图 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+
+  #write a[href*="xmind.app"]::before,
+  #write a[href*="xmind.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/xmind.svg");
+    content         : " ";
+  }
+
+  #write a[href*="edrawsoft.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/edrawsoft.svg");
+    content         : " ";
+  }
+
+  #write a[href*="edrawsoft.cn/mindmaster"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/mindmaster.svg");
+    content         : " ";
+  }
+
+  #write a[href*="naotu.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/baidunaotu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mubu.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/mubu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="processon.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/processon.svg");
+    content         : " ";
+  }
+
+  #write a[href*="draw.io"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/draw.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mindline.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/mindline.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zhixi.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/zhixi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gitmind.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/gitmind.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zhimap.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/zhimap.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mindmanager.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.3-Map/mindmanager.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4 知识库 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="b3log.org/siyuan"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/siyuan.svg");
+    content         : " ";
+  }
+
+  #write a[href*="obsidian.md"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/obsidian.svg");
+    content         : " ";
+  }
+
+  #write a[href*="roamedit.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/roamedit.svg");
+    content         : " ";
+  }
+
+  #write a[href*="logseq.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/logseq.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wolai.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/wolai.svg");
+    content         : " ";
+  }
+
+  #write a[href*="flowus.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/flowus.svg");
+    content         : " ";
+  }
+
+  #write a[href*="notion.so"]::before,
+  #write a[href*="notion.work"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/notion.svg");
+    content         : " ";
+  }
+
+  #write a[href*="notionchina.co"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/notionchina.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="clickup.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/clickup.svg");
+    content         : " ";
+  }
+
+  #write a[href*="remnote.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/remnote.svg");
+    content         : " ";
+  }
+
+  #write a[href*="clickup.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/clickup.svg");
+    content         : " ";
+  }
+
+  #write a[href*="workflowy.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/workflowy.svg");
+    content         : " ";
+  }
+
+  #write a[href*="airtable.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/airtable.svg");
+    content         : " ";
+  }
+
+  #write a[href*="seatable.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/seatable.svg");
+    content         : " ";
+  }
+
+  #write a[href*="effie.co"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/effie.svg");
+    content         : " ";
+  }
+
+  #write a[href*="getdrafts.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/drafts.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hulunote.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.4-KnowBase/hulunote.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5 白板 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="heptabase.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/heptabase.svg");
+    content         : " ";
+  }
+
+  #write a[href*="milanote.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/milanote.svg");
+    content         : " ";
+  }
+
+  #write a[href*="excalidraw.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/excalidraw.svg");
+    content         : " ";
+  }
+
+  #write a[href*="boardmix.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/boardmix.svg");
+    content         : " ";
+  }
+
+  #write a[href*="miro.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/miro.svg");
+    content         : " ";
+  }
+
+  #write a[href*="microsoft-whiteboard/"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/microsoftwhiteboard.svg");
+    content         : " ";
+    border-radius   : 4px;
+  }
+
+  #write a[href*="museapp.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/museapp.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="witeboard.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/witeboard.svg");
+    content         : " ";
+  }
+
+  #write a[href*="figma.com/figjam"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/figjam.svg");
+    content         : " ";
+  }
+
+  #write a[href*="teamind.co"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/teamind.svg");
+    content         : " ";
+  }
+
+  #write a[href*="laihua.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/laihua.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fabrie.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/fabrie.svg");
+    content         : " ";
+  }
+
+  #write a[href*="easinote.seewo.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/seewo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qingtu.co"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/qingtu.svg");
+    content         : " ";
+    transform       : scale(1.25);
+  }
+
+  #write a[href*="pub.visionon.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/visionon.svg");
+    content         : " ";
+  }
+
+  #write a[href*="colube.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.5-Whiteboard/colube.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6 卡片 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="writeathon.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.6-Card/writeathon.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qingk.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.6-Card/qingk.svg");
+    content         : " ";
+  }
+
+  #write a[href*="flomoapp.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.6-Card/flomo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="literatureandlatte.com/scapple"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.6-Card/scapple.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gingkowriter.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.6-Card/gingkowriter.svg");
+    content         : " ";
+  }
+
+  #write a[href*="metaslip.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.6-Card/metaslip.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7 清单 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="dida365.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.7-List/dida.svg");
+    content         : " ";
+  }
+
+  #write a[href*="todoist.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.7-List/todoist.svg");
+    content         : " ";
+  }
+
+  #write a[href*="todo.evestudio.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.7-List/todo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="todo.microsoft.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.7-List/microsofttodo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="culturedcode.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.7-List/thing.svg");
+    content         : " ";
+  }
+
+  #write a[href*="any.do"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.7-List/anydo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sortedapp.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.7-List/sorted.svg");
+    content         : " ";
+    transform       : scale(1.25);
+  }
+
+  #write a[href*="flicker.cool"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.7-List/flicker.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8 传统笔记 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="yinxiang.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.8-OldNote/yinyang.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="note.youdao.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.8-OldNote/youdaonote.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wiz.cn"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.8-OldNote/wiz.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xiangzuobiji.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.8-OldNote/xiangzuobiji.svg");
+    content         : " ";
+  }
+
+  #write a[href*="microsoft-365/word"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.8-OldNote/word.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="microsoft-365/excel"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.8-OldNote/excel.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="microsoft-365/powerpoint"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.8-OldNote/powerpoint.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+
+  #write a[href*="microsoft-365/onenote"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.8-OldNote/onenote.svg");
+    content         : " ";
+    transform       : scale(1.1);
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.9 收藏夹 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="cubox.pro"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.9-Favorites/cubox.svg");
+    content         : " ";
+  }
+
+  #write a[href*="withpinbox.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.9-Favorites/pinbox.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="getpocket.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.9-Favorites/pocket.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wallabag.org"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.9-Favorites/wallabag.svg");
+    content         : " ";
+  }
+
+  #write a[href*="raindrop.io"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.9-Favorites/raindrop.svg");
+    content         : " ";
+  }
+
+  #write a[href*="webcull.com"]::before {
+    background-image: url("../../Images/Favicon/05-Notes-Software-Websites/5.9-Favorites/webcull.svg");
+    content         : " ";
+  }
+}

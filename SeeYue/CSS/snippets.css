@@ -1,0 +1,255 @@
+/* 本文件为一些小的样式修改 */
+/* ================================================================= */
+
+
+/* 界面无内容时的背景 */
+#write>p:first-child:empty {
+  position: static;
+}
+
+#write>p:only-child:empty::before {
+  content                : " ";
+  display                : block;
+  position               : absolute;
+  top                    : 0;
+  left                   : 0;
+  right                  : 0;
+  bottom                 : 0;
+  background-image       : var(--empty-interface-bg-img-path);
+  background-size        : cover;
+  -webkit-background-size: cover;
+}
+
+/* 侧边栏输入框提示文本 */
+#file-library-search-panel input::placeholder,
+/* 底部栏拼写检查 */
+.ty-spell-check-panel-control-item input::placeholder,
+/* 写作区域搜索面板 */
+#md-searchpanel input::placeholder,
+:is(::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder) {
+  color: var(--all-input-box-prompt-text-color) !important;
+}
+
+/* ———————————————————————————— 公式块、HTML 块 ———————————————————————————— */
+/* HTML 块（编辑状态） */
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+  background-color: var(--hover-math-html-block-bg-color);
+}
+
+/* 公式块第一行 $$ */
+.md-math-block .md-rawblock-before {
+  border-top-right-radius: 4px;
+  border-top-left-radius : 4px;
+}
+
+/* 公式块最后一行 $$ */
+.md-math-block .md-rawblock-after {
+  border-bottom-left-radius : 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.md-math-block:hover .md-rawblock-before {
+  border-top-right-radius: 0;
+}
+
+/* 公式块 */
+.md-mathjax-preview {
+  background   : var(--hover-math-html-block-bg-color);
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.md-rawblock-tooltip {
+  font-family: "HarmonyOS-Sans", "HarmonyOS-Regular";
+}
+
+/* 右上角「公式」二字 */
+.md-rawblock-on-edit>.md-rawblock-tooltip {
+  border-top-right-radius: 4px;
+  border-top-left-radius : 4px;
+}
+
+/* 数学公式 */
+.md-inline-math[md-inline="inline_math"] {
+  /* color: blue; */
+  font-size: 105%;
+}
+
+/* 行间公式块、HTML 块  */
+.md-rawblock-on-edit>.md-rawblock-tooltip,
+.md-rawblock:hover>.md-rawblock-container,
+.md-rawblock:hover>.md-rawblock-tooltip {
+  background: var(--hover-math-html-block-bg-color);
+  display   : block;
+}
+
+.md-rawblock>.md-rawblock-container:hover {
+  border-radius          : 4px;
+  border-top-right-radius: 0;
+}
+
+.md-rawblock>.md-rawblock-container {
+  transition: .3s;
+}
+
+.md-rawblock>.md-rawblock-tooltip {
+  transition             : .3s;
+  display                : block;
+  visibility             : hidden;
+  opacity                : 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius : 4px;
+}
+
+.md-rawblock .md-rawblock-tooltip {
+  background-color: transparent;
+}
+
+.md-rawblock:hover>.md-rawblock-tooltip {
+  transition: .3s;
+  visibility: visible;
+  opacity   : 1;
+  animation : none !important;
+}
+
+/* 「公式」二字右侧按钮 */
+.md-rawblock-tooltip-btn {
+  color: #000;
+}
+
+.md-rawblock-tooltip-btn:hover {
+  background: var(--hover-math-html-block-tooltip-btn-bg-color);
+  color     : inherit;
+}
+
+/* 源代码模式，行号 */
+#typora-source .CodeMirror-activeline .CodeMirror-linenumber,
+#typora-source .CodeMirror-linenumber.CodeMirror-linenumber-show {
+  font-family: "HarmonyOS";
+}
+
+/* mermaid 图 */
+#write.enable-diagrams>[mermaid-type=gantt].md-fences:not(.md-focus) {
+  width         : auto;
+  /* margin-left: calc(-49vw + 50%); */
+}
+
+/* 分隔线 */
+hr {
+  height          : var(--writeArea-divider-height);
+  margin          : var(--writeArea-divider-top-bottom-margin) 0;
+  background-color: var(--writeArea-divider-color);
+  padding         : 0;
+  border          : none;
+  overflow        : hidden;
+  box-sizing      : content-box;
+}
+
+/* 鼠标悬浮在按钮上弹出的悬浮框 */
+.ty-tooltip {
+  font-family     : "Fira", "霞鹜文楷";
+  background-color: var(--btn-tooltip-bg-color);
+  color           : var(--btn-tooltip-text-color);
+  opacity         : 1;
+}
+
+/* —————————————————— 弹出菜单 —————————————————— */
+/* 选中拼写检查语言，弹出的菜单 */
+.ty-show-notification #md-notification {
+  display: block;
+  padding: 5px 0;
+}
+
+/* 弹出菜单 */
+#md-notification,
+.modal-content {
+  border-radius      : 8px;
+  /* width           : 62%; */
+  background-color   : var(--pop-up-menu-bg-color);
+  color              : var(--pop-up-menu-text-color);
+  border             : none;
+}
+
+.modal-content .modal-header {
+  padding: 15px 15px 5px 30px;
+}
+
+/* 弹出菜单标题 */
+.modal-content .modal-header .modal-title {
+  font-size  : 1.05rem;
+  font-family: "HarmonyOS-Bold";
+}
+
+/* 弹出菜单主体 */
+.modal-content .modal-body {
+  padding-left: 30px;
+}
+
+/* 插入表格菜单行列二字 */
+.modal-content .modal-body .input-group-addon:first-child,
+.modal-content .modal-body .input-group-addon:last-child {
+  border-radius: 0;
+  font-family  : "HarmonyOS-Bold";
+  font-size    : 1rem;
+  font-weight  : light;
+}
+
+/* 弹出菜单【行 × 列】行数字显示 */
+#table-insert-col,
+#table-insert-row {
+  margin-left  : 8px;
+  border       : 1px solid #ccc;
+  border-radius: 4px;
+  width        : 55%;
+  text-align   : center;
+  font-family  : 'HarmonyOS-Regular';
+  font-size    : .9rem;
+  padding      : 0 2px;
+  height       : 30px;
+}
+
+/* 底部【取消】、【丢弃】按钮 */
+.modal-content .modal-footer button.btn-default,
+/* 底部【确认】按钮 */
+.modal-content .modal-footer button.btn-primary,
+#md-notification button.btn-default,
+#md-notification button.btn-primary {
+  border-radius: 3px;
+  outline      : none;
+  box-shadow   : none;
+  border       : none;
+}
+
+#md-notification button.btn-default,
+.modal-content .modal-footer button.btn-default {
+  color           : var(--menu-footer-other-btn-text-color);
+  background-color: var(--menu-footer-other-btn-bg-color);
+
+}
+
+#md-notification button.btn-default:hover,
+.modal-content .modal-footer button.btn-default:hover {
+  background-color: var(--hover-menu-footer-other-btn-bg-color);
+}
+
+#md-notification button.btn-primary,
+.modal-content .modal-footer button.btn-primary {
+  color           : var(--menu-footer-OK-btn-text-color);
+  background-color: var(--menu-footer-OK-btn-bg-color);
+}
+
+#md-notification button.btn-primary:hover,
+.modal-content .modal-footer button.btn-primary:hover {
+  background-color: var(--hover-menu-footer-OK-btn-bg-color);
+}
+
+#md-notification button#ty-spell-check-dict-missing-close-btn {
+  margin-right: 0 !important;
+}
+
+/* 源代码模式，光标所在行行号 */
+/* #typora-source .CodeMirror-gutter-wrapper.CodeMirror-activeline-gutter .CodeMirror-linenumber.CodeMirror-gutter-elt {
+  color      : #ff5252;
+  font-weight: bolder;
+  opacity    : 1;
+} */

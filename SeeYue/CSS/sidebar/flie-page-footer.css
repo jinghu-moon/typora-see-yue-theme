@@ -1,0 +1,220 @@
+/* 本文件为侧边栏文件页底部栏及文件更多菜单设置 */
+/* ================================================================= */
+
+/* 文件页正文与底部工具栏分隔线 */
+.sidebar-footer {
+  border-top : var(--sidebar-footer-divider);
+  font-family: var(--sidebar-text-font);
+  color      : var(--sidebar-text-color);
+  font-size  : var(--sidebar-footer-text-size);
+}
+
+/* 取消底部栏按钮悬浮颜色 */
+.sidebar-footer .sidebar-footer-item:hover {
+  background-color: transparent;
+}
+
+/* 文件页底部栏左侧加号（列表视图） */
+.use-file-list-style #sidebar-new-file-btn,
+/* 文件页底部栏左侧加号（文件树视图） */
+.use-file-tree-style #sidebar-new-file-btn {
+  opacity: 1 !important;
+}
+
+.use-file-list-style #sidebar-new-file-btn .ty-add:before,
+.use-file-tree-style #sidebar-new-file-btn .ty-add:before {
+  font-family  : "iconfont" !important;
+  content      : "\e64d";
+  position     : relative;
+  top          : -2px;
+  left         : 0;
+  color        : var(--sidebar-footer-both-icon-color);
+  font-size    : var(--sidebar-footer-both-icon-size);
+  padding      : var(--hover-footer-both-icon-bg-size);
+  border-radius: var(--hover-footer-both-icon-bg-radius);
+}
+
+.use-file-list-style #sidebar-new-file-btn .ty-add:hover::before,
+.use-file-tree-style #sidebar-new-file-btn .ty-add:hover::before {
+  background-color: var(--hover-footer-left-icon-bg-color) !important;
+  color           : var(--hover-footer-both-icon-color) !important;
+  transition      : all .3s ease;
+}
+
+/* 文件页底部栏右侧列表视图 */
+.sidebar-footer-item .switch-file-list-btn-to-list .ty-three-cells::before,
+/* 文件页底部栏右侧文件树视图 */
+.sidebar-footer-item .switch-file-list-btn-to-tree .ty-file-tree::before {
+  font-family  : "iconfont" !important;
+  position     : relative;
+  top          : -1px;
+  color        : var(--sidebar-footer-both-icon-color);
+  font-size    : var(--sidebar-footer-both-icon-size);
+  padding      : var(--hover-footer-both-icon-bg-size);
+  border-radius: var(--hover-footer-both-icon-bg-radius);
+}
+
+.sidebar-footer-item .switch-file-list-btn-to-list .ty-three-cells:hover::before,
+.sidebar-footer-item .switch-file-list-btn-to-tree .ty-file-tree:hover::before {
+  color           : var(--hover-footer-both-icon-color) !important;
+  background-color: var(--hover-footer-right-icon-bg-color) !important;
+  transition      : all .3s ease;
+}
+
+.sidebar-footer-item .switch-file-list-btn-to-list .ty-three-cells::before {
+  content: "\ea00";
+}
+
+.sidebar-footer-item .switch-file-list-btn-to-tree .ty-file-tree::before {
+  content: "\e60b";
+}
+
+/* 底部栏加号按钮和视图切换按钮 */
+#ty-sidebar-footer .not-empty-menu-group {
+  padding-right: 2px;
+  padding-left : 2px;
+}
+
+#ty-sidebar-footer .not-empty-menu-group:hover {
+  opacity: 1;
+}
+
+/* 底部栏文件名+小圆点 */
+#sidebar-menu-btn>.sidebar-footer-item:hover,
+/* 底部栏文件名 */
+.sidebar-footer-main-item-label:hover {
+  background-color: var(--hover-footer-center-filename-bg-color);
+  border-radius   : 3px;
+  transition      : all .3s ease;
+  opacity         : 1;
+}
+
+/* ———————————————————————————————————— 弹出菜单 ———————————————————————————————————— */
+/* 文件页底部栏更多菜单 */
+#ty-sidebar-footer #sidebar-files-menu {
+  background: inherit !important;
+  padding   : 5px 8px;
+  border    : none;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+}
+
+#sidebar-files-menu.dropdown-menu>li>a {
+  font-family: var(--sidebar-text-font) !important;
+  color      : var(--sidebar-text-color) !important;
+}
+
+#ty-sidebar-footer #sidebar-files-menu li {
+  padding: 0 5px !important;
+}
+
+#ty-sidebar-footer #sidebar-files-menu li>a:hover {
+  background-color: var(--hover-footer-files-menu-line-bg-color) !important;
+  border-radius   : 3px;
+  transition      : all .3s ease;
+}
+
+/* 「操作」文字 */
+#ty-sidebar-footer #sidebar-files-menu li:nth-child(1)>span:first-child,
+/* 「排序」文字 */
+#ty-sidebar-footer #sidebar-files-menu li:nth-child(7)>span:first-child,
+/* 「最近使用的目录」文字 */
+#ty-sidebar-footer #sidebar-files-menu li:nth-child(8)>span:first-child {
+  color      : var(--footer-files-menu-tips-line-text-color);
+  font-family: "HarmonyOS-Bold";
+}
+
+#ty-sidebar-footer #sidebar-files-menu li:nth-child(7)>span:first-child {
+  position: relative;
+  top     : 3px;
+}
+
+/* 取消「排序」行上下分隔线 */
+#sidebar-files-menu>.show+.menuitem-group-label.show {
+  border: none;
+}
+
+/* 菜单关闭图标 */
+#sidebar-files-menu #close-sidebar-menu-btn {
+  color     : transparent;
+  font-size : 0;
+  position  : relative;
+  margin-top: 6px;
+}
+
+#sidebar-files-menu #close-sidebar-menu-btn::before {
+  font-family: "iconfont";
+  content    : "\f1f0";
+  font-size  : var(--footer-files-menu-closed-btn-logo-size);
+  color      : var(--footer-files-menu-closed-btn-logo-color);
+  position   : absolute;
+  right      : -10px;
+}
+
+#sidebar-files-menu #close-sidebar-menu-btn:hover::before {
+  color     : var(--hover-files-menu-closed-btn-logo-color);
+  transition: all .3s ease;
+}
+
+/* 「排序」文字右侧排序选项图标 */
+#sidebar-files-menu .sort-button-area .ty-side-sort-btn {
+  transition   : all .3s ease;
+  border-radius: var(--file-sort-type-btn-logo-bg-radius);
+  opacity      : 1;
+  color        : var(--files-menu-file-sort-type-btn-logo-color);
+  font-size    : var(--files-menu-file-sort-type-btn-logo-size);
+}
+
+/* 鼠标悬浮在文件排序按钮 */
+#sidebar-files-menu .sort-button-area .ty-side-sort-btn:hover {
+  background-color: var(--hover-file-sort-type-btn-logo-bg-color) !important;
+  cursor          : pointer;
+}
+
+/* 选中的按钮 */
+#sidebar-files-menu .sort-button-area .ty-side-sort-btn.active:hover,
+#sidebar-files-menu .sort-button-area .ty-side-sort-btn.active {
+  color           : var(--selected-file-sort-type-btn-logo-color) !important;
+  background-color: var(--selected-file-sort-type-btn-logo-bg-color) !important;
+}
+
+/* 「最近使用的目录」下正在使用的目录行 */
+.selected-folder-menu-item a {
+  position        : relative;
+  background-color: var(--files-menu-recently-used-dir-active-line-bg-color);
+  border-radius   : 3px;
+}
+
+.selected-folder-menu-item a::after {
+  color        : transparent;
+  position     : absolute;
+  top          : calc(50% - 5px);
+  right        : 5px;
+  width        : 4px;
+  height       : 12px;
+  font-size    : 7px;
+  background   : var(--files-menu-recently-used-dir-endLine-color);
+  border-radius: 6px;
+}
+
+.selected-folder-menu-item a:hover::after {
+  background-color: var(--hover-footer-files-menu-line-bg-color);
+  transition      : background-color .3s ease-in-out;
+}
+
+/* 原来的图标隐藏 */
+#sidebar-files-menu .folder-menu-item .fa-folder-o {
+  color: transparent;
+}
+
+/* 文件名前图标 */
+#sidebar-files-menu .folder-menu-item .fa-folder-o::before {
+  font-family : "iconfont";
+  content     : "\e678";
+  color       : var(--files-menu-recently-used-dir-head-logo-color);
+  position    : relative;
+  top         : 1px;
+  left        : 0;
+  margin-right: 3px;
+  font-size   : var(--files-menu-recently-used-dir-head-logo-size);
+  font-weight : bold;
+}

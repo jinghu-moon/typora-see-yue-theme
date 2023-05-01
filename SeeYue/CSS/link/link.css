@@ -1,0 +1,71 @@
+/* 本文件为链接样式设置 */
+/* ================================================================= */
+
+
+:is(a, a:hover, a:visited, a:active) {
+  cursor         : pointer !important;
+  text-decoration: none;
+}
+
+#write :is(p, table) a,
+a {
+  color        : var(--link-text-color);
+  font-weight  : var(--link-text-font-weight);
+  border-bottom: var(--link-text-botttom-line);
+  cursor       : pointer !important;
+  transition   : all var(--link-animation-time) ease;
+  position     : relative;
+  font-size    : var(--link-text-size);
+  border-bottom: 1.5px solid transparent;
+}
+
+#write a {
+  position: relative;
+}
+
+#write :is(p, table) a:hover,
+a:hover {
+  transition: color .3s ease;
+  color     : var(--hover-link-text-color);
+}
+
+/* 已被访问过的链接 */
+a:visited,
+/*鼠标点中激活链接*/
+a:active {
+  color: #d2d2d4;
+}
+
+/* 链接尾部小图标 */
+#write a[href*="http"]::after {
+  font-family    : "iconfont";
+  content        : "\e772";
+  /* font-family : 'ITS';
+  content        : "\e809"; */
+  display        : inline-block;
+  font-weight    : 400 !important;
+  font-style     : normal !important;
+  padding-left   : var(--tail-icon-and-text-distance);
+  font-size      : var(--link-text-tail-icon-size);
+  opacity        : var(--link-text-tail-icon-opacity);
+  color          : var(--link-text-tail-icon-color);
+  transition     : all .5s ease;
+}
+
+#write a[href*="http"]:hover::after {
+  color     : var(--hover-link-tail-icon-color);
+  transition: all .5s ease;
+}
+
+#write span[alt="none-both"] a::before,
+#write span[alt="none-both"] a::after {
+  display: none;
+}
+
+#write span[alt="none-head"] a::before {
+  display: none;
+}
+
+#write span[alt="none-tail"] a::after {
+  display: none !important;
+}

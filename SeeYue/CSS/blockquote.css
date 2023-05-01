@@ -1,0 +1,238 @@
+/* 本文件为引用块样式设置 */
+/* ================================================================= */
+
+
+/* 引用基础设置 */
+#write blockquote {
+  color           : var(--blockquote-text-color);
+  background-color: var(--blockquote-bg-color);
+  border-radius   : var(--blockquote-bg-radius);
+  font-size       : var(--blockquote-text-size);
+  font-family     : var(--blockquote-text-font);
+  margin-left     : var(--blockquote-left-right-indent);
+  margin-right    : var(--blockquote-left-right-indent);
+  padding         : 10px 10px 10px 15px !important;
+  box-shadow      : 0 0.2rem 0.5rem #0000000d, 0 0 0.05rem #0000001a;
+  position        : relative;
+  /* 隐藏过长的竖线 */
+  overflow        : hidden;
+}
+
+#write blockquote p {
+  margin: .8rem 0;
+}
+
+/* 用伪元素实现引用块左侧竖线 */
+#write blockquote::before {
+  content         : " ";
+  width           : var(--blockquote-left-line-default-width);
+  height          : 100%;
+  background-color: var(--blockquote-left-line-default-color);
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+}
+
+/* 引用块左上角图标 */
+#write blockquote>*:not(h1, h2, h3, h4, h5, h6):nth-child(1)::before {
+  display    : var(--blockquote-top-left-icon-state);
+  color      : var(--blockquote-top-left-icon-color);
+  font-size  : var(--blockquote-top-left-icon-size);
+  content    : "\ec81";
+  font-family: "iconfont";
+  position   : relative;
+  top        : -10px;
+  left       : 0px;
+}
+
+#write blockquote>ol:nth-child(1)::before {
+  left: -31px;
+}
+
+#write blockquote>ul:nth-child(1)::before {
+  left: -26px;
+}
+
+/* ————————————————————————————————— Admonitions 样式 ————————————————————————————————— */
+#write blockquote>:is(h1, h2, h3, h4, h5, h6):first-child {
+  font-family   : var(--admonitions-blockquote-title-font);
+  font-size     : var(--admonitions-blockquote-title-size) !important;
+  margin        : -10px -10px -10px -15px !important;
+  padding       : 10px 10px 10px 15px !important;
+  display       : flex;
+  align-items   : center;
+  letter-spacing: 1px;
+  font-weight   : normal !important;
+}
+
+/* 增加标题与文本间距 */
+#write blockquote>:is(h1+p, h2+p, h3+p, h4+p, h5+p, h6+p) {
+  margin-top: var(--admonitions-blockquote-title-text-distance);
+}
+
+/* 引用样式块的左侧竖线 */
+#write blockquote>:is(h1, h2, h3, h4, h5, h6):first-child::after {
+  content : " ";
+  width   : var(--admonitions-blockquote-left-line-width);
+  height  : 10000px;
+  position: absolute !important;
+  top     : 0;
+  left    : 0;
+}
+
+/* 图标 */
+#write blockquote>:is(h1, h2, h3, h4, h5, h6):first-child::before,
+#write blockquote>:is(h1, h2, h3, h4, h5, h6).md-focus::before {
+  font-family: "iconfont" !important;
+  position   : relative;
+  top        : 0px;
+  left       : 0px;
+  line-height: 1;
+}
+
+/* —————————————————————— Example / 例子 （一级标题）—————————————————————— */
+/* 标题 */
+#write blockquote>h1:first-child {
+  color           : var(--h1-example-blockquote-title-icon-color) !important;
+  background-color: var(--h1-example-blockquote-title-line-bg-color);
+
+}
+
+#write blockquote>h1:first-child span {
+  color: var(--h1-example-blockquote-title-color) !important;
+}
+
+/* 图标 */
+#write blockquote>:is(h1:first-child, h1.md-focus)::before {
+  content     : "\e603" !important;
+  font-size   : var(--h1-example-blockquote-logo-size) !important;
+  color       : var(--h1-example-blockquote-title-icon-color) !important;
+  margin-right: var(--h1-example-title-and-logo-distance);
+}
+
+/* 竖线 */
+#write blockquote>h1:first-child::after {
+  background-color: var(--h1-example-blockquote-left-line-color) !important;
+}
+
+/* —————————————————————— Question / 问题 （二级标题）—————————————————————— */
+/* 标题 */
+#write blockquote>h2:first-child {
+  color           : var(--h2-question-blockquote-title-icon-color) !important;
+  background-color: var(--h2-question-blockquote-title-line-bg-color);
+}
+
+#write blockquote>h2:first-child span {
+  color           : var(--h2-question-blockquote-title-color) !important;
+  background-image: none;
+  padding         : 0;
+}
+
+/* 图标 */
+#write blockquote>:is(h2:first-child, h2.md-focus)::before {
+  content     : "\e632" !important;
+  font-size   : var(--h2-question-blockquote-logo-size) !important;
+  color       : var(--h2-question-blockquote-title-icon-color) !important;
+  margin-right: var(--h2-question-title-and-logo-distance);
+}
+
+/* 竖线 */
+#write blockquote>h2:first-child::after {
+  background: var(--h2-question-blockquote-left-line-color) !important;
+}
+
+/* —————————————————————— Warning / 注意 （三级标题）—————————————————————— */
+/* 标题 */
+#write blockquote>h3:first-child {
+  color           : var(--h3-warning-blockquote-title-icon-color) !important;
+  background-color: var(--h3-warning-blockquote-title-line-bg-color);
+}
+
+#write blockquote>h3:first-child span {
+  color: var(--h3-warning-blockquote-title-color) !important;
+}
+
+/* 图标 */
+#write blockquote>:is(h3:first-child, h3.md-focus)::before {
+  content     : "\e6aa" !important;
+  font-size   : var(--h3-warning-blockquote-logo-size) !important;
+  color       : var(--h3-warning-blockquote-title-icon-color) !important;
+  margin-right: var(--h3-warning-title-and-logo-distance);
+}
+
+/* 竖线 */
+#write blockquote>h3:first-child::after {
+  background-color: var(--h3-warning-blockquote-left-line-color);
+}
+
+/* —————————————————————— Quote / 参考 （四级标题）—————————————————————— */
+/* 标题 */
+#write blockquote>h4:first-child {
+  color           : var(--h4-quote-blockquote-title-icon-color) !important;
+  background-color: var(--h4-quote-blockquote-title-line-bg-color);
+}
+
+#write blockquote>h4:first-child span {
+  color: var(--h4-quote-blockquote-title-color) !important;
+}
+
+/* 图标 */
+#write blockquote>:is(h4:first-child, h4.md-focus)::before {
+  content     : "\e626" !important;
+  font-size   : var(--h4-quote-blockquote-logo-size) !important;
+  color       : var(--h4-quote-blockquote-title-icon-color) !important;
+  margin-right: var(--h4-quote-title-and-logo-distance);
+}
+
+/* 竖线 */
+#write blockquote>h4:first-child::after {
+  background-color: var(--h4-quote-blockquote-left-line-color);
+}
+
+/* —————————————————————— Tips / 提示 （五级标题）—————————————————————— */
+/* 标题 */
+#write blockquote>h5:first-child {
+  color           : var(--h5-tips-blockquote-title-icon-color) !important;
+  background-color: var(--h5-tips-blockquote-title-line-bg-color);
+}
+
+#write blockquote>h5:first-child span {
+  color: var(--h5-tips-blockquote-title-color) !important;
+}
+
+/* 图标 */
+#write blockquote>:is(h5:first-child, h5.md-focus)::before {
+  content     : "\e605" !important;
+  font-size   : var(--h5-tips-blockquote-logo-size) !important;
+  color       : var(--h5-tips-blockquote-title-icon-color) !important;
+  margin-right: var(--h5-tips-title-and-logo-distance);
+}
+
+/* 竖线 */
+#write blockquote>h5:first-child::after {
+  background-color: var(--h5-tips-blockquote-left-line-color);
+}
+
+/* —————————————————————— Expand / 拓展 （六级标题）—————————————————————— */
+/* 标题 */
+#write blockquote>h6:first-child {
+  color           : var(--h6-expand-blockquote-title-icon-color) !important;
+  background-color: var(--h6-expand-blockquote-title-line-bg-color)
+}
+
+#write blockquote>h6:first-child span {
+  color: var(--h6-expand-blockquote-title-color) !important;
+}
+
+/* 图标 */
+#write blockquote>:is(h6:first-child, h6.md-focus)::before {
+  content     : "\e67b" !important;
+  font-size   : var(--h6-expand-blockquote-logo-size) !important;
+  color       : var(--h6-expand-blockquote-title-icon-color) !important;
+  margin-right: var(--h6-expand-title-and-logo-distance);
+}
+
+/* 竖线 */
+#write blockquote>h6:first-child::after {
+  background-color: var(--h6-expand-blockquote-left-line-color);
+}

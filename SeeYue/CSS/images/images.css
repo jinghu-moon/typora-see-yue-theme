@@ -1,0 +1,127 @@
+/* 本文件为图片设置 */
+/* ================================================================= */
+
+
+img {
+  border-radius: var(--image-radius);
+  border       : none;
+  transition   : all .4s ease;
+  /* 设置最大宽度 */
+  max-width    : var(--image-max-width);
+  box-shadow   : var(--image-shadow);
+}
+
+.md-image img[alt|='dark'] {
+  filter: var(--image-darker-level);
+}
+
+.md-image:hover img {
+  transform: scale(var(--hover-image-bigger-multiple));
+}
+
+/* 图片链接前图标 */
+.md-focus .md-img-error>.md-meta:first-of-type:before,
+.md-image>.md-meta:first-of-type:before {
+  top: -2.5px;
+}
+
+/* 图片链接文字 */
+.md-image>.md-meta {
+  border-radius: 3px;
+  font-family  : "Fira", "霞鹜文楷";
+  padding      : 2px 0 0 4px;
+  font-size    : var(--image-link-text-size);
+  color        : var(--image-link-text-color);
+}
+
+/* 图片报错提示图标 */
+.md-img-error>.md-meta:first-of-type:before {
+  color    : var(--error-image-link-text-icon-color);
+  font-size: 1.6rem;
+}
+
+/* 图片报错 */
+/* .md-image:not(.md-image-multi-line)>.md-meta, */
+.md-img-error>.md-meta {
+  display       : inline;
+  padding-bottom: 1px;
+  border-bottom : var(--error-image-link-underline);
+  border-radius : 0px !important;
+  color         : var(--error-image-link-text-icon-color);
+}
+
+/* 图片报错，链接文本加粗 */
+/* ![xxxx]( */
+.md-img-error .md-image-before-src.ty-focusable,
+/* xxxxx 图片路径 */
+.md-img-error .md-image-src-span.ty-focusable,
+/* ) */
+.md-img-error .md-image-after-src {
+  font-weight: bolder;
+}
+
+/* 图片加载失败，悬浮提示框 */
+.md-image>.md-show-hint:after {
+  color           : var(--hover-error-image-tipsBox-text-color) !important;
+  border-radius   : 3px;
+  background-color: var(--hover-error-image-tipsBox-bg-color);
+  opacity         : 1;
+}
+
+p>.md-img-loaded {
+  position: relative;
+}
+
+/* 网络图片标识 */
+p>.md-img-loaded[data-src*="https"]::before {
+  font-family: "iconfont";
+  content    : "\e627";
+  position   : absolute;
+  color      : var(--internet-image-prompt-icon-color);
+  top        : 5px;
+  right      : 8%;
+  z-index    : 99;
+  line-height: 1;
+  transition : .4s;
+}
+
+.md-image:hover.md-img-loaded[data-src]::before {
+  position: absolute;
+  top     : 0px;
+  right   : 7.2%;
+}
+
+/* 图片编号格式一  图xx */
+/* 示例 图1. xxxxx */
+#write {
+  counter-reset: imgNum;
+}
+
+#write p>.md-image:not(.md-img-error)::after {
+  content: "图 "counter(imgNum)"  "attr(alt) !important;
+}
+
+#write p>.md-image:not(.md-img-error)::after {
+  counter-increment: imgNum;
+  text-align       : center;
+  width            : 100%;
+  display          : inline-block;
+  font-size        : 12px;
+  font-family      : "HarmonyOS-Sans", "霞鹜文楷";
+}
+
+/* 链接图片 */
+#write a:not([alt=badge]):has(img) {
+  display   : block;
+  position  : relative;
+  text-align: center;
+}
+
+#write a[alt|=badge] {
+  position: relative;
+  top     : -2px;
+}
+
+#write a[alt|=badge]::after {
+  display: none;
+}

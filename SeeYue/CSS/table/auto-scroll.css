@@ -1,0 +1,36 @@
+/* 本文件为表格自适应宽度 + 长表格滚动显示设置文件 */
+/* ================================================================= */
+
+
+/* 表格宽度随内容增加而增加 */
+:is(figure, figure.md-focus),
+:is(.md-table-fig, .md-table-fig:active) {
+  border-radius: var(--table-bg-radius) !important;
+  min-width    : var(--table-min-width) !important;
+  width        : fit-content;
+  margin-right : var(--table-horizontal-center);
+  margin-left  : var(--table-horizontal-center);
+  margin-top   : 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* —————————————————— 以下代码为固定表头、滚动显示代码 —————————————————— */
+@media screen {
+  figure>table thead {
+    position: sticky !important;
+    top     : 0;
+    z-index : 10;
+  }
+
+  figure {
+    max-width : 100%;
+    max-height: var(--table-max-height);
+    cursor    : auto !important;
+    overflow  : overlay !important;
+  }
+
+  figure>table tr :is(th, td) {
+    min-width: var(--table-cell-min-width);
+  }
+}

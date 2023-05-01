@@ -1,0 +1,7 @@
+<svg class="nav-logo__svg" width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#EA607E" cx="18" cy="18" r="6"></circle>
+                <path d="M5.333 2.667a2.667 2.667 0 0 0-2.666 2.666v25.334a2.667 2.667 0 0 0 2.666 2.666h25.334a2.667 2.667 0 0 0 2.666-2.666V5.333a2.667 2.667 0 0 0-2.666-2.666H5.333zm0-2.667h25.334A5.333 5.333 0 0 1 36 5.333v25.334A5.333 5.333 0 0 1 30.667 36H5.333A5.333 5.333 0 0 1 0 30.667V5.333A5.333 5.333 0 0 1 5.333 0z" fill="#04286E" fill-rule="nonzero"></path>
+                <path d="M14 8.667A5.333 5.333 0 0 0 8.667 14v8A5.333 5.333 0 0 0 14 27.333h8A5.333 5.333 0 0 0 27.333 22v-8A5.333 5.333 0 0 0 22 8.667h-8zM14 6h8a8 8 0 0 1 8 8v8a8 8 0 0 1-8 8h-8a8 8 0 0 1-8-8v-8a8 8 0 0 1 8-8z" fill="#04286E" fill-rule="nonzero"></path>
+              </g>
+            </svg>

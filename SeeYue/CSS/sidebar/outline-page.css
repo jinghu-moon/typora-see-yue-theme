@@ -1,0 +1,293 @@
+/* 本文件为侧边栏大纲页面设置 */
+/* ================================================================= */
+
+
+/* 大纲页整体设置 */
+#outline-content {
+  padding      : var(--sidebar-outline-padding);
+  display      : block;
+  height       : 100%;
+  overflow-x   : hidden;
+  margin-bottom: 10px;
+  word-break   : break-all;
+}
+
+/* 大纲标题 */
+#outline-content .outline-item {
+  /* 标题末尾竖线与文本间距 */
+  padding-right : var(--active-headline-endLine-distance);
+  line-height   : var(--sidebar-all-headline-line-height);
+  padding-top   : 3px;
+  padding-bottom: 3px;
+  cursor        : pointer;
+  display       : flex;
+  align-items   : center;
+  border-radius : 4px;
+  margin        : 0;
+  border        : none;
+  transition    : background-color .3s ease;
+}
+
+#outline-content .outline-item:hover {
+  z-index         : 10;
+  background-color: var(--hover-outline-headline-bg-color);
+}
+
+/* 悬浮去掉下划线 */
+.outline-item .outline-label:hover {
+  text-decoration: none;
+}
+
+/* 选中标题突出样式 */
+#outline-content .outline-item-active {
+  color           : var(--active-outline-headline-color);
+  background-color: var(--active-outline-headline-bg-color);
+  position        : relative;
+}
+
+/* 选中大纲末尾小竖线 */
+#outline-content .outline-item-active::after {
+  display         : var(--active-headline-endLine-state);
+  position        : absolute;
+  content         : " ";
+  top             : var(--active-headline-endLine-top-position);
+  right           : var(--active-headline-endLine-right-position);
+  background-color: var(--active-headline-endLine-color);
+  width           : var(--active-headline-endLine-width);
+  height          : var(--active-headline-endLine-height);
+  border-radius   : var(--active-headline-endLine-radius);
+}
+
+#outline-content .outline-item-active:hover::after {
+  background-color: var(--hover-outline-headline-bg-color);
+  transition      : background-color var(--hover-headline-animation-time) ease;
+}
+
+/* 大纲页面右键菜单选择【高亮当前标题】，标题背景色 */
+#outline-content .outline-item-active.blink-area {
+  background-color: var(--highlight-active-headline-bg-color);
+}
+
+.blink-area {
+  -webkit-animation: blink-bg 1s 8;
+  animation        : blink-bg 1s 8
+}
+
+@keyframes blink-bg {
+
+  0% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0;
+  }
+
+  20% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0.5;
+  }
+
+  40% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0.8;
+  }
+
+  50% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 1;
+  }
+
+  60% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0.8;
+  }
+
+  80% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0.5;
+  }
+
+  100% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0;
+  }
+}
+
+@-webkit-keyframes blink-bg {
+
+  0% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0;
+  }
+
+  20% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0.5;
+  }
+
+  40% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0.8;
+  }
+
+  50% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 1;
+  }
+
+  60% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0.8;
+  }
+
+  80% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0.5;
+  }
+
+  100% {
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity         : 0;
+  }
+}
+
+
+/* —————————————————— 侧边栏大纲层级线 —————————————————— */
+.outline-item-open:is(.outline-h1, .outline-h2, .outline-h3, .outline-h4, .outline-h5, .outline-h6).outline-item-wrapper li::before {
+  content : "";
+  position: absolute;
+  height  : 100%;
+  z-index : 99;
+}
+
+.outline-item-open.outline-h1 li::before {
+  display         : var(--sidebar-h1-level-line-state);
+  left            : var(--h1-level-line-left-distance);
+  width           : var(--all-headline-level-line-width);
+  background-color: var(--sidebar-h1-level-line-color);
+}
+
+.outline-item-open.outline-h2 li::before {
+  display         : var(--sidebar-h2-level-line-state);
+  left            : var(--h2-level-line-left-distance);
+  width           : var(--all-headline-level-line-width);
+  background-color: var(--sidebar-h2-level-line-color);
+}
+
+.outline-item-open.outline-h3 li::before {
+  display         : var(--sidebar-h3-level-line-state);
+  left            : var(--h3-level-line-left-distance);
+  width           : var(--all-headline-level-line-width);
+  background-color: var(--sidebar-h3-level-line-color);
+}
+
+.outline-item-open.outline-h4 li::before {
+  display         : var(--sidebar-h4-level-line-state);
+  left            : var(--h4-level-line-left-distance);
+  width           : var(--all-headline-level-line-width);
+  background-color: var(--sidebar-h4-level-line-color);
+}
+
+.outline-item-open.outline-h5 li::before {
+  display         : var(--sidebar-h5-level-line-state);
+  left            : var(--h5-level-line-left-distance);
+  width           : var(--all-headline-level-line-width);
+  background-color: var(--sidebar-h5-level-line-color);
+}
+
+/* 大纲关闭折叠时，取消层级线 */
+.no-collapse-outline .outline-item-open:is(.outline-h1, .outline-h2, .outline-h3.outline-h4, .outline-h5, .outline-h6).outline-item-wrapper li::before {
+  display: var(--nofold-headline-level-line-state);
+}
+
+/* 标题缩进 */
+.outline-h1>.outline-item {
+  padding-left: 0;
+}
+
+.outline-h2>.outline-item {
+  padding-left: 1.2rem;
+}
+
+.outline-h3>.outline-item {
+  padding-left: 2.4rem;
+}
+
+.outline-h4>.outline-item {
+  padding-left: 3.6rem;
+}
+
+.outline-h5>.outline-item {
+  padding-left: 4.8rem;
+}
+
+.outline-h6>.outline-item {
+  padding-left: 5.85rem;
+}
+
+/* 标题缩进对齐 */
+/* .outline-item-single.outline-h3>.outline-item {
+  padding-left: 2.2rem;
+}
+
+.outline-item-single.outline-h4>.outline-item {
+  padding-left: 3.4rem;
+}
+
+.outline-item-single.outline-h5>.outline-item {
+  padding-left: 4.6rem;
+}
+
+.outline-item-single.outline-h6>.outline-item {
+  padding-left: 7.1rem;
+} */
+
+/* 大纲前符号 */
+.outline-item .outline-expander {
+  width         : 1.4rem;
+  height        : 1.4rem;
+  position      : relative;
+  display       : flex;
+  align-items   : center;
+  vertical-align: middle;
+  padding       : 0 4px;
+  color         : var(--sidebar-outline-left-triangle-color);
+}
+
+/* 大纲前列表符号（折叠）（默认状态） */
+.outline-item :is(.outline-expander, .outline-expander:hover)::before,
+/* 大纲列表前符号（展开） */
+.outline-item-open>.outline-item>.outline-expander:before {
+  font-family: 'iconfont';
+  content    : "\e644";
+  font-size  : var(--sidebar-outline-left-triangle-size);
+  padding    : var(--hover-outline-left-triangle-bg-size);
+}
+
+.outline-item :is(.outline-expander, .outline-expander:hover)::before {
+  content    : "\e644";
+  position   : absolute;
+  transform  : rotate(0deg);
+  line-height: 1;
+}
+
+.outline-item-open>.outline-item>.outline-expander:before {
+  transform: rotate(90deg);
+}
+
+/* 大纲折叠、展开时的动画 */
+.outline-item .outline-expander:hover::before,
+.outline-item-open>.outline-item>.outline-expander:hover::before {
+  padding         : var(--hover-outline-left-triangle-bg-size);
+  background-color: var(--hover-outline-left-triangle-bg-color);
+  color           : var(--hover-outline-left-triangle-color);
+  border-radius   : 2.5px;
+  transition      : all .5s ease;
+}
+
+/* 大纲页搜索结果 */
+.ty-on-outline-filter .ty-outline-hit {
+  font-weight     : normal;
+  background-color: var(--sidebar-outline-match-content-bg-color);
+  border-radius   : 2px;
+  padding         : 0 2px;
+  padding-bottom  : 1px;
+}

@@ -1,0 +1,864 @@
+/* 资源类网站 */
+/* =================================================================*/
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1 图片 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="unsplash.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/unsplash.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="wallhaven.cc"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/wallhaven.svg");
+    content         : " ";
+  }
+
+  #write a[href*="simpledesktops.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/simpledesktops.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="pixabay.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/pixabay.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pexels.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/pexels.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wallpaperscraft.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/wallpaperscraft.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bing.ioliu.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/bingdaily.svg");
+    content         : " ";
+  }
+
+  #write a[href*="deviantart.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/deviantart.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wall.alphacoders.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/wallalphacoders.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bz.zzzmh.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/zzzmh.svg");
+    content         : " ";
+  }
+
+  #write a[href*="huaban.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/huaban.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wallhere.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/wallhere.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hippopx.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/hippopx.svg");
+    content         : " ";
+  }
+
+  #write a[href*="colorhub.me"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/colorhub.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pixiv.net"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/pixiv.svg");
+    content         : " ";
+  }
+
+  #write a[href*="duitang.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/duitang.svg");
+    content         : " ";
+  }
+
+  #write a[href*="artstation.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/artstation.svg");
+    content         : " ";
+  }
+
+  #write a[href*="35photo.pro"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/simpledesktops.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wallroom.io"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/wallroom.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cgwallpapers.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/cgwallpapers.svg") !important;
+    content         : " ";
+    transform       : scale(1) !important;
+  }
+
+  #write a[href*="papers.co"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/papers.svg");
+    content         : " ";
+    transform       : scale(1.25);
+  }
+
+  #write a[href*="piqsels.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/piqsels.svg");
+    content         : " ";
+  }
+
+  #write a[href*="photo.ihansen.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/meituji.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zhutix.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.1-Images/zhutix.ico");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2 字体 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="maoken.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.2-Fonts/maoken1.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fonts.net.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.2-Fonts/zititianxia.svg");
+    content         : " ";
+  }
+
+  #write a[href*="100font.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.2-Fonts/100font.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hanyi.com.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.2-Fonts/hanyi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tsanger.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.2-Fonts/tsanger.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fonts.google.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.2-Fonts/googlefonts.svg");
+    content         : " ";
+  }
+
+  #write a[href*="font.im"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.2-Fonts/googlefontscn.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="foundertype.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.2-Fonts/foundertype.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3 图标 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="iconfont.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/iconfont.svg");
+    content         : " ";
+  }
+
+  #write a[href*="iconpark.oceanengine.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/iconpark.svg");
+    content         : " ";
+  }
+
+  #write a[href*="flaticon.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/flaticon.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="feathericons.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/feathericons.svg");
+    content         : " ";
+  }
+
+  #write a[href*="iconhub.io"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/iconhub.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="icons.radix-ui.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/radixicons.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="remixicon.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/remixicon.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="icomoon.io"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/icomoon.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tabler-icons.io"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/tablericons.svg");
+    content         : " ";
+  }
+
+  #write a[href*="simpleicons.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/simpleicons.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lineicons.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/lineicons.svg");
+    content         : " ";
+  }
+
+  #write a[href*="heroicons.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/heroicons.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="healthicons.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/healthicons.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fontawesome.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/fontawesome.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ionic.io"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/ionic.svg");
+    content         : " ";
+  }
+
+  #write a[href*="iconscout.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/unicons.svg");
+    content         : " ";
+  }
+
+  #write a[href*="icons.getbootstrap.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/getbootstrapicon.svg");
+    content         : " ";
+  }
+
+  #write a[href*="axmax.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.3-Icons/axmax.svg");
+    content         : " ";
+    transform       : scale(1.5);
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4 软件 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="ghxi.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/ghxi.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="yxssp.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/yxssp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dugubest.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/dugubest.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lan-sha.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/lansha.svg");
+    content         : " ";
+  }
+
+  #write a[href*="luochenzhimu.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/luochenzhimu.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="apprcn.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/apprcn.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="th-sjy.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/thsjy.svg");
+    content         : " ";
+  }
+
+  #write a[href*="iplaysoft.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/iplaysoft.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="6yit.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/6yit.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="423down.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/423down.svg");
+    content         : " ";
+  }
+
+  #write a[href*="dayanzai.me"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/dayanzai.svg");
+    content         : " ";
+  }
+
+  #write a[href*="foxirj.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/foxirj.svg");
+    content         : " ";
+  }
+
+  #write a[href*="whg6.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/whg6.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mpyit.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/mpyit.svg");
+    content         : " ";
+  }
+
+  #write a[href*="waodown.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/waodown.svg");
+    content         : " ";
+  }
+
+  #write a[href*="huajclub.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/huajclub.svg");
+    content         : " ";
+  }
+
+  #write a[href*="nite07.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/nite07.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ldqk.xyz"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/ldqk.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fenxm.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.4-Software/fenxm.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5 色卡 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="coolors.co"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/coolors.svg");
+    content         : " ";
+  }
+
+  #write a[href*="colorkit.co"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/colorkit.svg");
+    content         : " ";
+  }
+
+  #write a[href*="colorsandfonts.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/colorsandfonts.svg");
+    content         : " ";
+  }
+
+  #write a[href*="colorhunt.co"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/colorhunt.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zhongguose.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/zhongguose.svg");
+    content         : " ";
+  }
+
+  #write a[href*="2kil.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/2kil.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="peiseka.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/peiseka.svg");
+    content         : " ";
+  }
+
+  #write a[href*="palettable.io"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/palettable.svg");
+    content         : " ";
+  }
+
+  #write a[href*="grabient.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/grabient.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="uigradients.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/uigradients.svg");
+    content         : " ";
+  }
+
+  #write a[href*="webgradients.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/webgradients.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mycolor.space"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/mycolor.svg");
+    content         : " ";
+  }
+
+  #write a[href*="gradientbuttons.colorion.co"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/gradientbuttons.svg");
+    content         : " ";
+  }
+
+  #write a[href*="coolbackgrounds.io"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/coolbackgrounds.svg");
+    content         : " ";
+    border-radius   : 0;
+  }
+
+  #write a[href*="webkul.github.io/coolhue"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.5-Colors/coolhue.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6 导航站 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="imyshare.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/imyshare.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ilxdh.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/ilxdh.svg");
+    content         : " ";
+  }
+
+  #write a[href*="adzhp.net"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/adzhp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="nav.coolexe.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/coolexenav.svg");
+    content         : " ";
+  }
+
+  #write a[href*="0x3.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/0x3.svg");
+    content         : " ";
+  }
+
+  #write a[href*="upupmo.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/upupmo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="bigezhang.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/bigezhang.svg");
+    content         : " ";
+    transform       : scale(1.5);
+  }
+
+  #write a[href*="touduyu.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/touduyu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="amp360.net"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/amp360.svg");
+    content         : " ";
+  }
+
+  #write a[href*="nav.guidebook.top"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/guidebook.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xue8nav.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/xue8nav.svg");
+    content         : " ";
+  }
+
+  #write a[href*="nav.qinight.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/qinight.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wanyouw.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/wanyouw.svg");
+    content         : " ";
+  }
+
+  #write a[href*="site.sciping.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/scipingsite.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jiafangbb.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/jiafangbb.svg");
+    content         : " ";
+  }
+
+  #write a[href*="hao.uisdc.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/uisdc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ubuuk.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/ubuuk.svg");
+    content         : " ";
+  }
+
+  #write a[href*="chuangzaoshi.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/chuangzaoshi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="seeseed.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/seeseed.svg");
+    content         : " ";
+  }
+
+  #write a[href*="cxy521.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/cxy521.svg");
+    content         : " ";
+  }
+
+  #write a[href*="pmbaobao.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/pmbaobao.svg");
+    content         : " ";
+  }
+
+  #write a[href*="code-nav.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/codenav.svg");
+    content         : " ";
+  }
+
+  #write a[href*="tool.lu"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/toollu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="91sotu.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/91sotu.svg");
+    content         : " ";
+  }
+
+  #write a[href*="qssily.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/qssily.svg");
+    content         : " ";
+    background-color: #fff;
+  }
+
+  #write a[href*="v2fy.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/v2fy.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xydh.fun"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.6-Navigation/xydh.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7 新标签页 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="infinitytab.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/infinitytab.svg");
+    content         : " ";
+    transform       : scale(1.2);
+  }
+
+  #write a[href*="itab.link"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/itab.svg");
+    content         : " ";
+  }
+
+  #write a[href*="limestart.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/limestart.svg");
+    content         : " ";
+    border-radius   : 50%;
+  }
+
+  #write a[href*="cuipc.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/cuipc.svg");
+    content         : " ";
+  }
+
+  #write a[href*="marstab.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/marstab.svg");
+    content         : " ";
+  }
+
+  #write a[href*="renewedtab.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/renewedtab.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xiaoshuapp.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/xiaoshuapp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="jianfast.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/jianfast.svg");
+    content         : " ";
+  }
+
+  #write a[href*="moulem.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/moulem.svg");
+    content         : " ";
+  }
+
+  #write a[href*="speedceo.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.7-Newtab/speedceo.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8 应用商店 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="app.mi.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/miapp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="sj.qq.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/yyb.svg");
+    content         : " ";
+    transform       : scale(1.4);
+  }
+
+  #write a[href*="appgallery.huawei.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/huaweiapp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="appchina.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/appchina.svg");
+    content         : " ";
+  }
+
+  #write a[href*="huluxia.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/huluxia.svg");
+    content         : " ";
+  }
+
+  #write a[href*="apple.com/app-store"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/appstore.svg");
+    content         : " ";
+    transform       : scale(1);
+  }
+
+  #write a[href*="apkpure.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/apkpure.svg");
+    content         : " ";
+  }
+
+  #write a[href*="play.google.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/googleplay.svg");
+    content         : " ";
+  }
+
+  #write a[href*="f-droid.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/fdroid.svg");
+    content         : " ";
+  }
+
+  #write a[href*="apkmirror.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/apkmirror.svg");
+    content         : " ";
+  }
+
+  #write a[href*="aptoide.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/aptoide.svg");
+    content         : " ";
+  }
+
+  #write a[href*="apk-dl.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/apkdl.svg");
+    content         : " ";
+  }
+
+  #write a[href*="9apps.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/9apps.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wandoujia.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/wandoujia.svg");
+    content         : " ";
+  }
+
+  #write a[href*="creatorsdaily.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.8-Appstore/creatorsdaily.svg");
+    content         : " ";
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9 学习 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media screen {
+  #write a[href*="coursegraph.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/coursegraph.svg");
+    content         : " ";
+  }
+
+  #write a[href*="icourse163.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/icourse163.svg");
+    content         : " ";
+  }
+
+  #write a[href*="open.163.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/163open.svg") !important;
+    content         : " ";
+  }
+
+  #write a[href*="study.163.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/163study.svg");
+    content         : " ";
+  }
+
+  #write a[href*="wenku.baidu.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/baiduwenku.svg");
+    content         : " ";
+  }
+
+  #write a[href*="xuetangx.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/xuetangx.svg");
+    content         : " ";
+  }
+
+  #write a[href*="mooc.chaoxing.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/chaoxing.svg");
+    content         : " ";
+  }
+
+  #write a[href*="allhistory.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/allhistory.svg");
+    content         : " ";
+  }
+
+  #write a[href*="excelhome.net"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/excelhome.svg");
+    content         : " ";
+  }
+
+  #write a[href*="oeasy.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/oeasy.svg");
+    content         : " ";
+  }
+
+  #write a[href*="examcoo.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/examcoo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="crashcourse.club"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/crashcourse.svg");
+    content         : " ";
+  }
+
+  #write a[href*="msdmanuals.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/msdmanuals.svg");
+    content         : " ";
+  }
+
+  #write a[href*="doyoudo.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/doyoudo.svg");
+    content         : " ";
+  }
+
+  #write a[href*="eslbuzz.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/eslbuzz.svg");
+    content         : " ";
+  }
+
+  #write a[href*="youzack.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/youzack.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zdic.net"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/zdic.svg");
+    content         : " ";
+  }
+
+  #write a[href*="youzack.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/youzack.svg");
+    content         : " ";
+  }
+
+  #write a[href*="yxgapp.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/yxgapp.svg");
+    content         : " ";
+  }
+
+  #write a[href*="lanrenexcel.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/lanrenexcel.svg");
+    content         : " ";
+  }
+
+  #write a[href*="coursera.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/coursera.svg");
+    content         : " ";
+  }
+
+  #write a[href*="fenbi.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/fenbi.svg");
+    content         : " ";
+  }
+
+  #write a[href*="khanacademy.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/khanacademy.svg");
+    content         : " ";
+  }
+
+  #write a[href*="ted.com"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/ted.svg");
+    content         : " ";
+  }
+
+  #write a[href*="edx.org"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/edx.svg");
+    content         : " ";
+  }
+
+  #write a[href*="zcool.com.cn"]::before {
+    background-image: url("../../Images/Favicon/03-Resources-Websites/3.9-Study/zcool.svg");
+    content         : " ";
+  }
+}

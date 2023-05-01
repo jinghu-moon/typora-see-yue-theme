@@ -1,0 +1,79 @@
+/* 本文件为侧边栏整体设置 */
+/* ================================================================= */
+
+
+/* 侧边栏阴影 */
+#typora-sidebar,
+.typora-node #typora-sidebar {
+  box-shadow: var(--sidebar-box-shadow);
+}
+
+/* 侧边栏整体 */
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
+  border-radius   : var(--sidebar-border-radius);
+  background-color: var(--sidebar-whole-bg-color);
+}
+
+/* 侧边栏顶部 */
+.info-panel-tab {
+  /* 大纲、文件下方横条宽度 */
+  width  : var(--topBar-content-bottom-line-width);
+  opacity: 1;
+}
+
+/* 侧边栏顶部文字 */
+.info-panel-tab-title {
+  font-family   : "三极古拙楷书简";
+  font-size     : var(--sidebar-topBar-content-size) !important;
+  line-height   : 1.2rem;
+  padding-bottom: var(--topBar-content-bottom-line-distance);
+  color         : var(--sidebar-topBar-content-color);
+}
+
+.info-panel-tab-title:hover {
+  color    : var(--hover-sidebar-topBar-content-color) !important;
+  transform: color .3s ease;
+}
+
+/* 大纲、文件、查找下方横条 */
+.active-tab-files #info-panel-tab-file .info-panel-tab-border,
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border,
+.ty-show-search #info-panel-tab-search .info-panel-tab-border {
+  /* 大纲、文件下方横条高度 */
+  height          : var(--topBar-content-bottom-line-height);
+  background-color: var(--topBar-content-bottom-line-color);
+  transition      : all .5s ease;
+}
+
+/* 文件页、大纲页 */
+:is(#file-library, #outline-content),
+/* 搜索结果界面 */
+.ty-on-search #file-library-search-result {
+  font-family: var(--sidebar-text-font) !important;
+  color      : var(--sidebar-text-color) !important;
+  font-size  : var(--sidebar-text-size) !important;
+  /* 滚动条位置固定 */
+  overflow-y : var(--sidebar-scrollbar-state);
+}
+
+/* 文本过长，用省略号表示 */
+/* 文件名、文件夹名 */
+#file-library-tree .file-node-content .file-node-title,
+/* 大纲标题 */
+.outline-item .outline-label {
+  white-space  : nowrap;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  font-weight  : normal;
+}
+
+#file-library-tree .file-node-content .file-node-title {
+  /* width           : calc(var(--sidebar-width) - 70px); */
+  width: var(--filetree-all-filename-width) !important;
+}
+
+.outline-item .outline-label {
+  /* 分隔三角形与文字 */
+  margin-left: 3px;
+  width      : var(--outline-all-headline-width);
+}

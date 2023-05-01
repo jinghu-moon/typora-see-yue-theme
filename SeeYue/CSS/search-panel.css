@@ -1,0 +1,136 @@
+/* 本文件为写作区域搜索面板设置 */
+/* ================================================================= */
+
+
+#md-searchpanel {
+  background-color: var(--writeArea-search-panel-bg-color);
+  box-shadow      : var(--writeArea-search-panel-shadow);
+  border-bottom   : var(--writeArea-search-panel-bottom-border) !important;
+}
+
+/* 正文查找框 */
+#md-searchpanel input,
+/* 正文查找框按钮 */
+#md-searchpanel .btn {
+  font-family  : var(--writeArea-search-panel-text-font) !important;
+  border-radius: 4px;
+  font-size    : var(--writeArea-search-panel-text-size);
+  color        : var(--writeArea-search-panel-text-color) !important;
+  transition   : all .3s ease;
+}
+
+/* 正文查找框左侧【替换】和【查找】按钮 */
+#md-searchpanel .search-type-selection {
+  width: 50px;
+}
+
+/* 按钮（排除关闭按钮） */
+#md-searchpanel .btn:not(.close-btn):hover {
+  background-color: var(--hover-search-panel-btn-bg-color);
+  box-shadow      : none !important;
+}
+
+/* 中间区域 */
+#md-searchpanel>div>div:nth-child(2) {
+  margin: 0 5px;
+}
+
+/* 中间查找、替换框 */
+#md-searchpanel input {
+  background-color: var(--search-panel-input-box-bg-color);
+  border          : var(--search-panel-input-box-border);
+  border-radius   : 4px;
+}
+
+#md-searchpanel input:focus {
+  box-shadow  : none;
+  border-color: var(--focus-searchPanel-border-color) !important;
+}
+
+/* 中间搜索内容输入框右侧搜索选项按钮 */
+#md-searchpanel .ty-search-panel-row .searchpanel-search-option-btn {
+  color     : var(--search-panel-input-box-btn-color);
+  transition: all .3s ease;
+  border    : none;
+  top       : 6.5px;
+}
+
+/* 悬浮在按钮上 */
+.searchpanel-search-option-btn:hover {
+  background-color: var(--hover-search-panel-input-box-btn-bg-color);
+}
+
+/* 选中按钮 */
+#md-searchpanel .ty-search-panel-row .searchpanel-search-option-btn.active {
+  color           : var(--selected-search-panel-input-box-btn-color) !important;
+  background-color: var(--selected-search-panel-input-box-btn-bg-color);
+}
+
+/* 右侧选项区域 */
+
+/* 上一个、下一个匹配文本，点击变色 */
+/* #md-searchpanel .ty-search-panel-row #search-panel-prev:active,
+#md-searchpanel .ty-search-panel-row #search-panel-next:active {
+  color     : #3f77c1 !important;
+  transition: none;
+  box-shadow: none !important;
+} */
+
+/* 查找匹配数 */
+#md-searchpanel .ty-search-panel-row #search-panel-status {
+  text-align: center;
+}
+
+/* 匹配数为 0 */
+#search-panel-status .error-message {
+  color      : var(--search-panel-right-no-match-content-color);
+  font-family: var(--writeArea-search-panel-text-font);
+}
+
+/* 关闭按钮 */
+#md-searchpanel .ty-search-panel-row .close-btn {
+  box-shadow: none;
+  border    : none;
+}
+
+#md-searchpanel .ty-search-panel-row .input-group-addon.close-btn:hover {
+  color        : var(--hover-search-panel-closed-btn-color) !important;
+  /* transform : scale(1.2); */
+}
+
+#md-searchpanel .ty-search-panel-row .input-group-addon.close-btn {
+  position: relative;
+  left    : -3px;
+}
+
+#md-searchpanel .ty-search-panel-row .input-group-addon.close-btn .ion-close-round {
+  padding : 5px;
+  position: relative;
+  left    : -3px;
+}
+
+/* 【全部替换】选项 */
+#md-searchpanel .ty-replace-panel-row #search-panel-replaceall-btn,
+/* 【替换】选项 */
+#md-searchpanel .ty-replace-panel-row #search-panel-replace-btn {
+  text-align: center !important;
+  padding   : 0 !important;
+  width     : .2%;
+}
+
+/* 位置对调 */
+#search-panel-replaceall-btn {
+  position: relative;
+  left    : 35px;
+}
+
+#search-panel-replace-btn {
+  position: relative;
+  left    : -45px;
+}
+
+/* 全部替换完成通知 */
+#md-searchpanel #searchpanel-msg {
+  background-color: inherit;
+  color           : var(--search-panel-all-replace-notice-text-color);
+}

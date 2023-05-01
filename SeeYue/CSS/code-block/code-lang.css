@@ -1,0 +1,28 @@
+/* 本文件为代码块编程语言设置（不使用顶栏） */
+/* ================================================================= */
+
+
+/* 代码语言显示【右侧】 */
+#write pre::after {
+  font-family   : "HarmonyOS-Sans";
+  font-weight   : bolder;
+  font-size     : var(--code-block-right-program-lang-text-size);
+  letter-spacing: 1px;
+  color         : var(--code-block-right-program-lang-text-color);
+  position      : absolute;
+  top           : var(--code-block-right-program-lang-top-position);
+  right         : var(--code-block-right-program-lang-right-position);
+  z-index       : 99;
+}
+
+#write pre.md-fences {
+  padding: 15px 0 !important;
+}
+
+.md-fences+.md-fences {
+  margin-top: 2rem !important;
+}
+
+#write .code-tooltip {
+  top: 14px;
+}

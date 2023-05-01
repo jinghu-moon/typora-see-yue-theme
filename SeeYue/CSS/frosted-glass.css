@@ -1,0 +1,46 @@
+/* 本文件为界面毛玻璃效果设置 */
+/* ================================================================= */
+
+
+html {
+  background-color: var(--frosted-glass-interface-bg-color);
+}
+
+html {
+  /* 全局背景图片 */
+  background-image     : var(--frosted-glass-interface-bg-img) !important;
+  background-size      : cover !important;
+  background-repeat    : no-repeat;
+  background-position  : center;
+  background-attachment: fixed;
+  /* background        : no-repeat center/cover var(--interface-default-bg-img) rgba(255, 255, 255, 0.4) fixed; */
+}
+
+/* 全局背景色 */
+/* #typora-sidebar, */
+content,
+.on-focus-mode content {
+  background-color: var(--interface-bg-color) !important;
+}
+
+#typora-sidebar {
+  background-color: var(--interface-bg-color) !important;
+}
+
+/* 去除源代码模式下，使用背景图带来的顶部白边 */
+#typora-source {
+  top   : 0;
+  bottom: 0;
+}
+
+/* 毛玻璃效果 */
+#typora-sidebar,
+#write,
+/* 源代码模式 */
+#typora-source .CodeMirror-lines {
+  position       : relative;
+  /* 文字区域透明度 */
+  background     : var(--frosted-glass-writeArea-bg-color);
+  backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+  box-shadow     : var(--frosted-glass-writeArea-shadow);
+}

@@ -1,0 +1,81 @@
+/* 全局默认字体，使用可提高主题加载速度 */
+/* 相较于使用 font.css，使用该文件，细节上会有差距 */
+/* ================================================================= */
+
+
+/* 全局英文字体 */
+@font-face {
+  font-family : "Global_EN_Font";
+  src         : url("../Fonts/English-Fonts/HarmonyOS_Sans_Regular.woff2");
+  font-display: swap;
+}
+
+/* 全局中文字体 */
+@font-face {
+  font-family : "Global_CN_Font";
+  src         : url("../Fonts/Chinese-Fonts/LXGWWenKaiScreen.woff2");
+  font-display: swap;
+}
+
+/* 标题、加粗 */
+@font-face {
+  font-family : "HarmonyOS-Bold";
+  src         : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Bold.woff2");
+  font-display: swap;
+}
+
+/* 斜体、列表符号 */
+@font-face {
+  font-family : "HarmonyOS-Regular";
+  src         : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Regular.woff2");
+  font-display: swap;
+}
+
+/* 字体图标 */
+@font-face {
+  font-family : "iconfont";
+  src         : url("../Fonts/Iconfont/iconfont.woff2") format("truetype");
+  font-display: swap;
+}
+
+/* 链接尾部图标 */
+@font-face {
+  font-family : "ITS";
+  src         : url("../Fonts/Iconfont/its.woff");
+  font-display: swap;
+}
+
+/* H1 → H6 标题等级提示符号 */
+@font-face {
+  font-family : "remixicon";
+  src         : url("../Fonts/Iconfont/remixicon.woff2") format("truetype");
+  font-display: swap;
+}
+
+html :is(body, blockquote),
+:is(#file-library, #outline-content, #outline-content .outline-item-active),
+/* 悬浮提示文本 */
+.ty-tooltip,
+/* 字数统计框 */
+#footer-word-count-info td:nth-child(1),
+#write mark,
+#write mark,
+#write .md-toc-content :not(.md-toc-h1) .md-toc-inner,
+/* 是否使用拼写检查行、拼写检查全局设置 */
+#spell-check-panel :is(.ty-lang-control, .ty-lang-list),
+/* 弹出菜单 */
+.modal-content,
+/* 正文底部栏 */
+.show-footer footer.ty-footer,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) footer.ty-footer {
+  /* 参考 */
+  /*
+  https://fontsarena.com/blog/operating-systems-default-sans-serif-fonts/
+  https://huangxin.dev/partly-technical/webfont-from-beginner-to-sans-serif
+  */
+  font-family: "Global_EN_Font", "Global_CN_Font", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, serif !important;
+}
+
+#write :is(code, tt) {
+  font-family: "Global_EN_Font", "Global_CN_Font" !important;
+}

@@ -1,0 +1,1343 @@
+/* 本文件为侧边栏大纲页标题缩进设置 */
+/* 标题顺序需按照由大到小顺序，即 H1 → H6 ，该文件代码才可以正常显示 */
+/* ================================================================= */
+
+
+/* 只有同等级标题时 */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h5, .outline-h6)) .outline-h1>.outline-item,
+#outline-content:not(:has(.outline-h1)):has(.outline-h2) .outline-h2>.outline-item,
+#outline-content:not(:has(.outline-h1, .outline-h2)):has(.outline-h3) .outline-h3>.outline-item,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3)):has(.outline-h4) .outline-h4>.outline-item,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4)):has(.outline-h5) .outline-h5>.outline-item,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4, .outline-h5)):has(.outline-h6) .outline-h6>.outline-item {
+  padding-left: 0;
+  position    : relative;
+}
+
+/* 最高标题等级提醒 */
+#outline-content:has(.outline-h1) .outline-h1:first-of-type>.outline-item::before,
+#outline-content:not(:has(.outline-h1)) .outline-h2:first-of-type>.outline-item::before,
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-h3:first-of-type>.outline-item::before,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3)) .outline-h4:first-of-type>.outline-item::before,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4)) .outline-h5:first-of-type>.outline-item::before,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4, .outline-h5)) .outline-h6:first-of-type>.outline-item::before {
+  position   : fixed;
+  top        : 39px;
+  left       : 5px;
+  font-size  : 11px;
+  color      : var(--outline-page-headline-indent-rating-prompt-icon-color);
+  font-family: "remixicon";
+}
+
+/* 仅同级标题 */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h5, .outline-h6)) .outline-h1 .outline-expander,
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h5, .outline-h6)) .outline-h2 .outline-expander,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4, .outline-h5, .outline-h6)) .outline-h3 .outline-expander,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h5, .outline-h6)) .outline-h4 .outline-expander,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4, .outline-h6)) .outline-h5 .outline-expander,
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4, .outline-h5)) .outline-h6 .outline-expander {
+  width : 0;
+  height: 0;
+}
+
+/* —————————————————————————————————— 最高标题等级（1级） ——————————————————————————————————  */
+/* ———————————————————————————— 1 2 3 4 5 6 ———————————————————————————— */
+#outline-content .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede8\00A0\ede9\00A0\edea\00A0\edeb";
+}
+
+/* ———————————————————————————— 1 2 3 4 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede8\00A0\ede9\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h6)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h6)) .outline-h3>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h6)) .outline-h4>.outline-item {
+  padding-left: 3.6rem !important;
+}
+
+#outline-content:not(:has(.outline-h6)) .outline-h5>.outline-item {
+  padding-left: 4.65rem !important;
+}
+
+#outline-content:not(:has(.outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h4-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 3 4 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h5)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede8\00A0\ede9\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h5)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h5)) .outline-h3>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h5)) .outline-h4>.outline-item {
+  padding-left: 3.6rem !important;
+}
+
+#outline-content:not(:has(.outline-h5)) .outline-h6>.outline-item {
+  padding-left: 4.65rem !important;
+}
+
+#outline-content:not(:has(.outline-h5)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h5)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h5)) .outline-item-open.outline-h3 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h5)) .outline-item-open.outline-h4 li::before {
+  left: var(--h4-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 3 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h4)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede8\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h4)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h4)) .outline-h3>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h4)) .outline-h5>.outline-item {
+  padding-left: 3.6rem !important;
+}
+
+#outline-content:not(:has(.outline-h4)) .outline-h6>.outline-item {
+  padding-left: 4.65rem !important;
+}
+
+#outline-content:not(:has(.outline-h4)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h4)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h4)) .outline-item-open.outline-h3 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h4)) .outline-item-open.outline-h5 li::before {
+  left: var(--h4-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 4 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h3)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede9\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h3)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h3)) .outline-h4>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h3)) .outline-h5>.outline-item {
+  padding-left: 3.6rem !important;
+}
+
+#outline-content:not(:has(.outline-h3)) .outline-h6>.outline-item {
+  padding-left: 4.65rem !important;
+}
+
+#outline-content:not(:has(.outline-h3)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3)) .outline-item-open.outline-h4 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3)) .outline-item-open.outline-h5 li::before {
+  left: var(--h4-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 3 4 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede8\00A0\ede9\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h2)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2)) .outline-h4>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h2)) .outline-h5>.outline-item {
+  padding-left: 3.6rem !important;
+}
+
+#outline-content:not(:has(.outline-h2)) .outline-h6>.outline-item {
+  padding-left: 4.65rem !important;
+}
+
+#outline-content:not(:has(.outline-h2)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2)) .outline-item-open.outline-h4 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2)) .outline-item-open.outline-h5 li::before {
+  left: var(--h4-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 3 4 ———————————————————————————— */
+#outline-content:not(:has(.outline-h5, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede8\00A0\ede9";
+}
+
+#outline-content:not(:has(.outline-h5, .outline-h6)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h5, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h5, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h5, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h5, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h5, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 3 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h4, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede8\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h6)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 3 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h4, .outline-h5)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede8\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5)) .outline-h3>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5)) .outline-item-open.outline-h3 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 4 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h3, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede9\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h6)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h3, .outline-h4)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4)) .outline-h5>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4)) .outline-h6>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 3 4 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede9\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 3 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h4)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede8\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4)) .outline-h5>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4)) .outline-h6>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 4 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h3)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede9\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3)) .outline-h5>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3)) .outline-h6>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 3 ———————————————————————————— */
+#outline-content:not(:has(.outline-h4, .outline-h5, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede8";
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5, .outline-h6)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 2.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h4, .outline-h5, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 4 ———————————————————————————— */
+#outline-content:not(:has(.outline-h3, .outline-h5, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\ede9";
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h5, .outline-h6)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h5, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h5, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h5, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h6)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h5)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h5)) .outline-h2>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h5)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h5)) .outline-item-open.outline-h2 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 3 4 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h5, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede8\00A0\ede9";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h5, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h5, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h5, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h5, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 3 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede8\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 3 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h5)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede8\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h5)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h5)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h5)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 4 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede9\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 4 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h5)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede9\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h5)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h5)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h5)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4)) .outline-h5>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4)) .outline-item-open.outline-h5 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 2 ———————————————————————————— */
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h5, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede7";
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h5, .outline-h6)) .outline-h2>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h3, .outline-h4, .outline-h5, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 3 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h5, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede8";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h5, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h4, .outline-h5, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 4 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h5, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\ede9";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h5, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h5, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h6)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* ———————————————————————————— 1 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h5)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h5)) .outline-item-open.outline-h1 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 1 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h2, .outline-h3, .outline-h4, .outline-h5, .outline-h6)) .outline-h1:first-of-type>.outline-item::before {
+  content: "\ede6";
+}
+
+/* —————————————————————————————————— 最高标题等级（2级） ——————————————————————————————————  */
+/* ———————————————————————————— 2 3 4 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede8\00A0\ede9\00A0\edea\00A0\edeb\00A0\edec";
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-h2>.outline-item {
+  padding-left: 0 !important;
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-h4>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-h5>.outline-item {
+  padding-left: 3.6rem !important;
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-h6>.outline-item {
+  padding-left: 4.65rem !important;
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-item-open.outline-h4 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1)) .outline-item-open.outline-h5 li::before {
+  left: var(--h4-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 3 4 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h6)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede8\00A0\ede9\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h6)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 3 4 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h5)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede8\00A0\ede9\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h5)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h5)) .outline-h4>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h5)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h5)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h5)) .outline-item-open.outline-h4 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h5)) .outline-item-open.outline-h6 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 3 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h4)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede8\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4)) .outline-h5>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4)) .outline-h6>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4)) .outline-item-open.outline-h6 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 4 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h3)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede9\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3)) .outline-h5>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3)) .outline-h6>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3)) .outline-item-open.outline-h6 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4)) .outline-h5>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4)) .outline-item-open.outline-h5 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4)) .outline-item-open.outline-h6 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 4 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede9\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5)) .outline-item-open.outline-h6 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 4 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h6)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede9\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h6)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 3 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede8\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5)) .outline-item-open.outline-h6 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 3 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h6)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede8\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h6)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 3 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5, .outline-h6)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede8";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5, .outline-h6)) .outline-h3>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h4, .outline-h5, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 4 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5, .outline-h6)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\ede9";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h5, .outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 5 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h6)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h6)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h6)) .outline-item-open.outline-h5 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* ———————————————————————————— 2 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h5)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h5)) .outline-item-open.outline-h2 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 2 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h3, .outline-h4, .outline-h5, .outline-h6)) .outline-h2:first-of-type>.outline-item::before {
+  content: "\ede7";
+}
+
+/* —————————————————————————————————— 最高标题等级（3级） ——————————————————————————————————  */
+/* ———————————————————————————— 3 4 5 6 ———————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-h3:first-of-type>.outline-item::before {
+  content: "\ede8\00A0\ede9\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-h3>.outline-item {
+  padding-left: 0 !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-h5>.outline-item {
+  padding-left: 2.4rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-h6>.outline-item {
+  padding-left: 3.45rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-item-open.outline-h3 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2)) .outline-item-open.outline-h5 li::before {
+  left: var(--h3-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 3 4 5 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h6)) .outline-h3:first-of-type>.outline-item::before {
+  content: "\ede8\00A0\ede9\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 3 4 6 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h5)) .outline-h3:first-of-type>.outline-item::before {
+  content: "\ede8\00A0\ede9\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h5)) .outline-h4>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h5)) .outline-item-open.outline-h3 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h5)) .outline-item-open.outline-h4 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 3 5 6 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4)) .outline-h3:first-of-type>.outline-item::before {
+  content: "\ede8\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4)) .outline-h5>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4)) .outline-item-open.outline-h3 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4)) .outline-item-open.outline-h5 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 3 4 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h5, .outline-h6)) .outline-h3:first-of-type>.outline-item::before {
+  content: "\ede8\00A0\ede9";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h5, .outline-h6)) .outline-h4>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h5, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 3 5 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4, .outline-h6)) .outline-h3:first-of-type>.outline-item::before {
+  content: "\ede8\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4, .outline-h6)) .outline-item-open.outline-h3 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 3 6 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4, .outline-h5)) .outline-h3:first-of-type>.outline-item::before {
+  content: "\ede8\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4, .outline-h5)) .outline-item-open.outline-h3 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 3 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h4, .outline-h5, .outline-h6)) .outline-h3:first-of-type>.outline-item::before {
+  content: "\ede8";
+}
+
+/* —————————————————————————————————— 最高标题等级（4级） —————————————————————————————————— */
+/* —————————————————————————————————— 4 5 6 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3)) .outline-h4:first-of-type>.outline-item::before {
+  content: "\ede9\00A0\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3)) .outline-h4>.outline-item {
+  padding-left: 0 !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3)) .outline-h5>.outline-item {
+  padding-left: 1.2rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3)) .outline-h6>.outline-item {
+  padding-left: 2.25rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3)) .outline-item-open.outline-h4 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3)) .outline-item-open.outline-h5 li::before {
+  left: var(--h2-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 4 5 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h6)) .outline-h4:first-of-type>.outline-item::before {
+  content: "\ede9\00A0\edea";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h6)) .outline-h5>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h6)) .outline-item-open.outline-h4 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 4 6 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h5)) .outline-h4:first-of-type>.outline-item::before {
+  content: "\ede9\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h5)) .outline-item-open.outline-h4 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 4 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h5, .outline-h6)) .outline-h4:first-of-type>.outline-item::before {
+  content: "\ede9";
+}
+
+/* —————————————————————————————————— 最高标题等级（5级） —————————————————————————————————— */
+/* —————————————————————————————————— 5 6 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4)) .outline-h5:first-of-type>.outline-item::before {
+  content: "\edea\00A0\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4)) .outline-h5>.outline-item {
+  padding-left: 0 !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4)) .outline-h6>.outline-item {
+  padding-left: 1.05rem !important;
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4)) .outline-item-open.outline-h5 li::before {
+  left: var(--h1-level-line-left-distance);
+}
+
+/* —————————————————————————————————— 5 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4, .outline-h6)) .outline-h5:first-of-type>.outline-item::before {
+  content: "\edea";
+}
+
+/* —————————————————————————————————— 最高标题等级（6级） —————————————————————————————————— */
+/* —————————————————————————————————— 6 —————————————————————————————————— */
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4, .outline-h5)) .outline-h6:first-of-type>.outline-item::before {
+  content: "\edeb";
+}
+
+#outline-content:not(:has(.outline-h1, .outline-h2, .outline-h3, .outline-h4, .outline-h5)) .outline-h6>.outline-item {
+  padding-left: 0 !important;
+}
